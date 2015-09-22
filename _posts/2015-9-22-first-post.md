@@ -13,4 +13,4 @@ And this is another test paragraph/sentence.
   -3.5 step
 
 ***
-I hope this comes along quicker![This goes to Google](https://www.google.com)
+I hope this comes along quicker! [This goes to Google](https://www.google.com)
