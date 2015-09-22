@@ -4,10 +4,6 @@ layout: default
 
   {% for post in site.posts %}
 
-  <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2" style="background:#abffec;color:#333;">
-  	<h2>{{ post.title }}</h2>
-  	<time datetime="{{ post.date }}">{{ post.date }}</time>
-  	<p>{{ post.excerpt }}<br><a href="{{ site.baseurl }}{{ post.url }}">READ MORE →</a></p>
-  </div>
+  <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2" style="background:#abffec;color:#333;"><h2>{{ post.title }}</h2><time datetime="{{ post.date }}">{{ post.date }}</time><p>{{ post.excerpt }}<br><a href="{{ site.baseurl }}{{ post.url }}">READ MORE →</a></p></div>
 
   {% endfor %}
