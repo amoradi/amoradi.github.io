@@ -8,35 +8,34 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+    <nav class="container navigation" style="color: #fff;">   
+      <div class=" col-xs-12 col-sm-3">
+        <a href="#" class="logo-link"><img class="logo" src="{{ site.baseurl }}images/am-logo.png" />&nbsp;&nbsp;aaron bijan moradi</a>
       </div>
-    </div>
+      <div class="col-xs-12 col-sm-9 top-links">
+        <a href="#">about</a>
+        <a href="#">work</a>  
+        <a href="#">shelf</a>
+        <a href="#">contact</a>
+      </div>
+    </nav>
 
-    <div id="main" role="main" class="container">
+    <aside class="index">
+      <span class="index-anchor"><span>index</span></span>
+    </aside>
+
+    <div id='content'>
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+    <footer class="container">
+      <span class="pull-left copyright">&copy; 2015 aaron bijan moradi</span>
+      <a href="#">linkedin</a><a href="#">twitter</a><a href="mailto:moradi.aaron@gmail.com">email</a>
+      {% include svg-icons.html %}
+    </footer>
+
+    <!-- main js -->
+    <script src="{{ site.baseurl }}/js/main.js"></script>
 
     {% include analytics.html %}
   </body>
