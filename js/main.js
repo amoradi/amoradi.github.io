@@ -1,0 +1,43 @@
+// generate HEX color (light or dark)
+function randomColor(light) {
+	var color = '';
+
+	if (light) {		
+		var lightKey = ['a', 'b', 'c', 'd', 'e', '9'];
+		
+		while (color.length < 6) {
+			var i = Math.floor((Math.random() * 6));
+			color += lightKey[i];
+		}
+
+		color = color.split('');
+		console.log(color);
+		color[2] = 'f';
+		color[3] = 'f';
+		color = color.join('');
+	}
+	else {
+		var darkKey = ['0', '1', '2', '3', '4', '5'];
+		
+		while (color.length < 6) {
+			var i = Math.floor((Math.random() * 6));
+			color += darkKey[i];
+		}
+	}
+
+	return color;
+}
+
+function createPlaceHolderTiles() {
+	for (var i =0, ii = 144; i < ii; i++) {
+		var html = "<div class=\"col-xs-12 col-sm-4 col-md-3 col-lg-2\" style=\'background:#"+randomColor(true)+";color:#333;\'><h2>Koere This is a Long Title It Is Dear So Long I Don't Know What to Do With It</h2><time datetime=\"2008-02-14 20:00\">January 18, 2014</time><p>More text here 12345. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat <br /><a href=\"#\">READ MORE &rarr;</a></p></div>";
+		
+		var content = document.getElementById('content');
+		content.insertAdjacentHTML('beforeend', html);
+	}
+}
+
+$(document).on('ready', function() {
+	// add 24 divs of random colored bkgr and txt
+	createPlaceHolderTiles();
+});
