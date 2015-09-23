@@ -2,7 +2,6 @@
 layout: post
 title: This is My First Post!
 ---
-
 This is a test paragraph.
 
 And this is another test paragraph/sentence.
