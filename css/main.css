@@ -72,10 +72,7 @@ p {
 }
 #content a,
 #content a:hover,
-#content a:active,
-p a,
-p a:hover,
-p a:active {
+#content a:active {
   text-decoration: none;
   text-decoration: underline;
   color: #333;
