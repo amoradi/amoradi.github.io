@@ -18,12 +18,12 @@ div {
   margin-bottom: 35px;
   padding-right: 32px;
 }
-#content div {
+.tile {
   padding: 0px 25px 100px;
   border: #fff solid 1px;
   color: #333;
 }
-#content div:before {
+.tile:before {
   content: "";
   display: block;
   width: 40px;
@@ -154,4 +154,9 @@ footer {
 .copyright {
   font-style: italic;
   font-size: 1.5rem;
+}
+@media (max-width = 768px) {
+  .tile {
+    height: auto !important;
+  }
 }
