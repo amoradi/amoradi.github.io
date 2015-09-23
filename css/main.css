@@ -70,6 +70,9 @@ p {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
+#content a,
+#content a:hover,
+#content a:active,
 p a,
 p a:hover,
 p a:active {
