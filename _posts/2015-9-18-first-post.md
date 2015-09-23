@@ -1,11 +1,8 @@
 ---
 layout: post
 title: This is My First Post!
-excerpt: YYYYr
 ---
-This is a test paragraph.
-
-And this is another test paragraph/sentence.
+This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence.
 
 + First step
 + Second step
