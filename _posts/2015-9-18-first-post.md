@@ -1,6 +1,7 @@
 ---
 layout: post
 title: This is My First Post!
+excerpt: %%%% Yes, it's here.
 ---
 This is a test paragraph.
 
