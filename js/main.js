@@ -37,6 +37,10 @@ function createPlaceHolderTiles() {
 	}
 }
 
+function modifyPreviewTiles() {
+	
+}
+
 $(document).on('ready', function() {
 	// add 24 divs of random colored bkgr and txt
 	createPlaceHolderTiles();
