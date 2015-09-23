@@ -1,19 +1,3 @@
-// globals
-var MonthNames = [
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December"
-];
-    
 // generate HEX color (light or dark)
 function randomColor(light) {
 	var color = '';
