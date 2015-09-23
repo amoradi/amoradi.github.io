@@ -5,22 +5,8 @@ layout: default
   {% for post in site.posts %}
   
   <script>
-    var monthNames = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December"
-    ],
-    d = new Date("{{ post.date }}"),
-    dStr = monthNames[d.getMonth()];
+    var d = new Date("{{ post.date }}"),
+        dStr = MonthNames[d.getMonth()];
     
     dStr += " " + d.getUTCDate() + ", " + d.getFullYear();
   </script>
