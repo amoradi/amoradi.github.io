@@ -37,11 +37,24 @@ function createPlaceHolderTiles() {
 	}
 }
 
-function modifyPreviewTiles() {
+function calcTileHeight() {
+	// get tallest tile
+	// set all tiles to tallest tile height
+	var $tiles = $('#content').find('tile');
+	var $tallestTile = $tiles.each(function() {
+		// return tallest tile	
+	});
 	
+	var height = $tallestTile.css('outerheight');
+	$tiles.css('height',height);
+	
+	// do this on window.resize
+	// on mobile (1 col) tiles should have height:auto in all instances
 }
 
 $(document).on('ready', function() {
 	// add 24 divs of random colored bkgr and txt
 	createPlaceHolderTiles();
+	
+	$('window').on('resize', calcTileHeight);
 });
