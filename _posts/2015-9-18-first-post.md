@@ -1,7 +1,7 @@
 ---
 layout: post
 title: This is My First Post!
-excerpt: EE This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. EE
+excerpt: <p>This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph.</p>
 ---
 This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. Aentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence.
 
