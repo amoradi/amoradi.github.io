@@ -1,6 +1,7 @@
 ---
 layout: post
 title: This is My First Post!
+excerpt: YYYYr
 ---
 This is a test paragraph.
 
