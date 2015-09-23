@@ -20,8 +20,9 @@ layout: default
       "December"
     ],
     d = new Date("{{ post.date }}"),
-    dStr = monthNames[d.getMonth()],
-    dStr += d.getUTCDate() + ", ",
+    dStr = monthNames[d.getMonth()];
+    
+    dStr += d.getUTCDate() + ", ";
     dStr += d.getFullYear();
   </script>
   
