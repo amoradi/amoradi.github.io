@@ -2,6 +2,7 @@
 layout: post
 title: This is My First Post!
 excerpt: <p>This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph.</p>
+readableDate: January 7
 ---
 This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. Aentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence.
 
