@@ -155,8 +155,15 @@ footer {
   font-style: italic;
   font-size: 1.5rem;
 }
-@media (max-width = 768px) {
+@media (max-width: 768px) {
   .tile {
     height: auto !important;
+  }
+}
+
+@media (min-width: 1400px)
+  .col-xl-2 {
+    float: left;
+    width: 16.66666667%;
   }
 }
