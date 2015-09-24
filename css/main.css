@@ -83,8 +83,6 @@ p {
 .navigation,
 footer {
   z-index: 999;
-  padding: 7px 10px;
-  padding-right: 32px !important;
 }
 .navigation,
 .index,
