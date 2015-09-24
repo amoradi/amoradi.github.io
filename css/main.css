@@ -93,6 +93,10 @@ footer {
   width: 100%;
   position: fixed;
 }
+.navigation {
+  width: 200px;
+  height: 100%;
+}
 .navigation div {
   padding: 0;
 }
