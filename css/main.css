@@ -167,3 +167,10 @@ footer {
     width: 16.66666667%;
   }
 }
+
+@media (min-width: 1900px) {
+  .col-xxl-eighths {
+    float: left;
+    width: 12.5%;
+  }
+}
