@@ -94,12 +94,16 @@ footer {
 .navigation {
   width: 200px;
   height: 100%;
-  padding: 10px;
+  padding: 0;
   background-color: #222;
   text-align: center;
 }
 .navigation div {
   padding: 0;
+}
+.navigation div:first-child {
+  background-color: #000;
+  padding: 20px 0;
 }
 .navigation a,
 footer a {
@@ -150,6 +154,7 @@ footer a {
 }
 .logo {
   width: 68px;
+  vertical-align: bottom;
 }
 footer {
   text-align: right;
