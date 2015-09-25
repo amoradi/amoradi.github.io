@@ -105,7 +105,7 @@ p {
   border-bottom: 1px solid #111;
 }
 .navigation a:hover {
-  background: #111;
+  background: none;
   color: #43DAA4;
 }
 .navigation .logo-link {
