@@ -99,9 +99,6 @@ footer {
   background-color: #222;
   text-align: center;
 }
-.navigation div {
-  padding: 20px;
-}
 .navigation div:first-child {
   background-color: #fff;
   padding: 40px 0;
@@ -117,6 +114,7 @@ footer a {
   display: block;
   line-height: 2.8rem;
   color: #fff;
+  padding: 0 20px;
 }
 .navigation .logo-link {
   text-decoration: none;
@@ -154,8 +152,7 @@ footer a {
   display: inline-block;
 }
 .logo {
-  width: 98px;
-  vertical-align: bottom;
+  width: 68px;
 }
 footer {
   text-align: right;
