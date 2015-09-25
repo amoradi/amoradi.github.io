@@ -142,8 +142,18 @@ p {
   width: 48px;
 }
 .copyright {
-  font-style: italic;
-  font-size: 1.5rem;
+  color: #ccc;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+.copyright span {
+  display: block;
 }
 
 @media (max-width: 768px) {
