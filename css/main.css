@@ -120,13 +120,16 @@ footer a {
   border-bottom: 1px solid #000;
 }
 .navigation a:hover {
-  background: #000;
+  background: #111;
   color: #43DAA4;
 }
 .navigation .logo-link {
   text-decoration: none;
   font-size: 1rem;
   border: none;
+}
+.logo-link:hover {
+  background: none;
 }
 .top-links {
   padding: 40px 0;
