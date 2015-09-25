@@ -128,12 +128,10 @@ footer a {
   font-size: 1rem;
   border: none;
 }
-.logo-link:hover {
+.navigation .logo-link:hover {
   background: none;
 }
-.top-links {
-  padding: 40px 0;
-}
+
 .top-links a:first-child {
   border-top: 1px solid #000;
 }
