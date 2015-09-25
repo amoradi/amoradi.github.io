@@ -165,3 +165,14 @@ p {
     width: 12.5%;
   }
 }
+
+::-moz-selection { 
+    color: red;
+    background: #fff;
+}
+
+::selection {
+    color: red; 
+    background: #fff;
+}
+
