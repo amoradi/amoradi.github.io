@@ -21,6 +21,7 @@ div {
 .tile {
   padding: 0px 25px 100px;
   border: #fff solid 1px;
+  border-top: none;
   color: #333;
 }
 .tile:before {
@@ -153,7 +154,7 @@ footer a {
   display: inline-block;
 }
 .logo {
-  width: 68px;
+  width: 98px;
   vertical-align: bottom;
 }
 footer {
