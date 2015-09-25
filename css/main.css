@@ -121,6 +121,7 @@ p {
   border-top: 1px solid #111;
 }
 .index {
+  position: fixed;
   z-index: 998;
   bottom: 0;
   right: 0;
