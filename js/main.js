@@ -41,7 +41,7 @@ function createPlaceHolderTiles() {
 
 function colorTiles() {
 	$tiles.each(function(i) {
-		$($tiles[i]).css('background-color', randomColor(true));
+		$($tiles[i]).css('background-color', '#'+randomColor(true));
 	});
 }
 
