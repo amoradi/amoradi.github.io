@@ -169,6 +169,17 @@ p {
   .tile {
     height: auto !important;
   }
+  .navigation {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+  }
+  .top-links {
+    text-align: right;
+  }
+  .navigation.open {
+    height: auto;
+  }
 }
 
 @media (min-width: 1400px) {
