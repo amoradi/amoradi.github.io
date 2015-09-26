@@ -50,7 +50,7 @@ function calcTileHeight() {
 	        tallest = thisHeight;
 	    }	
 	});
-	
+	console.log('tallest: '+ tallest);
 	$tiles.css('height',tallest);
 	
 	// do this on window.resize
