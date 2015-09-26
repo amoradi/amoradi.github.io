@@ -156,6 +156,12 @@ p {
   display: block;
 }
 
+.index-arrow {
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
 @media (max-width: 768px) {
   .tile {
     height: auto !important;
