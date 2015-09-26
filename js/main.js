@@ -1,3 +1,5 @@
+var $tiles = $('#content').find('.tile');
+
 // generate HEX color (light or dark)
 function randomColor(light) {
 	var color = '';
@@ -37,13 +39,15 @@ function createPlaceHolderTiles() {
 	}
 }
 
+function colorTiles() {
+	$tiles.each(function(i) {
+		$($tiles[i]).css('background-color', randomColor(true);
+	}
+}
+
 function calcTileHeight() {
-	console.log('resized');
-	
-	// get tallest tile
-	// set all tiles to tallest tile height
-	var $tiles = $('#content').find('.tile'),
-	    tallest= 0;
+		
+	var tallest= 0;
 	    
 	$tiles.css('height', 'auto');    
 	
@@ -55,13 +59,12 @@ function calcTileHeight() {
 	        tallest = thisHeight;
 	    }	
 	});
-	console.log('tallest: '+ tallest);
+	
 	$tiles.css('height', tallest);
 }
 
 $(document).on('ready', function() {
-	// add 24 divs of random colored bkgr and txt
-	//createPlaceHolderTiles();
+	colorTiles();
 	calcTileHeight();
 	$(window).resize(calcTileHeight);
 });
