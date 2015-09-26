@@ -120,7 +120,15 @@ p {
 .navigation .logo-link:hover {
   background: none;
 }
-
+.ladder, .step {
+  display: block;
+}
+.step {
+  background: #fff;
+  height: 3px;
+  width: 25px;
+  margin-bottom: 2px;
+}
 .top-links a:first-child {
   border-top: 1px solid #111;
 }
