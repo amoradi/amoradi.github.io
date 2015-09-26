@@ -215,6 +215,8 @@ p {
   }
   .logo {
     width: 28px;
+    position: relative;
+    top: -2px;
   }
   .navigation .logo-link {
     display: inline-block;
