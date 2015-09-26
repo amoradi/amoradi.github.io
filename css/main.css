@@ -201,6 +201,7 @@ p {
   }
   .navigation.navOpen {
     height: 100%;
+    bottom: 0;
   }
   #content {
     padding: 0;
@@ -217,9 +218,8 @@ p {
     float: left;
   }
   .logo {
-    width: 28px;
+    width: 25px;
     position: relative;
-    top: -2px;
   }
   .navigation .logo-link {
     display: inline-block;
