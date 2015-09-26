@@ -195,7 +195,7 @@ p {
   .top-links {
     text-align: right;
   }
-  .navigation.open {
+  .navigation.navOpen {
     height: auto;
   }
   #content {

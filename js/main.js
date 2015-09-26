@@ -63,8 +63,21 @@ function calcTileHeight() {
 	$tiles.css('height', tallest);
 }
 
+function toggleNav() {
+	var $nav 	= $('.navigation').first(),
+	    isOpen 	= $nav.hasClass('navOpen');
+
+	if (isOpen) {
+		$nav.removeClass('navOpen');
+	}
+	else {
+		$nav.addClass('navOpen');
+	}
+}
+
 $(document).on('ready', function() {
 	colorTiles();
 	calcTileHeight();
 	$(window).resize(calcTileHeight);
+	$('.navigation .ladder').on('click', toggleNav)
 });
