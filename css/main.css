@@ -202,10 +202,10 @@ p {
     width: 28px;
   }
   .navigation .logo-link {
-    display: inline;
+    display: inline-block;
     line-height: 50px;
     padding: 0;
-    padding-left: 10px;
+    padding-left: 25px;
   }
 }
 
