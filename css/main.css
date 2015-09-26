@@ -198,6 +198,7 @@ p {
   }
   .top-links {
     text-align: right;
+    clear: both;
   }
   .navigation.navOpen {
     height: auto;
@@ -212,6 +213,9 @@ p {
   }
   .navigation div:first-child {
     padding: 0;
+  }
+  .logo-link {
+    float: left;
   }
   .logo {
     width: 28px;
