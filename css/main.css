@@ -172,6 +172,7 @@ p {
   .navigation {
     width: 100%;
     height: 50px;
+    overflow: hidden;
     text-align: left;
   }
   .top-links {
