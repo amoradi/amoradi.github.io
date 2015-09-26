@@ -49,7 +49,7 @@ function calcTileHeight() {
 	    var thisHeight = $($tiles[i]).height();
 	    
 	    if (thisHeight > tallest) {
-	        tallest = thisHeight;
+	        var tallest = thisHeight;
 	    }	
 	});
 	console.log('tallest: '+ tallest);
