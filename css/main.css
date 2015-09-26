@@ -134,6 +134,12 @@ p {
   font-size: 1.5rem;
   text-decoration: none;
 }
+.index-cursor {
+  cursor: pointer;
+}
+.index-cursor:hover {
+  color:#43DAA4;
+}
 .upsidedown {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
@@ -156,10 +162,6 @@ p {
 
 .copyright span {
   display: block;
-}
-
-.index-arrow {
-  font-size: 4rem;
 }
 
 @media (max-width: 768px) {
