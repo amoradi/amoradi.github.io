@@ -134,10 +134,10 @@ p {
   font-size: 1.5rem;
   text-decoration: none;
 }
-.index-cursor {
+.index-anchor {
   cursor: pointer;
 }
-.index-cursor:hover {
+.index-anchor:hover {
   color:#43DAA4;
 }
 .upsidedown {
