@@ -201,7 +201,7 @@ p {
     clear: both;
   }
   .navigation.navOpen {
-    height: auto;
+    height: !00%;
   }
   #content {
     padding: 0;
