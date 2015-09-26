@@ -43,8 +43,8 @@ function calcTileHeight() {
 	var $tiles = $('#content').find('.tile'),
 	    tallest= 0;
 	    
-	$tiles.each(function() {
-	    var thisHeight = $this.height();
+	$tiles.each(function(i) {
+	    var thisHeight = $tiles[i].height();
 	    
 	    if (thisHeight > tallest) {
 	        tallest = thisHeight;
