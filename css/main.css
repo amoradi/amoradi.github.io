@@ -201,7 +201,7 @@ p {
   .logo {
     width: 28px;
   }
-  .logo-link {
+  .navigation .logo-link {
     display: inline;
     line-height: 50px;
     padding: 0;
