@@ -181,6 +181,11 @@ p {
   .navigation.open {
     height: auto;
   }
+  #content {
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+  }
 }
 
 @media (min-width: 1400px) {
