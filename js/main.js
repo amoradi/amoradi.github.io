@@ -40,7 +40,7 @@ function createPlaceHolderTiles() {
 function calcTileHeight() {
 	// get tallest tile
 	// set all tiles to tallest tile height
-	var $tiles = $('#content').find('tile'),
+	var $tiles = $('#content').find('.tile'),
 	    tallest= 0;
 	    
 	$tiles.each(function() {
