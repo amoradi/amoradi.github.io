@@ -61,5 +61,5 @@ $(document).on('ready', function() {
 	// add 24 divs of random colored bkgr and txt
 	//createPlaceHolderTiles();
 	calcTileHeight();
-	$('window').on('resize', calcTileHeight);
+	$(window).resize(calcTileHeight);
 });
