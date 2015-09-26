@@ -120,14 +120,18 @@ p {
 .navigation .logo-link:hover {
   background: none;
 }
+.ladder {
+  float: right;
+  padding: 17px 20px;
+}
 .ladder, .step {
   display: block;
 }
 .step {
   background: #fff;
-  height: 3px;
+  height: 2px;
   width: 25px;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 .top-links a:first-child {
   border-top: 1px solid #111;
