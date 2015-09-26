@@ -45,6 +45,8 @@ function calcTileHeight() {
 	var $tiles = $('#content').find('.tile'),
 	    tallest= 0;
 	    
+	$tiles.css('height', 'auto');    
+	
 	$tiles.each(function(i) {
 	    var thisHeight = $($tiles[i]).height();
 	    console.log(thisHeight);
