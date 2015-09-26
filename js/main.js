@@ -47,13 +47,14 @@ function calcTileHeight() {
 	    
 	$tiles.each(function(i) {
 	    var thisHeight = $($tiles[i]).height();
+	    console.log(thisHeight);
 	    
 	    if (thisHeight > tallest) {
-	        var tallest = thisHeight;
+	        tallest = thisHeight;
 	    }	
 	});
 	console.log('tallest: '+ tallest);
-	$tiles.css('height',tallest);
+	$tiles.css('height', tallest);
 	
 	// do this on window.resize
 	// on mobile (1 col) tiles should have height:auto in all instances
