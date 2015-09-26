@@ -177,6 +177,9 @@ p {
     height: 50px;
     overflow: hidden;
     text-align: left;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
   .top-links {
     text-align: right;
@@ -191,6 +194,18 @@ p {
   }
   .index {
     left: 0;
+  }
+  .navigation div:first-child {
+    padding: 0;
+  }
+  .logo {
+    width: 28px;
+  }
+  .logo-link {
+    display: inline;
+    line-height: 50px;
+    padding: 0;
+    padding-left: 10px;
   }
 }
 
