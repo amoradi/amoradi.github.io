@@ -67,6 +67,10 @@ h1:first-letter {
   margin: 7px auto;
 }
 
+.contact-info img {
+  width: 50px;
+}
+
 .tile h2 {
   font-size: 2.6rem;
   margin-bottom: 0;
