@@ -18,7 +18,7 @@ div {
   padding-left: 99px;
 }
 .page {
-  padding: 0 20px;
+  padding: 25px 20px 20px;
 }
 .tile {
   padding: 0px 25px 100px;
@@ -88,6 +88,11 @@ p {
 #content a:active {
   text-decoration: none;
   text-decoration: underline;
+  color: #43DAA4;
+}
+.tile a,
+.tile a:hover,
+.tile a:active {
   color: #333;
   position: absolute;
   bottom: 30px;
@@ -189,6 +194,14 @@ p {
 
 .copyright span {
   display: block;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.page .entry {
+   margin-top: 60px;
 }
 
 @media (max-width: 768px) {
