@@ -63,6 +63,10 @@ h1:first-letter {
   bottom: 10px;
 }
 
+.contact-info a {
+  margin: 7px auto;
+}
+
 .tile h2 {
   font-size: 2.6rem;
   margin-bottom: 0;
@@ -200,9 +204,9 @@ p {
   position: fixed;
   bottom: 0;
   right: 0;
-  padding: 10px;
-  width: 100px;
-  text-align: center;
+  padding: 7px 10px;
+  width: 200px;
+  text-align: right;
 }
 
 .copyright span {
