@@ -19,43 +19,43 @@ I’m an inquisitive ol’ chap hailing from the prairies of Plano, TX. I enjoy 
 
 ### Food for Thought
 
-> “Great things are done by a series of small things brought together.” – Vincent Van Gogh
+> “Great things are done by a series of small things brought together.”<br/>– Vincent Van Gogh
 
 <!-- -->
-> “When I get a little money I buy books; and if any is left I buy food and clothes.” – Desiderius Erasmus
+> “When I get a little money I buy books; and if any is left I buy food and clothes.”<br/>– Desiderius Erasmus
 
 <!-- -->
-> “All men’s miseries derive from not being able to sit in a quiet room alone.”
+> “All men’s miseries derive from not being able to sit in a quiet room alone.”<br/>
 – Blaise Pascal
 
 <!-- -->
-> “Catch on fire and others will love to come watch you burn.”
+> “Catch on fire and others will love to come watch you burn.”<br/>
 – John Wesley
 
 <!-- -->
-> “Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while. That’s because they were able to connect experiences they’ve had and synthesize new things.”
+> “Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while. That’s because they were able to connect experiences they’ve had and synthesize new things.”<br/>
 – Steve Jobs
 
 <!-- -->
-> “Stay hungry, stay foolish.”
+> “Stay hungry, stay foolish.”<br/>
 – Steve Jobs
 
 <!-- -->
->“In spite of everything I shall rise again: I will take up my pencil, which I have forsaken in my great discouragement, and I will go on with my drawing.”
+>“In spite of everything I shall rise again: I will take up my pencil, which I have forsaken in my great discouragement, and I will go on with my drawing.”<br/>
 – Vincent Van Gogh
 
 <!-- -->
-> “I wish they would only take me as I am.”
+> “I wish they would only take me as I am.”<br/>
 – Vincent Van Gogh
 
 <!-- -->
-> “Fortune favors the audacious.”
+> “Fortune favors the audacious.”<br/>
 – Desiderius Erasmus
 
 <!-- -->
-> “A house is not a home unless it contains food and fire for the mind as well as the body.”
+> “A house is not a home unless it contains food and fire for the mind as well as the body.”<br/>
 – Benjamin Franklin
 
 <!-- -->
-> “The point is that if there is no God, then objective right and wrong do not exist. As Dostoyevsky said, “All things are permitted.”
+> “The point is that if there is no God, then objective right and wrong do not exist. As Dostoyevsky said, “All things are permitted.”<br/>
 ― William Lane Craig
