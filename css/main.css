@@ -90,9 +90,9 @@ p {
   text-decoration: underline;
   color: #43DAA4;
 }
-.tile a,
-.tile a:hover,
-.tile a:active {
+#content .tile a,
+#content .tile a:hover,
+#content .tile a:active {
   color: #333;
   position: absolute;
   bottom: 30px;
