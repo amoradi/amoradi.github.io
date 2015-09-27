@@ -43,6 +43,7 @@ div {
   left: 0;
 }
 #content .tile:hover {
+  text-decoration: none;
   cursor: pointer;
 }
 
