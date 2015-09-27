@@ -27,6 +27,7 @@ div {
   border: #fff solid 1px;
   border-top: none;
   color: #333;
+  display: block;
   overflow: hidden;
 }
 .tile:before {
@@ -39,6 +40,9 @@ div {
   height: 5px;
   background-color: rgba(0,0,0,0.1);
   left: 0;
+}
+.tile:hover {
+  cursor: pointer;
 }
 
 h1,

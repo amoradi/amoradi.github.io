@@ -4,14 +4,14 @@ layout: default
 
   {% for post in site.posts %}
  
-  <div class="tile col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-eighths">
+  <a href="{{ site.baseurl }}{{ post.url }}" class="tile col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-eighths">
     <h2>{{ post.title }}</h2>
     <time datetime="{{ post.date }}">
       {{ post.date | date: '%B %d, %Y' }}
     </time>
     {{ post.excerpt }}
     <a href="{{ site.baseurl }}{{ post.url }}">READ MORE →</a>
-  </div>
+  </a>
   
   {% endfor %}
 
