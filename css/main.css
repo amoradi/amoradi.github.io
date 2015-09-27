@@ -18,6 +18,7 @@ div {
   padding-left: 99px;
 }
 .page {
+  max-width: 960px;
   padding: 25px 20px 20px;
 }
 .tile {
