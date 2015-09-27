@@ -58,23 +58,6 @@ h1:first-letter {
   padding-top: 14px;
 }
 
-.contact-info {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  width: 100px;
-  margin-bottom: 0;
-}
-
-.contact-info a {
-  margin: 7px auto;
-  border: none;
-}
-
-.contact-info img {
-  width: 17px;
-}
-
 .tile h2 {
   font-size: 2.6rem;
   margin-bottom: 0;
@@ -235,6 +218,23 @@ blockquote p {
 }
 blockquote .author {
   font-size: 1.6rem;
+}
+
+.contact-info {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100px;
+  margin-bottom: 0;
+}
+
+.contact-info a {
+  margin: 7px auto;
+  border: none;
+}
+
+.contact-info img {
+  width: 17px;
 }
 
 @media (max-width: 768px) {
