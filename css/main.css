@@ -46,12 +46,12 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", "Jaldi", sans-serif;
+  font-weight: 600;
+  color: #222;
 }
 
 h2 {
   font-size: 2.6rem;
-  font-weight: 600;
-  color: #222;
   margin-bottom: 0;
   letter-spacing: 1px;
   line-height: 3.2rem;
