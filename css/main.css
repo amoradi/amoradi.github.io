@@ -220,7 +220,7 @@ p {
   .logo {
     width: 25px;
     position: relative;
-    top: -1px;
+    top: -2px;
   }
   .navigation .logo-link {
     display: inline-block;
