@@ -245,12 +245,12 @@ p {
 }
 
 ::-moz-selection { 
-    color: red;
-    background: #fff;
+    color: #43DAA4;
+    background: #222;
 }
 
 ::selection {
-    color: red; 
-    background: #fff;
+    color: r#43DAA4; 
+    background: #222;
 }
 
