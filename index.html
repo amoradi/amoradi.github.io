@@ -7,9 +7,10 @@ layout: default
   <div class="tile col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-eighths">
     <h2>{{ post.title }}</h2>
     <time datetime="{{ post.date }}">
-      <script>
+      <script type="text/javascript">
         var d = new Date("{{ post.date }}"),
-        dStr = MonthNames[d.getMonth()];
+         dStr = MonthNames[d.getMonth()];
+         
         dStr += " " + d.getUTCDate() + ", " + d.getFullYear();
         document.write(dStr);
       </script></time>
