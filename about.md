@@ -21,6 +21,7 @@ I’m an inquisitive ol’ chap hailing from the prairies of Plano, TX. I enjoy 
 
 > “Great things are done by a series of small things brought together.” – Vincent Van Gogh
 
+
 > “When I get a little money I buy books; and if any is left I buy food and clothes.” – Desiderius Erasmus
 
 > “All men’s miseries derive from not being able to sit in a quiet room alone.”
