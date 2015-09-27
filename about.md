@@ -13,11 +13,11 @@ Oh, and I also needed a place for [my portfolio.](http://amoradi.github.io/portf
 
 I’m an inquisitive ol’ chap hailing from the prairies of Plano, TX. I enjoy sketching, consuming info on the Internet, learning web technologies, being a dad, eating marvelously prepared food by my wife, dreaming of far away lands, vicariously traveling to foreign countries via Rick Steves’ work, fantasy football, theology, color, code, design, history, and learning!
 
-### Contact me
+### Contact
 
 [email](mailto:moradi.aaron@gmail.com) phone: (214) 284.1318 [linkedIn](http://www.linkedin.com/pub/aaron-moradi/47/61b/71a/) [github](https://github.com/amoradi) [twitter](https://twitter.com/AaronMoradi) [readernaut](http://readernaut.com/amoradi/)
 
-### Some Neat Quotes
+### Food for Thought
 
 > “Great things are done by a series of small things brought together.”
 – Vincent Van Gogh
