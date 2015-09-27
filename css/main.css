@@ -49,6 +49,7 @@ h6 {
   font-family: "Raleway", "Jaldi", sans-serif;
   font-weight: 600;
   color: #222;
+  margin: 45px 0 20px;
 }
 
 .tile h2 {
@@ -199,10 +200,6 @@ p {
 
 h1 {
   font-size: 4rem;
-}
-
-.page .entry {
-   margin-top: 60px;
 }
 
 @media (max-width: 768px) {
