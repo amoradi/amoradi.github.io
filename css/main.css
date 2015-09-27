@@ -22,15 +22,16 @@ div {
   padding: 0 25px 20px;
   overflow: hidden;
 }
-.tile {
+#content .tile {
   padding: 0px 25px 100px;
   border: #fff solid 1px;
   border-top: none;
   color: #333;
   display: block;
+  text-decoration: none;
   overflow: hidden;
 }
-.tile:before {
+#content .tile:before {
   content: "";
   display: block;
   width: 40px;
@@ -41,7 +42,7 @@ div {
   background-color: rgba(0,0,0,0.1);
   left: 0;
 }
-.tile:hover {
+#content .tile:hover {
   cursor: pointer;
 }
 
@@ -62,7 +63,7 @@ h1:first-letter {
   padding-top: 14px;
 }
 
-.tile h2 {
+#content .tile h2 {
   font-size: 2.6rem;
   margin-bottom: 0;
   letter-spacing: 1px;
@@ -74,7 +75,7 @@ h1:first-letter {
   margin-top: 0;
   background-color: rgba(255,255,255,0.25);
 }
-.tile h2:first-letter {
+#content .tile h2:first-letter {
   border-top: 2px solid;
   padding-top: 14px;
 }
@@ -88,7 +89,7 @@ time {
   margin-bottom: 1.6rem;
 }
 time,
-#content .tile a {
+.read-more {
   font-size: 1.3rem;
 }
 p {
@@ -102,9 +103,9 @@ p {
   text-decoration: underline;
   color: #43DAA4;
 }
-#content .tile a,
-#content .tile a:hover,
-#content .tile a:active {
+.read-more,
+.read-more:hover,
+.read-more:active {
   color: #333;
   position: absolute;
   bottom: 30px;
