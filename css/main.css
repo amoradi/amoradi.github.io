@@ -20,6 +20,7 @@ div {
 .page {
   max-width: 960px;
   padding: 0 25px 20px;
+  overflow: hidden;
 }
 .tile {
   padding: 0px 25px 100px;
