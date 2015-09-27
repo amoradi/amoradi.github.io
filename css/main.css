@@ -61,14 +61,18 @@ h1:first-letter {
 .contact-info {
   position: absolute;
   bottom: 10px;
+  left: 0;
+  width: 100px;
+  margin-bottom: 0;
 }
 
 .contact-info a {
   margin: 7px auto;
+  border: none;
 }
 
 .contact-info img {
-  width: 50px;
+  width: 17px;
 }
 
 .tile h2 {
