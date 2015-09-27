@@ -289,7 +289,7 @@ blockquote .author {
   }
 }
 
-@media (min-width: 769) {
+@media (min-width: 769px) {
   html {
     min-height: 500px;
   }
