@@ -45,6 +45,10 @@ function colorTiles() {
 	});
 }
 
+function colorBody() {
+	$('body').css('background-color', '#'+randomColor(true));
+}
+
 function calcTileHeight() {
 		
 	var tallest= 0;
@@ -76,6 +80,7 @@ function toggleNav() {
 }
 
 $(document).on('ready', function() {
+	colorBody();
 	colorTiles();
 	calcTileHeight();
 	$(window).resize(calcTileHeight);
