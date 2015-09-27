@@ -19,7 +19,7 @@ I’m an inquisitive ol’ chap hailing from the prairies of Plano, TX. I enjoy 
 
 ### Food for Thought
 
-> “Great things are done by a series of small things brought together.”<br/><span>– Vincent Van Gogh</span>
+> “Great things are done by a series of small things brought together.”<br/><span class="author">– Vincent Van Gogh</span>
 
 <!-- -->
 > “When I get a little money I buy books; and if any is left I buy food and clothes.”<br/><span class="author">– Desiderius Erasmus</span>
