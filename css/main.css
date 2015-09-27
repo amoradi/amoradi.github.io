@@ -290,7 +290,7 @@ blockquote .author {
 }
 
 @media (min-width: 769px) {
-  html {
+  .navigation {
     min-height: 500px;
   }
 }
