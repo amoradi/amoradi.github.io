@@ -7,15 +7,11 @@ title: About
 
 So… I wanted to commit my thoughts to a persistent form. And herein lies my motivation for the site — it’s a space for me carry on splendidly and without reservation, to jot down all my ideas, passions, studies, and privy thoughts I deem worthy. It’s my very own treasure chest of knowledge, toy box of cerebral blocks, and diary of data. In it, I plan to outline, elaborate, elucidate, and accommodate, for the betterment of mankind and for my memory’s sake!
 
-Oh, and I also needed a place for [my portfolio.](http://amoradi.github.io/portfolio.html)
+Oh, and I also needed a place for [my portfolio](http://amoradi.github.io/portfolio.html) and <a href="http://amoradi.github.io/resume.pdf" target="_blank">r&eacute;sum&eacute;.</a>
 
 ### Me
 
 I’m an inquisitive ol’ chap hailing from the prairies of Plano, TX. I enjoy sketching, consuming info on the Internet, learning web technologies, being a dad, eating marvelously prepared food by my wife, dreaming of far away lands, vicariously traveling to foreign countries via Rick Steves’ work, fantasy football, theology, color, code, design, history, and learning!
-
-### Contact
-
-[email](mailto:moradi.aaron@gmail.com) | [linkedIn](http://www.linkedin.com/pub/aaron-moradi/47/61b/71a/) | [github](https://github.com/amoradi) | [twitter](https://twitter.com/AaronMoradi) | [readernaut](http://readernaut.com/amoradi/)
 
 ### Food for Thought
 
