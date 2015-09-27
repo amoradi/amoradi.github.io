@@ -80,7 +80,7 @@ function toggleNav() {
 }
 
 $(document).on('ready', function() {
-	colorBody();
+	//colorBody();
 	colorTiles();
 	calcTileHeight();
 	$(window).resize(calcTileHeight);
