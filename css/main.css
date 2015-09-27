@@ -289,6 +289,12 @@ blockquote .author {
   }
 }
 
+@media (min-width: 769) {
+  html {
+    min-height: 500px;
+  }
+}
+
 @media (min-width: 1400px) {
   .col-xl-2 {
     float: left;
