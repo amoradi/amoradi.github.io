@@ -15,7 +15,7 @@ I’m an inquisitive ol’ chap hailing from the prairies of Plano, TX. I enjoy 
 
 ### Contact
 
-[email](mailto:moradi.aaron@gmail.com) phone: (214) 284.1318 [linkedIn](http://www.linkedin.com/pub/aaron-moradi/47/61b/71a/) [github](https://github.com/amoradi) [twitter](https://twitter.com/AaronMoradi) [readernaut](http://readernaut.com/amoradi/)
+[email](mailto:moradi.aaron@gmail.com) [linkedIn](http://www.linkedin.com/pub/aaron-moradi/47/61b/71a/) [github](https://github.com/amoradi) [twitter](https://twitter.com/AaronMoradi) [readernaut](http://readernaut.com/amoradi/)
 
 ### Food for Thought
 
