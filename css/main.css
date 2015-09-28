@@ -265,6 +265,10 @@ blockquote .author {
   width: 15px;
 }
 
+.fullscreen {
+  bottom: 10px;
+}
+
 .fullscreen img {
   width: 48px;
 }
