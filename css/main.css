@@ -245,12 +245,14 @@ blockquote .author {
   font-size: 1.6rem;
 }
 
-.contact-info {
+.contact-info,
+.fullscreen {
   position: absolute;
-  bottom: 10px;
+  bottom: 70px;
   left: 0;
   width: 100px;
   margin-bottom: 0;
+  text-align: center;
   padding: 10px 20px;
 }
 
@@ -261,6 +263,10 @@ blockquote .author {
 
 .contact-info img {
   width: 15px;
+}
+
+.fullscreen img {
+  width: 48px;
 }
 
 @media (max-width: 768px) {
@@ -333,7 +339,7 @@ blockquote .author {
 }
 
 @media (min-width: 1900px) {
-  .col-xxl-eighths {
+  .col-xxl-1_5 {
     float: left;
     width: 12.5%;
   }
