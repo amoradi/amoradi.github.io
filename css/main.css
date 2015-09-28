@@ -72,13 +72,19 @@ h1:first-letter {
   padding-top: 14px;
 }
 
+ul {
+  padding-left: 0;
+}
+
 li {
   list-style-type: none;
   font-size: 1.9rem;
 }
 
 li:before {
-  content:"\u25C6";
+  content:"\25C6";
+  margin-right: 10px;
+  font-size: 1.2rem;
 }
 
 #content .tile h2 {
