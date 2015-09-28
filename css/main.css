@@ -298,6 +298,13 @@ blockquote .author {
   bottom: 0;
   background-color: rgb(171, 255, 218);
 }
+.bkgr-container div {
+  height: 50px;
+  border-top: 1px solid #fff;
+}
+.bkgr-container div:first-child {
+  border-top: none;
+}
 
 @media (max-width: 768px) {
   #content {
