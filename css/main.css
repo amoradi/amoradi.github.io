@@ -267,7 +267,8 @@ blockquote .author {
 }
 
 .fullscreen {
-  bottom: 10px;
+  bottom: 0;
+  padding: 20px 0;
 }
 
 .fullscreen img {
