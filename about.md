@@ -1,6 +1,10 @@
 ---
 layout: page
 title: About
+sitemap:
+    priority: 0.7
+    changefreq: 'monthly'
+    lastmod: 2015-09-27
 ---
 
 ### Purpose
