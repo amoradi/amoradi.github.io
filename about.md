@@ -1,11 +1,14 @@
 ---
 layout: page
 title: About
+---
+
+{% comment %}
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
     lastmod: 2015-09-27
----
+{% end comment %}
 
 ### Purpose
 
