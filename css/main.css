@@ -291,7 +291,19 @@ blockquote .author {
   width: 22px;
 }
 
+.bkgr-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(171, 255, 218);
+}
+
 @media (max-width: 768px) {
+  #content {
+    padding: 0;
+    margin: 0;
+  }
   .tile {
     height: auto !important;
   }
