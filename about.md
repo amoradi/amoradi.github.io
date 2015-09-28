@@ -3,13 +3,6 @@ layout: page
 title: About
 ---
 
-{% comment %}
-sitemap:
-    priority: 0.7
-    changefreq: 'monthly'
-    lastmod: 2015-09-27
-{% end comment %}
-
 ### Purpose
 
 So… I wanted to commit my thoughts to a persistent form. And herein lies my motivation for the site — it’s a space for me carry on splendidly and without reservation, to jot down all my ideas, passions, studies, and privy thoughts I deem worthy. It’s my very own treasure chest of knowledge, toy box of cerebral blocks, and diary of data. In it, I plan to outline, elaborate, elucidate, and accommodate, for the betterment of mankind and for my memory’s sake!
