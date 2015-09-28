@@ -54,7 +54,7 @@ function colorBkgr(minWidth) {
 			if ($pagePost.length > 0) {
 				$('.bkgr-container').remove();
 
-				var bkgrWidth = $content.outerWidth() - $pagePost.outerWidth() - 99,
+				var bkgrWidth = $content.outerWidth() - $pagePost.outerWidth() - 239,
 					docHeight = $(document).height(),
 					numDivs   = Math.ceil(docHeight / 40);
 

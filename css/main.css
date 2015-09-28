@@ -297,6 +297,7 @@ blockquote .author {
   top: 0;
   bottom: 0;
   background-color: rgb(171, 255, 218);
+  opacity: .6;
 }
 .bkgr-container div {
   height: 40px;
