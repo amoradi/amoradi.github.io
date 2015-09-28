@@ -47,11 +47,13 @@ function colorTiles() {
 
 function colorBkgr(minWidth) {
 
-	if ($(window.outerWidth > minWidth)) {
+	if ($(window).width() > minWidth)) {
 		var $content = $('#content'),
 			$pagePost = $content.find('.page, .post').first();
 
 			if ($pagePost.length > 0) {
+				$('.bkgr-container').remove();
+
 				var bkgrWidth = $content.outerWidth() - $pagePost.outerWidth() - 99,
 					docHeight = $(document).outerHeight(),
 					numDivs   = Math.ceil(docHeight / 40);
