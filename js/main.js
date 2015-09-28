@@ -55,7 +55,7 @@ function colorBkgr(minWidth) {
 				$('.bkgr-container').remove();
 
 				var bkgrWidth = $content.outerWidth() - $pagePost.outerWidth() - 99,
-					docHeight = $(document).outerHeight(),
+					docHeight = $(document).height(),
 					numDivs   = Math.ceil(docHeight / 40);
 
 				// create container div
