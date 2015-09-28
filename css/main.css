@@ -20,7 +20,7 @@ div {
 .page,
 .post {
   max-width: 960px;
-  padding: 0 25px 20px;
+  padding: 40px 25px 20px;
   overflow: hidden;
 }
 #content .tile {
@@ -299,6 +299,11 @@ blockquote .author {
     line-height: 50px;
     padding: 0;
     padding-left: 25px;
+  }
+
+  .page,
+  .post {
+    padding-top: 0;
   }
 }
 
