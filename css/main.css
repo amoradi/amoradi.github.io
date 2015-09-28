@@ -360,3 +360,18 @@ blockquote .author {
     background: #43DAA4;
 }
 
+.hidden-fullscrn:-webkit-full-screen {
+  display: none;
+}
+
+.hidden-fullscrn:-moz-full-screen {
+  display: none;
+}
+
+.hidden-fullscrn:-ms-fullscreen {
+  display: none;
+}
+
+.hidden-fullscrn:fullscreen {
+  display: none;
+}

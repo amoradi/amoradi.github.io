@@ -79,10 +79,20 @@ function toggleNav() {
 	}
 }
 
+function toggleFullscreen() {
+	// if is in fullscrn mode, exit
+
+	// else
+	// put document into full screen mode
+}
+
 $(document).on('ready', function() {
 	//colorBody();
 	colorTiles();
 	calcTileHeight();
+
+	// events
 	$(window).resize(calcTileHeight);
-	$('.navigation .ladder').on('click', toggleNav)
+	$('.navigation .ladder').on('click', toggleNav);
+	$('.fullscreen').on('click', toggleFullscreen);
 });
