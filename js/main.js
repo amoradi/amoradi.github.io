@@ -62,7 +62,7 @@ function colorBkgr(minWidth) {
 					$divCont	= $(divCont);
 
 				divCont.className = 'bkgr-container';
-				div.Cont.style.width = bkgrWidth+"px";
+				divCont.style.width = bkgrWidth+"px";
 				$content.append(divCont);
 
 				// create divs
