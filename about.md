@@ -11,7 +11,10 @@ Oh, and I also needed a place for [my portfolio](http://amoradi.github.io/portfo
 
 ### Me
 
-I’m an inquisitive ol’ chap hailing from the prairies of Plano, TX. I enjoy sketching, consuming info on the Internet, learning web technologies, being a dad, eating marvelously prepared food by my wife, dreaming of far away lands, vicariously traveling to foreign countries via Rick Steves’ work, fantasy football, theology, color, code, design, history, and learning!
+<img src="/images/me-and-little-one-300x300.jpg" class="pull-right" width="200" />
+Let me introduce myself, &mdash; My name is Aaron Bijan Moradi. People call me Aaron. I'm originally from Plano, TX. I am currently a web developer for MRM//McCann in Birmingham, MI.
+
+I enjoy reading non-fiction, consuming info on the Internet, learning (new web technologies included), being a dad, and eating marvelously prepared food by my wife!
 
 ### Food for Thought
 
