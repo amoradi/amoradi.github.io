@@ -72,6 +72,10 @@ h1:first-letter {
   padding-top: 14px;
 }
 
+li {
+      list-style-type: square;
+}
+
 #content .tile h2 {
   font-size: 2.6rem;
   margin-bottom: 0;
