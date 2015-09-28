@@ -182,7 +182,8 @@ p {
   width: 35px;
   margin-bottom: 4px;
 }
-.top-links a:first-child {
+.top-links a:first-child,
+.fullscreen {
   border-top: 1px solid #111;
 }
 .index {
@@ -270,7 +271,7 @@ blockquote .author {
 }
 
 .fullscreen img {
-  width: 48px;
+  width: 28px;
 }
 
 @media (max-width: 768px) {
