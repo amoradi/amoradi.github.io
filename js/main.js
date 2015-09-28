@@ -45,8 +45,8 @@ function colorTiles() {
 	});
 }
 
-function colorBody() {
-	$('body').css('background-color', '#'+randomColor(true));
+function colorBkgr() {
+	$('#content').css('background-color', '#'+randomColor(true));
 }
 
 function calcTileHeight() {
@@ -87,7 +87,7 @@ function toggleFullscreen() {
 }
 
 $(document).on('ready', function() {
-	//colorBody();
+	colorBkgr();
 	colorTiles();
 	calcTileHeight();
 
