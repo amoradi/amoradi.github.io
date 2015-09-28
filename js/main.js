@@ -47,7 +47,7 @@ function colorTiles() {
 
 function colorBkgr(minWidth) {
 
-	if ($(window).width() > minWidth)) {
+	if ($(window).width() > minWidth) {
 		var $content = $('#content'),
 			$pagePost = $content.find('.page, .post').first();
 
