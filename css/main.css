@@ -73,7 +73,7 @@ h1:first-letter {
 }
 
 ul {
-  padding-left: 0;
+  padding: 20px 0;
 }
 
 li {
