@@ -73,7 +73,12 @@ h1:first-letter {
 }
 
 li {
-      list-style-type: square;
+  list-style-type: none;
+  font-size: 1.9rem;
+}
+
+li:before {
+  content="\u25C6";
 }
 
 #content .tile h2 {
