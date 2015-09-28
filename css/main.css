@@ -248,7 +248,7 @@ blockquote .author {
 }
 
 .contact-info img {
-  width: 17px;
+  width: 15px;
 }
 
 @media (max-width: 768px) {
@@ -303,7 +303,7 @@ blockquote .author {
 
   .page,
   .post {
-    padding-top: 0;
+    padding-top:0;
   }
 }
 
