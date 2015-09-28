@@ -78,7 +78,7 @@ li {
 }
 
 li:before {
-  content="\u25C6";
+  content="hi";
 }
 
 #content .tile h2 {
