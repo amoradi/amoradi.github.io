@@ -259,10 +259,10 @@ h1 {
 }
 
 blockquote {
-  padding: 4rem 3rem;
+  padding: 2rem 3rem;
   background: #eee;
   margin-bottom: 10px;
-  border-left: 15px solid #eee;
+  border-left: 7px solid rgba(0,0,0,.1);
 }
 
 blockquote p {

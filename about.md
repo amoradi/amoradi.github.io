@@ -27,14 +27,11 @@ title: About
 <blockquote>All men’s miseries derive from not being able to sit in a quiet room alone.<br/>
 <span class="author">– Blaise Pascal</span></blockquote>
 
-<blockquote>Catch on fire and others will love to come watch you burn.<br/>
-<span class="author">– John Wesley</span></blockquote>
-
 </div>
 <div class="page-col second-col col-lg-6 col-sm-12">
 
-<blockquote>Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while. That’s because they were able to connect experiences they’ve had and synthesize new things.<br/>
-<span class="author">– Steve Jobs</span></blockquote>
+<blockquote>Catch on fire and others will love to come watch you burn.<br/>
+<span class="author">– John Wesley</span></blockquote>
 
 <blockquote>Stay hungry, stay foolish.<br/>
 <span class="author">– Steve Jobs</span></blockquote>
@@ -51,8 +48,5 @@ title: About
 
 <blockquote>A house is not a home unless it contains food and fire for the mind as well as the body.<br/>
 <span class="author">– Benjamin Franklin</span></blockquote>
-
-<blockquote>The point is that if there is no God, then objective right and wrong do not exist. As Dostoyevsky said, "All things are permitted."<br/>
-<span class="author">― William Lane Craig</span></blockquote>
 
 </div>
