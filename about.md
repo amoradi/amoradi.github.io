@@ -2,7 +2,6 @@
 layout: page
 title: About
 ---
-<div class="page-col col-lg-6 col-sm-12">
 <h3>Purpose</h3>
 
 <p>So… I wanted to commit my thoughts to a persistent form. And herein lies my motivation for the site — it’s a space for me carry on splendidly and without reservation, to jot down all my ideas, passions, studies, and privy thoughts I deem worthy. It’s my very own treasure chest of knowledge, toy box of cerebral blocks, and diary of data. In it, I plan to outline, elaborate, elucidate, and accommodate, for the betterment of mankind and for my memory’s sake!</p>
@@ -27,9 +26,6 @@ title: About
 <blockquote>All men’s miseries derive from not being able to sit in a quiet room alone.<br/>
 <span class="author">– Blaise Pascal</span></blockquote>
 
-</div>
-<div class="page-col second-col col-lg-6 col-sm-12">
-
 <blockquote>Catch on fire and others will love to come watch you burn.<br/>
 <span class="author">– John Wesley</span></blockquote>
 
@@ -49,4 +45,3 @@ title: About
 <blockquote>A house is not a home unless it contains food and fire for the mind as well as the body.<br/>
 <span class="author">– Benjamin Franklin</span></blockquote>
 
-</div>

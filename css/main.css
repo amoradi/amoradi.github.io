@@ -23,7 +23,6 @@ div {
   padding: 40px 45px 20px;
   overflow: hidden;
   height: 100%;
-  background-color: #fff;
 }
 
 .float-left {
@@ -261,8 +260,6 @@ h1 {
 blockquote {
   padding: 2rem 3rem;
   background: #eee;
-  margin-bottom: 10px;
-  border-left: 7px solid rgba(0,0,0,.1);
 }
 
 blockquote p {
