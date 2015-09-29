@@ -315,11 +315,9 @@ blockquote .author {
 }
 .bkgr-container div {
   height: 40px;
-  border-top: 1px solid #fff;
 }
 .bkgr-container div:first-child {
-  border-top: none;
-}
+ }
 
 @media (max-width: 768px) {
   #content {
