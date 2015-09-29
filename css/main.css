@@ -21,7 +21,7 @@ div {
 .page,
 .post {
   max-width: 1080px;
-  padding: 40px 125px 20px;
+  padding: 40px 185px 20px;
   overflow: hidden;
   height: 100%;
   margin: 0 auto;
@@ -304,20 +304,6 @@ blockquote .author {
 .fullscreen img {
   width: 22px;
 }
-
-.bkgr-container {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgb(171, 255, 218);
-  opacity: .6;
-}
-.bkgr-container div {
-  height: 40px;
-}
-.bkgr-container div:first-child {
- }
 
 @media (max-width: 768px) {
   #content {
