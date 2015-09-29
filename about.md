@@ -11,8 +11,10 @@ title: About
 
 <h3>Me</h3>
 
-<img src="/images/me-and-little-one-300x300.jpg" class="pull-left float-left" width="225" />
-<p>Let me introduce myself, &mdash; My name is Aaron Bijan Moradi. People call me Aaron. I'm originally from Plano, TX. I am currently a web developer for MRM//McCann in Birmingham, MI.</p>
+<div>
+	<img src="/images/me-and-little-one-300x300.jpg" class="pull-left float-left" width="225" />
+	<p>Let me introduce myself, &mdash; My name is Aaron Bijan Moradi. People call me Aaron. I'm originally from Plano, TX. I am currently a web developer for MRM//McCann in Birmingham, MI.</p>
+</div>
 
 <p>I enjoy reading non-fiction, consuming info on the Internet, learning (new web technologies included), being a dad, and eating marvelously prepared food by my wife!</p>
 
@@ -29,7 +31,7 @@ title: About
 <span class="author">– John Wesley</span></blockquote>
 
 </div>
-<div class="page-col col-lg-6 col-sm-12">
+<div class="page-col second-col col-lg-6 col-sm-12">
 
 <blockquote>Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while. That’s because they were able to connect experiences they’ve had and synthesize new things.<br/>
 <span class="author">– Steve Jobs</span></blockquote>

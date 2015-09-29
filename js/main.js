@@ -30,6 +30,10 @@ function randomColor(light) {
 	return color;
 }
 
+function colorBkgr(elem) {
+	$(elem).css('background-color', '#'+randomColor(true));
+}
+
 function createPlaceHolderTiles() {
 	for (var i =0, ii = 144; i < ii; i++) {
 		var html = "<div class=\"tile col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-eighths\" style=\'background:#"+randomColor(true)+";color:#333;\'><h2>Koere This is a Long Title It Is Dear So Long I Don't Know What to Do With It</h2><time datetime=\"2008-02-14 20:00\">January 18, 2014</time><p>More text here 12345. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat <br /><a href=\"#\">READ MORE &rarr;</a></p></div>";
@@ -71,12 +75,18 @@ function colorBkgr(minWidth) {
 				// and append to container
 				for (var i =0; i < numDivs; i++) {
 					var randColDiv = document.createElement('div');
-					$(randColDiv).css('background-color', '#'+randomColor(true));
+					colorBkgr(randColDiv);
 					$divCont.append(randColDiv);
 				}
 			}
 	}
 
+}
+
+function colorBlockquote() {
+	$('blockquote').each(function(i) {
+		colorBkgr(i);
+	});
 }
 
 function calcTileHeight() {
@@ -119,6 +129,7 @@ function toggleFullscreen() {
 $(document).on('ready', function() {
 	colorTiles();
 	calcTileHeight();
+	colorBlockquote();
 
 	// events
 	$(window).resize(calcTileHeight);

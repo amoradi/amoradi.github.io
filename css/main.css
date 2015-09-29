@@ -19,7 +19,7 @@ div {
 }
 .page,
 .post {
-  /*max-width: 960px;*/
+  max-width: 1480px;
   padding: 40px 45px 20px;
   overflow: hidden;
   height: 100%;
@@ -58,6 +58,10 @@ div {
 
 .page-col {
   padding: 0;
+}
+
+.second-col {
+  padding-left: 45px;
 }
 
 h1,
@@ -257,7 +261,6 @@ h1 {
 blockquote {
   padding: 4rem 3rem;
   background: #eee;
-  border-left-color: #43DAA4;
 }
 
 blockquote p {
