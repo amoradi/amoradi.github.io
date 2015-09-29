@@ -1,4 +1,8 @@
-# Design Outlook
+---
+layout: page
+title: Design Outlook
+---
+
 #### Inspired By Swiss Style Graphic Design
 ***
 ### Economy
