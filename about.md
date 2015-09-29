@@ -6,7 +6,7 @@ title: About
 
 <p>So… I wanted to commit my thoughts to a persistent form. And herein lies my motivation for the site — it’s a space for me carry on splendidly and without reservation, to jot down all my ideas, passions, studies, and privy thoughts I deem worthy. It’s my very own treasure chest of knowledge, toy box of cerebral blocks, and diary of data. In it, I plan to outline, elaborate, elucidate, and accommodate, for the betterment of mankind and for my memory’s sake!</p>
 
-<p>Oh, and I also needed a place for <a href="http://amoradi.github.io/portfolio.html">my portfolio</a<blockquote>and <a href="http://amoradi.github.io/resume.pdf" target="_blank">r&eacute;sum&eacute;.</a></p>
+<p>Oh, and I also needed a place for <a href="http://amoradi.github.io/portfolio.html">my portfolio</a> and <a href="http://amoradi.github.io/resume.pdf" target="_blank">r&eacute;sum&eacute;.</a></p>
 
 <h3>Me</h3>
 
