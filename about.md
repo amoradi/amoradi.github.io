@@ -16,9 +16,6 @@ title: About
 
 <p>I enjoy reading non-fiction, consuming info on the Internet, learning (new web technologies included), being a dad, and eating marvelously prepared food by my wife!</p>
 
-</div>
-
-
 <h3>Food for Thought</h3>
 
 <blockquote>Great things are done by a series of small things brought together.<br/><span class="author">– Vincent Van Gogh</span></blockquote>
@@ -31,8 +28,9 @@ title: About
 <blockquote>Catch on fire and others will love to come watch you burn.<br/>
 <span class="author">– John Wesley</span></blockquote>
 
+</div>
 <div class="block col-lg-6 col-sm-12">
-	
+
 <blockquote>Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while. That’s because they were able to connect experiences they’ve had and synthesize new things.<br/>
 <span class="author">– Steve Jobs</span></blockquote>
 
