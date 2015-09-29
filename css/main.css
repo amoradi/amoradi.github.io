@@ -21,7 +21,7 @@ div {
 .page,
 .post {
   max-width: 1080px;
-  padding: 40px 185px 20px;
+  padding: 40px 185px 60px;
   overflow: hidden;
   height: 100%;
   margin: 0 auto;
@@ -98,6 +98,8 @@ li:before {
   content:"\25C6";
   margin-right: 10px;
   font-size: 1.2rem;
+  position: relative;
+  top: -3px;
 }
 
 #content .tile h2 {
