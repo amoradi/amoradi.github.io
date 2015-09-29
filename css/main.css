@@ -252,6 +252,8 @@ h1 {
 
 blockquote {
   padding: 4rem 3rem;
+  background: #eee;
+  border-right-color: #43DAA4;
 }
 
 blockquote p {

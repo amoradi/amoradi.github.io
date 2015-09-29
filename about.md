@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-
+<div class="col-lg-6 col-sm-12">
 ### Purpose
 
 So… I wanted to commit my thoughts to a persistent form. And herein lies my motivation for the site — it’s a space for me carry on splendidly and without reservation, to jot down all my ideas, passions, studies, and privy thoughts I deem worthy. It’s my very own treasure chest of knowledge, toy box of cerebral blocks, and diary of data. In it, I plan to outline, elaborate, elucidate, and accommodate, for the betterment of mankind and for my memory’s sake!
@@ -15,6 +15,9 @@ Oh, and I also needed a place for [my portfolio](http://amoradi.github.io/portfo
 Let me introduce myself, &mdash; My name is Aaron Bijan Moradi. People call me Aaron. I'm originally from Plano, TX. I am currently a web developer for MRM//McCann in Birmingham, MI.
 
 I enjoy reading non-fiction, consuming info on the Internet, learning (new web technologies included), being a dad, and eating marvelously prepared food by my wife!
+
+</div>
+<div class="col-lg-6 col-sm-12">
 
 ### Food for Thought
 
@@ -58,3 +61,5 @@ I enjoy reading non-fiction, consuming info on the Internet, learning (new web t
 <!-- -->
 > The point is that if there is no God, then objective right and wrong do not exist. As Dostoyevsky said, "All things are permitted."<br/>
 <span class="author">― William Lane Craig</span>
+
+</div>
