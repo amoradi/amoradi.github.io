@@ -261,6 +261,8 @@ h1 {
 blockquote {
   padding: 4rem 3rem;
   background: #eee;
+  margin-bottom: 10px;
+  border-left: 15px solid #eee;
 }
 
 blockquote p {
@@ -324,6 +326,9 @@ blockquote .author {
   }
   .tile {
     height: auto !important;
+  }
+  .second-col {
+    padding-left: 0;
   }
   .navigation {
     width: 100%;
