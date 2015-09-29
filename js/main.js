@@ -129,7 +129,6 @@ function toggleFullscreen() {
 $(document).on('ready', function() {
 	colorTiles();
 	calcTileHeight();
-	colorBlockquote();
 	colorBkgr('body');
 
 	// events

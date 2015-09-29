@@ -19,7 +19,7 @@ div {
 }
 .page,
 .post {
-  max-width: 1480px;
+  max-width: 1080px;
   padding: 40px 45px 20px;
   overflow: hidden;
   height: 100%;
@@ -259,7 +259,9 @@ h1 {
 
 blockquote {
   padding: 2rem 3rem;
-  background: #eee;
+  background-color: rgba(255,255,255,0.5);
+  margin-bottom: 10px;
+  border-left: 5px solid #fff;
 }
 
 blockquote p {
