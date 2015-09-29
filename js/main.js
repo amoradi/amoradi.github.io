@@ -121,9 +121,7 @@ $(document).on('ready', function() {
 	calcTileHeight();
 
 	// events
-	$(window).resize(function() {
-		calcTileHeight
-	});
+	$(window).resize(calcTileHeight);
 
 	$('.navigation .ladder').on('click', toggleNav);
 	$('.fullscreen').on('click', toggleFullscreen);
