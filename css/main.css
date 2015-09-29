@@ -21,10 +21,12 @@ div {
 .page,
 .post {
   max-width: 1080px;
-  padding: 40px 45px 20px;
+  padding: 40px 125px 20px;
   overflow: hidden;
   height: 100%;
   margin: 0 auto;
+  background-color: #fff;
+  margin: 20px auto 100px;
 }
 
 .float-left {
