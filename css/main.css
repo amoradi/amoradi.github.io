@@ -147,7 +147,7 @@ p {
 #content a:active {
   text-decoration: none;
   text-decoration: underline;
-  color: #43DAA4;
+  color: coral; /*#43DAA4;*/
 }
 .read-more,
 .read-more:hover,
@@ -185,7 +185,7 @@ p {
 }
 .navigation a:hover {
   background: none;
-  color: #43DAA4;
+  color: coral;
 }
 .navigation .logo-link {
   text-decoration: none;
@@ -229,7 +229,7 @@ p {
   cursor: pointer;
 }
 .index-anchor:hover {
-  color:#43DAA4;
+  color: coral;
 }
 .upsidedown {
   -webkit-transform: rotate(-180deg);
@@ -403,12 +403,12 @@ blockquote .author {
 
 ::-moz-selection { 
     color: #fff;
-    background: #43DAA4;
+    background: coral; /*#43DAA4;*/
 }
 
 ::selection {
     color: #fff; 
-    background: #43DAA4;
+    background: coral; /*#43DAA4;*/
 }
 
 .hidden-fullscrn:-webkit-full-screen {
