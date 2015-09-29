@@ -19,7 +19,7 @@ div {
 }
 .page,
 .post {
-  max-width: 960px;
+  /*max-width: 960px;*/
   padding: 40px 45px 20px;
   overflow: hidden;
   height: 100%;
