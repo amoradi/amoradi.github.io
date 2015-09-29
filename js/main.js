@@ -49,7 +49,7 @@ function colorTiles() {
 	});
 }
 
-function colorBkgr(minWidth) {
+function colorBkgrDivs(minWidth) {
 
 	if ($(window).width() > minWidth) {
 		var $content = $('#content'),
