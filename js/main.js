@@ -84,8 +84,8 @@ function colorBkgrDivs(minWidth) {
 }
 
 function colorBlockquote() {
-	$('blockquote').each(function(i) {
-		colorBkgr(i);
+	$('blockquote').each(function() {
+		colorBkgr($(this));
 	});
 }
 
