@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-<span class="block col-lg-6 col-sm-12">
+<div markdown=1 class="block col-lg-6 col-sm-12">
 ### Purpose
 
 So… I wanted to commit my thoughts to a persistent form. And herein lies my motivation for the site — it’s a space for me carry on splendidly and without reservation, to jot down all my ideas, passions, studies, and privy thoughts I deem worthy. It’s my very own treasure chest of knowledge, toy box of cerebral blocks, and diary of data. In it, I plan to outline, elaborate, elucidate, and accommodate, for the betterment of mankind and for my memory’s sake!
@@ -16,8 +16,9 @@ Let me introduce myself, &mdash; My name is Aaron Bijan Moradi. People call me A
 
 I enjoy reading non-fiction, consuming info on the Internet, learning (new web technologies included), being a dad, and eating marvelously prepared food by my wife!
 
-</span>
-<span class="block col-lg-6 col-sm-12">
+</div>
+
+<div markdown=1 class="block col-lg-6 col-sm-12">
 
 ### Food for Thought
 
@@ -62,4 +63,4 @@ I enjoy reading non-fiction, consuming info on the Internet, learning (new web t
 > The point is that if there is no God, then objective right and wrong do not exist. As Dostoyevsky said, "All things are permitted."<br/>
 <span class="author">― William Lane Craig</span>
 
-</span>
+</div>
