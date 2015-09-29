@@ -11,7 +11,7 @@ Oh, and I also needed a place for [my portfolio](http://amoradi.github.io/portfo
 
 ### Me
 
-<img src="/images/me-and-little-one-300x300.jpg" class="pull-left float-left" width="175" />
+<img src="/images/me-and-little-one-300x300.jpg" class="pull-left float-left" width="225" />
 Let me introduce myself, &mdash; My name is Aaron Bijan Moradi. People call me Aaron. I'm originally from Plano, TX. I am currently a web developer for MRM//McCann in Birmingham, MI.
 
 I enjoy reading non-fiction, consuming info on the Internet, learning (new web technologies included), being a dad, and eating marvelously prepared food by my wife!
