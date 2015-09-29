@@ -117,14 +117,12 @@ function toggleFullscreen() {
 }
 
 $(document).on('ready', function() {
-	colorBkgr(768);
 	colorTiles();
 	calcTileHeight();
 
 	// events
 	$(window).resize(function() {
 		calcTileHeight
-		colorBkgr(768);
 	});
 
 	$('.navigation .ladder').on('click', toggleNav);
