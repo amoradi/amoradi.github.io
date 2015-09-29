@@ -42,7 +42,3 @@ title: About
 
 <blockquote>Fortune favors the audacious.<br/>
 <span class="author">– Desiderius Erasmus</span></blockquote>
-
-<blockquote>A house is not a home unless it contains food and fire for the mind as well as the body.<br/>
-<span class="author">– Benjamin Franklin</span></blockquote>
-
