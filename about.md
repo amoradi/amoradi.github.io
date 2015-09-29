@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-<div markdown=1 class="block col-lg-6 col-sm-12">
+<div class="page-col col-lg-6 col-sm-12">
 <h3>Purpose</h3>
 
 <p>So… I wanted to commit my thoughts to a persistent form. And herein lies my motivation for the site — it’s a space for me carry on splendidly and without reservation, to jot down all my ideas, passions, studies, and privy thoughts I deem worthy. It’s my very own treasure chest of knowledge, toy box of cerebral blocks, and diary of data. In it, I plan to outline, elaborate, elucidate, and accommodate, for the betterment of mankind and for my memory’s sake!</p>
@@ -29,7 +29,7 @@ title: About
 <span class="author">– John Wesley</span></blockquote>
 
 </div>
-<div class="block col-lg-6 col-sm-12">
+<div class="page-col col-lg-6 col-sm-12">
 
 <blockquote>Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while. That’s because they were able to connect experiences they’ve had and synthesize new things.<br/>
 <span class="author">– Steve Jobs</span></blockquote>
