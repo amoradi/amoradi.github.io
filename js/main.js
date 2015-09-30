@@ -96,7 +96,7 @@ function calcTileHeight() {
 	$tiles.css('height', 'auto');    
 	
 	$tiles.each(function(i) {
-	    var thisHeight = $($tiles[i]).outerHeight();
+	    var thisHeight = $($tiles[i]).height();
 	    console.log(thisHeight);
 	    
 	    if (thisHeight > tallest) {
