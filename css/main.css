@@ -1,6 +1,6 @@
 body {
   font-family: "Jaldi", "Raleway", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: .1rem;
   width: 100%;
   margin: 0 auto;
   background: rgb(185, 255, 237);
@@ -15,27 +15,27 @@ div {
 #content {
   width: 100%;
   padding: 0;
-  margin-top: 0px;
-  padding-left: 99px;
+  margin-top: 0;
+  padding-left: 9.9rem;
 }
 .page,
 .post {
-  max-width: 1080px;
-  padding: 40px 185px 60px;
+  max-width: 108rem;
+  padding: 3.6rem 18.4rem 5.4rem;
   overflow: hidden;
   height: 100%;
   margin: 0 auto;
   background-color: #fff;
-  margin: 20px auto 40px;
+  margin: 2rem auto 4rem;
 }
 
 .float-left {
-  padding: 0 30px 30px 0;
+  padding: 0 3rem 3rem 0;
 }
 
 #content .tile {
-  padding: 0px 25px 100px;
-  border: #fff solid 1px;
+  padding: 0 2.4rem 10rem;
+  border: #fff solid .1rem;
   border-top: none;
   color: #333;
   display: block;
@@ -45,11 +45,11 @@ div {
 #content .tile:before {
   content: "";
   display: block;
-  width: 40px;
+  width: 4rem;
   background-color: #222;
   position: absolute;
   width: 100%;
-  height: 5px;
+  height: .5rem;
   background-color: rgba(0,0,0,0.1);
   left: 0;
 }
@@ -64,7 +64,7 @@ div {
 }
 
 .second-col {
-  padding-left: 45px;
+  padding-left: 4.5rem;
 }
 
 h1,
@@ -76,17 +76,17 @@ h6 {
   font-family: "Raleway", "Jaldi", sans-serif;
   font-weight: 600;
   color: #222;
-  margin: 45px 0 20px;
+  margin: 4.8rem 0 2.4rem;
   clear: both;
 }
 
 h1:first-letter {
-  border-top: 3px solid;
-  padding-top: 14px;
+ /* border-top: 3px solid;
+  padding-top: 14px;*/
 }
 
 ul {
-  padding: 20px 0;
+  padding: 2rem 0;
 }
 
 li {
@@ -96,40 +96,43 @@ li {
 
 li:before {
   content:"\25C6";
-  margin-right: 10px;
+  margin-right: 1rem;
   font-size: 1.2rem;
   position: relative;
-  top: -3px;
+  top: -.3rem;
 }
 
 #content .tile h2 {
   font-size: 2.6rem;
   margin-bottom: 0;
-  letter-spacing: 1px;
+  letter-spacing: .1rem;
   line-height: 3.2rem;
   margin-bottom: 0rem;
-  padding: 40px 25px 5px;
-  margin-left: -25px;
-  margin-right: -25px;
+  padding: 4.8rem 2.4rem .6rem;
+  margin-left: -2.4rem;
+  margin-right: -2.4rem;
   margin-top: 0;
   background-color: rgba(255,255,255,0.25);
 }
 #content .tile h2:first-letter {
-  border-top: 2px solid;
-  padding-top: 14px;
+  /*border-top: 2px solid;
+  padding-top: 14px;*/
 }
 time {
-  margin-left: -25px;
-  margin-right: -25px;
+  margin-left: -2.4rem;
+  margin-right: -2.4rem;
   margin-top: 0;
   background-color: rgba(255,255,255,0.25);
-  padding: 0 25px 20px;
+  padding: 0 2.4rem 2.4rem;
   display: block;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
+
+  display: none;
 }
 time,
 .read-more {
   font-size: 1.3rem;
+  line-height: 2.4rem;
 }
 
 .read-more {
@@ -143,7 +146,7 @@ p {
 .page p,
 .post p {
   font-size: 1.9rem;
-  line-height: 2.6rem;
+  line-height: 2.4rem;
 }
 
 #content a,
@@ -158,25 +161,25 @@ p {
 .read-more:active {
   color: #333;
   position: absolute;
-  bottom: 30px;
+  bottom: 2.4rem;
 }
 .navigation {
   z-index: 999;
   overflow: hidden;
   position: fixed;
-  width: 100px;
+  width: 10rem;
   height: 100%;
   top: 0;
   left: 0;
   padding: 0;
   background-color: #222;
   text-align: center;
-  -webkit-box-shadow: -6px -2px 5px 7px rgba(0,0,0,0.49);
-  -moz-box-shadow: -6px -2px 5px 7px rgba(0,0,0,0.49);
-  box-shadow: -6px -2px 5px 7px rgba(0,0,0,0.49);
+  -webkit-box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
+  -moz-box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
+  box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
 }
 .navigation div:first-child {
-  padding: 40px 0;
+  padding: 4rem 0;
 }
 .navigation a {
   font-size: 1.5rem;
@@ -184,8 +187,8 @@ p {
   display: block;
   line-height: 2.8rem;
   color: #fff;
-  padding: 4px 20px;
-  border-bottom: 1px solid #111;
+  padding: .4rem 2rem;
+  border-bottom: .1rem solid #111;
 }
 .navigation a:hover {
   background: none;
@@ -201,29 +204,29 @@ p {
 }
 .ladder {
   float: right;
-  padding: 17.5px 20px;
+  padding: 1.75rem 2rem;
 }
 .ladder, .step {
   display: block;
 }
 .step {
   background: #fff;
-  height: 1px;
-  width: 35px;
-  margin-bottom: 4px;
+  height: .1rem;
+  width: 3.5rem;
+  margin-bottom: .4rem;
 }
 .top-links a:first-child {
-  border-top: 1px solid #111;
+  border-top: .1rem solid #111;
 }
 .index {
   position: fixed;
   z-index: 998;
   bottom: 0;
   right: 0;
-  left: 100px;
+  left: 10rem;
   text-align: center;
-  height: 30px;
-  line-height: 30px;
+  height: 3rem;
+  line-height: 3rem;
   background: rgba(0,0,0,.7);
   color: #fff;
   font-size: 1.5rem;
@@ -242,7 +245,7 @@ p {
   display: inline-block;
 }
 .logo {
-  width: 48px;
+  width: 4.8rem;
 }
 .copyright {
   color: #ccc;
@@ -250,8 +253,8 @@ p {
   position: fixed;
   bottom: 0;
   right: 0;
-  padding: 7px 10px;
-  width: 200px;
+  padding: .7rem 1rem;
+  width: 20rem;
   text-align: right;
 }
 
@@ -266,15 +269,16 @@ h1 {
 blockquote {
   padding: 0 3rem;
   background-color: rgba(255,255,255,0.5);
-  margin: 4rem 0;
-  border-left-width: 3px;
+  margin: 4.8rem 0;
+  border-left-width: .3rem;
   border-left-color: #222;
   font-size: 2.2rem;
+  line-height: 2.4rem;
 }
 
 blockquote p {
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 2.4rem;
 }
 blockquote .author {
   font-size: 1.6rem;
@@ -283,12 +287,12 @@ blockquote .author {
 .contact-info,
 .fullscreen {
   position: absolute;
-  bottom: 70px;
+  bottom: 7rem;
   left: 0;
-  width: 100px;
+  width: 10rem;
   margin-bottom: 0;
   text-align: center;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
 }
 
 .contact-info a {
@@ -297,30 +301,30 @@ blockquote .author {
 }
 
 .contact-info img {
-  width: 15px;
+  width: 1.5rem;
 }
 
 .fullscreen {
-  bottom: 0px;
-  padding: 20px 0;
+  bottom: 0;
+  padding: 2rem 0;
 }
 
 .fullscreen img {
-  width: 22px;
+  width: 2.2rem;
 }
 
 @media (max-width: 768px) {
   #content {
     padding: 0;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 5rem;
   }
   .tile {
     height: auto !important;
   }
   .navigation {
     width: 100%;
-    height: 50px;
+    height: 5rem;
     overflow: hidden;
     text-align: left;
     -webkit-box-shadow: none;
@@ -328,7 +332,7 @@ blockquote .author {
     box-shadow: none;
   }
   .navigation a {
-    padding: 30px 20px;
+    padding: 3rem 2rem;
   }
   .top-links {
     text-align: right;
@@ -348,26 +352,26 @@ blockquote .author {
     float: left;
   }
   .logo {
-    width: 25px;
+    width: 2.5rem;
     position: relative;
-    top: -2px;
+    top: -.2rem;
   }
   .navigation .logo-link {
     display: inline-block;
-    line-height: 50px;
+    line-height: 5rem;
     padding: 0;
-    padding-left: 25px;
+    padding-left: 2.5rem;
   }
 
   .page,
   .post {
-    padding: 0 25px 20px;
+    padding: 0 2.5rem 2rem;
   }
 }
 
 @media (min-width: 769px) {
   .navigation {
-    min-height: 500px;
+    min-height: 50rem;
   }
 }
 
