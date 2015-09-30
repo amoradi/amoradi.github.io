@@ -1,8 +1,10 @@
 ---
 layout: post
 title: This is My 2nd Post, Dude, You Know?!
-excerpt: <p>This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph.his is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph.</p>
+excerpt: <p>Hamburger meatball salami pig, flank turkey pork loin kevin kielbasa chicken alcatra picanha tail. Boudin turkey pork belly pancetta. Short ribs tail salami capicola chicken. Pork loin biltong kevin beef turducken alcatra beef ribs cupim landjaeger. Jowl drumstick andouille salami ball tip. Alcatra capicola tenderloin strip steak leberkas sirloin beef ribs ham tri-tip pork drumstick cow pastrami ball tip. Beef ribs meatloaf leberkas fatback tenderloin boudin.</p>
 ---
+
+Hamburger meatball salami pig, flank turkey pork loin kevin kielbasa chicken alcatra picanha tail. Boudin turkey pork belly pancetta. Short ribs tail salami capicola chicken. Pork loin biltong kevin beef turducken alcatra beef ribs cupim landjaeger. Jowl drumstick andouille salami ball tip. Alcatra capicola tenderloin strip steak leberkas sirloin beef ribs ham tri-tip pork drumstick cow pastrami ball tip. Beef ribs meatloaf leberkas fatback tenderloin boudin. 
 
 This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. Aentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence.
 

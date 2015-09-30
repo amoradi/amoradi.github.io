@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Third post here.
-excerpt: <p>This is a test.</p>
+excerpt: <p>Frankfurter salami picanha cow, ham hock t-bone pork belly pork chop prosciutto short ribs flank ground round pork shoulder spare ribs. Picanha swine bresaola short m bresaola tri-tip, leberkas fatback pork loin sausage shankle.</p>
 ---
 
 This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. Aentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence.

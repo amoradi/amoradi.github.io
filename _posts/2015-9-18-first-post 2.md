@@ -1,10 +1,10 @@
 ---
 layout: post
 title: This is My First Post!
-excerpt: <p>This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph.</p>
+excerpt: <p>Ball tip turducken short ribs, shank hamburger ham t-bone ground round swine tail. Meatloaf ham jerky rump landjaeger turducken. Drumstick chuck beef ball tip, beef ribs picanha doner pig jerky ground round meatball pancetta meatloaf alcatra shoulder. Sirloin ball tip shankle porchetta filet mignon leberkas pork loin ground round biltong ham. in pancetta pork ham cow leberkas kevin ribeye flank jerky ham hock chicken.</p>
 ---
 
-This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. Aentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence. This is a test paragraph. And this is another test paragraph/sentence.
+Ball tip turducken short ribs, shank hamburger ham t-bone ground round swine tail. Meatloaf ham jerky rump landjaeger turducken. Drumstick chuck beef ball tip, beef ribs picanha doner pig jerky ground round meatball pancetta meatloaf alcatra shoulder. Sirloin ball tip shankle porchetta filet mignon leberkas pork loin ground round biltong ham. Andouille tri-tip venison short loin pancetta pork ham cow leberkas kevin ribeye flank jerky ham hock chicken.
 
 + First step
 + Second step
