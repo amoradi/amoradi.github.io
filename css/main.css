@@ -153,7 +153,6 @@ p {
 #content a:hover,
 #content a:active {
   text-decoration: none;
-  font-weight: bold;
   text-decoration: none;
   color: coral; /*#43DAA4;*/
 }
