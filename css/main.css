@@ -90,6 +90,8 @@ h6 {
 }
 .page-post-title ~ time {
     margin-bottom: 2.4rem;
+    display: block;
+    font-family: raleway;
 }
 
 .page time,
