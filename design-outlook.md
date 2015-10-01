@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Design Outlook
-subttile: Inspired By Swiss Style Graphic Design
+subtitle: Inspired By Swiss Style Graphic Design
 ---
 
 ### Economy
