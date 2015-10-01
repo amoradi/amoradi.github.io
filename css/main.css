@@ -86,13 +86,30 @@ h1:first-letter {
   padding-top: 14px;*/
 }
 
+.page h1 + *,
+.page h2 + *,
+.page h3 + *,
+.page h4 + *,
+.page h5 + *,
+.page h6 + *,
+.post h1 + *,
+.post h2 + *,
+.post h3 + *,
+.post h4 + *,
+.post h5 + *,
+.post h6 + * {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
 ul {
-  padding: 2rem 0;
+  padding: 0 0 2.4rem;
 }
 
 li {
   list-style-type: none;
   font-size: 1.9rem;
+  line-height: 2.4rem;
 }
 
 li:before {
