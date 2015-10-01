@@ -4,8 +4,10 @@ layout: default
 
 <article class="page">
   <h1 class="page-post-title">{{ page.title }}</h1>
-  <h4>{{ page.subtitle }}</h4>
-
+  {% if page.subtitle != null %}
+  	<h4>{{ page.subtitle }}</h4>
+  {% endif %}
+ 
   <div class="entry">
     {{ content }}
   </div>

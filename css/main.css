@@ -88,6 +88,15 @@ h6 {
 .page-post-title {
     margin-bottom: 0;
 }
+.page-post-title ~ time {
+    margin-bottom: 2.4rem;
+}
+
+.page time,
+.post time {
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+}
 
 h1:first-letter {
  /* border-top: 3px solid;
@@ -147,7 +156,7 @@ li:before {
   /*border-top: 2px solid;
   padding-top: 14px;*/
 }
-time {
+.grid time {
   margin-left: -2.4rem;
   margin-right: -2.4rem;
   margin-top: 0;
@@ -156,8 +165,8 @@ time {
   margin-bottom: 2.4rem;
   display: block;
 }
-time,
-.read-more {
+.grid time,
+.grid .read-more {
   font-size: 1.3rem;
   line-height: 2.4rem;
 }
