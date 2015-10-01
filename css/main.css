@@ -85,6 +85,10 @@ h6 {
   clear: both;
 }
 
+.page-post-title {
+    margin-bottom: 0;
+}
+
 h1:first-letter {
  /* border-top: 3px solid;
   padding-top: 14px;*/

@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Design Outlook
+subttile: Inspired By Swiss Style Graphic Design
 ---
-
-#### Inspired By Swiss Style Graphic Design
 
 ### Economy
 Less is more. Only elements that functionally enhance the work are used.
