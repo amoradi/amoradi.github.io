@@ -86,7 +86,7 @@ h6 {
 }
 
 .page-post-title {
-    margin-bottom: 0;
+    margin-bottom: .6rem;
 }
 .page-post-title ~ time {
     margin-bottom: 2.4rem;
