@@ -4,7 +4,7 @@ title: Design Outlook
 ---
 
 #### Inspired By Swiss Style Graphic Design
-***
+
 ### Economy
 Less is more. Only elements that functionally enhance the work are used.
 
@@ -14,15 +14,11 @@ Less is more. Only elements that functionally enhance the work are used.
 > And let us not be Weary with Whitespace.
 - Me
 
-***
-
 ### Utilitarian with Type 
 Type is used to buttress readablity and enforce information hierarchy. 
  
 > "The Swiss Style advocates that the typeface does not have to be expressive in itself,
 it must be an unobtrusive instrument of expression." (http://www.smashingmagazine.com/2009/07/lessons-from-swiss-style-graphic-design/)
-
-***
 
 ### Color
 
@@ -31,12 +27,10 @@ it must be an unobtrusive instrument of expression." (http://www.smashingmagazin
 + Yellow, green, and blue hues excite the composition
 + Warm coral for links
 
-***
 ### Geometry
 
 Rectangles are preferred over circles.
 
-***
 ### Usability 
 
 #### Desktop
@@ -46,13 +40,11 @@ Rectangles are preferred over circles.
 + Navigation is enclosed in a "hamburger"
 + Social and fullscreen links are removed
 
-***
 ### Imagery
 
 + Untouched photos are preferred over highly stylized photos. 
 + "crude" line drawings 
 
-***
 ### Content
 
 Content should be worth reading and should answer questions or address topics clearly deliniated in the post title.

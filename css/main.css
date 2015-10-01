@@ -67,6 +67,10 @@ div {
   padding-left: 4.5rem;
 }
 
+hr {
+    border-top: 1px solid #ddd;
+}
+
 h1,
 h2,
 h3,
