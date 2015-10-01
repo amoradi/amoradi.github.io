@@ -145,7 +145,7 @@ p {
 }
 .page p,
 .post p {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   line-height: 2.4rem;
 }
 
@@ -153,8 +153,12 @@ p {
 #content a:hover,
 #content a:active {
   text-decoration: none;
-  text-decoration: underline;
+  font-weight: bold;
+  text-decoration: none;
   color: coral; /*#43DAA4;*/
+}
+#content a:hover {
+  text-decoration: underline;
 }
 .read-more,
 .read-more:hover,
