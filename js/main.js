@@ -131,7 +131,7 @@ $(function(){
   'use strict';
   var $page = $('#content'),
       options = {
-        debug: true,
+        debug: false,
         prefetch: true,
         cacheLength: 2,
         onStart: {
