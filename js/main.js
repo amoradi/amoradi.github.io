@@ -129,7 +129,7 @@ function toggleFullscreen() {
 // smoothstate js
 $(function(){
   'use strict';
-  var $page = $('#content'),
+  var $page = $('#smoothjs'),
       options = {
         debug: false,
         prefetch: true,
