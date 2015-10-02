@@ -123,8 +123,8 @@ h1:first-letter {
 
 ul,
 ol {
-  padding: 0 0 2.4rem;
-  margin-bottom: 0;
+  padding: 0;
+  margin-bottom: 2.4rem;
 }
 
 li {
