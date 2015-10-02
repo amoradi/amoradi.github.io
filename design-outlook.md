@@ -32,12 +32,12 @@ Rectangles are preferred over circles.
 
 ### Usability 
 
-#### Desktop
-+ Navigation is fixed, available in every content scenario.
-
-#### Mobile /Tablet
-+ Navigation is enclosed in a "hamburger"
-+ Social and fullscreen links are removed
+#### Navigation
++ Desktop
+	+ Fixed, available in every content scenario.
++ Mobile /Tablet
+	+ Enclosed in a "hamburger"
+	+ Social and fullscreen links are removed
 
 ### Imagery
 
@@ -48,6 +48,30 @@ Rectangles are preferred over circles.
 
 Content should be worth reading and should answer questions or address topics clearly deliniated in the post title.
 Post content comes first; author trivia comes last. This is primarily an informational static blog, but, also happens to house 
-my professional requists &mdash; resume, portfolio, contact info.
+my professional requists &mdash; resume, portfolio, and contact info.
 
-Posts are informational tidbits, packaged in an easy-consume format makes for a delightful read.
+Posts are informational tidbits, packaged in an easy-to-consume format, makes for a delightful read
+
+### Personas
+
++ recruiters
++ answer seekers
++ potential freelance business contacts
++ fellow designers
++ fellow developers
+
+### Work
+
++ GitHub
++ Dribble
++ Portfolio
+
+### Red Routes
+
++ to resume (about page)
++ to portfolio (about page)
++ to GitHub (nav)
++ email (nav)
++ to dribble (nav)
++ to posts (homepage, homepage[index])
+
