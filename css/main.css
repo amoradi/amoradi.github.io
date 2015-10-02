@@ -131,6 +131,8 @@ li {
   list-style-type: none;
   font-size: 1.9rem;
   line-height: 2.4rem;
+  padding-left: 2rem;
+  text-indent: -2rem;
 }
 
 li:before {
