@@ -538,3 +538,7 @@ blockquote .author {
 .scene_element--fadeinright {
     animation-name: fadeInRight;
 }
+
+.is-exiting .scene_element {
+    animation-direction: alternate-reverse;
+}
