@@ -127,22 +127,34 @@ function toggleFullscreen() {
 }
 
 // smoothstate js
-(function ($) {
+$(function(){
   'use strict';
-
-  var $body    = $('html, body'), // Define jQuery collection 
-      content  = $('#content').smoothState({
-        onStart : {
-          duration: 250,
-          render: function () {
-            content.toggleAnimationClass('is-exiting');
-            
-            // Scroll user to the top
-            $body.animate({ 'scrollTop': 0 });
+  var $page = $('#content'),
+      options = {
+        debug: true,
+        prefetch: true,
+        cacheLength: 2,
+        onStart: {
+          duration: 250, // Duration of our animation
+          render: function ($container) {
+            // Add your CSS animation reversing class
+            $container.addClass('is-exiting');
+            // Restart your animation
+            smoothState.restartCSSAnimations();
+          }
+        },
+        onReady: {
+          duration: 0,
+          render: function ($container, $newContent) {
+            // Remove your CSS animation reversing class
+            $container.removeClass('is-exiting');
+            // Inject the new content
+            $container.html($newContent);
           }
         }
-      }).data('smoothState');
-})(jQuery);
+      },
+      smoothState = $page.smoothState(options).data('smoothState');
+});
 
 $(document).on('ready', function() {
 	colorTiles();
