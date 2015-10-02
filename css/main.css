@@ -160,6 +160,10 @@ li:before {
   /*border-top: 2px solid;
   padding-top: 14px;*/
 }
+.grid {
+    overflow: hidden;
+}
+
 .grid time {
   margin-left: -2.4rem;
   margin-right: -2.4rem;
