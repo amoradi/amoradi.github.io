@@ -131,7 +131,7 @@ function toggleFullscreen() {
   'use strict';
 
   var $body    = $('html, body'), // Define jQuery collection 
-      content  = $('#body').smoothState({
+      content  = $('#content').smoothState({
         onStart : {
           duration: 250,
           render: function () {
