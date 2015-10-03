@@ -45,6 +45,8 @@ function colorTiles($elem) {
 	$elem.each(function(i) {
 		$($elem[i]).css('background-color', '#'+randomColor(true));
 	});
+
+	console.log('colorTiles');
 }
 
 function colorBkgrDivs(minWidth) {
@@ -103,6 +105,7 @@ function calcTileHeight($elem) {
 	});
 	
 	$elem.css('height', tallest);
+	console.log('calcheight '+tallest);
 }
 
 function toggleNav() {
