@@ -8,18 +8,18 @@ categories: python, programming
 Python, in addition to those nifty data structures&#8211;tuples and arrays&#8211;, provides another way of collecting complex data. Wait for it&#8230; Dictionaries! Not to be confused with the type of book used to look up word definitions, dictionaries, are actual data structures. The *key* difference is that they use KEYS to assign values instead of indices.
 
 ### Example
-
+```python
     	listA = [1,2,3,4]
     	dictA = {"one":1, "two":2, "three":3, "four":4}
      
     	print listA[1], dictA["one"]
-    
+```    
     
 
 ### Syntax
-
+```python
     	dictX = {"KEY":VALUE, "KEY":VALUE, "KEY":VALUE}
-    
+ ```   
     
 
 Where KEY is an immutable type, e.g. a String, tuple, int, float.  
@@ -72,14 +72,14 @@ type(variable)
 :   Returns the type of the passed variable. If passed variable is dictionary, then it would return a dictionary type.
 
 ## Looping
-
+```python
     
     for k in ID.keys():
         print ID[k]   # prints number associated with each key.
     
     for key,value in ID.items():
         print key,":", value      # prints each key-value pair.
-    
+```    
     
 
 <div class="footnote">
