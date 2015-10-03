@@ -111,7 +111,7 @@ function toggleNav() {
 	    isOpen 	= $nav.hasClass('navOpen');
 
 	    console.log('sadfdsa');
-	    
+
 	if (isOpen) {
 		$nav.removeClass('navOpen');
 	}
@@ -127,7 +127,7 @@ function toggleFullscreen() {
 	// put document into full screen mode
 }
 
-function docReady(param) {
+function docReady() {
 	
 	var $tiles = $('#content').find('.tile');
 
@@ -139,14 +139,12 @@ function docReady(param) {
     	hljs.highlightBlock(block);
   	});
 	
-	if (param !== "afterSmoothJS") {
-		// events
-		$(window).resize(function() {
-			calcTileHeight($tiles);
-		});
-		$('.navigation .ladder').on('click', toggleNav);
-		$('.fullscreen').on('click', toggleFullscreen);
-	}
+	// events
+	$(window).resize(function() {
+		calcTileHeight($tiles);
+	});
+	$('.navigation .ladder').on('click', toggleNav);
+	$('.fullscreen').on('click', toggleFullscreen);
 }
 
 // smoothstate js
@@ -176,7 +174,7 @@ $(function(){
           }
         },
         onAfter: function($container, $newContent) {
-        	docReady("afterSmoothJS");
+        	docReady();
         }
       },
       smoothState = $page.smoothState(options).data('smoothState');
