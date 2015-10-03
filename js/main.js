@@ -125,18 +125,26 @@ function toggleFullscreen() {
 	// put document into full screen mode
 }
 
-function docReady() {
+function docReady(param) {
+	
 	var $tiles = $('#content').find('.tile');
 
 	colorTiles($tiles);
 	calcTileHeight($tiles);
+
+	// code highlighting
+	$('pre code').each(function(i, block) {
+    	hljs.highlightBlock(block);
+  	});
 	
-	// events
-	$(window).resize(function() {
-		calcTileHeight($tiles);
-	});
-	$('.navigation .ladder').on('click', toggleNav);
-	$('.fullscreen').on('click', toggleFullscreen);
+	if (param !== "afterSmoothJS") {
+		// events
+		$(window).resize(function() {
+			calcTileHeight($tiles);
+		});
+		$('.navigation .ladder').on('click', toggleNav);
+		$('.fullscreen').on('click', toggleFullscreen);
+	}
 }
 
 // smoothstate js
@@ -166,10 +174,7 @@ $(function(){
           }
         },
         onAfter: function($container, $newContent) {
-        	var $tiles = $('#content').find('.tile');
-
-        	colorTiles($tiles);
-			calcTileHeight($tiles);
+        	docReady("afterSmoothJS");
         }
       },
       smoothState = $page.smoothState(options).data('smoothState');
