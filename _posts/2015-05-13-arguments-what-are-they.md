@@ -11,12 +11,12 @@ excerpt: <p>Arguments are composed of statements (declarative sentences that res
 ## Arguments in Standard Form
 
 Premise(s)  
----
+***
 &#8756; (therefore) Conclusion 
 
 ## Example
 
 Scoring below 70% on a test is failing.  
 Cyrus scored 89% on his logic test.  
----
+***
 &#8756; Cyrus passed his test.
