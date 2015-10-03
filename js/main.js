@@ -166,7 +166,7 @@ $(function(){
           }
         },
         onAfter: function($container, $newContent) {
-        	docReady();
+        	console.log('asdfsadf');
         }
       },
       smoothState = $page.smoothState(options).data('smoothState');
