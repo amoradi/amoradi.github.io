@@ -134,7 +134,9 @@ function docReady() {
 	calcTileHeight($tiles);
 	
 	// events
-	$(window).resize(calcTileHeight($tiles));
+	$(window).resize(function() {
+		calcTileHeight($tiles);
+	});
 	$('.navigation .ladder').on('click', toggleNav);
 	$('.fullscreen').on('click', toggleFullscreen);
 }
@@ -167,7 +169,7 @@ $(function(){
         },
         onAfter: function($container, $newContent) {
         	var $tiles = $('#content').find('.tile');
-        	
+
         	colorTiles($tiles);
 			calcTileHeight($tiles);
         }
