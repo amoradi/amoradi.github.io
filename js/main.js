@@ -11,7 +11,6 @@ function randomColor(light) {
 		}
 
 		color = color.split('');
-		console.log(color);
 		color[2] = 'f';
 		color[3] = 'f';
 		color = color.join('');
@@ -42,11 +41,11 @@ function createPlaceHolderTiles() {
 }
 
 function colorTiles($elem) {
-	$elem.each(function(i) {
-		$($elem[i]).css('background-color', '#'+randomColor(true));
-	});
-
-	console.log('colorTiles');
+	if ($elem.length > 0) {	
+		$elem.each(function(i) {
+			$($elem[i]).css('background-color', '#'+randomColor(true));
+		});
+	}
 }
 
 function colorBkgrDivs(minWidth) {
@@ -90,22 +89,21 @@ function colorBlockquote() {
 }
 
 function calcTileHeight($elem) {
+	if ($elem.length > 0) {	
+		var tallest= 0;
+		    
+		$elem.css('height', 'auto');    
 		
-	var tallest= 0;
-	    
-	$elem.css('height', 'auto');    
-	
-	$elem.each(function(i) {
-	    var thisHeight = $($elem[i]).outerHeight();
-	    console.log(thisHeight);
-	    
-	    if (thisHeight > tallest) {
-	        tallest = thisHeight;
-	    }	
-	});
-	
-	$elem.css('height', tallest);
-	console.log('calcheight '+tallest);
+		$elem.each(function(i) {
+		    var thisHeight = $($elem[i]).outerHeight();
+		    	    
+		    if (thisHeight > tallest) {
+		        tallest = thisHeight;
+		    }	
+		});
+		
+		$elem.css('height', tallest);
+	}
 }
 
 function toggleNav() {
