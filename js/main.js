@@ -166,10 +166,17 @@ $(function(){
           }
         },
         onAfter: function($container, $newContent) {
-        	console.log('asdfsadf');
+        	var $tiles = $('#content').find('.tile');
+        	
+        	colorTiles($tiles);
+			calcTileHeight($tiles);
         }
       },
       smoothState = $page.smoothState(options).data('smoothState');
+});
+
+$(document).ready(function() {
+	docReady();
 });
 
 
