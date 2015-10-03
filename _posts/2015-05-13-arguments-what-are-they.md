@@ -3,12 +3,7 @@ title: Arguments, What Are They?
 author: Aaron Moradi
 layout: post
 permalink: /arguments-what-are-they/
-quote_content:
-  - 
-quote_attribution:
-  - 
-categories:
-  - logic
+categories: logic
 ---
 **Arguments** are composed of **statements** <mark>(declarative sentences that resolve to either true or false)</mark>. These statements consist of premises and a conclusion. Premises constitute a reason for accepting the truth of the conclusion by virtue of some series of steps that lead from those premises, to the conclusion.
 

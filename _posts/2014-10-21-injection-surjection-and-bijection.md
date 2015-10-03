@@ -3,12 +3,7 @@ title: Injection, Surjection and Bijection
 author: Aaron Moradi
 layout: post
 permalink: /injection-surjection-and-bijection/
-quote_content:
-  - 
-quote_attribution:
-  - 
-categories:
-  - math
+categories: math
 ---
 <img src="/wordpress/wp-content/uploads/2014/10/injection.png" alt="" width="200" height="200" class="alignright size-full wp-image-180" />
 
