@@ -22,7 +22,6 @@ div {
 .post {
   max-width: 108rem;
   padding: 3.6rem 18.4rem 5.4rem;
-  overflow: hidden;
   height: 100%;
   margin: 0 auto;
   background-color: #fff;
@@ -380,14 +379,16 @@ pre {
 .back {
   position: absolute;
   left: 0;
-  top: 0;
+  top: -2rem;
   height: 2rem;
   line-height: 2rem;
-  color: #222;
+  color: #222 !important;
   letter-spacing: 1px;
   font-weight: normal;
   overflow: hidden;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
+  background-color: #fff;
+  padding: 0 40px;
 }
 
 @media (max-width: 767px) {
