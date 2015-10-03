@@ -124,6 +124,36 @@ function toggleFullscreen() {
 	// put document into full screen mode
 }
 
+// smoothstate js
+$(function(){
+  'use strict';
+  var $page = $('#smoothjs'),
+      options = {
+        debug: false,
+        prefetch: true,
+        cacheLength: 2,
+        onStart: {
+          duration: 250, // Duration of our animation
+          render: function ($container) {
+            // Add your CSS animation reversing class
+            $container.addClass('is-exiting');
+            // Restart your animation
+            smoothState.restartCSSAnimations();
+          }
+        },
+        onReady: {
+          duration: 0,
+          render: function ($container, $newContent) {
+            // Remove your CSS animation reversing class
+            $container.removeClass('is-exiting');
+            // Inject the new content
+            $container.html($newContent);
+          }
+        }
+      },
+      smoothState = $page.smoothState(options).data('smoothState');
+});
+
 $(document).on('ready', function() {
 	var $tiles = $('#content').find('.tile');
 
@@ -135,33 +165,4 @@ $(document).on('ready', function() {
 	$('.navigation .ladder').on('click', toggleNav);
 	$('.fullscreen').on('click', toggleFullscreen);
 
-	// smoothstate js
-	$(function(){
-	  'use strict';
-	  var $page = $('#smoothjs'),
-	      options = {
-	        debug: false,
-	        prefetch: true,
-	        cacheLength: 2,
-	        onStart: {
-	          duration: 250, // Duration of our animation
-	          render: function ($container) {
-	            // Add your CSS animation reversing class
-	            $container.addClass('is-exiting');
-	            // Restart your animation
-	            smoothState.restartCSSAnimations();
-	          }
-	        },
-	        onReady: {
-	          duration: 0,
-	          render: function ($container, $newContent) {
-	            // Remove your CSS animation reversing class
-	            $container.removeClass('is-exiting');
-	            // Inject the new content
-	            $container.html($newContent);
-	          }
-	        }
-	      },
-	      smoothState = $page.smoothState(options).data('smoothState');
-	});
 });
