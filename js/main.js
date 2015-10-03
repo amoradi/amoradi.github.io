@@ -127,6 +127,18 @@ function toggleFullscreen() {
 	// put document into full screen mode
 }
 
+function docReady() {
+	var $tiles = $('#content').find('.tile');
+
+	colorTiles($tiles);
+	calcTileHeight($tiles);
+	
+	// events
+	$(window).resize(calcTileHeight);
+	$('.navigation .ladder').on('click', toggleNav);
+	$('.fullscreen').on('click', toggleFullscreen);
+}
+
 // smoothstate js
 $(function(){
   'use strict';
@@ -152,20 +164,12 @@ $(function(){
             // Inject the new content
             $container.html($newContent);
           }
+        },
+        onAfter: function($container, $newContent) {
+        	docReady();
         }
       },
       smoothState = $page.smoothState(options).data('smoothState');
 });
 
-$(document).on('ready', function() {
-	var $tiles = $('#content').find('.tile');
 
-	colorTiles($tiles);
-	calcTileHeight($tiles);
-	
-	// events
-	$(window).resize(calcTileHeight);
-	$('.navigation .ladder').on('click', toggleNav);
-	$('.fullscreen').on('click', toggleFullscreen);
-
-});
