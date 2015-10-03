@@ -110,6 +110,8 @@ function toggleNav() {
 	var $nav 	= $('.navigation').first(),
 	    isOpen 	= $nav.hasClass('navOpen');
 
+	    console.log('sadfdsa');
+	    
 	if (isOpen) {
 		$nav.removeClass('navOpen');
 	}
