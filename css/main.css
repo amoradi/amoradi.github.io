@@ -28,6 +28,7 @@ div {
   background-color: #fff;
   margin: 2rem auto 4rem;
   min-height: 900px;
+  position: relative;
 }
 
 .float-left {
@@ -374,6 +375,19 @@ pre {
   font-size: 1.4rem;
   line-height: 2.4rem;
   margin-bottom: 2.4rem;
+}
+
+.back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2rem;
+  line-height: 2rem;
+  color: #222;
+  letter-spacing: 1px;
+  font-weight: normal;
+  overflow: hidden;
+  font-size: 1.4rem; 
 }
 
 @media (max-width: 767px) {
