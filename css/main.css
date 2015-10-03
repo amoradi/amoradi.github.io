@@ -376,7 +376,7 @@ pre {
   margin-bottom: 2.4rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #content {
     padding: 0;
     margin: 0;
@@ -436,7 +436,7 @@ pre {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .navigation {
     min-height: 50rem;
   }
