@@ -364,11 +364,11 @@ blockquote .author {
 
 pre {
   display: block;
-  padding: 1rem 0;
+  padding: 0;
   margin: 0;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: none;
+  background-color: inherit;
   border: none;
   border-radius: 0;
   font-size: 1.4rem;
