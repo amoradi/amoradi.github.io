@@ -574,9 +574,13 @@ pre {
     top: -160%;
     opacity: 1; 
   } 
-  100% {
+  75% {
     top: -140%;
-    opacity: 0.7; 
+    opacity: .7; 
+  }
+  100% {
+    top: -120%;
+    opacity: 0.5;   
   }     
 }
 
@@ -593,10 +597,14 @@ pre {
     top: -160%;
     opacity: 1; 
   } 
-  100% {
+  75% {
     top: -140%;
-    opacity: 0.7; 
-  }       
+    opacity: .7; 
+  }
+  100% {
+    top: -120%;
+    opacity: 0.5;   
+  }      
 }
 
 /** Basic styles for an animated element */
