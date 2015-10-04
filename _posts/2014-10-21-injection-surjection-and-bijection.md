@@ -5,32 +5,35 @@ layout: post
 permalink: /injection-surjection-and-bijection/
 categories: math
 ---
-<div>
+<figure class="pull-right">
 <img src="/images/injection.png" alt="" width="200" height="200" class="pull-right" />
-## Injection  
+</figure>
+<h2>Injection</h2>  
 <small>(1-to-1 function)</small>
 
   * X values cannot have multiple Y values
   * All of Y may not correspond to X
-</div>
+
 * * *
-<div>
+<figure>
 <img src="/images/surjection.png" alt="" width="200" height="200" class="pull-right" />
+</figure>
 ## Surjection  
 <small>(onto function)</small>
 
   * X values can have multiple Y values
   * All of Y must correspond to X
-</div>
+
 * * *
-<div>
+<figure>
 <img src="/images/bijection.png" alt="" width="200" height="200" class="pull-right" />
+</figure>
 ## Bijection  
 <small>(Injective surjective function)</small>
 
   * X values cannot have multiple Y values
   * All of Y must correspond to X
-</div>
+
 <div class="footnote">
   <h3>
     Footnotes
