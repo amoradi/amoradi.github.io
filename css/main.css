@@ -300,6 +300,7 @@ p {
   text-align: center;
   left: 0;
   font-size: 3.6rem;
+  color: coral;
 
   animation-name: upAndDown;
   -webkit-animation-name: upAndDown;
