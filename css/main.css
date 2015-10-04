@@ -142,13 +142,6 @@ li:before {
   font-size: 1.2rem;
   position: relative;
   top: -.3rem;
-
-  animation-name: upAndDown;
-  -webkit-animation-name: upAndDown;
-  animation-duration: 1.5s;
-  -webkit-animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
 }
 
 #content .tile h2 {
@@ -307,6 +300,13 @@ p {
   text-align: center;
   left: 0;
   font-size: 3.6rem;
+
+  animation-name: upAndDown;
+  -webkit-animation-name: upAndDown;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 }
 .upsidedown {
   -webkit-transform: rotate(-180deg);
