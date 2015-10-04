@@ -5,7 +5,7 @@ layout: post
 permalink: /injection-surjection-and-bijection/
 categories: math
 ---
-<img src="/wordpress/wp-content/uploads/2014/10/injection.png" alt="" width="200" height="200" class="alignright size-full wp-image-180" />
+<img src="/images/injection.png" alt="" width="200" height="200" class="alignright size-full wp-image-180" />
 
 ## Injection  
 <small>(1-to-1 function)</small>
@@ -15,7 +15,7 @@ categories: math
 
 * * *
 
-<img src="/wordpress/wp-content/uploads/2014/10/surjection.png" alt="" width="200" height="200" class="mgT60 alignright size-full wp-image-182" /></p> 
+<img src="/images/surjection.png" alt="" width="200" height="200" class="mgT60 alignright size-full wp-image-182" /></p> 
 
 ## Surjection  
 <small>(onto function)</small>
@@ -25,7 +25,7 @@ categories: math
 
 * * *
 
-<img src="/wordpress/wp-content/uploads/2014/10/bijection.png" alt="" width="200" height="200" class="mgT60 alignright size-full wp-image-183" /></p> 
+<img src="/images/bijection.png" alt="" width="200" height="200" class="mgT60 alignright size-full wp-image-183" /></p> 
 
 ## Bijection  
 <small>(Injective surjective function)</small>
