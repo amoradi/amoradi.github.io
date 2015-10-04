@@ -2,9 +2,12 @@
 title: Injection, Surjection and Bijection
 author: Aaron Moradi
 layout: post
+excerpt: <p>In mathematics, injections, surjections and bijections are classes of functions distinguished by the manner in which arguments (input expressions from the domain) and images (output expressions from the codomain) are related or mapped to each other. A function maps elements from its domain to elements in its codomain.</p>
 permalink: /injection-surjection-and-bijection/
 categories: math
 ---
+<p>In mathematics, injections, surjections and bijections are classes of functions distinguished by the manner in which arguments (input expressions from the domain) and images (output expressions from the codomain) are related or mapped to each other. A function maps elements from its domain to elements in its codomain.</p>
+
 <h2>Injection</h2>
 <figure class="pull-right">
 <img src="/images/injection.png" alt="" width="200" height="200" class="pull-right" />
