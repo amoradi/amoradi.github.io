@@ -70,6 +70,7 @@ div {
 
 hr {
     border-top: 1px solid #ddd;
+    clear: both;
 }
 
 h1,
