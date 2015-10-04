@@ -289,7 +289,7 @@ p {
 .index-anchor span {
   position:relative;
   width: 100px;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
 }
 .index-anchor span:before {
