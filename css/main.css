@@ -293,7 +293,7 @@ p {
   margin: 0 auto;
 }
 .index-anchor span:before {
-  content: "\25B2";
+  content: "\2191";
   width: 100px;
   position: absolute;
   top: -120%;
