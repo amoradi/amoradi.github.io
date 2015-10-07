@@ -312,7 +312,7 @@ p {
 }
 
 .index-anchor:hover span:before {
-  color: #222;
+  color: coral;
 }
 .upsidedown {
   -webkit-transform: rotate(-180deg);
