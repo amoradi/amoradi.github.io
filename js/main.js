@@ -129,9 +129,11 @@ function toggleFullscreen() {
 
 function docReady() {
 	
-	var $tiles = $('#content').find('.tile');
+	var $tiles = $('#content').find('.tile'),
+		$blockq= $('blockquote');
 
 	colorTiles($tiles);
+	colorTiles($blockq);
 	calcTileHeight($tiles);
 
 	// code highlighting
