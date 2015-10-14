@@ -40,10 +40,10 @@ function createPlaceHolderTiles() {
 	}
 }
 
-function colorTiles($elem) {
+function makeRandomColor($elem, cssProp) {
 	if ($elem.length > 0) {	
 		$elem.each(function(i) {
-			$($elem[i]).css('background-color', '#'+randomColor(true));
+			$($elem[i]).css(cssProp, '#'+randomColor(true));
 		});
 	}
 }
@@ -132,8 +132,7 @@ function docReady() {
 	var $tiles = $('#content').find('.tile'),
 		$blockq= $('blockquote');
 
-	colorTiles($tiles);
-	colorTiles($blockq);
+	makeRandomColor($tiles, 'background-color');
 	calcTileHeight($tiles);
 
 	// code highlighting

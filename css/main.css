@@ -351,10 +351,11 @@ blockquote {
   color: #222;
   padding: 4.8rem !important;
   background-color: #fff;
+  border-left-width: 4px;
   margin: 2.4rem 0;
-  border-left-width: 0;
   font-size: 2.4rem;
   line-height: 3rem;
+  border-left-color: coral;
 }
 
 .page blockquote p,
@@ -367,8 +368,37 @@ blockquote .author {
   font-size: 1.6rem;
   margin-top: 2.4rem;
   display: inline-block;
-  background-color: rgba(255,255,255,0.55);
-  padding: 0 2.4rem;
+}
+
+mark {
+  padding: 0 .6rem;
+  color: #fff;
+  background-color: coral;
+}
+
+.post table,
+.page table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.post table td,
+.page table td {
+  font-size: 2.4rem;
+  padding: .6rem 0;
+}
+
+.post table tbody > tr:nth-child(odd) > td,
+.post table tbody > tr:nth-child(odd) > td {
+  color: #bbb;
+}
+
+.footnote {
+  border-top: 1px solid #ddd;
+  margin-top: 7.2rem;
 }
 
 .contact-info,
