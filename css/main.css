@@ -327,15 +327,20 @@ p {
 
 .logo {
   width: 4.8rem;
+  /*transform: rotate(180deg);*/
+}
+
+.logo-link:hover .logo {
   animation-name: flipLogo;
   animation-duration: .5s;
   animation-timing-function: ease-out;
-  transform: rotate(180deg);
 }
 
 @keyframes flipLogo {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(180deg);}
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(180deg);}
+    80% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
 }
 
 .copyright {
