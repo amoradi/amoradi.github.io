@@ -324,9 +324,20 @@ p {
   -o-transform: rotate(-180deg);
   display: inline-block;
 }
+
 .logo {
   width: 4.8rem;
+  animation-name: flipLogo;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
+  transform: rotate(180deg);
 }
+
+@keyframes flipLogo {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+
 .copyright {
   color: #ccc;
   font-size: 1rem;
@@ -349,13 +360,13 @@ h1 {
 
 blockquote {
   color: #222;
-  padding: 4.8rem !important;
+  padding: 2.4rem 4.8rem 4.8rem !important;
   background-color: #fff;
-  border-left-width: 4px;
+  border-top: none;
   margin: 2.4rem 0;
   font-size: 2.4rem;
   line-height: 3rem;
-  border-left-color: coral;
+  border-left: 2px solid #eee;
 }
 
 .page blockquote p,
@@ -368,6 +379,15 @@ blockquote .author {
   font-size: 1.6rem;
   margin-top: 2.4rem;
   display: inline-block;
+  color: coral;
+}
+
+blockquote small {
+  display: inline;
+}
+
+blockquote small:before {
+  content: "";
 }
 
 mark {
@@ -388,12 +408,25 @@ mark {
 .post table td,
 .page table td {
   font-size: 2.4rem;
-  padding: .6rem 0;
+  padding: .6rem 1.2rem;
 }
 
 .post table tbody > tr:nth-child(odd) > td,
 .post table tbody > tr:nth-child(odd) > td {
-  color: #bbb;
+  background-color: #eee;
+}
+
+th {
+  text-align: left;
+  background-color: coral;
+  color: #fff;
+  padding: 0rem 1.2rem;
+  font-weight: normal;
+  font-size: 2.4rem;
+}
+
+.entry {
+  overflow: visible;
 }
 
 .footnote {

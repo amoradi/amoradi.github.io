@@ -98,57 +98,161 @@ categories: logic
   </tr>
 </table>
 
-### &and; Conjunction (and)
-
-| A | B | A &and; B |
-| - | - | --------- |
-| F | F | F         |
-| F | T | F         |
-| T | F | F         |
-| T | T | T         |
-
-### &or; Disjunction (or)
-
-| A | B | A &or; B |
-| - | - | -------- |
-| F | F | F        |
-| F | T | T        |
-| T | F | T        |
-| T | T | T        |
-
-### &not; Not
-
-| A | &not; A |
-| - | ------- |
-| F | T       |
-| T | F       |
-
-### &rarr; Implication (if, then)
-
-| A | B | A &rarr; B |
-| - | - | ---------- |
-| F | F | T          |
-| F | T | T          |
-| T | F | F          |
-| T | T | T          |
-
-### &harr; If, and, Only If
-
-| A | B | A &harr; B |
-| - | - | ---------- |
-| F | F | T          |
-| F | T | F          |
-| T | F | F          |
-| T | T | T          |
-
-### XOR Exclusive-Or
-
-| A | B | A XOR B |
-| - | - | ------- |
-| F | F | F       |
-| F | T | T       |
-| T | F | T       |
-| T | T | F       |
+<h3>&and; Conjunction (and)</h3>
+<table>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A &and; B</th>
+</tr>
+<tr>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr>
+<td>F</td>
+<td>T</td>
+<td>F</td>
+</tr>
+<tr>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</table>
+<h3>&or; Disjunction (or)</h3>
+<table>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A &or; B</th>
+</tr>
+<tr>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr>
+<td>T</td>
+<td>F</td>
+<td>T</td>
+</tr>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</table>
+<h3>&not; Not</h3>
+<table>
+<tr>
+<th>A</th>
+<th>&not; A</th>
+</tr>
+<tr>
+<td>F</td>
+<td>T</td>
+</tr>
+<tr>
+<td>T</td>
+<td>F</td>
+</tr>
+</table>
+<h3>&rarr; Implication (if, then)</h3>
+<table>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A &rarr; B</th>
+</tr>
+<tr>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+</tr>
+<tr>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</table>
+<h3>&harr; If, and, Only If</h3>
+<table>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A &harr; B</th>
+</tr>
+<tr>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+</tr>
+<tr>
+<td>F</td>
+<td>T</td>
+<td>F</td>
+</tr>
+<tr>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</table>
+<h3>XOR Exclusive-Or</h3>
+<table>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A XOR B</th>
+</tr>
+<tr>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr>
+<td>T</td>
+<td>F</td>
+<td>T</td>
+</tr>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>F</td>
+</tr>
+</table>
 
 <div class="footnote" id="footnotes">
   <h3>
