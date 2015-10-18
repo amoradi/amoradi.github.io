@@ -1,0 +1,76 @@
+<template id="book-preview">
+  <style>
+    figure { margin: 0; }
+    .publisher { display: block; }
+  </style>
+  
+</template>
+
+<script>
+	//var host = document.get
+	document._currentScript = document._currentScript || document.currentScript;
+
+	var proto = Object.create(HTMLElement.prototype, {
+	  createdCallback: {
+	    value: function() {
+			var template = document._currentScript.ownerDocument.querySelector('#book-preview');
+
+			// shadow root
+			var shadow = this.createShadowRoot();
+
+			// create figure
+	     	var fig 	= document.createElement('figure');
+		    var figCap 	= document.createElement('figcaption');
+		    var subTitle= document.createElement('span');
+		    var author 	= document.createElement('span');
+		    var pages  	= document.createElement('span');
+		    var pub 	= document.createElement('span');
+		    var review  = document.createElement('blockquote');
+		    var revAuth = document.createElement('span');
+
+		    // create image
+	     	var img = document.createElement('img');
+		    img.src = this.getAttribute('data-img');
+
+		    subTitleContent = this.getAttribute('data-subtitle');
+		    figCap.innerHTML = '<h1>' + this.getAttribute('data-title') + '</h1>';
+
+		    if (subTitleContent.length > 0) {
+		    	subTitle.innerHTML = subTitleContent;
+		    	figCap.appendChild(subTitle);
+		    }
+
+		    fig.appendChild(img);
+		    fig.appendChild(figCap);
+
+		    // author
+		    author.innerHTML = 'by ' + this.getAttribute('data-author');
+
+		    // pages
+		    pages.innerHTML = ', ' + this.getAttribute('data-pages') + ' pages';
+
+		    // publisher
+		    pub.innerHTML = this.getAttribute('data-publisher');
+		    pub.setAttribute('class', 'publisher');
+
+		    // review
+		    revAuth.className = 'author';
+		    revAuth.innerHTML = '- ' + this.getAttribute('data-review-author');
+		    review.innerHTML = this.getAttribute('data-review');
+		    review.appendChild(revAuth);
+			
+		    // Add the image to the Shadow Root.
+		    shadow.appendChild(fig);
+		    shadow.appendChild(author);
+		    shadow.appendChild(pages);
+		    shadow.appendChild(pub);
+		    shadow.appendChild(review);
+
+			// clone template and append to elem's shadow DOM
+			var clone = document._currentScript.ownerDocument.importNode(template.content, true);
+			shadow.appendChild(clone);
+	    }
+	  }
+	});
+	document.registerElement('book-preview', {prototype: proto});
+</script>

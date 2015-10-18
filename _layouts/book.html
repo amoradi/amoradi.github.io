@@ -4,22 +4,16 @@ layout: default
 
 <article class="book scene_element scene_element--fadein">
 	
+	<book-preview
+		data-img="bob"
+		data-title="{{ page.title }}"
+		data-subtitle="{{ page.subtitle }}"
+		data-author="{{ page.author }}"
+		data-pages="{{ page.pages }}"
+		data-publisher="{{ page.publisher }}"
+		data-isbn-13="{{ page.isbn-13 }}"
+		data-review="{{ page.review }}"
+		data-review-author="{{ page.review-author }}">
+	</book-preview>
 	
-		<!-- <img src="{{ page.cover }}" />
-
-		<span class="book-title">{{ page.title }}</span>
-		{% if page.subtitle != null %}
-			<h4>{{ page.subtitle }}</h4>
-		{% endif %}
-
-		<span class="book-author">{{ page.author }}</span>
-		<span class="book-pages">{{ page.pages }}</span>
-		<span class="book-summary">{{ page.summary }}</span>
- -->
- 	<span class="book-title">{{ page.title }}</span>
-
-	<div class="entry">
-    	{{ content }}
-  	</div>
-		
 </article>

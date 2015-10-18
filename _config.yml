@@ -15,11 +15,6 @@ avatar: https://avatars2.githubusercontent.com/u/6855005?v=3&s=96
 # Flags below are optional
 #
 
-collections:
-  - shelf:
-    output: true
-    permalink: /shelf/:path/
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -80,4 +75,10 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+
+collections:
+  shelf:
+    output: true
+  webcomponents:
+    output: true
 

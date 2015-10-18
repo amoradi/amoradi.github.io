@@ -132,8 +132,10 @@ function docReady() {
 	var $tiles = $('#content').find('.tile'),
 		$blockq= $('blockquote');
 
-	makeRandomColor($tiles, 'background-color');
-	calcTileHeight($tiles);
+	if ($tiles.length > 0) {
+		makeRandomColor($tiles, 'background-color');
+		calcTileHeight($tiles);
+	}
 
 	// code highlighting
 	$('pre code').each(function(i, block) {
