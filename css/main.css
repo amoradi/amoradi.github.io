@@ -540,6 +540,7 @@ pre {
   margin-left: 0;
   margin-right: 0;
   padding: 3.6rem 2.4rem;
+  text-align: center;
 }
 
 #content .shelf .tile:hover {
