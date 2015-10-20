@@ -130,11 +130,18 @@ function toggleFullscreen() {
 function docReady() {
 	
 	var $tiles = $('#content').find('.tile'),
+		$books  = $('#content').find('.book-side');
 		$blockq= $('blockquote');
 
-	if ($tiles.length > 0) {
-		makeRandomColor($tiles, 'background-color');
-		calcTileHeight($tiles);
+	if ($tiles.length > 0 ) {
+
+		if ($('#content > article:first').hasClass('shelf')) {
+			makeRandomColor($books, 'background-color');
+
+		} else if ($('#content > article:first').hasClass('grid')) {
+			makeRandomColor($tiles, 'background-color');
+			calcTileHeight($tiles);
+		}
 	}
 
 	// code highlighting
@@ -144,7 +151,9 @@ function docReady() {
 	
 	// events
 	$(window).resize(function() {
-		calcTileHeight($tiles);
+		if ($('#content > article:first').hasClass('grid')) {
+			calcTileHeight($tiles);
+		}
 	});
 	$('.navigation .ladder').on('click', toggleNav);
 	$('.fullscreen').on('click', toggleFullscreen);

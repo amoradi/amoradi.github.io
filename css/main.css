@@ -486,6 +486,78 @@ pre {
   margin-bottom: 2.4rem;
 }
 
+/* books on shelf */
+#content .shelf .tile {
+  height: 400px;
+  padding: 0;
+  position: relative;
+  -webkit-perspective: 100px;
+  -moz-perspective: 100px;
+  perspective: 1000px;
+}
+
+.book-rect {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: visible;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.book-rect .book-top,
+.book-rect .book-side {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  
+}
+
+.book-rect .book-top {
+  top: 0px;
+  height: 50px;
+  background: #222;
+}
+
+.book-rect .book-side  {
+  transform: rotateY(0deg) translateZ(0px);
+  border: 2px solid rgba(0,0,0,.1);
+}
+.book-rect .book-top {
+  transform: rotateX(90deg) translateZ(25px);
+  background: coral;
+  border: 2px solid rgba(0,0,0,.1);
+}
+
+#content .shelf .tile {
+  overflow: hidden;
+  border: none;
+}
+
+#content .shelf .tile h2 {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 3.6rem 2.4rem;
+}
+
+#content .shelf .tile:hover {
+  overflow: visible;
+  z-index: 99;
+  perspective-origin: top center;
+}
+
+#content .shelf .tile:hover .book-rect {
+  transform: translateZ(50px) rotateX( -10deg );
+  z-index: 99;
+}
+
+#content .shelf .tile:hover .book-side  {
+  background: red;
+  transform: rotateY(0deg) translateZ(25px);
+}
+
 @media (max-width: 767px) {
   #content {
     padding: 0;
