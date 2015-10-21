@@ -110,13 +110,23 @@ function toggleNav() {
 	var $nav 	= $('.navigation').first(),
 	    isOpen 	= $nav.hasClass('navOpen');
 
-	    console.log('sadfdsa');
-
 	if (isOpen) {
 		$nav.removeClass('navOpen');
 	}
 	else {
 		$nav.addClass('navOpen');
+	}
+}
+
+function toggleIndexView() {
+	var $index 	= $('.index').first(),
+	    isOpen 	= $index.hasClass('active');
+
+	if (isOpen) {
+		$index.removeClass('active');
+	}
+	else {
+		$index.addClass('active');
 	}
 }
 
@@ -156,6 +166,7 @@ function docReady() {
 		}
 	});
 	$('.navigation .ladder').on('click', toggleNav);
+	$('.index-anchor').on('click', toggleIndexView);
 	$('.fullscreen').on('click', toggleFullscreen);
 }
 

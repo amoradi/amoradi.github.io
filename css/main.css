@@ -44,6 +44,10 @@ div {
   overflow: hidden;
 }
 
+#content .grid .tile {
+  min-height: 500px;
+}
+
 #content .tile:before {
   content: "";
   display: block;
@@ -284,6 +288,11 @@ p {
   color: #fff;
   font-size: 1.5rem;
   text-decoration: none;
+
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
 }
 .index-anchor {
   cursor: pointer;
@@ -326,7 +335,7 @@ p {
 }
 
 .logo {
-  width: 4.8rem;
+  width: 4.2rem;
   /*transform: rotate(180deg);*/
 }
 
@@ -530,7 +539,18 @@ pre {
   background: coral;
   border: 2px solid rgba(0,0,0,.1);
 }
-
+#content .shelf .tile .shelf-author {
+  background-color: rgba(255,255,255,0.25);
+  display: block;
+  padding: 2.4rem 1.2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 #content .shelf .tile {
   overflow: hidden;
   border: none;
@@ -539,8 +559,9 @@ pre {
 #content .shelf .tile h2 {
   margin-left: 0;
   margin-right: 0;
-  padding: 3.6rem 2.4rem;
+  padding: 3.6rem 1.6rem;
   text-align: center;
+  font-size: 1.4rem
 }
 
 #content .shelf .tile:hover {
@@ -559,6 +580,16 @@ pre {
   transform: rotateY(0deg) translateZ(25px);
 }
 
+.index.active {
+  height: 100%;
+  
+  background: rgba(0,0,0,.85);
+
+   -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
 @media (max-width: 767px) {
   #content {
     padding: 0;
@@ -567,6 +598,11 @@ pre {
   }
   .tile {
     height: auto !important;
+    min-height: auto !important;
+  }
+
+  #content .shelf .tile {
+    height: 250px !important;
   }
   .navigation {
     width: 100%;
