@@ -542,11 +542,12 @@ pre {
 
 #content .shelf {
   background: #eee;
-  overflow: hidden;
+  float: left;
+  width: 100%;
   border: 45px solid #fff;
+  border-bottom-width: 100px;
   border-right-width: 100px;
   border-left-width: 100px;
-  margin-bottom: 30px;
 }
 
 #content .shelf .tile .shelf-author {
@@ -564,7 +565,12 @@ pre {
 #content .shelf .tile {
   overflow: hidden;
   border: none;
+  min-width: 10%;
   max-width: 25%;
+}
+
+#content .shelf .tile:active * {
+  background: coral !important;
 }
 
 #content .shelf .tile h2 {
@@ -619,6 +625,11 @@ pre {
     min-height: auto !important;
     width: 100% !important;
     max-width: 100% !important;
+  }
+
+  #content .shelf {
+    overflow: hidden;
+    float: none;
   }
 
   .shelf-shelf {
