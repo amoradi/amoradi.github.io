@@ -2,11 +2,11 @@
 layout: book
 title: Bulletproof Ajax
 subtitle:
-author: ROBERT BRINGHURST
-publisher: Hartley and Marks Publishers; 3rd edition (October 9, 2004)
-pages: 352
-isbn-13: 978-0881791327
+author: JEREMY KEITH
+publisher: New Riders; 1st edition (February 19, 2007)
+pages: 216
+isbn-13: 078-5342472660
 cover: test cover
-review: It’s beautifully produced. It’s lucidly written. It’s full of wisdom. It was an honor to read it.
-review-author: The Editorial Eye
+review: Nice javaScript introduction.
+review-author: Aaron Moradi
 ---

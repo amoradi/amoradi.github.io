@@ -1,12 +1,12 @@
 ---
 layout: book
-title: THE ELEMENTS OF TYPOGRAPHIC STYLE
+title: LEARNING JQUERY 1.3
 subtitle:
-author: ROBERT BRINGHURST
-publisher: Hartley and Marks Publishers; 3rd edition (October 9, 2004)
-pages: 352
-isbn-13: 978-0881791327
+author: JONATHAN CHAFFER & KARL SWEDBERG
+publisher: Packt Publishing; 2nd edition edition (February 13, 2009)
+pages: 444
+isbn-13: 978-1847196705
 cover: test cover
-review: It’s beautifully produced. It’s lucidly written. It’s full of wisdom. It was an honor to read it.
-review-author: The Editorial Eye
+review: Start aright with jQuery.
+review-author: Aaron Moradi
 ---

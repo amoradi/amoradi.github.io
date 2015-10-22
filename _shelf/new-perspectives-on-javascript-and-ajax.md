@@ -2,11 +2,11 @@
 layout: book
 title: New Perspectives on JavaScript and AJAX
 subtitle:
-author: ROBERT BRINGHURST
-publisher: Hartley and Marks Publishers; 3rd edition (October 9, 2004)
-pages: 352
-isbn-13: 978-0881791327
+author: PATRICK CAREY & FRANK CANOVATCHEL
+publisher: Cengage Learning; 2 edition (December 16, 2009)
+pages: 1048
+isbn-13: 978-1439044032
 cover: test cover
-review: It’s beautifully produced. It’s lucidly written. It’s full of wisdom. It was an honor to read it.
-review-author: The Editorial Eye
+review: Yes. This is a textbook.
+review-author: Aaron Moradi
 ---

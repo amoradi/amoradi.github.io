@@ -539,6 +539,12 @@ pre {
   background: coral;
   border: 2px solid rgba(0,0,0,.1);
 }
+
+#content .shelf {
+  background: #eee;
+  overflow: hidden;
+}
+
 #content .shelf .tile .shelf-author {
   background-color: rgba(255,255,255,0.25);
   display: block;
@@ -554,6 +560,7 @@ pre {
 #content .shelf .tile {
   overflow: hidden;
   border: none;
+  max-width: 25%;
 }
 
 #content .shelf .tile h2 {
@@ -582,14 +589,21 @@ pre {
 
 .index.active {
   height: 100%;
-  
   background: rgba(0,0,0,.85);
-
-   -webkit-transition: all 500ms ease-in;
+  -webkit-transition: all 500ms ease-in;
   -moz-transition: all 500ms ease-in;
   -o-transition: all 500ms ease-in;
   transition: all 500ms ease-in;
 }
+
+.shelf-shelf {
+  display: block;
+  width: 100%;
+  clear: both;
+  height: 25px;
+  background: #fff;
+}
+
 @media (max-width: 767px) {
   #content {
     padding: 0;
@@ -599,6 +613,12 @@ pre {
   .tile {
     height: auto !important;
     min-height: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .shelf-shelf {
+    display: none;
   }
 
   #content .shelf .tile {

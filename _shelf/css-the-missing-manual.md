@@ -2,11 +2,11 @@
 layout: book
 title: CSS The Missing Manual
 subtitle:
-author: ROBERT BRINGHURST
-publisher: Hartley and Marks Publishers; 3rd edition (October 9, 2004)
-pages: 352
-isbn-13: 978-0881791327
+author: DAVID SAWYER MCFARLAND
+publisher: O'Reilly Media; Second Edition edition (August 31, 2009)
+pages: 538
+isbn-13: 978-0596802448
 cover: test cover
-review: It’s beautifully produced. It’s lucidly written. It’s full of wisdom. It was an honor to read it.
-review-author: The Editorial Eye
+review: The Missing Manual series is simply the most intelligent and usable series of guidbooks…
+review-author: Kevin Kelly
 ---
