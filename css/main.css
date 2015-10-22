@@ -543,6 +543,10 @@ pre {
 #content .shelf {
   background: #eee;
   overflow: hidden;
+  border: 45px solid #fff;
+  border-right-width: 100px;
+  border-left-width: 100px;
+  margin-bottom: 30px;
 }
 
 #content .shelf .tile .shelf-author {
@@ -566,7 +570,7 @@ pre {
 #content .shelf .tile h2 {
   margin-left: 0;
   margin-right: 0;
-  padding: 3.6rem 1.6rem;
+  padding: 3.6rem 1.2rem;
   text-align: center;
   font-size: 1.4rem
 }
@@ -600,8 +604,8 @@ pre {
   display: block;
   width: 100%;
   clear: both;
-  height: 25px;
-  background: #fff;
+  height: 35px;
+  background: #fff;  
 }
 
 @media (max-width: 767px) {
@@ -673,6 +677,10 @@ pre {
     font-size: 3.6rem;
     line-height: 3.6rem;
   }
+  #content .shelf {
+    border-right-width: 20px;
+    border-left-width: 20px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -693,6 +701,10 @@ pre {
   .page,
   .post {
     padding: 3.6rem 8.4rem 5.4rem;
+  }
+  #content .shelf {
+    border-right-width: 60px;
+    border-left-width: 60px;
   }
 }
 
