@@ -1,3 +1,5 @@
+var indexText = $('.index-anchor span').html();
+
 // generate HEX color (light or dark)
 function randomColor(light) {
 	var color = '';
@@ -120,13 +122,16 @@ function toggleNav() {
 
 function toggleIndexView() {
 	var $index 	= $('.index').first(),
-	    isOpen 	= $index.hasClass('active');
+	    isOpen 	= $index.hasClass('active'),
+	    $indexTxt = $index.find('span span');
 
 	if (isOpen) {
 		$index.removeClass('active');
+		$indexTxt.html(indexText);
 	}
 	else {
 		$index.addClass('active');
+		$indexTxt.html('&times;');
 	}
 }
 
@@ -159,7 +164,6 @@ function docReady() {
     	hljs.highlightBlock(block);
   	});
 	
-	// events
 	$(window).resize(function() {
 		if ($('#content > article:first').hasClass('grid')) {
 			calcTileHeight($tiles);
@@ -170,41 +174,15 @@ function docReady() {
 	$('.fullscreen').on('click', toggleFullscreen);
 }
 
-// smoothstate js
-$(function(){
-  'use strict';
-  var $page = $('#smoothjs'),
-      options = {
-        debug: false,
-        prefetch: true,
-        cacheLength: 2,
-        onStart: {
-          duration: 750, // Duration of our animation
-          render: function ($container) {
-            // Add your CSS animation reversing class
-            $container.addClass('is-exiting');
-            // Restart your animation
-            smoothState.restartCSSAnimations();
-          }
-        },
-        onReady: {
-          duration: 0,
-          render: function ($container, $newContent) {
-            // Remove your CSS animation reversing class
-            $container.removeClass('is-exiting');
-            // Inject the new content
-            $container.html($newContent);
-          }
-        },
-        onAfter: function($container, $newContent) {
-        	docReady();
-        }
-      },
-      smoothState = $page.smoothState(options).data('smoothState');
-});
-
 $(document).ready(function() {
 	docReady();
+});
+
+// Wait for window load
+$(window).load(function() {
+	var fdTime = ($('#content > article:first').hasClass('grid')) ? 1500 : 1500;
+	// Animate loader off screen
+	$("#loader").fadeOut(fdTime);
 });
 
 
