@@ -3,7 +3,7 @@ layout: shelf
 ---
 
 {% for book in site.shelf %}
-    <div class="tile col-xs-12" style="width:{{book.pages}}px">
+    <a href="{{book.url}}" class="tile col-xs-12" style="width:{{book.pages}}px">
       <div class="book-rect">
 
       	<div class="book-top"></div>
@@ -12,7 +12,7 @@ layout: shelf
       		<span class="shelf-author">by {{ book.author }}</span>
       	</div>
       </div>     
-    </div>
+    </a>
 
     {% capture currentmod %}{{ forloop.index | modulo:4 }}{% endcapture %}
     
