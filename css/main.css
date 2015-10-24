@@ -706,8 +706,7 @@ pre {
   }
   
   .index.active {
-    top: 5rem;
-    bottom: 0;
+    padding-top: 5rem;
   }
 }
 
