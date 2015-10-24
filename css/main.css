@@ -694,13 +694,19 @@ pre {
   .post {
     padding: .6rem 2.5rem 2rem;
   }
+  
   h1 {
     font-size: 3.6rem;
     line-height: 3.6rem;
   }
+  
   #content .shelf {
     border-right-width: 20px;
     border-left-width: 20px;
+  }
+  
+  .index.active {
+    top: 5rem;
   }
 }
 
