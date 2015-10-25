@@ -212,14 +212,11 @@ li:before {
   line-height: 2.4rem;
 }
 
-.read-more {
-  position: relative;
-}
-
-.read-more:after {
+.read-more:after,
+.read-more:before {
   content: "";
   display: block;
-  height: 1px;
+  height: 2px;
   background-color: #222;
   width: 100%;
 
@@ -230,19 +227,10 @@ li:before {
 }
 
 .read-more:before {
-  content: "";
-  display: block;
-  height: 1px;
   background-color: #fff;
-  width: 100%;
   position: absolute;
   bottom: 0;
   width: 0;
-
-  -webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
 }
 
 .grid .tile:hover .read-more:after {
