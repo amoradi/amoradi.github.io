@@ -122,15 +122,18 @@ function toggleNav() {
 
 function toggleIndexView() {
 	var $index 	= $('.index').first(),
-	    isOpen 	= $index.hasClass('active'),
+		$body   = $('body'),
+	    isOpen 	= $index.hasClass('active') && $body.hasClass('index-view'),
 	    $indexTxt = $index.find('span span');
 
 	if (isOpen) {
 		$index.removeClass('active');
+		$body.removeClass('index-view');
 		$indexTxt.html(indexText);
 	}
 	else {
 		$index.addClass('active');
+		$body.addClass('index-view');
 		$indexTxt.html('&times;');
 	}
 }
