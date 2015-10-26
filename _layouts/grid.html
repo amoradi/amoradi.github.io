@@ -11,8 +11,7 @@ layout: default
 		{% for post in site.posts %}
  
 		  <a href="{{ site.baseurl }} {{ post.url }}" class="post-view-post">
-		  	{{forloop.index}}. {{ post.date | date: '%B %d, %Y' }} {{ post.title }}</a>
-		  
+		  	 <span>{{ post.date | date: '%B %d, %Y' }}</span> <span>{{ post.title }}</span></a>
 		 {% endfor %}
 	</section>
 </aside>
