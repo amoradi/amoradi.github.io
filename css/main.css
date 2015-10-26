@@ -705,6 +705,15 @@ pre {
   z-index: 9999;
 }
 
+.post-view-post {
+  display: block;
+  text-align: left;
+}
+
+.post-view-post span + span {
+  text-align: right;
+}
+
 @media (max-width: 767px) {
   #content {
     padding: 0;
