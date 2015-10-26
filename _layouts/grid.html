@@ -8,5 +8,10 @@ layout: default
 <aside class="index scene_element scene_element--fadeinup">
 	<span class="index-anchor"><span>post index</span></span>
 	<section class="index-content">
+		{% for post in site.posts %}
+ 
+		  <a href="{{ site.baseurl }}{{ post.url }}" class="post-view-post">{{ post.date | date: '%B %d, %Y' }} {{ post.title }</a>
+		  
+		 {% endfor %}
 	</section>
 </aside>
