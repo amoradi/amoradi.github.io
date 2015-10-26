@@ -719,6 +719,9 @@ book-preview {
   background: #fff;
   overflow: hidden;
   display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 4.8rem;
 }
 
 @media (max-width: 767px) {
