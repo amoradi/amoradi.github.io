@@ -19,7 +19,12 @@
 	line-height: 3rem;
 	border-left: 2px solid #eee;
     }
-    
+    blockquote .author {
+	font-size: 1.6rem;
+	margin-top: 2.4rem;
+	display: inline-block;
+	color: coral;
+    }
   </style>
   
 </template>
@@ -37,7 +42,7 @@
 			var shadow = this.createShadowRoot();
 
 			// create figure
-	     	var fig 	= document.createElement('figure');
+	     	    var fig 	= document.createElement('figure');
 		    var figCap 	= document.createElement('figcaption');
 		    var subTitle= document.createElement('span');
 		    var author 	= document.createElement('span');
