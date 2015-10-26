@@ -715,6 +715,12 @@ pre {
   text-align: right;
 }
 
+book-preview {
+  background: #fff;
+  overflow: hidden;
+  display: block;
+}
+
 @media (max-width: 767px) {
   #content {
     padding: 0;
