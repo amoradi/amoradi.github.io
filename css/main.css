@@ -711,6 +711,7 @@ pre {
 }
 
 .post-view-post span + span {
+  float: right;
   text-align: right;
 }
 
