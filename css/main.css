@@ -61,12 +61,12 @@ div {
 }
 
 #content .grid .tile:hover {
-  color: coral !important;
-  background: #fff !important;
+  color: #fff !important;
+  background: coral !important;
 }
 
 #content .grid .tile:hover * {
-  color: coral !important;
+  color: #fff !important;
 }
 
 #content .tile:before {
