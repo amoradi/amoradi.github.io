@@ -1,10 +1,16 @@
+html {
+  min-height: 100%;
+}
+
 body {
   font-family: "Jaldi", "Raleway", sans-serif;
   letter-spacing: .1rem;
+  min-height: 100%;
   width: 100%;
   margin: 0 auto;
   background: rgb(185, 255, 237);
   font-size: 1.4rem;
+  position: relative;
 }
 
 body.index-view {
@@ -718,10 +724,28 @@ pre {
 book-preview {
   background: #fff;
   overflow: hidden;
-  display: block;
+  display: none;
   width: 50%;
   margin: 0 auto;
   padding: 4.8rem;
+  font-size: 10px;
+  position: absolute;
+
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+book-preview.show-book-preview {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
 }
 
 @media (max-width: 767px) {

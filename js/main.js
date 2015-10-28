@@ -145,6 +145,16 @@ function toggleFullscreen() {
 	// put document into full screen mode
 }
 
+function toggleBookPreview(e) {
+	var book 		= $(e.target).closest('[data-title]'),
+		bookTitle 	= book.attr('data-title'),
+		bookPrev 	= $("book-preview[data-title='"+bookTitle+"'");
+
+	bookPrev.css('top', book.offset().top);
+	bookPrev.css('left', book.offset().left);
+	bookPrev.addClass('show-book-preview');
+}
+
 function docReady() {
 	
 	var $tiles = $('#content').find('.tile'),
@@ -175,6 +185,9 @@ function docReady() {
 	$('.navigation .ladder').on('click', toggleNav);
 	$('.index-anchor').on('click', toggleIndexView);
 	$('.fullscreen').on('click', toggleFullscreen);
+	$('.shelf .tile').on('click', function(e) {
+		toggleBookPreview(e);
+	});
 }
 
 $(document).ready(function() {

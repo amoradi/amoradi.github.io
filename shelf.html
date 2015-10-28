@@ -3,7 +3,7 @@ layout: shelf
 ---
 
 {% for book in site.shelf %}
-    <a href="{{book.url}}" class="tile col-xs-12" style="width:{{book.pages}}px">
+    <div class="tile col-xs-12" style="width:{{book.pages}}px" data-title="{{ book.title }}">
       <div class="book-rect">
 
       	<div class="book-top"></div>
@@ -12,7 +12,7 @@ layout: shelf
       		<span class="shelf-author">by {{ book.author }}</span>
       	</div>
       </div>     
-    </a>
+    </div>
 
     {% capture currentmod %}{{ forloop.index | modulo:4 }}{% endcapture %}
     
@@ -20,4 +20,18 @@ layout: shelf
     	<div class="shelf-shelf"></div>
     {% endif %}
 
+{% endfor %}
+
+{% for book in site.shelf %}
+  <book-preview
+    data-img="{{ book.cover }}"
+    data-title="{{ book.title }}"
+    data-subtitle="{{ book.subtitle }}"
+    data-author="{{ book.author }}"
+    data-pages="{{ book.pages }}"
+    data-publisher="{{ book.publisher }}"
+    data-isbn-13="{{ book.isbn-13 }}"
+    data-review="{{ book.review }}"
+    data-review-author="{{ book.review-author }}">
+  </book-preview>
 {% endfor %}
