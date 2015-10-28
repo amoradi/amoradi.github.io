@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} {% else %} {{ site.name }} {% endif %}</title>
-
+    {% include html-imports.html %}
     {% include meta.html %}
     {% include base-css-js.html %}
   </head>
@@ -48,8 +48,6 @@
         {{ content }}
       </div>
     </div>
-
-    {% include html-imports.html %}
     <div id="loader"></div>
     <!-- main js -->
     <script src="{{ site.baseurl }}/js/main.js"></script>
