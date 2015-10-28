@@ -48,7 +48,7 @@
 			var shadow = this.createShadowRoot();
 
 			// create figure
-	     	var fig 	= document.createElement('figure');
+	     	     var fig 	= document.createElement('figure');
 		    var figCap 	= document.createElement('figcaption');
 		    var subTitle= document.createElement('span');
 		    var author 	= document.createElement('span');
@@ -89,10 +89,14 @@
 		    review.appendChild(revAuth);
 			
 		    // Add the image to the Shadow Root.
-		    fig.appendChild(author);
-		    fig.appendChild(pages);
-		    fig.appendChild(pub);
-		    fig.appendChild(review);
+		    //fig.appendChild(author);
+		    //fig.appendChild(pages);
+		    //fig.appendChild(pub);
+		    //fig.appendChild(review);
+		    shadow.appendChild(author);
+		    shadow.appendChild(pages);
+		    shadow.appendChild(pub);
+		    shadow.appendChild(review);
 		    shadow.appendChild(fig);
 
 			// clone template and append to elem's shadow DOM
