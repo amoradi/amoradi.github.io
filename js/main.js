@@ -148,7 +148,7 @@ function toggleFullscreen() {
 function toggleBookPreview(e) {
 	var book 		= $(e.target).closest('[data-title]'),
 		bookTitle 	= book.attr('data-title'),
-		bookPrev 	= $("book-preview[data-title='"+bookTitle+"'");
+		bookPrev 	= $("book-preview[data-title='"+bookTitle+"']");
 
 	bookPrev.css('top', book.offset().top);
 	bookPrev.css('left', book.offset().left);
