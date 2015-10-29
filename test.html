@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="/js/vendor/webcomponents.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="/js/vendor/highlight.pack.js"></script>
+    
+    <!-- html imports -->
+    <script async>
+      function handleLoad(e) {
+        console.log('Loaded import: ' + e.target.href);
+    }
+    function handleError(e) {
+      console.log('Error loading import: ' + e.target.href);
+    }
+    </script>
+    <link rel="import" type="text/html" href="/webcomponents/test-comp.html" onload="handleLoad(event)" onerror="handleError(event)" async />
+  
+  </head>
+  <body>
+    <test-comp></test-comp>
+  </body>
+</html>
