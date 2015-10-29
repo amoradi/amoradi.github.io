@@ -42,8 +42,8 @@
 	var proto = Object.create(HTMLElement.prototype, {
 	  createdCallback: {
 	    value: function() {
-	    	var document._currentScript = document._currentScript || document.currentScript;
-			var template = document._currentScript.ownerDocument.querySelector('#book-preview');
+	    	var documentCurrentScript = document._currentScript || document.currentScript;
+			var template = documentCurrentScript.ownerDocument.querySelector('#book-preview');
 
 			// shadow root
 			var shadow = this.createShadowRoot();
@@ -97,7 +97,7 @@
 		    shadow.appendChild(fig);
 
 			// clone template and append to elem's shadow DOM
-			var clone = document._currentScript.ownerDocument.importNode(template.content, true);
+			var clone = documentCurrentScript.ownerDocument.importNode(template.content, true);
 			shadow.appendChild(clone);
 	    }
 	  }
