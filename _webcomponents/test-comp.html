@@ -40,12 +40,13 @@
 <script>
 	 
 	
+var documentCurrentScript = document._currentScript || document.currentScript;
 
 	var proto = Object.create(HTMLElement.prototype, {
 	  createdCallback: {
 	    value: function() {
 	    
-	    var documentCurrentScript = document._currentScript || document.currentScript;
+	    
 			var template = documentCurrentScript.ownerDocument.querySelector('#test-comp');
 
 			// shadow root
