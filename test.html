@@ -8,7 +8,7 @@
     <script src="/js/vendor/highlight.pack.js"></script>
     
     <!-- html imports -->
-    <script async>
+    <script>
       function handleLoad(e) {
         console.log('Loaded import: ' + e.target.href);
       }
@@ -20,7 +20,7 @@
   </head>
   <body>
     <test-comp></test-comp>
-    <link rel="import" type="text/html" href="/webcomponents/test-comp.html" onload="handleLoad(event)" onerror="handleError(event)" async />
+    <link rel="import" type="text/html" href="/webcomponents/test-comp.html" onload="handleLoad(event)" onerror="handleError(event)" />
   
   </body>
 </html>
