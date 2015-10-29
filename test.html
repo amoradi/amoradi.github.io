@@ -11,12 +11,12 @@
     <script async>
       function handleLoad(e) {
         console.log('Loaded import: ' + e.target.href);
-    }
-    function handleError(e) {
-      console.log('Error loading import: ' + e.target.href);
-    }
+      }
+      function handleError(e) {
+        console.log('Error loading import: ' + e.target.href);
+      }
     </script>
-    <link rel="import" type="text/html" href="/webcomponents/test-comp.html" onload="handleLoad(event)" onerror="handleError(event)" async />
+    <link rel="import" type="text/html" href="/webcomponents/test-comp.html" onload="handleLoad(event)" onerror="handleError(event)" />
   
   </head>
   <body>
