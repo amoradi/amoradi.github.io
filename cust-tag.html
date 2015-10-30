@@ -3,23 +3,51 @@ layout: default
 ---
 
 <script>
-var proto = Object.create(HTMLElement.prototype);
-  proto.name = 'Custom Element';
+(function() {
+  'use strict';
   
+  var proto = Object.create(HTMLElement.prototype);
+  proto.name = 'Custom Element';
+    
   proto.alert = function() {
     alert('This is ' + this.name);
+  };
+  
+  proto.createChildren = function(attribute, elem) {
+    var attrValue = this.getAttribute(attribute);
+    
+    if (attrValue) {
+      if (elem === 'img') {
+        return document.createElement(elem).src = attrValue;
+      } else {
+        return document.createElement(elem).textContent = attrValue;
+      }
   };
   
   proto.createdCallback = function() {
     var div = document.createElement('div');
     div.textContent = 'This is Custom Element';
+    
     this.appendChild(div);
+    this.appendChild(createChildren('data-img', 'img'));
   };
   
   document.registerElement('book-preview', {
     extends: 'figure',
     prototype: Object.create(HTMLFigureElement.prototype)
-});
+  });
+    
+})();
+
+// data-img="{{ book.cover }}"
+// data-title="{{ book.title }}"
+// data-subtitle="{{ book.subtitle }}"
+// data-author="{{ book.author }}"
+// data-pages="{{ book.pages }}"
+// data-publisher="{{ book.publisher }}"
+// data-isbn-13="{{ book.isbn-13 }}"
+// data-review="{{ book.review }}"
+// data-review-author="{{ book.review-author }}">
 
 </script>
 
