@@ -22,6 +22,7 @@ layout: default
       } else {
         return document.createElement(elem).textContent = attrValue;
       }
+    }
   };
   
   proto.createdCallback = function() {
@@ -29,7 +30,7 @@ layout: default
     div.textContent = 'This is Custom Element';
     
     this.appendChild(div);
-    this.appendChild(createChildren('data-img', 'img'));
+    this.appendChild(this.createChildren('data-img', 'img'));
   };
   
   document.registerElement('book-preview', {
