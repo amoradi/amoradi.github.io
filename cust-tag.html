@@ -21,11 +21,10 @@ layout: default
       
       if (elem === 'img') {
         elem.src = attrValue;
-        return elem;
       } else {
         elem.textContent = attrValue;
-        return elem;
       }
+      return elem;
     }
   };
   
