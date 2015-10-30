@@ -17,14 +17,14 @@ layout: default
     var attrValue = this.getAttribute(attribute);
     
     if (attrValue) {
-      var elem = document.createElement(elem);
+      var child = document.createElement(elem);
       
       if (elem === 'img') {
-        elem.src = attrValue;
+        child.src = attrValue;
       } else {
-        elem.textContent = attrValue;
+        child.textContent = attrValue;
       }
-      return elem;
+      return child;
     }
   };
   
