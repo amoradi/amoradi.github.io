@@ -100,20 +100,26 @@ function colorBlockquote() {
 }
 
 function calcTileHeight($elem) {
-	if ($elem.length > 0) {	
-		var tallest= 0;
-		    
-		$elem.css('height', 'auto');    
-		
-		$elem.each(function(i) {
-		    var thisHeight = $($elem[i]).outerHeight();
-		    	    
-		    if (thisHeight > tallest) {
-		        tallest = thisHeight;
-		    }	
-		});
-		
-		$elem.css('height', tallest);
+	if ($elem.length > 0) {
+
+		if ($(window).width() < 768) {
+			$elem.css('height', 'auto');
+		}
+		else {	
+			var tallest= 0;
+			    
+			$elem.css('height', 'auto');    
+			
+			$elem.each(function(i) {
+			    var thisHeight = $($elem[i]).outerHeight();
+			    	    
+			    if (thisHeight > tallest) {
+			        tallest = thisHeight;
+			    }	
+			});
+			
+			$elem.css('height', tallest);
+		}
 	}
 }
 
@@ -197,8 +203,9 @@ function docReady() {
     	hljs.highlightBlock(block);
   	});
 	
-	$(window).resize(function() {
+	$(window).resize(function(e) {
 		if ($('#content > article:first').hasClass('grid')) {
+			$tiles.css('height', 'auto');
 			calcTileHeight($tiles);
 		}
 	});
