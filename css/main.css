@@ -233,6 +233,10 @@ li:before {
   line-height: 2.4rem;
 }
 
+.grid .read-more {
+  line-height: 1.6rem;
+}
+
 .read-more:after,
 .read-more:before {
   content: "";
