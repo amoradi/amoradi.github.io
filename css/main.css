@@ -199,7 +199,7 @@ li:before {
 }
 
 .grid {
-    
+  overflow: hidden;
 }
 
 .grid time {
@@ -387,7 +387,7 @@ p {
 }
 
 .index-anchor span:before {
-  content: "\2191";
+  content: "\2038";
   width: 100px;
   position: absolute;
   top: -120%;

@@ -6,12 +6,7 @@
   'use strict';
   
   var proto = Object.create(HTMLElement.prototype);
-  proto.name = 'Custom Element';
     
-  proto.alert = function() {
-    alert('This is ' + this.name);
-  };
-  
   // @desc    creates a node with a host elem's attribute
   // @params  attribute - attribute on host element <string>
   //          element   - created child element <string>
@@ -22,7 +17,6 @@
         beforeText = attribute[1] || '',
         afterText = attribute[2] || '';
 
-    
     if (attrValue) {
       
       if (elem === 'img') {
