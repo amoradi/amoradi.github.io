@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Jaldi", "Raleway", sans-serif;
+  font-family: sans-serif;
   letter-spacing: .1rem;
   min-height: 100%;
   width: 100%;
@@ -214,7 +214,7 @@ li:before {
 
 .grid time,
 .grid .read-more {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 2.4rem;
 }
 
@@ -264,10 +264,11 @@ p {
   text-decoration: none;
   text-decoration: none;
   color: coral; /*#43DAA4;*/
+  border-bottom: 2px solid coral;
 }
 
-#content a:hover {
-  text-decoration: underline;
+#content .grid a {
+  border-bottom: none;
 }
 
 .read-more,
@@ -475,7 +476,7 @@ blockquote {
 .page blockquote p,
 .post blockquote p {
   font-size: 2.4rem;
-  line-height: 3rem;
+  line-height: 3.2rem;
 }
 
 blockquote .author {
@@ -808,14 +809,18 @@ keyboard-arrows span {
   height: 40px;
   line-height: 33px;
   width: 40px;
+  pointer: cursor;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   margin: 3px 4px;
 }
 
-keyboard-arrows span:hover {
-    background: #eee;
+keyboard-arrows span:not(.disabled):hover {
+  background: coral;
+  border-color: coral;
+  cursor: pointer;
+  color: #fff;
 }
 
 .disabled {
