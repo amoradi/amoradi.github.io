@@ -730,6 +730,14 @@ pre {
 .post-view-post {
   display: block;
   text-align: left;
+  line-height: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.post-view-post span {
+  max-width: 50%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .post-view-post span + span {

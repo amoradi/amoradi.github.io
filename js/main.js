@@ -188,7 +188,7 @@ function docReady() {
 
 		} else if ($('#content > article:first').hasClass('grid')) {
 			makeRandomColor($tiles, 'background-color');
-			ca .lcTileHeight($tiles);
+			calcTileHeight($tiles);
 		}
 	}
 
