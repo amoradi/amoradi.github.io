@@ -66,13 +66,23 @@ div {
   min-height: 500px;
 }
 
-#content .grid .tile:hover {
-  color: #fff !important;
-  background: coral !important;
-}
+@media (min-width: 768px) {
+  #content .grid .tile:hover {
+    color: #fff !important;
+    background: coral !important;
+  }
 
-#content .grid .tile:hover * {
-  color: #fff !important;
+  #content .grid .tile:hover * {
+    color: #fff !important;
+  }
+
+  .grid .tile:hover .read-more:after {
+    width: 0;
+  }
+
+  .grid .tile:hover .read-more:before {
+    width: 100%;
+  }
 }
 
 #content .tile:before {
@@ -237,14 +247,6 @@ li:before {
   position: absolute;
   bottom: 0;
   width: 0;
-}
-
-.grid .tile:hover .read-more:after {
-  width: 0;
-}
-
-.grid .tile:hover .read-more:before {
-  width: 100%;
 }
 
 p {
