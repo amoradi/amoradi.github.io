@@ -102,7 +102,7 @@ function colorBlockquote() {
 function calcTileHeight($elem) {
 	if ($elem.length > 0) {
 
-		if ($(document).width() < 768) {
+		if ($(window).width() < 768) {
 			$elem.css('height', 'auto');
 		}
 		else {	

@@ -63,31 +63,7 @@ div {
 }
 
 #content .grid .tile {
-  min-height: 500px;
   border-top: 4px solid transparent;
-}
-
-@media (min-width: 768px) {
-  #content .grid .tile:hover {
-    background: #fff !important;
-    border-top: 4px solid coral;
-  }
-
-  #content .grid .tile:hover * {
-    
-  }
-
-  #content .grid .tile:hover .read-more {
-
-  }
-
-  .grid .tile:hover .read-more:after {
-    width: 0;
-  }
-
-  .grid .tile:hover .read-more:before {
-    width: 100%;
-  }
 }
 
 #content .tile:before {
@@ -945,6 +921,30 @@ keyboard-arrows span:not(.disabled):hover {
 @media (min-width: 768px) {
   .navigation {
     min-height: 50rem;
+  }
+  #content .grid .tile {
+    min-height: 500px;
+  }
+
+  #content .grid .tile:hover {
+    background: #fff !important;
+    border-top: 4px solid coral;
+  }
+
+  #content .grid .tile:hover * {
+    
+  }
+
+  #content .grid .tile:hover .read-more {
+
+  }
+
+  .grid .tile:hover .read-more:after {
+    width: 0;
+  }
+
+  .grid .tile:hover .read-more:before {
+    width: 100%;
   }
 }
 
