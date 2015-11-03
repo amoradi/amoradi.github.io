@@ -64,16 +64,21 @@ div {
 
 #content .grid .tile {
   min-height: 500px;
+  border-top: 4px solid transparent;
 }
 
 @media (min-width: 768px) {
   #content .grid .tile:hover {
-    color: #fff !important;
-    background: coral !important;
+    background: #fff !important;
+    border-top: 4px solid coral;
   }
 
   #content .grid .tile:hover * {
-    color: #fff !important;
+    
+  }
+
+  #content .grid .tile:hover .read-more {
+
   }
 
   .grid .tile:hover .read-more:after {
@@ -243,7 +248,7 @@ li:before {
 }
 
 .read-more:before {
-  background-color: #fff;
+  background-color: #222;
   position: absolute;
   bottom: 0;
   width: 0;
