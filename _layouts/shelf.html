@@ -5,6 +5,28 @@ layout: default
 <article class="shelf scene_element scene_element--fadein">
 {{ content }}
 </article>
-<aside class="index scene_element scene_element--fadeinup">
-	<span class="index-anchor"><span>book index</span></span>
+<aside class="index">
+	<span class="index-anchor"><span>slideshow</span></span>
+	<section class="index-content">
+		{% for book in site.shelf %}
+
+		  <figure is="book-preview"
+		    data-img="{{ book.cover }}"
+		    data-title="{{ book.title }}"
+		    data-subtitle="{{ book.subtitle }}"
+		    data-author="{{ book.author }}"
+		    data-pages="{{ book.pages }}"
+		    data-publisher="{{ book.publisher }}"
+		    data-isbn-13="{{ book.isbn-13 }}"
+		    data-review="{{ book.review }}"
+		    data-review-author="{{ book.review-author }}">
+		  </figure>
+  
+		{% endfor %}
+
+		<keyboard-arrows>
+		    <kbd><span class="disabled">&#9652;</span></kbd>
+		    <kbd><span>&#9666;</span><span class="disabled">&#9662;</span><span>&#9656;</span></kbd>
+		</keyboard-arrows>
+	</section>
 </aside>

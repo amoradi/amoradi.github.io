@@ -79,6 +79,6 @@ exclude:
 collections:
   shelf:
     output: true
-  webcomponents:
+  customelements:
     output: true
 

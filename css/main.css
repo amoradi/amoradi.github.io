@@ -276,6 +276,11 @@ p {
   color: #333;
   position: absolute;
   bottom: 2.4rem;
+
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
 }
 
 .navigation {
@@ -449,6 +454,11 @@ p {
 h1 {
   font-size: 4.8rem;
   line-height: 4.8rem;
+}
+
+h2 {
+ font-size: 3rem;
+ line-height: 3rem;
 }
 
 blockquote {
@@ -651,6 +661,11 @@ pre {
 
 #content .shelf .tile:active * {
   background: coral !important;
+
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
 }
 
 #content .shelf .tile h2 {
@@ -721,8 +736,9 @@ pre {
   text-align: right;
 }
 
-book-preview {
+figure[is=book-preview] {
   background: #fff;
+  color: #333;
   overflow: hidden;
   display: none;
   width: 50%;
@@ -737,15 +753,73 @@ book-preview {
   transition: all 500ms ease-in;
 }
 
-book-preview.show-book-preview {
+figure[is=book-preview].show-book-preview {
   display: block;
-  position: absolute;
+  position: static;
   z-index: 1000;
 
   -webkit-transition: all 500ms ease-in;
   -moz-transition: all 500ms ease-in;
   -o-transition: all 500ms ease-in;
   transition: all 500ms ease-in;
+}
+
+figure[is=book-preview] span {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+figure[is=book-preview] .subtitle {
+  font-weight: bold;
+  margin-top: -16px;
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
+}
+
+figure[is=book-preview] .author {
+  font-size: 1.6rem;
+}
+
+keyboard-arrows,
+keyboard-arrows kbd {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin:0;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+keyboard-arrows {
+  padding: 4.8rem;
+}
+
+keyboard-arrows span {
+  background: #fff;
+  border: 2px outset #eee;
+  color: #222;
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+  line-height: 33px;
+  width: 40px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin: 3px 4px;
+}
+
+keyboard-arrows span:hover {
+    background: #eee;
+}
+
+.disabled {
+    opacity: .3;
 }
 
 @media (max-width: 767px) {

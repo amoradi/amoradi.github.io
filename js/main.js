@@ -1,3 +1,12 @@
+---
+
+---
+
+// register custom elements
+{% for elem in site.customelements %}
+	{{ elem.content }}
+{% endfor %}
+
 var indexText = $('.index-anchor span').html();
 
 // generate HEX color (light or dark)
@@ -148,11 +157,22 @@ function toggleFullscreen() {
 function toggleBookPreview(e) {
 	var book 		= $(e.target).closest('[data-title]'),
 		bookTitle 	= book.attr('data-title'),
-		bookPrev 	= $("book-preview[data-title='"+bookTitle+"']");
+		bookPrev 	= $("figure[is=book-preview][data-title='"+bookTitle+"']");
+
+	toggleIndexView();
 
 	bookPrev.css('top', book.offset().top);
 	bookPrev.css('left', book.offset().left);
 	bookPrev.addClass('show-book-preview');
+
+	setTimeout(function() {
+		bookPrev.css({
+			top: 0,
+			left: 0,
+			width: '100%',
+			height: 'auto'
+		});
+	}, 100);
 }
 
 function docReady() {
@@ -168,7 +188,7 @@ function docReady() {
 
 		} else if ($('#content > article:first').hasClass('grid')) {
 			makeRandomColor($tiles, 'background-color');
-			calcTileHeight($tiles);
+			ca .lcTileHeight($tiles);
 		}
 	}
 
@@ -200,5 +220,3 @@ $(window).load(function() {
 	// Animate loader off screen
 	$("#loader").fadeOut(fdTime);
 });
-
-
