@@ -285,10 +285,10 @@ p {
   color: coral; /*#43DAA4;*/
   border-bottom: 2px solid coral;
 
-  -webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 #content .grid a {
@@ -342,10 +342,10 @@ p {
   padding: .4rem 2rem;
   border-bottom: .1rem solid #111;
 
-  -webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 .navigation a:hover {
@@ -872,6 +872,10 @@ keyboard-arrows span:not(.disabled):hover {
 
 #content > * > * {
   opacity: 0;
+}
+
+#content > .index > .index-content {
+  opacity: 1;
 }
 
 @media (max-width: 767px) {
