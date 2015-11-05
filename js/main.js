@@ -184,6 +184,22 @@ function toggleBookPreview(e) {
 	}, 100);
 }
 
+function fadeInPageElements() {
+    
+    /* Check the location of each desired element */
+    $('#content > * > *').not('#loader').each(function(i) {
+        
+        var bottom_of_object = $(this).offset().top;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        
+        /* If the object is completely visible in the window, fade it it */
+        if (bottom_of_window > bottom_of_object) {
+            
+            $(this).animate({'opacity':'1'},500);      
+        }
+    });
+}
+
 function docReady() {
 	
 	var $tiles = $('#content').find('.tile'),
@@ -205,12 +221,17 @@ function docReady() {
 	$('pre code').each(function(i, block) {
     	hljs.highlightBlock(block);
   	});
+
+  	// fade page elems
+  	fadeInPageElements();
 	
 	$(window).resize(function(e) {
 		if ($('#content > article:first').hasClass('grid')) {
 			$tiles.css('height', 'auto');
 			calcTileHeight($tiles);
 		}
+
+		fadeInPageElements();
 	});
 
 	$('.navigation .ladder').on('click', toggleNav);
@@ -224,6 +245,10 @@ function docReady() {
 $(document).ready(function() {
 	docReady();
 });
+
+
+// fade in page elements
+$(window).scroll(fadeInPageElements);
 
 // Wait for window load
 $(window).load(function() {

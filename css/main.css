@@ -63,7 +63,7 @@ div {
 }
 
 #content .grid .tile {
-  border-top: 4px solid transparent;
+  padding-top: 4px;
 }
 
 #content .tile:before {
@@ -214,7 +214,9 @@ li:before {
 }
 
 .read-more:after,
-.read-more:before {
+.read-more:before,
+#content .grid .tile:after,
+#content .grid .tile:before  {
   content: "";
   display: block;
   height: 2px;
@@ -233,6 +235,36 @@ li:before {
   bottom: 0;
   width: 0;
 }
+
+#content .grid .tile:after,
+#content .grid .tile:before {
+  background-color: transparent;
+  height: 4px;
+  top: 0;
+  left: 0;
+
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+#content .grid .tile:after {
+  background-color: coral;
+  position: absolute;
+  width: 0;
+}
+
+#content .grid .tile:hover:before {
+  width: 0;
+}
+
+#content .grid .tile:hover:after {
+  width: 100%;
+}
+
+
+
 
 p {
   font-size: 1.7rem;
@@ -661,13 +693,14 @@ pre {
   max-width: 25%;
 }
 
-#content .shelf .tile:active * {
+#content .shelf .tile:active > *,
+#content .shelf .tile:hover > * {
   background: coral !important;
 
-  -webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 #content .shelf .tile h2 {
@@ -679,6 +712,7 @@ pre {
 }
 
 #content .shelf .tile:hover {
+  box-shadow: 0rem 1.5rem 1rem .5rem rgba(0,0,0,0.25);
   overflow: visible;
   z-index: 99;
   perspective-origin: top center;
@@ -836,6 +870,10 @@ keyboard-arrows span:not(.disabled):hover {
     opacity: .3;
 }
 
+#content > * > * {
+  opacity: 0;
+}
+
 @media (max-width: 767px) {
   #content {
     padding: 0;
@@ -936,13 +974,19 @@ keyboard-arrows span:not(.disabled):hover {
   .navigation {
     min-height: 50rem;
   }
+
+  #content .grid {
+    padding: 0 0 2rem 0;
+  }
+
   #content .grid .tile {
     min-height: 500px;
   }
 
   #content .grid .tile:hover {
     background: #fff !important;
-    border-top: 4px solid coral;
+    box-shadow: 0rem 0rem 2rem .2rem rgba(0,0,0,0.25);
+    z-index: 2;
   }
 
   #content .grid .tile:hover * {
@@ -996,7 +1040,13 @@ keyboard-arrows span:not(.disabled):hover {
     float: left;
     width: 12.5%;
   }
-  
+}
+
+@media (max-width: 767px) {
+  #content .grid .tile:after,
+  #content .grid .tile:before {
+    display: none;
+  }
 }
 
 ::-moz-selection { 
