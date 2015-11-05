@@ -9,6 +9,9 @@
 
 var indexText = $('.index-anchor span').html();
 
+// set loader height
+$("#loader").height($(window).height());
+
 // generate HEX color (light or dark)
 function randomColor(light) {
 	var color = '';
@@ -209,6 +212,7 @@ function docReady() {
 			calcTileHeight($tiles);
 		}
 	});
+
 	$('.navigation .ladder').on('click', toggleNav);
 	$('.index-anchor').on('click', toggleIndexView);
 	$('.fullscreen').on('click', toggleFullscreen);
