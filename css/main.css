@@ -252,10 +252,24 @@ p {
   text-decoration: none;
   color: coral; /*#43DAA4;*/
   border-bottom: 2px solid coral;
+
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
 }
 
 #content .grid a {
   border-bottom: none;
+}
+
+.index-view #content .index-content a {
+  border-bottom: 1px solid #000;
+}
+
+.index-view #content .index-content a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
 }
 
 .read-more,
