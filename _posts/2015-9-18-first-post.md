@@ -1,7 +1,7 @@
 ---
 layout: post
 title: This is My First Post!
-excerpt: <p>Bacon ipsum dolor amet ribeye meatloaf venison meatball jowl. Doner short ribs bresaola drumstick rump porchetta chuck shankle meatloaf. Brisket kevin beef ribeye capicola swine, shankle beef.</p>
+excerpt: <p>Bacon ipsum dolor amet ribeye meatloaf venison meatball jowl...</p>
 ---
 
 Bacon ipsum dolor amet ribeye meatloaf venison meatball jowl. Doner short ribs bresaola drumstick rump porchetta chuck shankle meatloaf. Brisket kevin beef ribeye capicola swine, shankle beef ribs jerky ham hock sausage tail salami pork ball tip. Short ribs turducken spare ribs, sirloin venison bacon pig biltong pork chop. Bresaola shoulder ground round pork loin jowl picanha bacon pork. Cow jerky pork chop chicken shank bacon. Kevin landjaeger ham, swine prosciutto alcatra filet mignon hamburger porchetta.

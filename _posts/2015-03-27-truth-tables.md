@@ -3,7 +3,7 @@ title: Truth Tables
 author: Aaron Moradi
 layout: post
 permalink: /truth-tables/
-excerpt: <p>Truth tables give us operational definitions of the important logical connectives, separate from and independent of their use in ordinary language. They also provide a mechanism whereby the truth values of complicated expressions may be worked out.</p>
+excerpt: <p>Truth tables give us operational definitions of the important logical connectives...</p>
 categories: logic
 ---
 > Truth tables give us operational definitions of the important logical connectives, separate from and independent of their use in ordinary language. **They also provide a mechanism whereby the truth values of complicated expressions may be worked out.**

@@ -4,6 +4,7 @@ author: Aaron Moradi
 layout: post
 permalink: /python-dictionaries/
 categories: python, programming
+excerpt: <p>Python, in addition to those nifty data structures&#8211;tuples and arrays&#8211;, provides another...</p>
 ---
 Python, in addition to those nifty data structures&#8211;tuples and arrays&#8211;, provides another way of collecting complex data. Wait for it&#8230; Dictionaries! Not to be confused with the type of book used to look up word definitions, dictionaries, are actual data structures. The *key* difference is that they use KEYS to assign values instead of indices.
 
