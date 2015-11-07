@@ -10,7 +10,7 @@
 var indexText = $('.index-anchor span').html();
 
 // set loader height
-$("#loader").height($(window).height());
+$("#loader").height(Math.max($(document).height(), $(window).height()));
 
 // generate HEX color (light or dark)
 function randomColor(light) {
@@ -187,7 +187,7 @@ function toggleBookPreview(e) {
 function fadeInPageElements() {
     
     /* Check the location of each desired element */
-    $('#content > * > *').not('#loader').each(function(i) {
+    $('#content > * > *').not('#loader, .index-anchor').each(function(i) {
         
         var bottom_of_object = $(this).offset().top;
         var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -195,7 +195,7 @@ function fadeInPageElements() {
         /* If the object is completely visible in the window, fade it it */
         if (bottom_of_window > bottom_of_object) {
             
-            $(this).animate({'opacity':'1'},500);      
+            $(this).animate({'opacity':'1'},200);      
         }
     });
 }

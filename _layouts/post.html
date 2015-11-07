@@ -16,6 +16,13 @@ layout: default
 
   {% include disqus.html %}
 </article>
-<aside class="index scene_element scene_element--fadeinup">
-  <span class="index-anchor"><span>posts index</span></span>
+<aside class="index">
+  <span class="index-anchor"><span>post index</span></span>
+  <section class="index-content">
+    {% for post in site.posts %}
+ 
+      <a href="{{ site.baseurl }} {{ post.url }}" class="post-view-post">
+         <span>{{ post.date | date: '%m.%d.%Y' }}</span><span>{{ post.title }}</span></a>
+     {% endfor %}
+  </section>
 </aside>
