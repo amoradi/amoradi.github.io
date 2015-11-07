@@ -634,7 +634,7 @@ pre {
   position: relative;
   -webkit-perspective: 10rem;
   -moz-perspective: 10rem;
-  perspective: 10rem;
+  perspective: 100rem;
 }
 
 .book-rect {
@@ -891,6 +891,10 @@ keyboard-arrows span:not(.disabled):hover {
 #content > .index > .index-content,
 #content > .index > .index-anchor {
   opacity: 1;
+}
+
+.index-view {
+  position: fixed;
 }
 
 @media (max-width: 767px) {
