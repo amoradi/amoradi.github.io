@@ -152,7 +152,7 @@ function toggleIndexView() {
 	else {
 		$index.addClass('active');
 		$body.addClass('index-view');
-		$indexTxt.html('&times;');
+		$indexTxt.html('<img src=\"/images/close-x.png\" class=\"close-x\"/>');
 	}
 }
 

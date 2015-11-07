@@ -420,6 +420,11 @@ p {
   margin: 0 auto;
 }
 
+.close-x {
+  width: 50px;
+  padding-top: 10px;
+}
+
 .index-anchor span:before {
   content: "";
   background: url(/images/index-arrow.png) no-repeat center center;
