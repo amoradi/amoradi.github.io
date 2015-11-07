@@ -297,6 +297,7 @@ p {
 
 .index-view #content .index-content a {
   border-bottom: .1rem solid coral;
+  overflow: hidden;
 }
 
 .index-view #content .index-content a:hover {
