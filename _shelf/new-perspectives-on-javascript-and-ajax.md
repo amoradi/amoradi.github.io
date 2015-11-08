@@ -9,4 +9,5 @@ isbn-13: 978-1439044032
 cover: test cover
 review: Yes. This is a textbook.
 review-author: Aaron Moradi
+cover: /images/carey-canovatchel.jpg
 ---

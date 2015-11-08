@@ -9,4 +9,5 @@ isbn-13: 978-1568984483
 cover: test cover
 review: Dense enough to cover all vital type subjects…condensed enough for easy referencing.
 review-author: Step Inside Design
+cover: /images/lupton.jpg
 ---

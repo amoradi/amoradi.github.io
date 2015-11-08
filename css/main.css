@@ -836,6 +836,13 @@ figure[is=book-preview] .author {
   font-size: 1.6rem;
 }
 
+figure[is=book-preview] img {
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
 keyboard-arrows,
 keyboard-arrows kbd {
   display: block;
@@ -1057,7 +1064,7 @@ keyboard-arrows span:not(.disabled):hover {
     float: left;
     width: 16.66666667%;
   }
-  
+
   .col-xl-2_4 {
     float: left;
     width: 20%;

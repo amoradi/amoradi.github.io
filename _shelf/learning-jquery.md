@@ -9,4 +9,5 @@ isbn-13: 978-1847196705
 cover: test cover
 review: Start aright with jQuery.
 review-author: Aaron Moradi
+cover: /images/chaffer-swedberg.jpg
 ---

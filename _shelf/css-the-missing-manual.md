@@ -9,4 +9,5 @@ isbn-13: 978-0596802448
 cover: test cover
 review: The Missing Manual series is simply the most intelligent and usable series of guidbooks…
 review-author: Kevin Kelly
+cover: /images/mcfarland.jpg
 ---

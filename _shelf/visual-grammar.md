@@ -9,4 +9,5 @@ isbn-13: 978-1568985817
 cover: test cover
 review: Required reading.
 review-author: Architecture Magazine
+cover: /images/leborg.jpg
 ---

@@ -9,4 +9,5 @@ isbn-13: 078-5342472660
 cover: test cover
 review: Nice javaScript introduction.
 review-author: Aaron Moradi
+cover: /images/jeremy-keith.jpg
 ---
