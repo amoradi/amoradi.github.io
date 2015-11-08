@@ -1040,6 +1040,10 @@ keyboard-arrows span:not(.disabled):hover {
     border-right-width: 6rem;
     border-left-width: 6rem;
   }
+
+  #content .grid .tile {
+    min-height: 50rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1053,9 +1057,14 @@ keyboard-arrows span:not(.disabled):hover {
     float: left;
     width: 16.66666667%;
   }
+  
   .col-xl-2_4 {
     float: left;
     width: 20%;
+  }
+
+   #content .grid .tile {
+    min-height: 50rem;
   }
 }
 
@@ -1063,10 +1072,6 @@ keyboard-arrows span:not(.disabled):hover {
   .col-xxl-1_5 {
     float: left;
     width: 12.5%;
-  }
-
-  #content .grid .tile {
-    min-height: 50rem;
   }
 }
 
