@@ -166,22 +166,57 @@ function toggleFullscreen() {
 function toggleBookPreview(e) {
 	var book 		= $(e.target).closest('[data-title]'),
 		bookTitle 	= book.attr('data-title'),
-		bookPrev 	= $("figure[is=book-preview][data-title='"+bookTitle+"']");
+		bookPrev 	= $("figure[is=book-preview][data-title='"+bookTitle+"']"),
+		$index 		= $('.index').first(),
+		books 		= $('.index-content').find('figure[is=book-preview]');
 
 	toggleIndexView();
+	$index.addClass('book-detail-live');
 
+	books.removeClass('show-book-preview'); 
 	bookPrev.css('top', book.offset().top);
 	bookPrev.css('left', book.offset().left);
 	bookPrev.addClass('show-book-preview');
+	bookTransition(bookPrev);
+}
 
+function pageinateBookPreview(direction) {
+	var books 		= $('.index-content').find('figure[is=book-preview]'),
+		liveBook 	= $('.index-content').find('figure[is=book-preview].show-book-preview'),
+		$nextBook 	= $($(liveBook).next('figure')),
+		$prevBook 	= $($(liveBook).prev('figure'));
+
+	$(books).removeClass('show-book-preview');
+
+	if (direction === 'next') {
+		console.log('next');		
+		bookTransition($nextBook, 'fadein');
+	} else if (direction === 'prev') {
+		console.log('prev');		
+		bookTransition($prevBook, 'fadein');		
+	}
+}
+
+function bookTransition($elem, fadein) {
 	setTimeout(function() {
-		bookPrev.css({
+		$elem.css({
 			top: 0,
 			left: 0,
 			width: '100%',
 			height: 'auto'
 		});
 	}, 100);
+
+	if (fadein === 'fadein') {
+
+		$elem.addClass('fadein');
+
+		setTimeout(function() {
+			$elem.addClass('show-book-preview');
+		}, 200);
+	}
+
+	$('.index').animate({ scrollTop: 0 }, 0);
 }
 
 function fadeInPageElements() {
@@ -239,6 +274,32 @@ function docReady() {
 	$('.fullscreen').on('click', toggleFullscreen);
 	$('.shelf .tile').on('click', function(e) {
 		toggleBookPreview(e);
+	});
+
+	// index arrows
+	$('.next-arrow').on('click', function() {
+		pageinateBookPreview('next');
+	});
+	$('.prev-arrow').on('click', function() {
+		pageinateBookPreview('prev');
+	});
+
+	$(document).keydown(function(e) {
+
+		if ($('.index.active').length > 0) {
+		    switch(e.which) {
+		        case 37: // left
+		        pageinateBookPreview('prev');
+		        break;
+
+		        case 39: // right
+		        pageinateBookPreview('next');
+		        break;
+
+		        default: return; // exit this handler for other keys
+		    }
+		    e.preventDefault(); // prevent the default action (scroll / move caret)
+		}
 	});
 }
 

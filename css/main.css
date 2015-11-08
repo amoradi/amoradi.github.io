@@ -802,21 +802,33 @@ figure[is=book-preview] {
   position: absolute;
   box-shadow: 0rem 0rem 1rem .2rem rgba(0,0,0,0.05);
 
-  -webkit-transition: all 500ms ease-in;
+  /*-webkit-transition: all 500ms ease-in;
   -moz-transition: all 500ms ease-in;
   -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
+  transition: all 500ms ease-in;*/
 }
 
 figure[is=book-preview].show-book-preview {
   display: block;
   position: static;
   z-index: 1000;
+  opacity: 1;
 
   -webkit-transition: all 500ms ease-in;
   -moz-transition: all 500ms ease-in;
   -o-transition: all 500ms ease-in;
   transition: all 500ms ease-in;
+}
+
+.fadein {
+  display: block !important;
+  opacity: 0;
+  z-index: -1;
+
+  /*-webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;*/
 }
 
 figure[is=book-preview] span {
@@ -845,7 +857,7 @@ figure[is=book-preview] img {
 
 keyboard-arrows,
 keyboard-arrows kbd {
-  display: block;
+  display: none;
   text-align: center;
   padding: 0;
   margin:0;
@@ -855,6 +867,11 @@ keyboard-arrows kbd {
   border-radius: .3rem;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+figure[is=book-preview].show-book-preview ~ keyboard-arrows,
+figure[is=book-preview].show-book-preview ~ keyboard-arrows kbd {
+  display: block;
 }
 
 keyboard-arrows {
