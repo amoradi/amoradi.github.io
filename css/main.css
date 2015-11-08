@@ -11,6 +11,7 @@ body {
   background: rgb(185, 255, 237);
   font-size: 1.4rem;
   position: relative;
+  text-rendering: optimizeLegibility;
 }
 
 body.index-view {
