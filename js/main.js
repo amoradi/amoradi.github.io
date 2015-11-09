@@ -189,16 +189,16 @@ function toggleBookPreview(e) {
 function pageinateBookPreview(direction) {
 	var books 		= $('.index-content').find('figure[is=book-preview]'),
 		liveBook 	= $('.index-content').find('figure[is=book-preview].show-book-preview'),
-		$nextBook 	= $($(liveBook).next('figure')),
-		$prevBook 	= $($(liveBook).prev('figure'));
+		$nextBook 	= ($(liveBook).next('figure').length > 0) ? $($(liveBook).next('figure')) : $(books[0]),
+		$prevBook 	= ($(liveBook).prev('figure').length > 0) ? $($(liveBook).prev('figure')) : $(books[books.length-1]);
 
 	$(books).removeClass('show-book-preview');
 
 	if (direction === 'next') {
-		console.log('next');		
+				
 		bookTransition($nextBook, 'fadein');
 	} else if (direction === 'prev') {
-		console.log('prev');		
+		console.log($prevBook);		
 		bookTransition($prevBook, 'fadein');		
 	}
 }
