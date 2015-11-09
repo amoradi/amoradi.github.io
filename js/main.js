@@ -153,6 +153,12 @@ function toggleIndexView() {
 		$index.addClass('active');
 		$body.addClass('index-view');
 		$indexTxt.html('<img src=\"/images/close-x.png\" class=\"close-x\"/>');
+
+		if ($('#content > .shelf').length > 0) {
+			if ($('.index-content').find('figure[is=book-preview].show-book-preview').length < 1) {
+				bookTransition($('.index-content').find('figure[is=book-preview]').first(), 'fadein');
+			}
+		}
 	}
 }
 
