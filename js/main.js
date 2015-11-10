@@ -138,11 +138,12 @@ function toggleNav() {
 	}
 }
 
-function toggleIndexView() {
-	var $index 	= $('.index').first(),
-		$body   = $('body'),
-	    isOpen 	= $index.hasClass('active') && $body.hasClass('index-view'),
-	    $indexTxt = $index.find('span span');
+function toggleIndexView(dontShowFirstItem) {
+	var $index 				= $('.index').first(),
+		$body   			= $('body'),
+	    isOpen 				= $index.hasClass('active') && $body.hasClass('index-view'),
+	    $indexTxt 			= $index.find('span span'),
+	    dontShowFirstItem 	= (dontShowFirstItem === true) ? true : false;
 
 	if (isOpen) {
 		$index.removeClass('active');
@@ -154,7 +155,8 @@ function toggleIndexView() {
 		$body.addClass('index-view');
 		$indexTxt.html('<img src=\"/images/close-x.png\" class=\"close-x\"/>');
 
-		if ($('#content > .shelf').length > 0) {
+		// show first item when index area is empty (on first index click)
+		if (!dontShowFirstItem && $('#content > .shelf').length > 0) {
 			if ($('.index-content').find('figure[is=book-preview].show-book-preview').length < 1) {
 				bookTransition($('.index-content').find('figure[is=book-preview]').first(), 'fadein');
 			}
@@ -176,7 +178,7 @@ function toggleBookPreview(e) {
 		$index 		= $('.index').first(),
 		books 		= $('.index-content').find('figure[is=book-preview]');
 
-	toggleIndexView();
+	toggleIndexView(true);
 	$index.addClass('book-detail-live');
 
 	books.removeClass('show-book-preview'); 
