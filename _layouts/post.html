@@ -6,10 +6,10 @@ layout: default
   <!-- <a class="hidden-xs back" href="javascript:history.back()">&larr; back</a> -->
   <div class="PageNavigation">
   {% if page.previous.url %}
-    <a class="prev" href="{{page.previous.url}}">{{page.previous.title}}</a>&nbsp;&nbsp;
+    <a class="prev" href="{{page.previous.url}}">&#10094; {{page.previous.title}}</a>&nbsp;&nbsp;
   {% endif %}
   {% if page.next.url %}
-    <a class="next" href="{{page.next.url}}">{{page.next.title}}</a>
+    <a class="next" href="{{page.next.url}}">{{page.next.title}} &#10095;</a>
   {% endif %}
   </div>
 
