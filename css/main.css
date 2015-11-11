@@ -1105,7 +1105,7 @@ keyboard-arrows span:not(.disabled):hover {
 
   #content .grid .tile:hover {
     background: #fff !important;
-    box-shadow: 0rem 0rem 2rem .2rem rgba(0,0,0,0.25);
+    box-shadow: 0rem 0rem 1rem .2rem rgba(0,0,0,0.15);
     z-index: 2;
   }
 
