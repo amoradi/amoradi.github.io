@@ -516,6 +516,10 @@ blockquote {
   border-left: .2rem solid #eee;
 }
 
+figure[is="book-preview"] blockquote {
+  font-size: 2rem;
+}
+  
 .page blockquote p,
 .post blockquote p {
   font-size: 2.4rem;
@@ -674,7 +678,6 @@ pre {
 }
 
 #content .shelf {
-  background: #eee;
   float: left;
   width: 100%;
   border: 4.5rem solid #fff;
@@ -797,7 +800,7 @@ figure[is=book-preview] {
   display: none;
   width: 50%;
   margin: 0 auto;
-  padding: 4.8rem;
+  padding: 7.2rem 4.8rem 2.4rem;
   font-size: 1rem;
   position: absolute;
   box-shadow: 0rem 0rem 1rem .2rem rgba(0,0,0,0.05);
@@ -849,7 +852,7 @@ figure[is=book-preview] .author {
 }
 
 figure[is=book-preview] img {
-  width: 50%;
+  max-height: 200px;
   max-width: 500px;
   margin: 0 auto;
   display: block;
@@ -875,23 +878,21 @@ figure[is=book-preview].show-book-preview ~ keyboard-arrows kbd {
 }
 
 keyboard-arrows {
-  padding: 4.8rem;
+  padding: 3.6rem 4.8rem;
 }
 
 keyboard-arrows span {
   background: #fff;
-  border: .2rem outset #eee;
+  /*border: .2rem outset #eee;*/
   color: #222;
   display: inline-block;
-  vertical-align: top;
-  height: 2.5rem;
-  line-height: 1.8rem;
-  width: 2.5rem;
-  pointer: cursor;
+  vertical-align: middle;
+  padding: .2rem 1.2rem;
+  cursor: pointer;
   -webkit-border-radius: .4rem;
   -moz-border-radius: .4rem;
   border-radius: .4rem;
-  margin: 0 .1rem;
+  margin: .3rem .2rem;
 }
 
 keyboard-arrows kbd + kbd {
@@ -906,7 +907,7 @@ keyboard-arrows span:not(.disabled):hover {
 }
 
 .disabled {
-    opacity: .3;
+  background: #555;
 }
 
 #content > * > * {

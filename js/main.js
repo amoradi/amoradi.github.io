@@ -194,13 +194,12 @@ function pageinateBookPreview(direction) {
 		$nextBook 	= ($(liveBook).next('figure').length > 0) ? $($(liveBook).next('figure')) : $(books[0]),
 		$prevBook 	= ($(liveBook).prev('figure').length > 0) ? $($(liveBook).prev('figure')) : $(books[books.length-1]);
 
-	$(books).removeClass('show-book-preview');
-
 	if (direction === 'next') {
-				
+		
 		bookTransition($nextBook, 'fadein');
+
 	} else if (direction === 'prev') {
-		console.log($prevBook);		
+		
 		bookTransition($prevBook, 'fadein');		
 	}
 }
@@ -220,6 +219,9 @@ function bookTransition($elem, fadein) {
 		$elem.addClass('fadein');
 
 		setTimeout(function() {
+			var books 		= $('.index-content').find('figure[is=book-preview]');
+
+			$(books).removeClass('show-book-preview');
 			$elem.addClass('show-book-preview');
 		}, 200);
 	}
