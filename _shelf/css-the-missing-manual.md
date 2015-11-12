@@ -2,7 +2,7 @@
 layout: book
 title: CSS The Missing Manual
 subtitle:
-author: DAVID SAWYER MCFARLAND
+author: David Sawyer McFarland
 publisher: O'Reilly Media; Second Edition edition (August 31, 2009)
 pages: 538
 isbn-13: 978-0596802448
