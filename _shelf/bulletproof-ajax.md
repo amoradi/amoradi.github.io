@@ -2,7 +2,7 @@
 layout: book
 title: Bulletproof Ajax
 subtitle:
-author: JEREMY KEITH
+author: Jeremy Keith
 publisher: New Riders; 1st edition (February 19, 2007)
 pages: 216
 isbn-13: 078-5342472660
