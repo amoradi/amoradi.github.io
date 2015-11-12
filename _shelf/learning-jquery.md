@@ -1,8 +1,8 @@
 ---
 layout: book
-title: LEARNING JQUERY 1.3
+title: Learning jQuery 1.3
 subtitle:
-author: JONATHAN CHAFFER & KARL SWEDBERG
+author: Jonathan Chaffer & Karl Swedberg
 publisher: Packt Publishing; 2nd edition edition (February 13, 2009)
 pages: 444
 isbn-13: 978-1847196705
