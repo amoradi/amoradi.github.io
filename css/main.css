@@ -1178,6 +1178,11 @@ keyboard-arrows span:not(.disabled):hover {
   #content .grid .tile:before {
     display: none;
   }
+  
+  figure[is=book-preview] img {
+    float: none;
+    margin: 0 auto;
+  }
 }
 
 ::-moz-selection { 
