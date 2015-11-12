@@ -2,7 +2,7 @@
 layout: book
 title: Jump Start JavaScript
 subtitle:
-author: ARA PEHLIVANIAN, DON NGUYEN
+author: Ara Pehlivanian & Don Nguyen
 publisher: SitePoint; 1 edition (July 22, 2013)
 pages: 150
 isbn-13: 978-0987332189
