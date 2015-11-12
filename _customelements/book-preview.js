@@ -37,7 +37,7 @@
 
     // append children to host
     this.appendChild(this.createNode(['data-img'], 'img'));
-    var div = this.createElement('div');
+    var div = document.createElement('div');
     div.appendChild(this.createNode(['data-title'], 'h2'));
     div.appendChild(this.createNode(['data-subtitle'], 'span', ['subtitle']));
     div.appendChild(this.createNode(['data-author', 'by '], 'span'));
