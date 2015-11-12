@@ -517,6 +517,7 @@ blockquote {
 }
 
 figure[is="book-preview"] blockquote {
+  clear: both;
   font-size: 2rem;
 }
   
