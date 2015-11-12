@@ -848,6 +848,10 @@ figure[is=book-preview] .subtitle {
   font-size: 2rem;
 }
 
+figure[is=book-preview] .subtitle + span {
+  text-transform: capitalize;
+}
+
 figure[is=book-preview] .author {
   font-size: 1.6rem;
 }
