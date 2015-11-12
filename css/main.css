@@ -853,8 +853,9 @@ figure[is=book-preview] .author {
 
 figure[is=book-preview] img {
   max-height: 200px;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 300px;
+  float: left;
+  margin-right: 2.4rem;
   display: block;
 }
 
