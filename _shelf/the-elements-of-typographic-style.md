@@ -1,6 +1,6 @@
 ---
 layout: book
-title: THE ELEMENTS OF TYPOGRAPHIC STYLE
+title: The Elements of Typographic Style
 subtitle:
 author: ROBERT BRINGHURST
 publisher: Hartley and Marks Publishers; 3rd edition (October 9, 2004)
