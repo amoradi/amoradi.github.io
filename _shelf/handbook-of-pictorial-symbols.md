@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Handbook of Pictorial Symbols
-author: RUDOLF MODLEY & WILLIAM R. MYERS
+author: Rudolf Modley & William R. Myers
 publisher: Dover Publications; 1 edition (November 17, 2011)
 pages: 160
 isbn-13: 978-0486233574
