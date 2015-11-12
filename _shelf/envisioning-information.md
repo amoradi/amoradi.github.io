@@ -2,7 +2,7 @@
 layout: book
 title: Envisioning Information
 subtitle:
-author: EDWARD R. TUFTE
+author: Edward R. Tufte
 publisher: Graphics Press (January 1990)
 pages: 126
 isbn-13: 978-0961392116
