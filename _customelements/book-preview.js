@@ -37,12 +37,14 @@
 
     // append children to host
     this.appendChild(this.createNode(['data-img'], 'img'));
-    this.appendChild(this.createNode(['data-title'], 'h2'));
-    this.appendChild(this.createNode(['data-subtitle'], 'span', ['subtitle']));
-    this.appendChild(this.createNode(['data-author', 'by '], 'span'));
-    this.appendChild(this.createNode(['data-pages', '', ' pages'], 'span'));
-    this.appendChild(this.createNode(['data-publisher'], 'span'));
-    this.appendChild(this.createNode(['data-isbn-13'], 'span'));
+    var div = this.createElement('div');
+    div.appendChild(this.createNode(['data-title'], 'h2'));
+    div.appendChild(this.createNode(['data-subtitle'], 'span', ['subtitle']));
+    div.appendChild(this.createNode(['data-author', 'by '], 'span'));
+    div.appendChild(this.createNode(['data-pages', '', ' pages'], 'span'));
+    div.appendChild(this.createNode(['data-publisher'], 'span'));
+    div.appendChild(this.createNode(['data-isbn-13'], 'span'));
+    this.appendChild(div);
     var review = this.createNode(['data-review'], 'blockquote');
     var author = this.createNode(['data-review-author'], 'span', ['author']);
     review.appendChild(author);
