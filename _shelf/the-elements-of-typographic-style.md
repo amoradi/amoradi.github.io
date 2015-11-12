@@ -2,7 +2,7 @@
 layout: book
 title: The Elements of Typographic Style
 subtitle:
-author: ROBERT BRINGHURST
+author: Robert Bringhurst
 publisher: Hartley and Marks Publishers; 3rd edition (October 9, 2004)
 pages: 352
 isbn-13: 978-0881791327
