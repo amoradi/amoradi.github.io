@@ -857,6 +857,7 @@ figure[is=book-preview] img {
   max-width: 300px;
   float: left;
   margin-right: 2.4rem;
+  margin-bottom: 2.4rem;
   display: block;
 }
 
@@ -1097,6 +1098,10 @@ keyboard-arrows span:not(.disabled):hover {
     min-height: 50rem;
   }
 
+  figure[is=book-preview] h2 {
+    margin-top: 0;
+  }
+  
   #content .grid {
     padding: 0 0 2rem 0;
   }
