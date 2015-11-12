@@ -2,7 +2,7 @@
 layout: book
 title: New Perspectives on JavaScript and AJAX
 subtitle:
-author: Patrick Carey & FRANK CANOVATCHEL
+author: Patrick Carey & Frank Canovatchel
 publisher: Cengage Learning; 2 edition (December 16, 2009)
 pages: 1048
 isbn-13: 978-1439044032
