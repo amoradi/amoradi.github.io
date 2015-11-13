@@ -44,7 +44,7 @@ div {
   position: relative;
 }
 
-.book-detail-live .index-content {
+.active .index-content {
   padding-top: 0;
 }
 
