@@ -910,6 +910,13 @@ keyboard-arrows kbd + kbd {
   margin-top: -.3rem;
 }
 
+keyboard-arrows img {
+  height: 45px;
+  margin: 0 10px;
+  cursor: pointer;
+  position: relative;
+}
+
 keyboard-arrows span:not(.disabled):hover {
   background: coral;
   border-color: coral;

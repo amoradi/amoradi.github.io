@@ -192,15 +192,24 @@ function pageinateBookPreview(direction) {
 	var books 		= $('.index-content').find('figure[is=book-preview]'),
 		liveBook 	= $('.index-content').find('figure[is=book-preview].show-book-preview'),
 		$nextBook 	= ($(liveBook).next('figure').length > 0) ? $($(liveBook).next('figure')) : $(books[0]),
-		$prevBook 	= ($(liveBook).prev('figure').length > 0) ? $($(liveBook).prev('figure')) : $(books[books.length-1]);
+		$prevBook 	= ($(liveBook).prev('figure').length > 0) ? $($(liveBook).prev('figure')) : $(books[books.length-1]),
+		$nextArrow  = $('.next-arrow'),
+		$prevArrow  = $('.prev-arrow');
 
 	if (direction === 'next') {
-		
-		bookTransition($nextBook, 'fadein');
-
+		$nextArrow[0].src = '/images/index-arrow-right-live.png';
+		$nextArrow.animate({left: '10px'}, 'fast');
+		$nextArrow.animate({left: '0px'}, 'fast', function() {
+			$nextArrow[0].src = '/images/index-arrow-right.png';
+			bookTransition($nextBook, 'fadein');
+		});
 	} else if (direction === 'prev') {
-		
-		bookTransition($prevBook, 'fadein');		
+		$prevArrow[0].src = '/images/index-arrow-left-live.png';
+		$prevArrow.animate({right: '10px'}, 'fast');
+		$prevArrow.animate({right: '0px'}, 'fast', function() {
+			$prevArrow[0].src = '/images/index-arrow-left.png';
+			bookTransition($prevBook, 'fadein');
+		});		
 	}
 }
 
