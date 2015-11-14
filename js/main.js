@@ -9,9 +9,6 @@
 
 var indexText = $('.index-anchor span').html();
 
-// set loader height
-$("#loader").height(Math.max($(document).height(), $(window).height()));
-
 // generate HEX color (light or dark)
 function randomColor(light) {
 	var color = '';
@@ -143,7 +140,7 @@ function toggleIndexView(dontShowFirstItem) {
 		$body   			= $('body'),
 	    isOpen 				= $index.hasClass('active') && $body.hasClass('index-view'),
 	    $indexTxt 			= $index.find('span span'),
-	    dontShowFirstItem 	= (dontShowFirstItem === true) ? true : false;
+	    dontShowFirstItem 	= (dontShowFirstItem === true);
 
 	if (isOpen) {
 		$index.removeClass('active');
@@ -249,7 +246,7 @@ function fadeInPageElements() {
         /* If the object is completely visible in the window, fade it it */
         if (bottom_of_window > bottom_of_object) {
             
-            $(this).animate({'opacity':'1'},50);      
+            $(this).animate({'opacity':'1'}, 50);      
         }
     });
 }
@@ -315,6 +312,9 @@ function docReady() {
 		        pageinateBookPreview('next');
 		        break;
 
+		        case 27: // esc
+		        toggleIndexView();
+
 		        default: return; // exit this handler for other keys
 		    }
 		    e.preventDefault(); // prevent the default action (scroll / move caret)
@@ -332,7 +332,23 @@ $(window).scroll(fadeInPageElements);
 
 // Wait for window load
 $(window).load(function() {
-	var fdTime = ($('#content > article:first').hasClass('grid')) ? 1500 : 1500;
+	var fdTime = 15000;
 	// Animate loader off screen
-	$("#loader").fadeOut(fdTime);
+	// set loader height
+	//$("#loader").height(Math.max($(document).height(), $(window).height()));
+	setTimeout(function() {
+		$('#loader').addClass('reveal');
+		//$('html').css('overflow', 'visible');
+	}, 2000);
+
+	setTimeout(function() {
+		$('.navigation').addClass('reveal');
+		$('#loader').fadeOut();
+	}, 2500);
+
+	// $('#loader').animate({left: '-100%'}, 500, function() {
+	// 	$('.navigation *').animate({opacity: '1'}, 200, function() {
+	// 		$('html').css('overflow', 'visible');
+	// 	});
+	// });
 });

@@ -1,5 +1,7 @@
 html {
   min-height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 body {
@@ -771,13 +773,34 @@ pre {
 
 #loader {
   background: #222;
-  height: 100%;
+  height: 100000px;
   top: 0;
   bottom: 0;
-  right: 0;
+  width: 100%;
   left: 0;
   position: absolute;
   z-index: 9999;
+
+  webkit-box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
+  -moz-box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
+  box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
+
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+#loader.reveal {
+  left: -100%;
+}
+
+.navigation * {
+  opacity: 0;
+}
+
+.navigation.reveal * {
+  opacity: 1;
 }
 
 .post-view-post {
@@ -922,6 +945,10 @@ keyboard-arrows span:not(.disabled):hover {
   border-color: coral;
   cursor: pointer;
   color: #fff;
+}
+
+.pageNavigation {
+  font-size: 1.2rem;
 }
 
 .disabled {
@@ -1083,6 +1110,12 @@ keyboard-arrows span:not(.disabled):hover {
   .post,
   .index-content {
     padding: .6rem 2.5rem 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .pageNavigation {
+    font-size: 1.8rem;
   }
   
   h1 {
