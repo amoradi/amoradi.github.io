@@ -1114,6 +1114,10 @@ keyboard-arrows span:not(.disabled):hover {
     margin-top: 0;
   }
 
+  .index-content {
+    margin-top: 2rem;
+  }
+
   .pageNavigation {
     font-size: 1.8rem;
   }

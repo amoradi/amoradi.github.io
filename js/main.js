@@ -345,10 +345,4 @@ $(window).load(function() {
 		$('.navigation').addClass('reveal');
 		$('#loader').fadeOut();
 	}, 2500);
-
-	// $('#loader').animate({left: '-100%'}, 500, function() {
-	// 	$('.navigation *').animate({opacity: '1'}, 200, function() {
-	// 		$('html').css('overflow', 'visible');
-	// 	});
-	// });
 });
