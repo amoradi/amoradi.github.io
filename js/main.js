@@ -326,23 +326,21 @@ $(document).ready(function() {
 	docReady();
 });
 
-
 // fade in page elements
 $(window).scroll(fadeInPageElements);
 
 // Wait for window load
 $(window).load(function() {
 	var fdTime = 15000;
-	// Animate loader off screen
-	// set loader height
-	//$("#loader").height(Math.max($(document).height(), $(window).height()));
+	
+	$('.loader-img').css({'display': 'block', 'margin-top': $(window).height()/2 - 100});
 	setTimeout(function() {
+		
 		$('#loader').addClass('reveal');
-		//$('html').css('overflow', 'visible');
-	}, 2000);
+	}, 700);
 
 	setTimeout(function() {
 		$('.navigation').addClass('reveal');
 		$('#loader').fadeOut();
-	}, 2500);
+	}, 1300);
 });

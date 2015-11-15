@@ -551,7 +551,7 @@ blockquote small:before {
 mark {
   padding: 0 .6rem;
   color: #fff;
-  background-color: coral;
+  background-color: lightcoral;
 }
 
 .post table,
@@ -773,17 +773,18 @@ pre {
 
 #loader {
   background: #222;
-  height: 100000px;
+  height: 10000px;
   top: 0;
   bottom: 0;
   width: 100%;
   left: 0;
   position: absolute;
   z-index: 9999;
-
-  webkit-box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
+  border-right: 7rem solid #fff;
+  border-left: 7rem solid #fff;
+  /*webkit-box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
   -moz-box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
-  box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
+  box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);*/
 
   -webkit-transition: all 500ms ease-in;
   -moz-transition: all 500ms ease-in;
@@ -792,7 +793,49 @@ pre {
 }
 
 #loader.reveal {
-  left: -100%;
+  opacity: 0;
+}
+
+.loader-img {
+  display: none;
+  font-family: "Raleway", sans-serif;
+  width: 300px;
+  padding: 30px 0;
+  margin: 0 auto;
+  text-align: center;
+  animation-name: toggleFade;
+  -webkit-animation-name: toggleFade;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.loader-img div {
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  background: transparent;
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  border: 1px solid #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: color .35s linear;
+  -moz-transition: color .35s linear;
+  -o-transition: color .35s linear;
+  transition: color .35s linear;
+}
+
+#loader .loader-img span {
+  font-style: italic;
+  text-align: center;
 }
 
 .navigation * {
@@ -822,13 +865,14 @@ pre {
 }
 
 figure[is=book-preview] {
+  
   background: #fff;
   color: #333;
   overflow: hidden;
   display: none;
   width: 50%;
   margin: 0 auto;
-  padding: 7.2rem 4.8rem 2.4rem;
+  padding: 7.2rem 4.8rem 9.4rem;
   font-size: 1rem;
   position: absolute;
   box-shadow: 0rem 0rem 1rem .2rem rgba(0,0,0,0.05);
@@ -966,6 +1010,13 @@ keyboard-arrows span:not(.disabled):hover {
 
 .index-view {
   position: fixed;
+}
+
+#loader span {
+  display: block;
+  text-align: center;
+  margin: 30px 0 40px;
+  color: #fff;
 }
 
 @media (max-width: 767px) {
@@ -1351,6 +1402,50 @@ keyboard-arrows span:not(.disabled):hover {
     top: -120%;
     opacity: 0.5;   
   }      
+}
+
+@keyframes toggleFade {
+  0% {
+    opacity: 0.2;   
+  }
+  25% {
+    
+    opacity: .5; 
+  }
+  50% {
+    
+    opacity: 1; 
+  } 
+  75% {
+    
+    opacity: .5; 
+  }
+  100% {
+    
+    opacity: 0.2;   
+  }     
+}
+
+@-webkit-keyframes toggleFade {
+  0% {
+    opacity: 0.2;   
+  }
+  25% {
+    
+    opacity: .5; 
+  }
+  50% {
+    
+    opacity: 1; 
+  } 
+  75% {
+    
+    opacity: .5; 
+  }
+  100% {
+    
+    opacity: 0.2;   
+  }     
 }
 
 /** Basic styles for an animated element */
