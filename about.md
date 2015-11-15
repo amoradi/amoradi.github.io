@@ -17,6 +17,31 @@ title: About
 <p>I enjoy reading non-fiction, consuming info on the Internet, learning (new web technologies included), being a dad, and eating marvelously prepared food by my wife!</p>
 </div>
 
+<h3>Timeline</h3>
+<section class="timeline">
+<div data-date="08/03/198dasdda5">
+    born here asdfsadf  sadf asfd asdf
+    </div>
+<div data-date="08/03/1990">
+    qwevcwqerfwer wqf sdfg sdfg sfdg sfdg sfdg sdfg sfdg ssdfg sdfg sdfg
+    </div>
+<div data-date="08/03/1992">
+    asd asdfewrr asdfa wr
+    </div>
+<svg width="200" height="400"
+     version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+    
+    
+    <polyline points="90 290 97.5 302 105 290" stroke="#FF7F50" stroke-width="3"
+      stroke-linecap="butt" fill="none" stroke-linejoin="miter"/>
+    
+    <line stroke-linecap="square"
+          x1="97.5" y1="0" x2="97.5" y2="300" 
+          stroke="#FF7F50" stroke-width="3" marker-end="url(#triangle)" />
+</svg>
+
+</section>
 
 <h3>Food for Thought</h3>
 

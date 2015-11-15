@@ -178,6 +178,10 @@ li:before {
   top: -.3rem;
 }
 
+.footnote li:before {
+  display: none;
+}
+
 #content .tile h2 {
   font-size: 2.2rem;
   font-weight: 900;
@@ -1017,6 +1021,46 @@ keyboard-arrows span:not(.disabled):hover {
   text-align: center;
   margin: 30px 0 0;
   color: #fff;
+}
+
+/* timeline */
+.timeline svg {position: absolute; top: 12px;}
+.timeline {position: relative; width: 400px; margin: 0 auto; height: 400px;}
+.timeline div {
+    padding: 0;
+    padding-left: 120px;
+    font-size: 20px;
+    position: relative;
+    display: block;
+    line-height: 24px;
+    clear: both;
+    font-family: sans-serif;
+    color: #222;
+    margin: 10px 0 20px;
+} 
+.timeline div:before {
+    content: attr(data-date);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 75px;
+    overflow: hidden;
+    font-size: 12px;
+    text-align: right;
+}
+
+.timeline div:after {
+    content: ' ';
+    position: absolute;
+    left: 85px;
+    top: 0px;
+    width: 25px;
+    display: block;
+    overflow: hidden;
+    background: #FF7F50;
+    height: 2px;
+    margin: 11px 0;
 }
 
 @media (max-width: 767px) {

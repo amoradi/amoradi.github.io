@@ -331,6 +331,8 @@ $(window).scroll(fadeInPageElements);
 
 // Wait for window load
 $(window).load(function() {
+	$("html, body").animate({ scrollTop: 0 }, 'fast');
+
 	var fdTime = 15000;
 	
 	$('.loader-img').css({'display': 'block', 'margin-top': $(window).height()/2 - 100});
