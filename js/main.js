@@ -333,7 +333,7 @@ $(window).scroll(fadeInPageElements);
 $(window).load(function() {
 	var fdTime = 15000;
 	
-	$('.loader-img').css({'display': 'block', 'margin-top': $(window).height()/2 - 50});
+	$('.loader-img').css({'display': 'block', 'margin-top': $(window).height()/2 - 100});
 	setTimeout(function() {
 		
 		$('#loader').addClass('reveal');

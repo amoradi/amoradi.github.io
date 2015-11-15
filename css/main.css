@@ -780,8 +780,8 @@ pre {
   left: 0;
   position: absolute;
   z-index: 9999;
-  border-right: 7rem solid #fff;
-  border-left: 7rem solid #fff;
+  /*border-right: 7rem solid #fff;
+  border-left: 7rem solid #fff;*/
   /*webkit-box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
   -moz-box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
   box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);*/
