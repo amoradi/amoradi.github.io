@@ -36,7 +36,7 @@ div {
 .page,
 .post,
 .index-content {
-  max-width: 108rem;
+  max-width: 170rem;
   padding: 3.6rem 18.4rem 5.4rem;
   height: 100%;
   margin: 0 auto;
@@ -44,6 +44,12 @@ div {
   margin: 2rem auto 4rem;
   min-height: 90rem;
   position: relative;
+}
+
+.page,
+.post {
+  border-left: 3.6rem solid rgb(185, 255, 237);
+  border-right: 3.6rem solid rgb(185, 255, 237);
 }
 
 .active .index-content {
@@ -1089,6 +1095,13 @@ keyboard-arrows span:not(.disabled):hover {
   .index-view #content .index-content a {
     border-bottom: .2rem solid coral;
   }
+
+  .page,
+  .post {
+    border-left: none;
+    border-right: none;
+  }
+
 
   .post-view-post {
     line-height: 2.6rem;
