@@ -337,10 +337,10 @@ $(window).load(function() {
 	setTimeout(function() {
 		
 		$('#loader').addClass('reveal');
-	}, 88700);
+	}, 700);
 
 	setTimeout(function() {
 		$('.navigation').addClass('reveal');
 		$('#loader').fadeOut();
-	}, 881300);
+	}, 1300);
 });
