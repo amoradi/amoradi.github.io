@@ -333,14 +333,14 @@ $(window).scroll(fadeInPageElements);
 $(window).load(function() {
 	var fdTime = 15000;
 	
-	$('.loader-img').css({'display': 'block', 'margin-top': $(window).height()/2 - 100});
+	$('.loader-img').css({'display': 'block', 'margin-top': $(window).height()/2 - 50});
 	setTimeout(function() {
 		
 		$('#loader').addClass('reveal');
-	}, 700);
+	}, 88700);
 
 	setTimeout(function() {
 		$('.navigation').addClass('reveal');
 		$('#loader').fadeOut();
-	}, 1300);
+	}, 881300);
 });
