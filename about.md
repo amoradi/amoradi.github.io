@@ -17,29 +17,86 @@ title: About
 <p>I enjoy reading non-fiction, consuming info on the Internet, learning (new web technologies included), being a dad, and eating marvelously prepared food by my wife!</p>
 </div>
 
-<h3>Timeline</h3>
+<h3>A Brief Summary of My Life</h3>
 <section class="timeline">
-<div data-date="08/03/198dasdda5">
-    born here asdfsadf  sadf asfd asdf
-    </div>
-<div data-date="08/03/1990">
-    qwevcwqerfwer wqf sdfg sdfg sfdg sfdg sfdg sdfg sfdg ssdfg sdfg sdfg
-    </div>
-<div data-date="08/03/1992">
-    asd asdfewrr asdfa wr
-    </div>
-<svg width="200" height="400"
-     version="1.1"
-     xmlns="http://www.w3.org/2000/svg">
+	<div data-date="3/8/1985">
+	    Entered the world - Dallas, Texas
+	    </div>
+	<div data-date="8/1990">
+	    Started public schooling in Plano, Texas
+	    </div>
+	<div data-date="8/1991">
+	    Began playing organized soccer (Y.M.C.A.) Team name: Giants
+	    </div>
+	<div data-date="8/1995">
+	    Became addicted to the mental math game, Cycles in Mr. Soloman's class, 5th grade
+	    </div>
+	<div data-date="8/1996">
+	    Met a professional trumpet player and was pursuaded to take up the trumpet in 6th grade
+	    </div>
+	<div data-date="12/1997">
+	    Made 10<sup>th</sup> chair All-City, 1st band, 7<sup>th</sup> grade
+	    </div>
+	<div data-date="8/1998">
+	    Joined the 8th grade football team
+	    </div>
+	<div data-date="12/1998">
+	    Made 2<sup>nd</sup> chair All-City, 1st band, 8<sup>th</sup> grade
+	    </div>
+	<div data-date="5/2003">
+	    Graduated from highschool
+	    </div>
+	<div data-date="8/2003">
+	    Enrolled at Texas Tech University to major in architecture
+	    </div>
+	<div data-date="12/2003">
+	    Started playing online poker for leisure
+	    </div>
+	<div data-date="12/2003">
+	    Bought a black Krammer bass guitar at a pawnshop and started playing
+	    </div>
+	<div data-date="5/2005">
+	    Left Texas Tech
+	    </div>
+	<div data-date="6/2005">
+		Attempted to form a rock/alt/indie trio with my mates. Rented a jam space. Got a job at Virgin Records
+	</div>
+	<div data-date="8/2005">
+	    Enrolled at Collin College &mdash; took art and music classes
+	    </div>
+	<div data-date="9/2005">
+	    Taught myself to write lefthanded and throw a football lefthanded
+	    </div>
+	<div data-date="8/2008">
+	    Enrolled at The Unversity of Texas at Dallas
+	    </div>
+	<div data-date="12/2009">
+	    Graduated from UTD with a BA in Art & Performance, visual art concentration
+	    </div>
+	<div data-date="4/5/2013">
+	    Married my wife Alexa
+	    </div>
+	<div data-date="1/18/2014">
+	    My fist son was born, Gideon
+	    </div>
+	<div data-date="11/16/2015">
+	    My second son was born, Justice
+	    </div>
+
+
+
+
+	<svg width="200" height="100%"
+	     version="1.1"
+	     xmlns="http://www.w3.org/2000/svg">
     
-    
-    <polyline points="90 290 97.5 302 105 290" stroke="#FF7F50" stroke-width="3"
-      stroke-linecap="butt" fill="none" stroke-linejoin="miter"/>
-    
-    <line stroke-linecap="square"
-          x1="97.5" y1="0" x2="97.5" y2="300" 
-          stroke="#FF7F50" stroke-width="3" marker-end="url(#triangle)" />
-</svg>
+	    <polyline points="90 100% 97.5 100% 105 100%" stroke="#FF7F50" stroke-width="3"
+	      stroke-linecap="butt" fill="none" stroke-linejoin="miter"/>
+	    
+	    <line stroke-linecap="square"
+	          x1="97.5" y1="0" x2="97.5" y2="100%" 
+	          stroke="#FF7F50" stroke-width="3" marker-end="url(#triangle)" />
+	</svg>
 
 </section>
 

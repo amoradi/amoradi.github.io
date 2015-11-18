@@ -1031,7 +1031,7 @@ keyboard-arrows span:not(.disabled):hover {
 
 /* timeline */
 .timeline svg {position: absolute; top: 12px;}
-.timeline {position: relative; width: 400px; margin: 0 auto; height: 400px;}
+.timeline {position: relative; margin: 0 auto; overflow: hidden;}
 .timeline div {
     padding: 0;
     padding-left: 120px;
