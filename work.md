@@ -47,7 +47,7 @@ title: work
 		<td>TaskMaster</td>
 		<td>Front-End Developer / Web Designer</td>
 		<td>JavaScript, Grunt, Require.js, Illustrator</td>
-		<td><a href="" target="_blank">TaskMaster</a></td>
+		<td><a href="http://amoradi.github.io/taskmaster/" target="_blank">TaskMaster</a></td>
 	</tr>
 	<tr>
 		<td>MapIt</td>
