@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: about
 ---
 <h3>Purpose</h3>
 
@@ -77,10 +77,10 @@ title: About
 	    Married my wife Alexa
 	    </div>
 	<div data-date="1/18/2014">
-	    My fist son was born, Gideon
+	    My fist son, Gideon, was born.
 	    </div>
 	<div data-date="11/16/2015">
-	    My second son was born, Justice
+	    My second son, Justice, was born.
 	    </div>
 
 

@@ -127,6 +127,7 @@ h6 {
 
 .page-post-title {
     margin-bottom: 1.2rem;
+    text-transform: capitalize;
 }
 
 .page-post-title ~ time {
@@ -416,10 +417,10 @@ p {
   font-size: 1.2rem;
   text-decoration: none;
 
-  -webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
+  -webkit-transition: all 250ms ease-in;
+  -moz-transition: all 250ms ease-in;
+  -o-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
 }
 
 .index-anchor {
@@ -593,6 +594,41 @@ th {
   font-size: 2.4rem;
 }
 
+.large-table {
+  vertical-align: top;
+  margin-top: 7.2rem;
+}
+
+.large-table tbody > tr:nth-child(even) {
+  
+}
+
+.large-table th {
+ background: transparent;
+ color: #222;
+ padding-bottom: 2.4rem;
+ font-style: italic;
+ font-size: 1.3rem;
+}
+
+.large-table tr td:first-child {
+  white-space: nowrap;
+}
+
+.large-table tr {
+  vertical-align: top;
+  
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+.page .large-table td {
+  font-size: 1.8rem;
+  padding: 2.4rem 1.2rem;
+}
+
 .entry {
   overflow: visible;
 }
@@ -761,10 +797,10 @@ pre {
 .index.active {
   height: 100%;
   background: rgba(0,0,0,.85);
-  -webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
+  -webkit-transition: all 250ms ease-in;
+  -moz-transition: all 250ms ease-in;
+  -o-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
   overflow-y: scroll;
 }
 
@@ -1306,6 +1342,32 @@ keyboard-arrows span:not(.disabled):hover {
 
   #content .grid .tile {
     min-height: 50rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .large-table,
+  .large-table > *,
+  .large-table > * > *,
+  .large-table > * > * > * {
+    display: block;
+  }
+  
+  .large-table th {
+    display: none;
+  }
+
+  .large-table tr {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .page .large-table tr td {
+    padding-top: 0;
+  }
+
+  .large-table tr td:first-child {
+    font-weight: bold;
+    padding-top: 1.2rem;
   }
 }
 
