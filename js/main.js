@@ -320,6 +320,27 @@ function docReady() {
 		    e.preventDefault(); // prevent the default action (scroll / move caret)
 		}
 	});
+
+	// fullscrn
+	fullScrn('.fullscreen', 'html');
+}
+
+function fullScrn(elem, fullscrnElem) {
+	
+	var fullscrnElem = $(fullscrnElem)[0];
+
+	$(elem).on('click', function() {
+		
+		if (fullscrnElem.requestFullscreen) {
+		  fullscrnElem.requestFullscreen();
+		} else if (fullscrnElem.msRequestFullscreen) {
+		  fullscrnElem.msRequestFullscreen();
+		} else if (fullscrnElem.mozRequestFullScreen) {
+		  fullscrnElem.mozRequestFullScreen();
+		} else if (fullscrnElem.webkitRequestFullscreen) {
+		  fullscrnElem.webkitRequestFullscreen();
+		}
+	});	
 }
 
 $(document).ready(function() {

@@ -1,4 +1,5 @@
 html {
+  background: rgb(185, 255, 237);
   min-height: 100%;
   overflow: hidden;
   overflow-y: scroll;
@@ -234,7 +235,11 @@ li:before {
 .read-more:after,
 .read-more:before,
 #content .grid .tile:after,
-#content .grid .tile:before  {
+#content .grid .tile:before,
+.post a:after,
+.post a:before,
+.page a:after,
+.page a:before  {
   content: "";
   display: block;
   height: .2rem;
@@ -247,11 +252,24 @@ li:before {
   transition: all 500ms ease-in;
 }
 
-.read-more:before {
+.read-more:before,
+.page a:before,
+.post a:before {
   background-color: #222;
   position: absolute;
   bottom: 0;
   width: 0;
+}
+
+.post a:after,
+.post a:before,
+.page a:after,
+.page a:before {
+  display: none;
+   -webkit-transition: all 400ms ease-in;
+  -moz-transition: all 400ms ease-in;
+  -o-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
 }
 
 #content .grid .tile:after,
@@ -300,7 +318,7 @@ p {
 #content a:hover {
   text-decoration: none;
   text-decoration: none;
-  color: coral; /*#43DAA4;*/
+  color: coral; 
   border-bottom: .2rem solid coral;
 
   -webkit-transition: all 200ms ease-in;
@@ -330,6 +348,14 @@ p {
   position: absolute;
   bottom: 2.4rem;
 
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+.page a:hover,
+.post a:hover {
   -webkit-transition: all 500ms ease-in;
   -moz-transition: all 500ms ease-in;
   -o-transition: all 500ms ease-in;
@@ -1320,12 +1346,31 @@ keyboard-arrows span:not(.disabled):hover {
 
   }
 
-  .grid .tile:hover .read-more:after {
+  .grid .tile:hover .read-more:after,
+  .page a:hover:after,
+  .post a:hover:after {
     width: 0;
   }
 
-  .grid .tile:hover .read-more:before {
+  .grid .tile:hover .read-more:before,
+  .page a:hover:before,
+  .post a:hover:before {
     width: 100%;
+  }
+
+  #content .page a,
+  #content .post a {
+    position: relative;
+    display: inline-block;
+    border: none;
+  }
+
+  .post a:after,
+  .post a:before,
+  .page a:after,
+  .page a:before {
+    display: block;
+    background-color: coral;
   }
 }
 
@@ -1352,7 +1397,7 @@ keyboard-arrows span:not(.disabled):hover {
   .large-table > * > * > * {
     display: block;
   }
-  
+
   .large-table th {
     display: none;
   }
