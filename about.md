@@ -6,7 +6,7 @@ title: about
 
 <p>So… I wanted to commit my thoughts to a persistent form. And herein lies my motivation for the site — it’s a space for me carry on splendidly and without reservation, to jot down all my ideas, passions, studies, and privy thoughts I deem worthy. It’s my very own treasure chest of knowledge, toy box of cerebral blocks, and diary of data. In it, I plan to outline, elaborate, elucidate, and accommodate, for the betterment of mankind and for my memory’s sake!</p>
 
-<p>Oh, and I also needed a place for <a href="/work.html">my portfolio</a> and <a href="http://amoradi.github.io/resume.pdf" target="_blank">r&eacute;sum&eacute;.</a></p>
+<p>Oh, and I also needed a place for <a href="/work.html">my portfolio</a> and <a href="/resume.html">r&eacute;sum&eacute;.</a></p>
 
 <h3>Me</h3>
 
@@ -17,7 +17,7 @@ title: about
 <p>I enjoy reading non-fiction, consuming info on the Internet, learning (new web technologies included), being a dad, and eating marvelously prepared food by my wife!</p>
 </div>
 
-<h3>A Brief Summary of My Life</h3>
+<!-- <h3>A Brief Summary of My Life</h3>
 <section class="timeline">
 	<div data-date="3/8/1985">
 	    Entered the world - Dallas, Texas
@@ -98,7 +98,7 @@ title: about
 	          stroke="#FF7F50" stroke-width="3" marker-end="url(#triangle)" />
 	</svg>
 
-</section>
+</section> -->
 
 <h3>Food for Thought</h3>
 
