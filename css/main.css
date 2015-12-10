@@ -1345,6 +1345,7 @@ keyboard-arrows span:not(.disabled):hover {
   .top-links {
     text-align: right;
     clear: both;
+    padding-top: 2rem;
   }
 
   .navigation.navOpen {
