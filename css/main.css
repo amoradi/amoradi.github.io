@@ -48,7 +48,7 @@ div {
 }
 
 .page.welcome {
-  min-height: none;
+  min-height: auto;
 }
 
 .page,
