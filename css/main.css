@@ -47,6 +47,10 @@ div {
   position: relative;
 }
 
+.page.welcome {
+  min-height: none;
+}
+
 .page,
 .post {
   border-left: 3.6rem solid rgb(185, 255, 237);
