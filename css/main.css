@@ -673,7 +673,7 @@ th {
 .large-table tr.detail td {
   padding-top: 0;
   white-space: normal;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 300;
 }
 
@@ -1544,7 +1544,7 @@ keyboard-arrows span:not(.disabled):hover {
   }
 
   .page .large-table tr td:first-child ~ td {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
 
