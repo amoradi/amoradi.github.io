@@ -1494,7 +1494,8 @@ keyboard-arrows span:not(.disabled):hover {
 @media (min-width: 768px) and (max-width: 992px) {
   .page,
   .post,
-  .index-content {
+  .index-content,
+  .page.welcome {
     padding: 3.6rem 8.4rem 5.4rem;
   }
   #content .shelf {
