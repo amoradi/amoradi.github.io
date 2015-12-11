@@ -1421,7 +1421,7 @@ keyboard-arrows span:not(.disabled):hover {
   
   .page.welcome {
     padding-top: 0;
-    min-height: auto;
+    min-height: 1000px;
   }
 }
 
