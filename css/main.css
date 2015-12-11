@@ -1418,6 +1418,10 @@ keyboard-arrows span:not(.disabled):hover {
   .index.active {
     padding-top: 5rem;
   }
+  
+  .page.welcome {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 420px) {
