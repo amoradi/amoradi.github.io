@@ -569,6 +569,10 @@ h1.welcome-title:first-letter {
   font-size: 7.2rem;
 }
 
+h1.welcome-title {
+  color: coral;
+}
+
 h2 {
  font-size: 3rem;
  line-height: 3rem;
