@@ -54,7 +54,8 @@ div {
   border: none;
   padding-top: 6.6rem;
   padding-bottom: 7.2rem;
-  border-top: coral 13px solid;
+  border: coral 13px solid;
+  border-bottom: none;
   text-align: center;
 }
 
@@ -567,10 +568,6 @@ h1 {
 
 h1.welcome-title:first-letter {
   font-size: 7.2rem;
-}
-
-h1.welcome-title {
-  color: coral;
 }
 
 h2 {
@@ -1402,7 +1399,8 @@ keyboard-arrows span:not(.disabled):hover {
 
   .page,
   .post,
-  .index-content {
+  .index-content,
+  .page.welcome {
     padding: .6rem 2.5rem 2rem;
     margin-bottom: 0;
     margin-top: 0;
@@ -1431,7 +1429,6 @@ keyboard-arrows span:not(.disabled):hover {
   }
   
   .page.welcome {
-    padding-top: 0;
     min-height: 0;
   }
 }
