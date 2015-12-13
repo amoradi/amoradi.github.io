@@ -570,6 +570,10 @@ h1.welcome-title:first-letter {
   font-size: 7.2rem;
 }
 
+.welcome-1p {
+  margin-bottom: 0;
+}
+
 h2 {
  font-size: 3rem;
  line-height: 3rem;
