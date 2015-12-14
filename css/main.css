@@ -571,7 +571,8 @@ h1.welcome-title:first-letter {
 }
 
 .welcome-1p {
-  margin-bottom: 0;
+  max-width: 650px;
+  margin: 0 auto 2.4rem;
 }
 
 h2 {
