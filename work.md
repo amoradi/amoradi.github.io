@@ -110,13 +110,13 @@ title: work
 		<td><a href="" target="_blank">Learn Geometry</a></td>
 	</tr> -->
 	<tr>
-		<td>Carousel</td>
-		<td>Web Developer</td>
+		<td>2012 Pantone Color of The Year Infographic</td>
+		<td>Designer</td>
 		<td><!-- JavaScript, Grunt --></td>
-		<td><a href="" target="_blank">Carousel</a></td>
+		<td><a href="http://www.infographicpost.com/wp-content/uploads/2012/05/Pantone-Color-Of-The-Year-Tangerine-Tango-2012.jpg" target="_blank">Infographic</a></td>
 	</tr>
 	<tr class="detail">
-		<td colspan="1">JavaScript, jQuery</td>
-		<td colspan="1">Self</td>
+		<td colspan="1">Adobe Illustrator</td>
+		<td colspan="1">Masterlink</td>
 	<tr>
 </table>
