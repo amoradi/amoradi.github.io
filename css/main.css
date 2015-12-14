@@ -54,7 +54,8 @@ div {
   border: none;
   padding-top: 6.6rem;
   padding-bottom: 7.2rem;
-  border: coral 2.4rem solid;
+  border: coral 3.6rem solid;
+  border-top-width: 2rem;
   border-bottom: none;
   text-align: center;
 }
