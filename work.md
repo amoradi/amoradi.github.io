@@ -119,4 +119,14 @@ title: work
 		<td colspan="1">Adobe Illustrator</td>
 		<td colspan="1">Masterlink</td>
 	<tr>
+	<tr>
+		<td>Portfolio Site v.3</td>
+		<td>Web Developer / Web Designer</td>
+		<td><!-- JavaScript, Grunt --></td>
+		<td><a href="http://amoradi.github.io/" target="_blank">amoradi.github.io</a></td>
+	</tr>
+	<tr class="detail">
+		<td colspan="1">Markdown, Liquid Templating, Bootstrap, Highlight.js, Web Components - Custom Element, jQuery</td>
+		<td colspan="1">Self</td>
+	<tr>
 </table>
