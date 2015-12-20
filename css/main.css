@@ -57,8 +57,7 @@ div {
   border: coral 3.6rem solid;
   border-top-width: 2rem;
   border-bottom: none;
-  text-align: center;
-  background: #F9EFE2;
+  text-align: left;
 }
 
 .page,
@@ -1245,26 +1244,38 @@ keyboard-arrows span:not(.disabled):hover {
   padding-top: 2rem;
 }
 
-@media (max-width: 1080px) {
-  .playground-img {
-    width: 500px;
-  }
-}
+ .welcome-img-container {
+  width: 50%;
+  text-align: center;
+  float: right;
+ }
+
+ .playground-img {
+  width: 80%;
+  max-width: 700px;
+ }
+
+ .page.welcome  .welcome-title:first-line {
+  font-size: 7.2rem;
+ }
 
 @media (max-width: 767px) {
   html {
     font-size: 8px;
   }
 
+  .page.welcome {
+    text-align: center;
+  }
+
+  .welcome-img-container {
+    display: none;
+  }
+
   #content {
     padding: 0;
     margin: 0;
     margin-top: 5rem;
-  }
-
-  .playground-img {
-    width: 80%;
-    margin-top: 5.6rem;
   }
 
   blockquote {
