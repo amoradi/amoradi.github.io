@@ -57,7 +57,7 @@ div {
   border: coral 3.6rem solid;
   border-top-width: 2rem;
   border-bottom: none;
-  text-align: left;
+  text-align: center;
 }
 
 .page,
@@ -568,7 +568,9 @@ h1 {
 }
 
 h1.welcome-title {
-  font-size: 7.2rem;
+  font-size: 6rem;
+  line-height: 6rem;
+  margin-bottom: 4.8rem;
 }
 
 .welcome-1p {
