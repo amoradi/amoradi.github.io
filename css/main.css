@@ -574,6 +574,7 @@ h1.welcome-title {
 
 .welcome-1p {
   margin: 0 auto 2.4rem;
+  max-width: 70rem;
 }
 
 .page.welcome div p, .page.welcome div a {
@@ -1250,10 +1251,7 @@ keyboard-arrows span:not(.disabled):hover {
 }
 
  .page.welcome > div {
-  width: 50%;
   text-align: center;
-  display: inline-block;
-  vertical-align: middle;
  }
 
  .playground-img {
