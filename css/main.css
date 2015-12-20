@@ -1639,6 +1639,10 @@ keyboard-arrows span:not(.disabled):hover {
     float: none;
     margin: 0 auto;
   }
+
+  #content .welcome-links a { 
+    border-bottom: .2rem solid
+  }
 }
 
 ::-moz-selection { 
