@@ -1244,6 +1244,12 @@ keyboard-arrows span:not(.disabled):hover {
   padding-top: 2rem;
 }
 
+@media (max-width: 1080px) {
+  .playground-img {
+    width: 500px;
+  }
+}
+
 @media (max-width: 767px) {
   html {
     font-size: 8px;
@@ -1253,6 +1259,11 @@ keyboard-arrows span:not(.disabled):hover {
     padding: 0;
     margin: 0;
     margin-top: 5rem;
+  }
+
+  .playground-img {
+    width: 80%;
+    margin-top: 5.6rem;
   }
 
   blockquote {
