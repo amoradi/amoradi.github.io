@@ -54,9 +54,8 @@ div {
   border: none;
   padding-top: 6.6rem;
   padding-bottom: 7.2rem;
-  /*border: coral 3.6rem solid;*/
+  border-bottom: #222 1.2rem solid;
   border-top-width: 2rem;
-  border-bottom: none;
   text-align: center;
 }
 
@@ -1250,15 +1249,16 @@ keyboard-arrows span:not(.disabled):hover {
   padding-top: 2rem;
 }
 
- .welcome-img-container {
+ .page.welcome > div {
   width: 50%;
   text-align: center;
-  float: right;
+  display: inline-block;
+  vertical-align: middle;
  }
 
  .playground-img {
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
  }
 
 
