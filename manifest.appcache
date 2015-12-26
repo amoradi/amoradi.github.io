@@ -29,7 +29,7 @@ https://fonts.googleapis.com/css?family=Jaldi:400,700|Raleway:400,500,700,600
 https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css
 
 #style sheet images
-"/images/index-arrow.png"
+/images/index-arrow.png
 
 #javascript files
 http://amoradi.github.io/js/vendor/webcomponents.js
