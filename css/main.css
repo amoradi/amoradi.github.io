@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Raleway";
+    src: url('fonts/raleway-regular-webfont.eot');
+    src: url('fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('fonts/raleway-regular-webfont.woff') format('woff'),
+         url('fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
   background: rgb(185, 255, 237);
   min-height: 100%;
@@ -152,7 +165,7 @@ h6 {
 .page-post-title ~ time {
     margin-bottom: 2.4rem;
     display: block;
-    font-family: raleway;
+    font-family: "Raleway";
 }
 
 .page time,
