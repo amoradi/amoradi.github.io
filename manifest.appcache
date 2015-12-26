@@ -23,17 +23,16 @@ http://amoradi.github.io/truth-tables/
 http://amoradi.github.io/work.html
 
 #style sheets
-http://amoradi.github.io/css/highlightjs/github.css
 http://amoradi.github.io/css/main.css
-https://fonts.googleapis.com/css?family=Jaldi:400,700|Raleway:400,500,700,600
-https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css
+http://amoradi.github.io/css/vendor/bootstrap.min.css
+http://amoradi.github.io/css/vendor/highlightjs/github.css
 
 #style sheet images
 /images/index-arrow.png
 
 #javascript files
 http://amoradi.github.io/js/vendor/webcomponents.js
-https://code.jquery.com/jquery-1.11.3.min.js
+http://amoradi.github.io/js/vendor/jquery-1.11.3.min.js
 http://amoradi.github.io/js/vendor/highlight.pack.js
 http://amoradi.github.io/js/main.js
 
