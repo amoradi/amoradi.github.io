@@ -1,0 +1,41 @@
+CACHE MANIFEST
+
+#version 1.0 12-26-2015
+
+CACHE:
+
+#images
+http://amoradi.github.io/images/fullscreen-diamond.png
+http://amoradi.github.io/images/iconmonstr-email-3-icon-256.png
+http://amoradi.github.io/images/iconmonstr-github-icon-256.png
+http://amoradi.github.io/images/iconmonstr-linkedin-icon-256.png
+http://amoradi.github.io/images/playground-dark.jpg
+
+#internal HTML documents
+http://amoradi.github.io/
+http://amoradi.github.io/arguments-what-are-they/
+http://amoradi.github.io/first-post/
+http://amoradi.github.io/injection-surjection-and-bijection/
+http://amoradi.github.io/python-dictionaries/
+http://amoradi.github.io/resume.html
+http://amoradi.github.io/shelf.html
+http://amoradi.github.io/truth-tables/
+http://amoradi.github.io/work.html
+
+#style sheets
+http://amoradi.github.io/css/highlightjs/github.css
+http://amoradi.github.io/css/main.css
+https://fonts.googleapis.com/css?family=Jaldi:400,700|Raleway:400,500,700,600
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css
+
+#style sheet images
+"/images/index-arrow.png"
+
+#javascript files
+http://amoradi.github.io/js/vendor/webcomponents.js
+https://code.jquery.com/jquery-1.11.3.min.js
+http://amoradi.github.io/js/vendor/highlight.pack.js
+http://amoradi.github.io/js/main.js
+
+NETWORK:
+*
