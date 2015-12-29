@@ -458,7 +458,8 @@ p {
   box-shadow: -.6rem -.2rem .5rem .7rem rgba(0,0,0,0.49);
 }
 
-.navigation a {
+.navigation a, 
+.navigation .index-anchor-nav {
   font-size: 1.2rem;
   text-decoration: none;
   display: block;
@@ -1651,6 +1652,22 @@ keyboard-arrows span:not(.disabled):hover {
 
   .index-anchor {
     display: none;
+  }
+
+  .active .index-anchor {
+    display: block;
+  }
+
+  .index-anchor-nav {
+    color: #fff;
+    margin-top: 360px;
+    display: block;
+    font-size: 12px;
+    cursor: pointer;
+    padding: .9rem 0;
+    border-bottom: .1rem solid #111;
+    border-top: .1rem solid #111;
+    line-height: 2.8rem;
   }
 }
 
