@@ -292,7 +292,9 @@ function docReady() {
 		});
 	}
 
-	stickyHeader('.welcome-links');
+	var homePage = ($('.welcome-links').length > 0);
+
+	if (homePage) stickyHeader('.welcome-links');
 	
 	$(window).resize(function(e) {
 		if ($('#content > article:first').hasClass('grid')) {
@@ -305,12 +307,15 @@ function docReady() {
 
 	$('.navigation .ladder').on('click', toggleNav);
 	$('.index-anchor').on('click', toggleIndexView);
+	$('.index-anchor-nav').on('click', toggleIndexView);
 	$('.fullscreen').on('click', toggleFullscreen);
 	$('.shelf .tile').on('click', function(e) {
 		toggleBookPreview(e);
 	});
 
-	stickyHeader('.welcome-links');
+	var homePage = ($('.welcome-links').length > 0);
+
+	if (homePage) stickyHeader('.welcome-links');
 
 	// index arrows
 	$('.next-arrow').on('click', function() {
