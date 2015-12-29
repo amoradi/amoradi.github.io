@@ -1597,11 +1597,11 @@ keyboard-arrows span:not(.disabled):hover {
 
   /* sticky header homepage */
   .sticky-header .welcome-img-container,
-  .stick-header .welcome-1p {
+  .sticky-header .welcome-1p {
     display: none;
   }
 
-  .sticky-header .grid {
+  .sticky-header #content .grid {
     padding-top: 6rem;
   }
 
@@ -1640,7 +1640,7 @@ keyboard-arrows span:not(.disabled):hover {
     padding: 1rem 2.4rem;
   }
 
-  .sticky-header .welcome-links a {
+  .sticky-header #content .welcome-links a {
     font-size: 1.6rem;
     line-height: 1.6rem;
   }
