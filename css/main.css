@@ -474,7 +474,8 @@ p {
   transition: all 200ms ease-in;
 }
 
-.navigation a:hover {
+.navigation a:hover,
+.navigation .index-anchor-nav:hover {
   background: none;
   color: coral;
 }
@@ -1669,6 +1670,10 @@ keyboard-arrows span:not(.disabled):hover {
     border-top: .1rem solid #111;
     line-height: 2.8rem;
   }
+
+  .page .index-anchor-nav {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1769,6 +1774,10 @@ keyboard-arrows span:not(.disabled):hover {
 @media (max-width: 767px) {
   #content .grid .tile:after,
   #content .grid .tile:before {
+    display: none;
+  }
+
+  .index-anchor-nav {
     display: none;
   }
   
