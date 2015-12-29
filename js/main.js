@@ -280,7 +280,7 @@ function docReady() {
   		var nH = $('.navigation').outerHeight() / 2;
   		var lH = $('.top-links').outerHeight();
 
-  		$('.index-anchor-nav').css('margin-top', (nh - lh) + 'px');
+  		$('.index-anchor-nav').css('margin-top', (nH - lH) + 'px');
   	}
 
   	calcIndexPos();
