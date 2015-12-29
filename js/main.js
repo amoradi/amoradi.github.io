@@ -285,7 +285,7 @@ function docReady() {
 		    var scroll_pos_test = element_position;
 
 		    if (y_scroll_pos > scroll_pos_test) {
-		        $(body).addClass('sticky-header');
+		        $('body').addClass('sticky-header');
 		    }
 		});
 	}
