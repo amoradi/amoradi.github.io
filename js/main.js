@@ -275,6 +275,22 @@ function docReady() {
 
   	// fade page elems
   	fadeInPageElements();
+
+
+  	function stickyHeader(elem) {
+	  	var element_position = $(elem).offset().top;
+
+		$(window).on('scroll', function() {
+		    var y_scroll_pos = window.pageYOffset;
+		    var scroll_pos_test = element_position;
+
+		    if (y_scroll_pos > scroll_pos_test) {
+		        $(body).addClass('sticky-header');
+		    }
+		});
+	}
+
+	stickyHeader('.welcome-links');
 	
 	$(window).resize(function(e) {
 		if ($('#content > article:first').hasClass('grid')) {
@@ -291,6 +307,8 @@ function docReady() {
 	$('.shelf .tile').on('click', function(e) {
 		toggleBookPreview(e);
 	});
+
+	stickyHeader('.welcome-links');
 
 	// index arrows
 	$('.next-arrow').on('click', function() {
