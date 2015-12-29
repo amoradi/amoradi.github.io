@@ -1,12 +1,12 @@
 ---
-title: The Law of Large Numbers, AKA Bernoulli's Theorem, & The Gambler's Fallacy
+title: The Law of Large Numbers & The Gambler's Fallacy
 author: Aaron Moradi
 layout: post
 permalink: /bernoullis-theorem-gamblers-fallacy/
 categories: probability, statistics
-excerpt: <p>This law states that in repeated independent experiments (e.g., flipping a fair coin 100 times and counting the fraction of heads) with the same expected value...</p>
+excerpt: <p>This law states that in repeated independent experiments (e.g., flipping a fair coin 100 times and counting the fraction of heads)...</p>
 ---
-This law states that in repeated independent experiments (e.g., flipping a fair coin 100 times and counting the fraction of heads) with the same expected value (0.5 in this case), **the average value of the experiments approaches the expected value as the number of experiments goes to inifinity.**
+The Law of Large Numbers, AKA Bernoulli's Theorem, states that in repeated independent experiments (e.g., flipping a fair coin 100 times and counting the fraction of heads) with the same expected value (0.5 in this case), **the average value of the experiments approaches the expected value as the number of experiments goes to inifinity.**
 
 It is worth noting that the law of large numbers does not imply, as too many seem to think, that if deviations from expected behavior occur, these deviations are likely to be evened out by opposite deviations in the future. This misapplication of the law of large numbers is known as the **gambler's fallacy**.
 
