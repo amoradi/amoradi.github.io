@@ -1776,6 +1776,10 @@ keyboard-arrows span:not(.disabled):hover {
     display: none;
   }
 
+  #content > * > * {
+    opacity: 1;
+  }
+
   .index-anchor-nav {
     display: none;
   }

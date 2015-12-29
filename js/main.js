@@ -280,7 +280,7 @@ function docReady() {
   		var nH = $('.navigation').outerHeight() / 2;
   		var lH = $('.top-links').outerHeight();
 
-  		$('.index-anchor-nav').css('margin-top', (nH - lH) + 'px');
+  		$('.index-anchor-nav').css('margin-top', (nH - lH)-20 + 'px');
   	}
 
   	calcIndexPos();
@@ -312,7 +312,7 @@ function docReady() {
 
 		fadeInPageElements();
 		calcIndexPos();
-		
+
 		if (homePage) stickyHeader('.welcome-links');
 	});
 
