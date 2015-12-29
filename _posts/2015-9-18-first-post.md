@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Data Visualization - Keynote by Dr. Edward Tufte
+permalink: /tufte-data-visualization-lecture/
 excerpt:
 ---
 

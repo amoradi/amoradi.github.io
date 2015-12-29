@@ -10,7 +10,7 @@ The Law of Large Numbers, AKA Bernoulli's Theorem, states that in repeated indep
 
 It is worth noting that the law of large numbers does not imply, as too many seem to think, that if deviations from expected behavior occur, these deviations are likely to be evened out by opposite deviations in the future. This misapplication of the law of large numbers is known as the **gambler's fallacy**.
 
-> On August 18, 1913 at the casino in Monte Carlo, black came up a record twenty-six times in succession [in roulette]. ... [There] was a near-panicky rush to bet on red, begining about the time black had come up a phenomenal fifteen times. In application of the maturity [of the chances] doctrine, players doubled and tripled their stakes, this doctrine leading them to believe after black came up the twentieth time that there was not a chance in a million of another repeat. In the end the unusual run enriched the Casino by some millions of francs.
+> On August 18, 1913 at the casino in Monte Carlo, black came up a record twenty-six times in succession [in roulette]. ... [There] was a near-panicky rush to bet on red, beginning about the time black had come up a phenomenal fifteen times. In application of the maturity [of the chances] doctrine, players doubled and tripled their stakes, this doctrine leading them to believe after black came up the twentieth time that there was not a chance in a million of another repeat. In the end the unusual run enriched the Casino by some millions of francs.
 
 
 <div class="footnote" id="footnotes">
@@ -23,7 +23,7 @@ It is worth noting that the law of large numbers does not imply, as too many see
       <a target="_blank" href="https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-0">Introduction to Computation and Programming Using Python, pp. 156-157</a>
     </li>
     <li>
-      <span>Huff and Geis, How To Take a Chance, pp. 28-29</span>
+      <a href="http://www.amazon.com/How-Take-Chance-Darrell-Huff/dp/0393002632" target="_blank">Huff and Geis, How To Take a Chance, pp. 28-29</a>
     </li>
   </ul>
 </div>
