@@ -25,7 +25,7 @@ http://amoradi.github.io/tufte-data-visualization-lecture/
 http://amoradi.github.io/work.html
 
 #style sheets
-http://amoradi.github.io/css/main.css?breakcache
+http://amoradi.github.io/css/main.css
 http://amoradi.github.io/css/vendor/bootstrap.min.css
 http://amoradi.github.io/css/vendor/highlightjs/github.css
 
@@ -36,7 +36,7 @@ http://amoradi.github.io/css/vendor/highlightjs/github.css
 http://amoradi.github.io/js/vendor/webcomponents.js
 http://amoradi.github.io/js/vendor/jquery-1.11.3.min.js
 http://amoradi.github.io/js/vendor/highlight.pack.js
-http://amoradi.github.io/js/main.js?breakcache
+http://amoradi.github.io/js/main.js
 
 NETWORK:
 *
