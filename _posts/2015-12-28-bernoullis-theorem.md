@@ -23,7 +23,7 @@ It is worth noting that the law of large numbers does not imply, as too many see
       <a target="_blank" href="https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-0">Introduction to Computation and Programming Using Python, pp. 156-157</a>
     </li>
     <li>
-      <span>Huff and Geis, How to Take Chances, pp. 28-29</span>
+      <span>Huff and Geis, How To Take a Chance, pp. 28-29</span>
     </li>
   </ul>
 </div>
