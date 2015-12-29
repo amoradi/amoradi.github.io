@@ -286,7 +286,7 @@ function docReady() {
 
 		    if (y_scroll_pos > scroll_pos_test) {
 		        $('body').addClass('sticky-header');
-		    } else if (y_scroll_pos === 0) {
+		    } else if (y_scroll_pos === 0 && $('body').hasClass('sticky-header')) {
 		    	$('body').removeClass('sticky-header');
 		    }
 		});
