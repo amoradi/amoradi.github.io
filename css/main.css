@@ -1594,6 +1594,56 @@ keyboard-arrows span:not(.disabled):hover {
     display: block;
     background-color: coral;
   }
+
+  /* sticky header homepage */
+  .sticky-header .welcome-img-container,
+  .stick-header .welcome-1p {
+    display: none;
+  }
+
+  .sticky-header .grid {
+    padding-top: 6rem;
+  }
+
+  .sticky-header .page.welcome > div {
+    text-align: right;
+  }
+
+  .sticky-header .page.welcome {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: 6rem;
+  }
+
+  .sticky-header .grid {
+    padding-top: 6rem;
+  }
+
+  .sticky-header .welcome-title {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    float: left;
+    font-size: 1.7rem;
+    margin-left: 10.4rem;
+  }
+
+  .sticky-header .welcome-title span {
+    display: inline;
+  }
+
+  .sticky-header .welcome-links {
+    padding: 1rem 2.4rem;
+  }
+
+  .sticky-header .welcome-links a {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
