@@ -276,6 +276,14 @@ function docReady() {
   	// fade page elems
   	fadeInPageElements();
 
+  	function calcIndexPos() {
+  		var nH = $('.navigation').outerHeight() / 2;
+  		var lH = $('.top-links').outerHeight();
+
+  		$('.index-anchor-nav').css('margin-top', (nh - lh) + 'px');
+  	}
+
+  	calcIndexPos();
 
   	function stickyHeader(elem) {
 	  	var element_position = $(elem).offset().top;
@@ -316,6 +324,8 @@ function docReady() {
 	var homePage = ($('.welcome-links').length > 0);
 
 	if (homePage) stickyHeader('.welcome-links');
+
+	calcIndexPos();
 
 	// index arrows
 	$('.next-arrow').on('click', function() {
