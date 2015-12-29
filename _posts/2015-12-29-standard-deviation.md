@@ -4,7 +4,7 @@ author: Aaron Moradi
 layout: post
 permalink: /standard-deviation-explained/
 categories: probability, statistics
-excerpt: <p>How many samples do we need to look at before we can have justified confidence in our answer? This depends on the **variance**</p>
+excerpt: <p>How many samples do we need to look at before we can have justified confidence in our answer?</p>
 ---
 How many samples do we need to look at before we can have justified confidence in our answer? This depends on the **variance** in the underlying distribution. Roughly speaking, variance is a measure of how much spread there is in the possible different outcomes.
 
