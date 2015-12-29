@@ -246,12 +246,12 @@ li {
   line-height: 2.4rem;
   padding-left: 2rem;
   text-indent: -2rem;
+  margin-bottom: 1rem;
 }
 
 .footnote li {
   padding-left: 0;
   text-indent: 0;
-  margin-bottom: 1.2rem;
 }
 
 li a {
