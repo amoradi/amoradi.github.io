@@ -311,6 +311,9 @@ function docReady() {
 		}
 
 		fadeInPageElements();
+		calcIndexPos();
+		
+		if (homePage) stickyHeader('.welcome-links');
 	});
 
 	$('.navigation .ladder').on('click', toggleNav);
@@ -320,12 +323,6 @@ function docReady() {
 	$('.shelf .tile').on('click', function(e) {
 		toggleBookPreview(e);
 	});
-
-	var homePage = ($('.welcome-links').length > 0);
-
-	if (homePage) stickyHeader('.welcome-links');
-
-	calcIndexPos();
 
 	// index arrows
 	$('.next-arrow').on('click', function() {
