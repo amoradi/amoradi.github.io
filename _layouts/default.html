@@ -6,7 +6,7 @@
     {% include base-css-js.html %}
   </head>
 
-  <body class="{{ page.layout }}">
+  <body {% if page.type %} class="{{ page.type }}" {% endif %}>
     <div>
       <nav class="navigation hidden-fullscrn">   
         <div>
