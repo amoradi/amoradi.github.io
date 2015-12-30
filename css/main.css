@@ -1670,7 +1670,7 @@ keyboard-arrows span:not(.disabled):hover {
     line-height: 2.8rem;
   }
 
-  .page .index-anchor-nav {
+  .page-layout .index-anchor-nav {
     display: none;
   }
 }
