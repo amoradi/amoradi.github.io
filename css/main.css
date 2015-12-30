@@ -1542,6 +1542,7 @@ keyboard-arrows span:not(.disabled):hover {
 @media (min-width: 768px) {
   .navigation {
     min-height: 50rem;
+    letter-spacing: 1.5px;
   }
 
   figure[is=book-preview] h2 {
