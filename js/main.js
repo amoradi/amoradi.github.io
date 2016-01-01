@@ -291,10 +291,11 @@ function docReady() {
 		$(window).on('scroll', function() {
 		    var y_scroll_pos = window.pageYOffset;
 		    var scroll_pos_test = element_position;
+		    var isSticky = $('body').hasClass('sticky-header');
 
-		    if ((scroll_pos_test - y_scroll_pos) <= 235) {
+		    if (!isSticky && (scroll_pos_test - y_scroll_pos) <= 235) {
 		        $('body').addClass('sticky-header');
-		    } else if (y_scroll_pos === 0 && $('body').hasClass('sticky-header')) {
+		    } else if (y_scroll_pos === 0 && isSticky) {
 		    	$('body').removeClass('sticky-header');
 		    }
 		});
