@@ -292,7 +292,7 @@ function docReady() {
 		    var y_scroll_pos = window.pageYOffset;
 		    var scroll_pos_test = element_position;
 
-		    if (y_scroll_pos > scroll_pos_test) {
+		    if ((scroll_pos_test - y_scroll_pos) <= 235) {
 		        $('body').addClass('sticky-header');
 		    } else if (y_scroll_pos === 0 && $('body').hasClass('sticky-header')) {
 		    	$('body').removeClass('sticky-header');
