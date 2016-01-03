@@ -1,11 +1,12 @@
 CACHE MANIFEST
 
-#version 1.0 12-30-2015
+#version 1.0 1-3-2016
 
 CACHE:
 
 #images
 http://amoradi.github.io/images/fullscreen-diamond.png
+http://amoradi.github.io/images/iconmonstr-behance-icon-256.png
 http://amoradi.github.io/images/iconmonstr-email-3-icon-256.png
 http://amoradi.github.io/images/iconmonstr-github-icon-256.png
 http://amoradi.github.io/images/iconmonstr-linkedin-icon-256.png
@@ -14,6 +15,7 @@ http://amoradi.github.io/images/playground-dark.jpg
 #internal HTML documents
 http://amoradi.github.io/
 http://amoradi.github.io/arguments-what-are-they/
+http://amoradi.github.io/arithmetic-geometric-means-explained/
 http://amoradi.github.io/bernoullis-theorem-gamblers-fallacy/
 http://amoradi.github.io/injection-surjection-and-bijection/
 http://amoradi.github.io/python-dictionaries/
@@ -25,7 +27,7 @@ http://amoradi.github.io/tufte-data-visualization-lecture/
 http://amoradi.github.io/work.html
 
 #style sheets
-http://amoradi.github.io/css/main.css?asd
+http://amoradi.github.io/css/main.css
 http://amoradi.github.io/css/vendor/bootstrap.min.css
 http://amoradi.github.io/css/vendor/highlightjs/github.css
 
@@ -36,7 +38,7 @@ http://amoradi.github.io/css/vendor/highlightjs/github.css
 http://amoradi.github.io/js/vendor/webcomponents.js
 http://amoradi.github.io/js/vendor/jquery-1.11.3.min.js
 http://amoradi.github.io/js/vendor/highlight.pack.js
-http://amoradi.github.io/js/main.js?breakcache
+http://amoradi.github.io/js/main.js
 
 NETWORK:
 *
