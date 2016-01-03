@@ -8,7 +8,7 @@ excerpt: <p>How many samples do we need to look at before we can have justified 
 ---
 How many samples do we need to look at before we can have justified confidence in our answer? This depends on the **variance** in the underlying distribution. Roughly speaking, variance is a measure of how much spread there is in the possible different outcomes.
 
-We can formalize this notion relatively simple byt using the concept of **standard deviation**. Informally, the standard deviation tells us what fraction of the values are close to the mean. If many values are relatively close to the mean, the standard deviation is relatively small. If many values are relatively far from the mean, the standard deviation is relatively large. If all values are the same, the standard deviation is zero.
+We can formalize this notion relatively simply by using the concept of **standard deviation**. Informally, the standard deviation tells us what fraction of the values are close to the mean. If many values are relatively close to the mean, the standard deviation is relatively small. If many values are relatively far from the mean, the standard deviation is relatively large. If all values are the same, the standard deviation is zero.
 
 ```python
     def stdDev(X):

@@ -287,18 +287,22 @@ function docReady() {
 
   	function stickyHeader(elem) {
 	  	var element_position = $(elem).offset().top;
+	  		
 
 		$(window).on('scroll', function() {
+			var windowWidth = $(window).outerWidth();
 		    var y_scroll_pos = window.pageYOffset;
 		    var scroll_pos_test = element_position;
 		    var isSticky = $('body').hasClass('sticky-header');
-	
-	    	if (!isSticky && (scroll_pos_test - y_scroll_pos) <= 235) {
-		        $('body').addClass('sticky-header');
-		        $(window).scrollTop(1);
-	    	} else if (y_scroll_pos === 0 && isSticky) {
-	    		$('body').removeClass('sticky-header');
-	    	}
+		
+			if (windowWidth > 620) {
+		    	if (!isSticky && (scroll_pos_test - y_scroll_pos) <= 235) {
+			        $('body').addClass('sticky-header');
+			        $(window).scrollTop(1);
+		    	} else if (y_scroll_pos === 0 && isSticky) {
+		    		$('body').removeClass('sticky-header');
+		    	}
+		    }
 		});
 	}
 
