@@ -619,6 +619,9 @@ p {
 
 .copyright a {
     width: auto;
+    display: inline;
+    color: coral;
+    border-bottom: 0;
     position: relative;
     padding: 0;
 }
