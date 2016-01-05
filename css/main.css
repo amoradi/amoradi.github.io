@@ -1617,6 +1617,10 @@ keyboard-arrows span:not(.disabled):hover {
     display: block;
     background-color: coral;
   }
+  
+  sup a:after, sup a:before {
+      display: none !important;
+  }
 
   /* sticky header homepage */
   .sticky-header .welcome-img-container,
