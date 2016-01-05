@@ -605,7 +605,8 @@ p {
     100% {transform: rotate(360deg);}
 }
 
-.copyright {
+.copyright,
+.copyright a {
   color: #ccc;
   font-size: 1rem;
   position: fixed;
@@ -614,6 +615,12 @@ p {
   padding: .7rem 1rem;
   width: 20rem;
   text-align: right;
+}
+
+.copyright a {
+    width: auto;
+    position: relative;
+    padding: 0;
 }
 
 .copyright span {
