@@ -34,7 +34,7 @@ http://amoradi.github.io/css/vendor/highlightjs/github.css
 #style sheet images
 /images/index-arrow.png
 
-#javascript files
+# javascript files
 http://amoradi.github.io/js/vendor/webcomponents.js
 http://amoradi.github.io/js/vendor/jquery-1.11.3.min.js
 http://amoradi.github.io/js/vendor/highlight.pack.js
