@@ -613,7 +613,11 @@ p {
   bottom: 0;
   right: 0;
   padding: .7rem 1rem;
+<<<<<<< Updated upstream
   width: 22rem;
+=======
+  width: 35rem;
+>>>>>>> Stashed changes
   text-align: right;
   line-height: 1;
 }
