@@ -42,6 +42,17 @@ title: work
 		<td colspan="1">Custom Wordpress Theme, HTML5 Boilerplate, CSS3 Animations, Photoshop, Responsive Web Design</td>
 		<td colspan="1">Visual App</td>
 	<tr>
+
+	<tr>
+		<td>Keller Graduate School of Management</td>
+		<td>Front-End Developer</td>
+		<td></td>
+		<td><a href="http://www.keller.edu/" target="_blank">keller.edu</a>
+	</tr>
+	<tr class="detail">
+		<td colspan="1">Adobe AEM, JavaScript, jQuery, Responsive Web Design, Git, GitHub</td>
+		<td colspan="1">MRM//McCANN</td>
+	<tr>
 	
 	<tr>
 		<td>Frisbee Auto</td>
@@ -117,16 +128,5 @@ title: work
 	<tr class="detail">
 		<td colspan="1">Markdown, Liquid Templating, Bootstrap, Highlight.js, Web Components - Custom Element, jQuery</td>
 		<td colspan="1">Self</td>
-	<tr>
-
-	<tr>
-		<td>Keller Graduate School of Management</td>
-		<td>Front-End Developer</td>
-		<td></td>
-		<td><a href="http://www.keller.edu/" target="_blank">keller.edu</a>
-	</tr>
-	<tr class="detail">
-		<td colspan="1">Adobe AEM, JavaScript, jQuery, Responsive Web Design, Git, GitHub</td>
-		<td colspan="1">MRM//McCANN</td>
 	<tr>
 </table>
