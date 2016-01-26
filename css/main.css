@@ -1641,6 +1641,7 @@ keyboard-arrows span:not(.disabled):hover {
   }
 
   .sticky-header .page.welcome {
+    background: transparent;
     padding: 0;
     position: fixed;
     top: 0;
