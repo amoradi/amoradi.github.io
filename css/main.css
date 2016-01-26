@@ -1338,7 +1338,7 @@ keyboard-arrows span:not(.disabled):hover {
   max-width: 500px;
  }
 
-.welcome-img-container {
+.page.welcome > .welcome-img-container {
     position: absolute;
     z-index: 0;
     left: 50%;
