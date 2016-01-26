@@ -1330,6 +1330,7 @@ keyboard-arrows span:not(.disabled):hover {
 
  .page.welcome > div {
   text-align: center;
+  position: relative;
  }
 
  .playground-img {
@@ -1337,6 +1338,12 @@ keyboard-arrows span:not(.disabled):hover {
   max-width: 500px;
  }
 
+.welcome-img-container {
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    opacity: .5;
+}
 
 @media (max-width: 767px) {
   html {
@@ -1625,7 +1632,7 @@ keyboard-arrows span:not(.disabled):hover {
   sup a:after, sup a:before {
       display: none !important;
   }
-
+ 
   /* sticky header homepage */
   .sticky-header .welcome-img-container,
   .sticky-header .welcome-1p {
