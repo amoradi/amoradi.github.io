@@ -1299,6 +1299,10 @@ keyboard-arrows span:not(.disabled):hover {
   margin-bottom: 9.6rem;
 }
 
+#content .resume-titles {
+    line-height: 2rem;    
+}
+
 #content .resume-details table {
   width: 50%;
 }
