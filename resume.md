@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Aaron Moradi <span>[web developer, web designer]</span>
+title: Aaron Moradi <span>[front end web developer, user interface designer]</span>
 ---
 <div class="resume-details">
 <!-- <p>1475 Woodhaven Ct. Apt. #6<br />
@@ -26,8 +26,10 @@ Birmingham, MI &mdash; Jan. 2015 - Present
 - Develop web components in Adobe AEM
 - Take lead role in website production offering client-side expertise from the outset.
 - Monitor live content.
-- Actively share knowledge with fellow coders, encourage best practice in the department, and support/encourage other developers.
-- Worked with brands such as Abbott, Chevrolet, Keller Graduate School, and DeVry University.
+- Actively share knowledge with fellow coders, encourage best practices in the department, and support/encourage other developers.
+- Worked with brands such as Abbott, Chevrolet, Keller Graduate School, and Mohegan Sun.
+- Implement click tracking analytics
+- Maintain code modularity with TerrificJS
 
 #### Front-End Web Developer / Web Designer at Visual Application, Inc. 
 Richardson, TX — Sept. 2012 - Jan. 2015
