@@ -1300,7 +1300,8 @@ keyboard-arrows span:not(.disabled):hover {
 }
 
 #content .resume-titles {
-    line-height: 2rem;    
+    line-height: 2rem; 
+    padding-top: 2rem;
 }
 
 #content .resume-details table {
