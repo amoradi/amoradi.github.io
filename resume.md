@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Aaron Moradi <span class="resume-titles"><br />front end web developer<br />user interface designer</span>
+title: Aaron Moradi <span class='resume-titles'><br />front end web developer<br />user interface designer</span>
 ---
 <div class="resume-details">
 <!-- <p>1475 Woodhaven Ct. Apt. #6<br />
