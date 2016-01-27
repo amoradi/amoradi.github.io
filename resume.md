@@ -24,10 +24,10 @@ Waterford, MI 48327</p> -->
 Birmingham, MI &mdash; Jan. 2015 - Present
 
 - Develop web components in Adobe AEM
-- Take lead role in website production offering client-side expertise from the outset.
-- Monitor live content.
-- Actively share knowledge with fellow coders, encourage best practices in the department, and support/encourage other developers.
-- Worked with brands such as Abbott, Chevrolet, Keller Graduate School, and Mohegan Sun.
+- Take lead role in website production offering client-side expertise from the outset
+- Monitor live content
+- Actively share knowledge with fellow coders, encourage best practices in the department, and support/encourage other developers
+- Worked with brands such as Abbott, Chevrolet, Keller Graduate School, and Mohegan Sun
 - Implement click tracking analytics
 - Maintain code modularity with TerrificJS
 
