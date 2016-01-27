@@ -31,10 +31,10 @@ http://amoradi.github.io/css/main.css?1234
 http://amoradi.github.io/css/vendor/bootstrap.min.css
 http://amoradi.github.io/css/vendor/highlightjs/github.css
 
-# style sheet images
+#style sheet images
 /images/index-arrow.png
 
-# javascript files
+#javascript files
 http://amoradi.github.io/js/vendor/webcomponents.js
 http://amoradi.github.io/js/vendor/jquery-1.11.3.min.js
 http://amoradi.github.io/js/vendor/highlight.pack.js
