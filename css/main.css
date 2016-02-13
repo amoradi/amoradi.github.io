@@ -466,8 +466,7 @@ p {
   line-height: 2.8rem;
   color: #fff;
   padding: .4rem 0;
-  border-bottom: .1rem solid #111;
-
+  
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
@@ -508,7 +507,7 @@ p {
 }
 
 .top-links a:first-child {
-  border-top: .1rem solid #111;
+  
 }
 
 .index {
@@ -1709,8 +1708,7 @@ keyboard-arrows span:not(.disabled):hover {
     font-size: 12px;
     cursor: pointer;
     padding: .9rem 0;
-    border-bottom: .1rem solid #111;
-    border-top: .1rem solid #111;
+    
     line-height: 2.8rem;
   }
 
