@@ -10,19 +10,39 @@
 <link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
   <style>
 
-html {font-family: 'Petit Formal Script', cursive;background: #fff url(img.jpg) no-repeat center center fixed; 
+html {font-family: 'Petit Formal Script', cursive; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   image-orientation: 0deg;
+  position: relative;
+  overflow: hidden;
   
 background-size: cover;color: #fff;text-align:center;}
 h1 {font-size: 48px;}
 p {font-size: 21px; ; line-height: 31px; }
 span {color: pink;}
 
-
+html:before {
+content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: #fff url(img.jpg) no-repeat 0 0;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
   </style>
   </head>
 <body>
