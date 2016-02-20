@@ -1668,7 +1668,6 @@ keyboard-arrows span:not(.disabled):hover {
   }
 
   .sticky-header .welcome-title {
-    color: coral;
     padding: 0;
     margin: 0;
     text-align: left;
