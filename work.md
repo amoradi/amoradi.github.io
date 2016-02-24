@@ -137,7 +137,7 @@ title: work
 		<td><a href="http://amoradi.github.io/" target="_blank">amoradi.github.io</a></td>
 	</tr>
 	<tr class="detail">
-		<td colspan="1">Markdown, Liquid Templating, Bootstrap, Highlight.js, Web Components - Custom Element, jQuery</td>
+		<td colspan="1">Markdown, Liquid Templating, Bootstrap, Highlight.js, Web Components - Custom Element, HTML5 Application Cache, jQuery</td>
 		<td colspan="1">Self</td>
 	<tr>
 	
