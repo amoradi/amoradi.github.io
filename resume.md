@@ -95,5 +95,5 @@ Plano, TX — May. 2010 - Oct. 2011
 - Udacity — Full Stack Foundations, Feb. 2016
 - Udacity — Intro to Relational Databases, Jan. 2016
 - Udacity — Programming Foundations with Python, Nov. 2015
-- MITx — 6.00.1x: Introduction to Computer Science and Programming Using Python, 96%, 6/11 - 8/12/2014 
-- Coursera, University of New Mexico — Web Application Architectures, 8/11 - 9/22/2014
+- MITx — 6.00.1x: Introduction to Computer Science and Programming Using Python, 96%, Aug. 2014 
+- Coursera, University of New Mexico — Web Application Architectures, Sept. 2014
