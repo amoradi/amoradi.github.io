@@ -26,7 +26,6 @@ Birmingham, MI &mdash; Jan. 2015 - Present
 
 - Develop web components in Adobe AEM
 - Take lead role in website production offering client-side expertise from the outset
-- Monitor live content
 - Actively share knowledge with fellow coders, encourage best practices in the department, and support/encourage other developers
 - Worked with brands such as Abbott, Chevrolet, Keller Graduate School, and Mohegan Sun
 - Implement click tracking analytics
@@ -36,11 +35,11 @@ Birmingham, MI &mdash; Jan. 2015 - Present
 Richardson, TX — Sept. 2012 - Jan. 2015
 
 - In charge of entire website production life-cycles
-- Designing in Photoshop and Illustrator 
-- Slicing into responsive HTML5/CSS3 
-- Translating HTML/CSS into custom Wordpress theme or Dreamweaver template(s) 
-- Page design and buildout 
-- Homepage design 
+- Designed interfaces in Photoshop and Illustrator 
+- Sliced comps into responsive, cross-browser compatible, gracefully degrading HTML5/CSS3/JS 
+- Translated HTML/CSS into custom Wordpress theme or Dreamweaver template(s) 
+- Attended client meetings and reviews 
+- Conducted instructional client Wordpress how-to meetings 
 
 #### Organic SEO Specialist / Web Designer at Masterlink Interactive / Ivie & Associates 
 Flower Mound, TX — Nov. 2011 - Sept. 2012
@@ -70,13 +69,13 @@ Plano, TX — May. 2010 - Oct. 2011
 - WordPress / PHP
 - User Interface Design / Web Design
 - RWD 
-- SASS/Less 
+- SASS, Less 
 - Python 
 - XML, JSON
-- JSP / Sightly
+- Adobe AEM, JSP, Sightly
 - Bootstrap 
 - Schema.org Microdata
-- Git, GitHub, Bitbucket 
+- Git, GitHub
 - Adobe Photoshop, Illustrator
 - Sitefinity, Magento
 
@@ -91,6 +90,15 @@ Plano, TX — May. 2010 - Oct. 2011
 - Beginning Web Programming - HTML/CSS (ITSE 1311) 
 - Intermediate Web Programming - JavaScript (ITSE 2302) 
 - Introduction to Digital Media (IMED 1301)
+
+
+## MOOCs
+
+#### Udacity — Full Stack Foundations, Feb. 2016
+
+#### Udacity — Intro to Relational Databases, Jan. 2016
+
+#### Udacity — Programming Foundations with Python, Nov. 2015
 
 #### MITx — 6.00.1x: Introduction to Computer Science and Programming Using Python, 96%, 6/11 - 8/12/2014 
 
