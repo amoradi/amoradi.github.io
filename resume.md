@@ -91,20 +91,9 @@ Plano, TX — May. 2010 - Oct. 2011
 - Intermediate Web Programming - JavaScript (ITSE 2302) 
 - Introduction to Digital Media (IMED 1301)
 
-
-## MOOCs
-
-#### Udacity — Full Stack Foundations, Feb. 2016
-
-
-#### Udacity — Intro to Relational Databases, Jan. 2016
-
-
-#### Udacity — Programming Foundations with Python, Nov. 2015
-
-
-#### MITx — 6.00.1x: Introduction to Computer Science and Programming Using Python, 96%, 6/11 - 8/12/2014 
-
-
-#### Coursera, University of New Mexico — Web Application Architectures, 8/11 - 9/22/2014
-- Built a basic Ruby on Rails blog application.
+#### MOOCs
+- Udacity — Full Stack Foundations, Feb. 2016
+- Udacity — Intro to Relational Databases, Jan. 2016
+- Udacity — Programming Foundations with Python, Nov. 2015
+- MITx — 6.00.1x: Introduction to Computer Science and Programming Using Python, 96%, 6/11 - 8/12/2014 
+- Coursera, University of New Mexico — Web Application Architectures, 8/11 - 9/22/2014
