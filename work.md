@@ -44,6 +44,17 @@ title: work
 	<tr>
 
 	<tr>
+		<td>what HE loves (prototype)</td>
+		<td>Front-End Developer / Web Designer</td>
+		<td></td>
+		<td><a href="http://whatheloves.com" target="_blank">whatHeloves.com</a>
+	</tr>
+	<tr class="detail">
+		<td colspan="1">Fullpage.js, jQuery, Responsive Web Design, CSS3 Animations, Photoshop</td>
+		<td colspan="1">Self</td>
+	<tr>
+
+	<tr>
 		<td>Keller Graduate School of Management</td>
 		<td>Front-End Developer</td>
 		<td></td>
@@ -127,6 +138,17 @@ title: work
 	</tr>
 	<tr class="detail">
 		<td colspan="1">Markdown, Liquid Templating, Bootstrap, Highlight.js, Web Components - Custom Element, jQuery</td>
+		<td colspan="1">Self</td>
+	<tr>
+	
+	<tr>
+		<td>Portfolio Site v.2</td>
+		<td>Web Developer / Web Designer</td>
+		<td><!-- JavaScript, Grunt --></td>
+		<td><a href="http://relevantmatters.org/" target="_blank">relevantmatters.org</a></td>
+	</tr>
+	<tr class="detail">
+		<td colspan="1">Wordpress</td>
 		<td colspan="1">Self</td>
 	<tr>
 </table>
