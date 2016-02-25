@@ -650,7 +650,7 @@ h1.welcome-title span {
 }
 
 .welcome-1p {
-  margin: 0 auto 2.4rem;
+  margin: 0 0 2.4rem;
   max-width: 70rem;
 }
 
@@ -1333,7 +1333,6 @@ keyboard-arrows span:not(.disabled):hover {
 }
 
  .page.welcome > div {
-  text-align: center;
   position: relative;
  }
 
