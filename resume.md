@@ -82,14 +82,16 @@ Plano, TX — May. 2010 - Oct. 2011
 ## Education
 
 #### University of Texas at Dallas — B.A. Art & Performance, 3.53 GPA, Dec. 2009
-- Degree emphasis in visual studies/design and liberal arts
+- Degree emphasis in visual studies, design and liberal arts
 
-#### Collin College — Interactive Web Programming MSAA, 3.4 GPA, 2013
+#### Collin College — Interactive Web Programming MSAA, 3.4 GPA
 - Fundamentals of Programming - Java (COSC 1315) 
 - Programming Fundamentals II - Java (COSC 1337) 
 - Beginning Web Programming - HTML/CSS (ITSE 1311) 
 - Intermediate Web Programming - JavaScript (ITSE 2302) 
 - Introduction to Digital Media (IMED 1301)
+
+#### Texas Tech University - Architecture 2003-2005 (no degree)
 
 #### MOOCs
 - Udacity — Full Stack Foundations, Feb. 2016
