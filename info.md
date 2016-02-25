@@ -7,7 +7,7 @@ title: Info
 <p>Besides code, contour, color and type, he enjoys circuit training, theology, the NFL, and exotic food.</p>
 </div>
 <h1>Aaron Moradi</h1>
-<span class="resume-titles"><br>Front-End Developer - UI Designer</span>
+<!--<span class="resume-titles"><br>Front-End Developer - UI Designer</span>-->
 <div class="resume-details">
 <!-- <p>1475 Woodhaven Ct. Apt. #6<br />
 Waterford, MI 48327</p> -->
