@@ -1,8 +1,14 @@
 ---
 layout: page
-title: Aaron Moradi
+title: Info
 ---
+<div class="info-section">
+<p>Aaron Moradi is a Detroit-based, knowledge-loving creative developer, hailing from the plains of Plano, Texas.</p>
+<p>Besides code, contour, color and type, he enjoys circuit training, theology, the NFL, and exotic food.</p>
+</div>
 <div class="resume-details">
+<h1>Aaron Moradi</h1>
+<span class="resume-titles"><br>Front-End Developer - UI Designer</span>
 <!-- <p>1475 Woodhaven Ct. Apt. #6<br />
 Waterford, MI 48327</p> -->
 
