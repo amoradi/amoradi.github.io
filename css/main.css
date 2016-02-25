@@ -1334,6 +1334,7 @@ keyboard-arrows span:not(.disabled):hover {
 
  .page.welcome > div {
   position: relative;
+  text-align: left;
  }
 
  .playground-img {
