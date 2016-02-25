@@ -92,7 +92,11 @@ Plano, TX — May. 2010 - Oct. 2011
 - Introduction to Digital Media (IMED 1301)
 
 #### Texas Tech University - Architecture 2003-2005 (no degree)
-
+- Design Environment & Society (ARCH 1311)	
+- Arch. Freehand Drawing (ARCH 1341)
+- Arch. Design Studio I (ARCH 1412)
+- Trigonometry (MATH 1321)
+- Hist. of World Arch. I (ARCH 2311)
 
 #### MOOCs
 - Udacity — Full Stack Foundations, Feb. 2016
