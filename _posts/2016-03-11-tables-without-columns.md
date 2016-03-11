@@ -35,7 +35,7 @@ categories: HTML
     width: 100%;
     height: 600px;
     border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    
   }
   .layout-table tr {
     height: 33.333%;
@@ -46,7 +46,9 @@ categories: HTML
     padding: 20px !important;
   }
   .mgt-20 {margin-top: 32px;}
-  
+  .table-exercise {
+    overflow: visible;
+  }
   @media screen and (max-width: 700px) {
     .layout-table td,
     .layout-table tr:first-child td {
