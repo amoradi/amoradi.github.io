@@ -40,7 +40,10 @@ categories: HTML
   }
   .layout-table td {
     padding: 20px;
+    font-size: 13px;
+    padding: 20px !important;
   }
+  .mgt-20 {margin-top: 20px;}
   
   @media screen and (max-width: 700px) {
     .layout-table td,
@@ -96,7 +99,7 @@ categories: HTML
   </tr>
 </table>
 
-<p>The above column-less table can be achieved by simply displaying all <code>&lt;tr&gt;'s</code> as <code>&lt;tables&gt;</code>.</p>
+<p class="mgt-20">The above column-less table can be achieved by simply displaying all <code>&lt;tr&gt;'s</code> as <code>&lt;tables&gt;</code>.</p>
 <pre><code>
 tr {
     display: table;
