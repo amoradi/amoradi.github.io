@@ -43,7 +43,7 @@ categories: HTML
     font-size: 13px !important;
     padding: 20px !important;
   }
-  .mgt-20 {margin-top: 20px;}
+  .mgt-20 {margin-top: 32px;}
   
   @media screen and (max-width: 700px) {
     .layout-table td,
