@@ -59,7 +59,7 @@ categories: HTML
   }
 </style>
 
-<p>Compare the two <code>&lt;table&gt;'s</code> below.</p>
+<p>Compare the two <code>&lt;table&gt;</code>'s below.</p>
 <div class="table-exercise">
 <p><strong>Typical Table (with columns)</strong></p>
 <table>
@@ -80,7 +80,7 @@ categories: HTML
   </tr>
 </table>
 
-<p><strong>Table Without Columns</strong></p>
+<p class="mgt-20"><strong>Table Without Columns</strong></p>
 <table class="no-columns">
   <tr>
     <td>Apple</td>
@@ -99,7 +99,7 @@ categories: HTML
   </tr>
 </table>
 
-<p class="mgt-20">The above column-less table can be achieved by simply displaying all <code>&lt;tr&gt;'s</code> as <code>&lt;table&gt;'s</code>.</p>
+<p class="mgt-20">The above column-less table can be achieved by simply displaying all <code>&lt;tr&gt;</code>'s as <code>&lt;table&gt;</code>'s.</p>
 <pre><code>
 tr {
     display: table;
