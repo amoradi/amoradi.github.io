@@ -1,5 +1,5 @@
 ---
-title: Tables Without Columns
+title: Tables <i>Without</i> Columns
 author: Aaron Moradi
 layout: post
 permalink: /tables-without-columns/
