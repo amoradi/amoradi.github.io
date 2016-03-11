@@ -100,7 +100,7 @@ categories: HTML
 <p>In the example below, content fits into a predefined width (100% of its container) and height (600px). The table rows are set to a 33.33% height (200px in this case). If cell content were to exceed the 33.33% height restriction (in the case of long copy, etc.), the entire table would grow taller, yet maintain equal height scaling per row, i.e. the rows would be 33.33% of the total height of the table still.</p>
 <p>This is a great way to fit content into blocks or cells, letting content determine cell size. For a truly <mark>liquid approach</mark>, ensure table dimensions are percentages, not fixed pixel widths, as in the example below.</p>
 
-<p>**Note This table stacks cells when the window is less than 700px for a small browser/mobile view. Simply set all <td>'s to display: block</p>
+<p>**Note This table stacks cells when its container is less than 700px for a small browser/mobile view. Simply set all <code><td></code>'s to display: block</p>
 
 <table class="no-columns layout-table">
   <tr>
