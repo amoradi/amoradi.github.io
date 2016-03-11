@@ -55,9 +55,6 @@ categories: HTML
       box-sizing: border-box;
       border-top: 0;
     }
-    .layout-table tr:first-child td:first-child {
-      border-top: 1px solid #ccc;
-    }
   }
 </style>
 
