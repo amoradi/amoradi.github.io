@@ -3,7 +3,7 @@ title: Tables Without Columns
 author: Aaron Moradi
 layout: post
 permalink: /tables-without-columns/
-excerpt: <p>An Effective Way to Use The Layout Luxuries of Tables Without The Constraint of Columns, with Use Cases</p>
+excerpt: <p>An Effective Way to Use The Layout Luxuries of Tables Without The Constraint of Columns</p>
 categories: HTML
 ---
 
