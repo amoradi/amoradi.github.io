@@ -61,7 +61,7 @@ categories: HTML
 
 <p>Compare the two <code>&lt;table&gt;'s</code> below.</p>
 <div class="table-exercise">
-<h4>Typical Table (with columns)</h4>
+<p><strong>Typical Table (with columns)</strong></p>
 <table>
   <tr>
     <td>Apple</td>
@@ -80,7 +80,7 @@ categories: HTML
   </tr>
 </table>
 
-<h4>Table Without Columns</h4>
+<p><strong>Table Without Columns</strong></p>
 <table class="no-columns">
   <tr>
     <td>Apple</td>
