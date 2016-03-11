@@ -22,7 +22,7 @@ categories: HTML
   .no-columns td {
     border-top: none;
   }
-  .no-columns tr:first-child td {
+  .no-columns {
     border-top: 1px solid #ccc;
   }
   table {
@@ -34,6 +34,8 @@ categories: HTML
   .layout-table {
     width: 100%;
     height: 600px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
   }
   .layout-table tr {
     height: 33.333%;
