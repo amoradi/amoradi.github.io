@@ -96,10 +96,19 @@ categories: HTML
   </tr>
 </table>
 
+<p>The above column-less table can be achieved by simply displaying all <code>&lt;tr&gt;'s</code> as <code>&lt;tables&gt;</code>.</p>
+
+<code>
+tr {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}</code>
+
 <h2>Use Cases of Tables Without Columns</h2>
 <p>In the example below, content fits into a predefined width (100% of its container) and height (600px). The table rows are set to a 33.33% height (200px in this case). If cell content were to exceed the 33.33% height restriction (in the case of long copy, etc.), the entire table would grow taller, yet maintain equal height scaling per row, i.e. the rows would be 33.33% of the total height of the table still.</p>
 <p>This is a great way to fit content into blocks or cells, letting content determine cell size. For a truly <mark>liquid approach</mark>, ensure table dimensions are percentages, not fixed pixel widths, as in the example below.</p>
-<p>**Note On small browser and mobile views, the below table stacks cells. To do this, simply set: <code> td {display: block;}</code> in your CSS.</p>
+<p>**Note On small browser and mobile views, the below table stacks cells. To do this, set: <code> td {display: block;}</code> in your CSS.</p>
 
 <table class="no-columns layout-table">
   <tr>
