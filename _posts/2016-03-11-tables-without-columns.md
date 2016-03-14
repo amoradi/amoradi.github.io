@@ -110,7 +110,7 @@ tr {
 
 <h2>A Column-less Table Use Case</h2>
 <p>In the example below, content fits into a predefined width (100% of its container) and height (600px). The table rows are set to a 33.33% height (200px in this case). If cell content were to exceed the 33.33% height restriction (in the case of long copy, etc.), the entire table would grow taller and lose their defined percentage heights.</p>
-<p>This is a great way to fit content into blocks or cells, letting content determine cell size, yet maintaining defined rows. For a truly <mark>liquid approach</mark>, ensure table dimensions are percentages, not fixed pixel widths, as in the example below.</p>
+<p>This is a great way to fit content into blocks or cells, letting content determine cell size, yet maintaining defined rows. For a truly <mark>liquid approach</mark>, ensure <code>&lt;table&gt;</code> dimensions are percentages, not fixed pixel widths, as in the example below.</p>
 <p>**Note On small browser and mobile views, the below table stacks cells. To do this, set: <code> td {display: block;}</code> in your CSS.</p>
 
 <table class="no-columns layout-table">
