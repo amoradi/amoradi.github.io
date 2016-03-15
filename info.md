@@ -30,12 +30,12 @@ Waterford, MI 48327</p> -->
 #### Web Developer at MRM//McCann
 Birmingham, MI &mdash; Jan. 2015 - Present
 
-- Develop web components in Adobe AEM
-- Take lead role in website production offering client-side expertise from the outset
-- Actively share knowledge with fellow coders, encourage best practices in the department, and support/encourage other developers
-- Worked with brands such as Abbott, Chevrolet, Keller Graduate School, and Mohegan Sun
+- Develop web components in Adobe AEM using a mix of JavaScript, JSP, Sightly, HTML, CSS and Java from scratch
+- Program from a functional paradigm, utilizing higher-order functions, pure functions, and event delegation
+- Employ libraries and frameworks such as jQuery, Modernizer, Respond.js, TerrificJS, Bootstrap and more
+- Write OOCSS with CSS preprocessrors like SASS and LESS
+- Work with brands such as Abbott, Chevrolet, Keller Graduate School, and Mohegan Sun
 - Implement click tracking analytics
-- Maintain code modularity with TerrificJS
 
 #### Front-End Web Developer / Web Designer at Visual Application, Inc. 
 Richardson, TX — Sept. 2012 - Jan. 2015
@@ -44,7 +44,7 @@ Richardson, TX — Sept. 2012 - Jan. 2015
 - Designed interfaces in Photoshop and Illustrator 
 - Sliced comps into responsive, cross-browser compatible, gracefully degrading HTML5/CSS3/JS 
 - Translated HTML/CSS into custom Wordpress theme or Dreamweaver template(s) 
-- Attended client meetings and reviews 
+- Participated in client meetings and reviews 
 - Conducted instructional client Wordpress how-to meetings 
 
 #### Organic SEO Specialist / Web Designer at Masterlink Interactive / Ivie & Associates 
@@ -53,10 +53,10 @@ Flower Mound, TX — Nov. 2011 - Sept. 2012
 - Functioned in Production Department and Digital Marketing Department
 - Designed marketing collateral, banner ads, website headers, Facebook covers, Twitter pages, YouTube 
 channels
-- Worked with brands such as Sam’s Club, Raley’s Supermarkets, Texas Lending, and many more. 
-- Built-out web projects, i.e., styled and formatted sites.
-- In charge of monthly email blast, both writing, sending and improving conversions 
-- Coded sites with Schema microdata
+- Worked with brands such as Sam’s Club, Raley’s Supermarkets, Texas Lending, and many more 
+- Built-out web projects, writing HTML and CSS from scratch
+- In charge of monthly email blast &mdash; both writing and sending to improve conversions 
+- Coded sites with Schema microdata for SEO
 - Performed onsite optimization —image optimization, A/B testing, and content creation
 - Wrote monthly SEO reports 
 
@@ -70,19 +70,19 @@ Plano, TX — May. 2010 - Oct. 2011
 
 - HTML5, DHTML 
 - CSS3 
-- JavaScript, OOP
-- jQuery, jQuery UI, jQuery Mobile 
-- WordPress / PHP
-- User Interface Design / Web Design
-- RWD 
+- JavaScript
+- Adobe AEM, JSP, Sightly
+- Functional and Object Oriented Programming Paradigms
+- Git, GitHub, SVN, TortoiseSVN
+- jQuery, jQuery UI
+- User Interface Design / Responsive Web Design
 - SASS, Less 
 - Python 
-- XML, JSON
-- Adobe AEM, JSP, Sightly
+- JSON, XML
 - Bootstrap 
 - Schema.org Microdata
-- Git, GitHub
 - Adobe Photoshop, Illustrator
+- WordPress / PHP
 - Sitefinity, Magento
 
 ## Education
