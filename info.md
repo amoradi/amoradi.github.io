@@ -45,7 +45,7 @@ Richardson, TX — Sept. 2012 - Jan. 2015
 - Sliced comps into responsive, cross-browser compatible, gracefully degrading HTML5/CSS3/JS 
 - Translated HTML/CSS into custom Wordpress theme or Dreamweaver template(s) 
 - Participated in client meetings and reviews 
-- Conducted instructional client Wordpress how-to meetings 
+- Conducted instructional Wordpress how-to meetings for clients
 
 #### Organic SEO Specialist / Web Designer at Masterlink Interactive / Ivie & Associates 
 Flower Mound, TX — Nov. 2011 - Sept. 2012
