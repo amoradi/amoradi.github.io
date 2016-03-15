@@ -4,7 +4,7 @@ title: Info
 ---
 <div class="info-section">
 <p>Aaron Moradi is a Detroit-based, knowledge-loving creative developer, hailing from the plains of Plano, Texas.</p>
-<p>Besides code, contour, color and type, he enjoys circuit training, theology, biking, the NFL, and exotic food.</p>
+<p>Besides code, contour, color and type, he enjoys circuit training, theology, the NFL, and exotic food.</p>
 </div>
 <h1>Aaron Moradi</h1>
 <!--<span class="resume-titles"><br>Front-End Developer - UI Designer</span>-->
