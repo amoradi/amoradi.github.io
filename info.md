@@ -30,7 +30,7 @@ Waterford, MI 48327</p> -->
 #### Web Developer at MRM//McCann
 Birmingham, MI &mdash; Jan. 2015 - Present
 
-- Develop web components in Adobe AEM using a mix of JavaScript, JSP, Sightly, HTML, CSS and Java from scratch
+- Develop web components in Adobe AEM using a mix of JavaScript, JSP, Sightly, HTML, CSS and Java, from scratch
 - Program from a functional paradigm, utilizing higher-order functions, pure functions, and event delegation
 - Employ libraries and frameworks such as jQuery, Modernizer, Respond.js, TerrificJS, Bootstrap and more
 - Write OOCSS with CSS preprocessrors like SASS and LESS
