@@ -985,10 +985,10 @@ pre {
 .index.active {
   height: 100%;
   background: rgba(0,0,0,.85);
-  -webkit-transition: all 250ms ease-in 250ms;
-  -moz-transition: all 250ms ease-in 250ms;
-  -o-transition: all 250ms ease-in 250ms;
-  transition: all 250ms ease-in 250ms;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
   overflow-y: scroll;
   opacity: 0;
 }
