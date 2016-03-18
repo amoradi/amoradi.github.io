@@ -143,14 +143,12 @@ function toggleIndexView(dontShowFirstItem) {
 	    dontShowFirstItem 	= (dontShowFirstItem === true);
 
 	if (isOpen) {
-		setTimeout(function() {$index.removeClass('active');}, 250);
-		$index.removeClass('opaque');
+		$index.removeClass('active opaque');
 		$body.removeClass('index-view');
 		$indexTxt.html(indexText);
 	}
 	else {
-		$index.addClass('active');
-		setTimeout(function() {$index.addClass('opaque');}, 250);
+		$index.addClass('active opaque');
 		$body.addClass('index-view');
 		$indexTxt.html('<img src=\"/images/close-x.png\" class=\"close-x\"/>');
 
