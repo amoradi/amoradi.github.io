@@ -995,10 +995,10 @@ pre {
 
 .index.active.opaque {
   opacity: 1;
-  -webkit-transition: all 250ms ease-in 250ms;
-  -moz-transition: all 250ms ease-in 250ms;
-  -o-transition: all 250ms ease-in 250ms;
-  transition: all 250ms ease-in 250ms;
+  -webkit-transition: opacity 250ms ease-in-out;
+  -moz-transition: opacity 250ms ease-in-out;
+  -o-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
 }
 
 .index-content {
