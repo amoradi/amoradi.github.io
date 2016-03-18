@@ -541,7 +541,8 @@ p {
   color: #fff;
   font-size: 1.2rem;
   text-decoration: none;
-
+  opacity: 0;
+  
   -webkit-transition: all 250ms ease-in;
   -moz-transition: all 250ms ease-in;
   -o-transition: all 250ms ease-in;
@@ -989,6 +990,15 @@ pre {
   -o-transition: all 250ms ease-in 250ms;
   transition: all 250ms ease-in 250ms;
   overflow-y: scroll;
+  opacity: 0;
+}
+
+.index.active.opaque {
+  opacity: 1;
+  -webkit-transition: all 250ms ease-in 250ms;
+  -moz-transition: all 250ms ease-in 250ms;
+  -o-transition: all 250ms ease-in 250ms;
+  transition: all 250ms ease-in 250ms;
 }
 
 .index-content {
