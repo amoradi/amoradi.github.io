@@ -543,10 +543,10 @@ p {
   text-decoration: none;
   opacity: 1;
   
-  -webkit-transition: all 250ms linear;
-  -moz-transition: all 250ms linear;
-  -o-transition: all 250ms linear;
-  transition: all 250ms linear;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
 }
 
 .index-anchor {
@@ -985,10 +985,10 @@ pre {
 .index.active {
   height: 100%;
   background: rgba(0,0,0,.85);
-  -webkit-transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -o-transition: all 1s linear;
-  transition: all 1s linear;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
   overflow-y: scroll;
 }
 
