@@ -985,20 +985,20 @@ pre {
 .index.active {
   height: 100%;
   background: rgba(0,0,0,.85);
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
+  -webkit-transition: all ease-in-out;
+  -moz-transition: all ease-in-out;
+  -o-transition: all ease-in-out;
+  transition: all ease-in-out;
   overflow-y: scroll;
   opacity: 0;
 }
 
 .index.active.opaque {
   opacity: 1;
-  -webkit-transition: opacity 250ms ease-in-out;
-  -moz-transition: opacity 250ms ease-in-out;
-  -o-transition: opacity 250ms ease-in-out;
-  transition: opacity 250ms ease-in-out;
+  -webkit-transition: opacity 250ms ease-in-out .25s;
+  -moz-transition: opacity 250ms ease-in-out .25s;
+  -o-transition: opacity 250ms ease-in-out .25s;
+  transition: opacity 250ms ease-in-out .25s;
 }
 
 .index-content {
