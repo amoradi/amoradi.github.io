@@ -432,7 +432,7 @@ p {
 .index-view #content .index-content a {
   border-bottom: .1rem solid coral;
   overflow: hidden;
-  margin: 0 18rem;
+  margin-left: 7rem;
   line-height: 1.2;
   padding: 1rem 0;
   color: #fff;
@@ -447,6 +447,11 @@ p {
   font-weight: 700;
   margin-bottom: 0;
   letter-spacing: .2rem;
+}
+
+.index-view #content .index-content a:hover > span {
+  padding: 0 1rem;
+  background: rgba(255,127,80,.7);
 }
 
 .read-more,
@@ -1399,10 +1404,6 @@ keyboard-arrows span:not(.disabled):hover {
     font-size: 8px;
   }
   
-  .index-view #content .index-content a {
-    margin: 0 8rem;
-  }
-
   .page.welcome {
     text-align: center;
   }
