@@ -430,7 +430,7 @@ p {
 }
 
 .index-view #content .index-content a {
-  border-bottom: .1rem solid coral;
+  border-bottom: .3rem solid coral;
   overflow: hidden;
   margin-left: 7rem;
   line-height: 1.2;
@@ -1633,7 +1633,7 @@ keyboard-arrows span:not(.disabled):hover {
     border-bottom-color: coral;
     font-size: 2.2rem;
     font-weight: 500;
-    margin-bottom: 0;
+    margin-bottom: 1.2rem;
     letter-spacing: .1rem;
   }
 
