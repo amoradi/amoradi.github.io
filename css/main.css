@@ -442,7 +442,6 @@ p {
 .index-view #content .index-content a:hover {
   color: #fff;
   border-bottom-color: coral;
-  border-bottom-width: .7rem;
   font-size: 4.4rem;
   font-weight: 700;
   margin-bottom: 0;
