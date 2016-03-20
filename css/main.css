@@ -1422,6 +1422,10 @@ keyboard-arrows span:not(.disabled):hover {
     font-size: 3rem;
     line-height: 3rem;
   }
+  
+  .index-view #content .index-content a {
+    margin-left: 0;
+  }
 
   blockquote {
     color: #222;
@@ -1639,10 +1643,6 @@ keyboard-arrows span:not(.disabled):hover {
     letter-spacing: 1.5px;
   }
   
-  .index-view #content .index-content a {
-    margin-left: 0;
-  }
-
   figure[is=book-preview] h2 {
     margin-top: 0;
   }
