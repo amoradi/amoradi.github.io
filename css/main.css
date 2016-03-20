@@ -1638,6 +1638,10 @@ keyboard-arrows span:not(.disabled):hover {
     min-height: 58rem;
     letter-spacing: 1.5px;
   }
+  
+  .index-view #content .index-content a {
+    margin-left: 0;
+  }
 
   figure[is=book-preview] h2 {
     margin-top: 0;
