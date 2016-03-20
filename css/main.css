@@ -432,7 +432,7 @@ p {
 .index-view #content .index-content a {
   border-bottom: .1rem solid coral;
   overflow: hidden;
-  margin-left: 0;
+  margin-left: 7rem;
   line-height: 1.2;
   padding: 1rem 0;
   color: #fff;
