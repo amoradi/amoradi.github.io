@@ -1005,7 +1005,8 @@ pre {
   right: 0;
   
   bottom: 0;
-  background: rgba(255, 127, 80, .5);
+  background: rgba(251,187,164,.9);
+  
   -webkit-transition: all 1s linear;
   -moz-transition: all 1s linear;
   -o-transition: all 1s linear;
@@ -1626,6 +1627,20 @@ keyboard-arrows span:not(.disabled):hover {
   .index.active {
     height: 100% !important;
   }
+  
+  .index-view #content .index-content a:hover {
+    color: coral;
+    border-bottom-color: coral;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    letter-spacing: .1rem;
+  }
+
+    .index-view #content .index-content a:hover > span {
+      padding: 0;
+      background: none;
+    }
 }
 
 @media (max-width: 420px) {
