@@ -19,9 +19,9 @@ title: work
 	<tr class="detail">
 		<td colspan="1">Livefyre, Shuffle js, Slick Carousel, jQuery, Bootstrap, Adobe AEM, Responsive Web Design, Apache Subversion, TortoiseSVN</td>
 		<td colspan="1">MRM//McCANN</td>
-	<tr>
+	</tr>
 	
-		<tr>
+	<tr>
 		<td>Chevrolet</td>
 		<td>Front-End Developer</td>
 		<td><!-- Adobe AEM, Bootstrap, RWD --></td>
@@ -30,7 +30,7 @@ title: work
 	<tr class="detail">
 		<td colspan="1">Adobe AEM, Bootstrap, Responsive Web Design, Apache Subversion, TortoiseSVN</td>
 		<td colspan="1">MRM//McCANN</td>
-	<tr>
+	</tr>
 	
 	<tr>
 		<td>Barry Wood</td>
@@ -41,18 +41,19 @@ title: work
 	<tr class="detail">
 		<td colspan="1">Custom Wordpress Theme, HTML5 Boilerplate, CSS3 Animations, Photoshop, Responsive Web Design</td>
 		<td colspan="1">Visual App</td>
-	<tr>
+	</tr>
 
 	<tr>
-		<td>what HE loves (prototype)</td>
-		<td>Front-End Developer / Web Designer</td>
-		<td></td>
-		<td><a href="http://whatheloves.com" target="_blank">whatHeloves.com</a>
+		<td>TaskMaster</td>
+		<td>Web Developer / Web Designer</td>
+		<td>Self<!-- JavaScript, Grunt, Require.js, Illustrator --></td>
+		<td><a href="http://amoradi.github.io/taskmaster/" target="_blank">TaskMaster</a></td>
 	</tr>
 	<tr class="detail">
-		<td colspan="1">Fullpage.js, jQuery, Responsive Web Design, CSS3 Animations, Photoshop</td>
+		<td colspan="1">JavaScript, localstorage, Grunt, Require.js, Git, GitHub</td>
 		<td colspan="1">Self</td>
-	<tr>
+	</tr>
+	
 
 	<tr>
 		<td>Keller Graduate School of Management</td>
@@ -63,7 +64,7 @@ title: work
 	<tr class="detail">
 		<td colspan="1">Adobe AEM, JavaScript, jQuery, Responsive Web Design, Git, GitHub</td>
 		<td colspan="1">MRM//McCANN</td>
-	<tr>
+	</tr>
 	
 	<tr>
 		<td>Frisbee Auto</td>
@@ -74,7 +75,7 @@ title: work
 	<tr class="detail">
 		<td colspan="1">Custom Wordpress Theme, HTML5 Boilerplate, Photoshop</td>
 		<td colspan="1">Self</td>
-	<tr>
+	</tr>
 
 	<tr>
 		<td>Office Furniture</td>
@@ -96,18 +97,18 @@ title: work
 	<tr class="detail">
 		<td colspan="1">Custom Wordpress Theme, HTML5 Boilerplate, Photoshop</td>
 		<td colspan="1">Visual App</td>
-	<tr>
+	</tr>
 
 	<tr>
-		<td>TaskMaster</td>
-		<td>Web Developer / Web Designer</td>
-		<td>Self<!-- JavaScript, Grunt, Require.js, Illustrator --></td>
-		<td><a href="http://amoradi.github.io/taskmaster/" target="_blank">TaskMaster</a></td>
+		<td>what HE loves (prototype)</td>
+		<td>Front-End Developer / Web Designer</td>
+		<td></td>
+		<td><a href="http://whatheloves.com" target="_blank">whatHeloves.com</a>
 	</tr>
 	<tr class="detail">
-		<td colspan="1">JavaScript, localstorage, Grunt, Require.js, Git, GitHub</td>
+		<td colspan="1">Fullpage.js, jQuery, Responsive Web Design, CSS3 Animations, Photoshop</td>
 		<td colspan="1">Self</td>
-	<tr>
+	</tr>
 	<!-- <tr>
 		<td>MapIt</td>
 		<td>Front-End Developer / Web Designer</td>
@@ -129,7 +130,7 @@ title: work
 	<tr class="detail">
 		<td colspan="1">Adobe Illustrator</td>
 		<td colspan="1">Masterlink</td>
-	<tr>
+	</tr>
 	<tr>
 		<td>Portfolio Site v.3</td>
 		<td>Web Developer / Web Designer</td>
@@ -139,7 +140,7 @@ title: work
 	<tr class="detail">
 		<td colspan="1">Markdown, Liquid Templating, Bootstrap, Highlight.js, Web Components - Custom Element, HTML5 Application Cache, jQuery</td>
 		<td colspan="1">Self</td>
-	<tr>
+	</tr>
 	
 	<tr>
 		<td>Portfolio Site v.2</td>
@@ -150,5 +151,5 @@ title: work
 	<tr class="detail">
 		<td colspan="1">Wordpress</td>
 		<td colspan="1">Self</td>
-	<tr>
+	</tr>
 </table>
