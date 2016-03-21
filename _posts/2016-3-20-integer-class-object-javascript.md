@@ -1,5 +1,5 @@
 ---
-title: My Humble Attempt at a JS Integer <strike>Class</strike> Object
+title: My Humble Example of a JS Integer <strike>Class</strike> Object
 author: Aaron Moradi
 layout: post
 permalink: /integer-class-object-javascript/
