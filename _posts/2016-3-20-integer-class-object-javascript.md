@@ -4,6 +4,7 @@ author: Aaron Moradi
 layout: post
 permalink: /integer-class-object-javascript/
 categories: javascript, programming
+excerpt: <p>Code example.</p>
 ---
 
 ```javascript
