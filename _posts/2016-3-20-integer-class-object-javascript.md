@@ -1,10 +1,10 @@
 ---
-title: My Feeble Attempt at an Integer <strike>Class</strike> Object
+title: My Humble Attempt at a JS Integer <strike>Class</strike> Object
 author: Aaron Moradi
 layout: post
 permalink: /integer-class-object-javascript/
 categories: javascript, programming
-excerpt: <p>Code example.</p>
+excerpt: <p>JavaScript code example</p>
 ---
 
 ```javascript
