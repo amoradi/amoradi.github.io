@@ -58,7 +58,7 @@ title: work
 		<td>Keller Graduate School of Management</td>
 		<td>Front-End Developer</td>
 		<td></td>
-		<td><a href="http://www.keller.edu/" target="_blank">keller.edu</a>
+		<td><a href="http://www.keller.edu/" target="_blank">keller.edu</a></td>
 	</tr>
 	<tr class="detail">
 		<td colspan="1">Adobe AEM, JavaScript, jQuery, Responsive Web Design, Git, GitHub</td>
