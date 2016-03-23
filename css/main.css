@@ -140,7 +140,7 @@ div {
 }
 
 .image-example-title ~ img {
-    margin: 0 auto;
+    margin: 100px auto;
     display: block;
     max-width: 100%;
 }
