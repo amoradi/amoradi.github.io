@@ -73,7 +73,7 @@ body.index-view {
   overflow: hidden;
 }
 
-.hljs {
+#content .hljs {
     padding: 3rem;
 }
 
