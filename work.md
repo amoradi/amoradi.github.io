@@ -102,7 +102,7 @@ title: work
 		<td>what HE loves (prototype)</td>
 		<td>Front-End Developer / Web Designer</td>
 		<td></td>
-		<td><a href="http://whatheloves.com" target="_blank">whatHeloves.com</a>
+		<td><a href="http://whatheloves.com" target="_blank">whatHeloves.com</a></td>
 	</tr>
 	<tr class="detail">
 		<td colspan="1">Fullpage.js, jQuery, Responsive Web Design, CSS3 Animations, Photoshop</td>
@@ -151,6 +151,7 @@ title: work
 		<td colspan="1">Wordpress</td>
 		<td colspan="1">Self</td>
 	</tr>
+	
 </table>
 
 <div>
