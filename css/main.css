@@ -73,6 +73,10 @@ body.index-view {
   overflow: hidden;
 }
 
+.hljs {
+    padding: 3rem;
+}
+
 div {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
