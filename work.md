@@ -2,7 +2,6 @@
 layout: page
 title: work
 ---
-
 <table class="large-table">
 	<tr>
 		<th>Client - Technologies / Tools</th>
