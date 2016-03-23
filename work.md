@@ -153,3 +153,7 @@ title: work
 		<td colspan="1">Self</td>
 	</tr>
 </table>
+
+<h2>Design Examples</h2>
+
+<img src="images/bw.jpg" />
