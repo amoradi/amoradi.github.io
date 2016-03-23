@@ -152,9 +152,9 @@ title: work
 		<td colspan="1">Self</td>
 	</tr>
 </table>
-<br />
-<h2 class="image-example-title">Design Examples</h2>
 
+<div>
+<h2 class="image-example-title">Design Examples</h2>
 <img src="/images/bw.jpg" />
 <img src="/images/raleys-port.jpg" />
 <img src="/images/fa.jpg" />
@@ -165,3 +165,4 @@ title: work
 <img src="/images/fb-covers.jpg" />
 <img src="/images/pantoneInfographic.jpg" />
 <img src="/images/banner-ads.jpg" />
+</div>
