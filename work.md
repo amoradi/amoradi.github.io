@@ -165,5 +165,5 @@ title: work
 <img src="/images/of.jpg" />
 <img src="/images/fb-covers.jpg" />
 <img src="/images/pantoneInfographic.jpg" />
-<img src="/images/banner-ads.jpg" />
+<img src="/images/banner-ads.jpg" style="max-width: 500px;" />
 </div>
