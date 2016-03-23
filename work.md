@@ -85,7 +85,7 @@ title: work
 	<tr class="detail">
 		<td colspan="1">Magento, Bootstrap, Photoshop</td>
 		<td colspan="1">Visual App</td>
-	<tr>
+	</tr>
 
 	<tr>
 		<td>Commercial Power Sweep</td>
