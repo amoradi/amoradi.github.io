@@ -153,7 +153,16 @@ title: work
 		<td colspan="1">Self</td>
 	</tr>
 </table>
+<br />
+<h2 class="image-example-title">Design Examples</h2>
 
-<h2>Design Examples</h2>
-
-<img src="images/bw.jpg" />
+<img src="/images/bw.jpg" />
+<img src="/images/raleys-port.jpg" />
+<img src="/images/fa.jpg" />
+<img src="/images/cps.jpg" />
+<img src="/images/bus-card.jpg" />
+<img src="/images/banners-4.jpg" />
+<img src="/images/of.jpg" />
+<img src="/images/fb-covers.jpg" />
+<img src="/images/pantoneInfographic.jpg" />
+<img src="/images/banner-ads.jpg" />
