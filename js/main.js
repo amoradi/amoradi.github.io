@@ -162,7 +162,7 @@ function toggleIndexView(dontShowFirstItem) {
 		animate = setTimeout(function() {
 			$indexTxt.html(indexText);
 			indexAnchor.removeClass('leaving');
-		}, 499);
+		}, 1000);
 	}
 	else {
 		clearTimeout(animate);
