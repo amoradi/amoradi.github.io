@@ -150,7 +150,7 @@ function toggleIndexView(dontShowFirstItem) {
 		setTimeout(function() {
 			$indexTxt.html(indexText);
 			indexAnchor.removeClass('leaving');
-		}, 2000);
+		}, 1000);
 	}
 	else {
 		$index.addClass('active opaque');
