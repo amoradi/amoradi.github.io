@@ -1070,19 +1070,20 @@ pre {
   background: red;
   transform: rotateY(0deg) translateZ(25px);
 }
+.index,
+.index.active {
+-webkit-transition: all 1s linear 0s;
+  -moz-transition: all 1s linear 0s;
+  -o-transition: all 1s linear 0s;
+  transition: all 1s linear 0s;
+}
 
 .index.active {
   height: 100% !important;
   left: 0;
   right: 0;
-  
   bottom: 0;
   background: rgba(251,187,164,.9);
-  
-  -webkit-transition: all 1s linear .5s;
-  -moz-transition: all 1s linear .5s;
-  -o-transition: all 1s linear .5s;
-  transition: all 1s linear .5s;
   overflow-y: scroll;
 }
 
