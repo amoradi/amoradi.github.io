@@ -491,7 +491,7 @@ p {
   border-bottom: none;
 }
 
-.index-view #content .index-content a {
+#content .index-content a {
   border-bottom: .3rem solid coral;
   overflow: hidden;
   margin-left: 7rem;
