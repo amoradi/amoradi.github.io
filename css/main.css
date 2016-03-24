@@ -660,6 +660,11 @@ p {
   /*color: coral;*/
 }
 
+.active .index-anchor {
+    display: inline-block;
+    height: 60px;
+}
+
 .active .index-anchor span {
   font-size: 4rem;
 }
