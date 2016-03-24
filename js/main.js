@@ -134,6 +134,7 @@ function toggleNav() {
 		$nav.addClass('navOpen');
 	}
 }
+
 function debounce(fn, delay) {
 	var timer = null;
 	return function () {
@@ -342,10 +343,10 @@ function docReady() {
 	$('.navigation .ladder').on('click', toggleNav);
 	$('.index-anchor').on('click', debounce(function (event) {
 	    toggleIndexView();
-	  }, 1250));
+	  }, 500));
 	$('.index-anchor-nav').on('click', debounce(function (event) {
 	    toggleIndexView();
-	  }, 1250));
+	  }, 500));
 	$('.fullscreen').on('click', toggleFullscreen);
 	$('.shelf .tile').on('click', function(e) {
 		toggleBookPreview(e);
