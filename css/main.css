@@ -173,7 +173,7 @@ div {
     position: absolute;
     width: 50px;
     top: 10px;
-    margin: 0 auto;
+    margin: 50px auto 0;
     visibility: hidden;
     opacity: 0;
     /*-webkit-transition: all 500ms ease-in 0s;*/
@@ -190,7 +190,7 @@ div {
 .active .x {
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s, opacity 0s linear;
+    transition: visibility 0s 2s, opacity 0s 2s linear;
 }
 
 .float-left {
