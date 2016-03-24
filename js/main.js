@@ -342,10 +342,10 @@ function docReady() {
     $('.navigation .ladder').on('click', toggleNav);
     $('.index-anchor').on('click', debounce(function(event) {
         toggleIndexView();
-    }, 2000));
+    }, 200));
     $('.index-anchor-nav').on('click', debounce(function(event) {
         toggleIndexView();
-    }, 2000));
+    }, 200));
     $('.fullscreen').on('click', toggleFullscreen);
     $('.shelf .tile').on('click', function(e) {
         toggleBookPreview(e);
