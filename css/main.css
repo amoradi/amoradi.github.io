@@ -118,7 +118,8 @@ div {
   padding-bottom: 100px;
 }
 
-.info-section:after {
+.info-section:after,
+.info-section-bottom:before {
   content: "";
   display: block;background-color: rgb(185, 255, 237);
   width: 100%;
@@ -127,7 +128,7 @@ div {
   left: 0;
   right: 0;
   }
- 
+  
  .info-section p + p {
    padding-bottom: 70px;
  }
