@@ -118,6 +118,14 @@ div {
   padding-bottom: 100px;
 }
 
+.info-section-bottom {
+    margin-top: 100px;
+}
+
+.info-section-bottom h2:first-child {
+    margin-top: 14.4rem;
+}
+
 .info-section:after,
 .info-section-bottom:before {
   content: "";
