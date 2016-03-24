@@ -167,7 +167,9 @@ div {
     background: #fff;
     height: 2px;
     position: relative;
-    width: 90px;
+    width: 50px;
+    top: 10px;
+    margin: 0 auto;
 }
 
 .x-top {
