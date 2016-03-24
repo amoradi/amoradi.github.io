@@ -174,7 +174,7 @@ div {
     width: 50px;
     top: 10px;
     margin: 0 auto;
-    display: none;
+    visibility: hidden;
     -webkit-transition: all 500ms ease-in 0s;
     -moz-transition: all 500ms ease-in 0s;
     -o-transition: all 500ms ease-in 0s;
@@ -186,7 +186,7 @@ div {
 }
 
 .active .x {
-    display: block;
+    visibility: visible;
 }
 
 .active .x-top {
