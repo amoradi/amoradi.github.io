@@ -137,15 +137,16 @@ function toggleNav() {
 
 function toggleIndexView(dontShowFirstItem) {
 	var $index 		= $('.index').first(),
+	index-anchor		= $index.find('.index-anchor').first(),
     	$body   		= $('body'),
 	isOpen 			= $index.hasClass('active') && $body.hasClass('index-view'),
 	$indexTxt 		= $index.find('span span'),
 	dontShowFirstItem 	= (dontShowFirstItem === true);
 
 	if (isOpen) {
+		index-anchor.addClass('leaving');
 		$index.removeClass('active opaque');
 		$body.removeClass('index-view');
-		$indexTxt.addClass('leaving');
 		setTimeout(function() {
 			$indexTxt.html(indexText);
 		}, 1000);
@@ -154,7 +155,7 @@ function toggleIndexView(dontShowFirstItem) {
 		$index.addClass('active opaque');
 		$body.addClass('index-view');
 		//$indexTxt.html('<img src=\"/images/close-x.png\" class=\"close-x\"/>');
-		$indexTxt.removeClass('leaving');
+		index-anchor.removeClass('leaving');
 		$indexTxt.html('<div class="x x-top"></div><div class="x x-btm"></div>');
 		
 		// show first item when index area is empty (on first index click)
