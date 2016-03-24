@@ -162,7 +162,7 @@ function toggleIndexView(dontShowFirstItem) {
 		animate = setTimeout(function() {
 			$indexTxt.html(indexText);
 			indexAnchor.removeClass('leaving');
-		}, 500);
+		}, 1500);
 	}
 	else {
 		clearTimeout(animate);
@@ -343,10 +343,10 @@ function docReady() {
 	$('.navigation .ladder').on('click', toggleNav);
 	$('.index-anchor').on('click', debounce(function (event) {
 	    toggleIndexView();
-	  }, 500));
+	  }, 1500));
 	$('.index-anchor-nav').on('click', debounce(function (event) {
 	    toggleIndexView();
-	  }, 500));
+	  }, 1500));
 	$('.fullscreen').on('click', toggleFullscreen);
 	$('.shelf .tile').on('click', function(e) {
 		toggleBookPreview(e);
