@@ -669,8 +669,7 @@ p {
   font-size: 4rem;
 }
 
-.active .index-anchor span:before,
-.index-anchor.leaving span:before{
+.active .index-anchor span:before {
     display: none;
 }
 
@@ -1857,6 +1856,10 @@ keyboard-arrows span:not(.disabled):hover {
   .page-layout .index-anchor-nav {
     display: none;
   }
+  
+  .index-anchor.leaving span:before{
+    display: none;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
