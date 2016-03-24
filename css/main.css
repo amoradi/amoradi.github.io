@@ -1071,7 +1071,9 @@ pre {
   transform: rotateY(0deg) translateZ(25px);
 }
 
-.index.active {
+.index.active, 
+body, 
+.index-view {
 -webkit-transition: all .75s linear 0s;
   -moz-transition: all .75s linear 0s;
   -o-transition: all .75s linear 0s;
