@@ -1079,10 +1079,10 @@ pre {
   bottom: 0;
   background: rgba(251,187,164,.9);
   
-  -webkit-transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -o-transition: all 1s linear;
-  transition: all 1s linear;
+  -webkit-transition: all 1s linear .5s;
+  -moz-transition: all 1s linear .5s;
+  -o-transition: all 1s linear .5s;
+  transition: all 1s linear .5s;
   overflow-y: scroll;
 }
 
