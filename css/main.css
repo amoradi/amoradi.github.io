@@ -190,6 +190,7 @@ div {
 .active .x {
     visibility: visible;
     opacity: 1;
+    transition: visibility 0s 2s, opacity 0s 2s linear;
 }
 
 .active .x-top {
