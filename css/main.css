@@ -175,12 +175,12 @@ div {
     top: 10px;
     margin: 0 auto;
     visibility: hidden;
-    /*opacity: 0;*/
+    opacity: 0;
     /*-webkit-transition: all 500ms ease-in 0s;*/
     /*-moz-transition: all 500ms ease-in 0s;*/
     /*-o-transition: all 500ms ease-in 0s;*/
     /*transition: all 500ms ease-in 0s;*/
-    transition: transform 1s 0s, visibility 0s 5s, opacity 0s 5s linear;
+    transition: visibility 0s 2s, opacity 0s 2s linear;
     moz-transform: rotate(0deg);  /* FF3.5/3.6 */
     -o-transform: rotate(0deg);  /* Opera 10.5 */
     -webkit-transform: rotate(0deg);  /* Saf3.1+ */
@@ -189,8 +189,8 @@ div {
 
 .active .x {
     visibility: visible;
-    /*opacity: 1;*/
-    transition: transform 1s 0s, visibility 0s 5s, opacity 0s 5s linear;
+    opacity: 1;
+    transition: transform 1s 0s, visibility 0s, opacity 0s linear;
 }
 
 .active .x-top {
