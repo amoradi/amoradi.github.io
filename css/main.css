@@ -186,8 +186,6 @@ div {
     -o-transform: rotate(-45deg);  /* Opera 10.5 */
     -webkit-transform: rotate(-45deg);  /* Saf3.1+ */
     transform: rotate(-45deg);  /* Newer browsers (incl IE9) */
-    position: relative;
-    top: -7px;
 }
 
 .float-left {
