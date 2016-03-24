@@ -1836,7 +1836,7 @@ keyboard-arrows span:not(.disabled):hover {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
   .large-table,
   .large-table > *,
   .large-table > * > *,
@@ -1883,17 +1883,9 @@ keyboard-arrows span:not(.disabled):hover {
   .page .large-table tr td:first-child ~ td {
     font-size: 1.7rem;
   }
-}
-
-@media (max-width: 1200px) {
+  
   .second-col {
     padding-left: 0;
-  }
-  .large-table,
-  .large-table > *,
-  .large-table > * > *,
-  .large-table > * > * > * {
-    display: block;
   }
 }
 
