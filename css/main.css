@@ -153,6 +153,10 @@ div {
   padding-top: 0;
 }
 
+.active .open-index {
+    display: none;
+}
+
 .image-example-title ~ img {
     margin: 100px auto;
     display: block;
@@ -170,22 +174,22 @@ div {
     width: 50px;
     top: 10px;
     margin: 0 auto;
-    
+    display: none;
     -webkit-transition: all 500ms ease-in 0s;
     -moz-transition: all 500ms ease-in 0s;
     -o-transition: all 500ms ease-in 0s;
     transition: all 500ms ease-in 0s;
-}
-
-.leaving .x-btm,
-.leaving .x-top {
-    -moz-transform: rotate(0deg);  /* FF3.5/3.6 */
+    moz-transform: rotate(0deg);  /* FF3.5/3.6 */
     -o-transform: rotate(0deg);  /* Opera 10.5 */
     -webkit-transform: rotate(0deg);  /* Saf3.1+ */
     transform: rotate(0deg);  /* Newer browsers (incl IE9) */
 }
 
-.x-top {
+.active .x {
+    display: block;
+}
+
+.active .x-top {
     -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476)"; /* IE8 */
     -moz-transform: rotate(45deg);  /* FF3.5/3.6 */
     -o-transform: rotate(45deg);  /* Opera 10.5 */
@@ -193,7 +197,7 @@ div {
     transform: rotate(45deg);  /* Newer browsers (incl IE9) */
 }
 
-.x-btm {
+.active .x-btm {
     -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=-0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=-0.7071067811865476)"; /* IE8 */
     -moz-transform: rotate(-45deg);  /* FF3.5/3.6 */
     -o-transform: rotate(-45deg);  /* Opera 10.5 */
