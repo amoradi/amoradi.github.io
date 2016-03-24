@@ -190,7 +190,7 @@ div {
 .active .x {
     visibility: visible;
     opacity: 1;
-    transition: transform 1s 0s, visibility 0s, opacity 0s linear;
+    transition: visibility 0s, opacity 0s linear;
 }
 
 .float-left {
