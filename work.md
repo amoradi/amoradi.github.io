@@ -49,7 +49,7 @@ title: work
 		<td><a href="http://amoradi.github.io/taskmaster/" target="_blank">TaskMaster</a></td>
 	</tr>
 	<tr class="detail">
-		<td colspan="1">JavaScript, localstorage, Grunt, Require.js, Git, GitHub</td>
+		<td colspan="1">JavaScript, custom MVC, localstorage, Grunt, Require.js, Git, GitHub</td>
 		<td colspan="1">Self</td>
 	</tr>
 	
