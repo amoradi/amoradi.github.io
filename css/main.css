@@ -193,22 +193,6 @@ div {
     transition: transform 1s 0s, visibility 0s, opacity 0s linear;
 }
 
-.active .x-top {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476)"; /* IE8 */
-    -moz-transform: rotate(45deg);  /* FF3.5/3.6 */
-    -o-transform: rotate(45deg);  /* Opera 10.5 */
-    -webkit-transform: rotate(45deg);  /* Saf3.1+ */
-    transform: rotate(45deg);  /* Newer browsers (incl IE9) */
-}
-
-.active .x-btm {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=-0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=-0.7071067811865476)"; /* IE8 */
-    -moz-transform: rotate(-45deg);  /* FF3.5/3.6 */
-    -o-transform: rotate(-45deg);  /* Opera 10.5 */
-    -webkit-transform: rotate(-45deg);  /* Saf3.1+ */
-    transform: rotate(-45deg);  /* Newer browsers (incl IE9) */
-}
-
 .float-left {
   padding: 0 3rem 3rem 0;
 }
