@@ -345,10 +345,10 @@ function docReady() {
 	$('.navigation .ladder').on('click', toggleNav);
 	$('.index-anchor').on('click', debounce(function (event) {
 	    toggleIndexView();
-	  }, 200));
+	  }, 2000));
 	$('.index-anchor-nav').on('click', debounce(function (event) {
 	    toggleIndexView();
-	  }, 200));
+	  }, 2000));
 	$('.fullscreen').on('click', toggleFullscreen);
 	$('.shelf .tile').on('click', function(e) {
 		toggleBookPreview(e);
