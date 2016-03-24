@@ -134,7 +134,17 @@ function toggleNav() {
 		$nav.addClass('navOpen');
 	}
 }
-
+function debounce(fn, delay) {
+	var timer = null;
+	return function () {
+		var context = this, args = arguments;
+		clearTimeout(timer);
+		timer = setTimeout(function () {
+		fn.apply(context, args);
+		}, delay);
+	};
+}
+  
 function toggleIndexView(dontShowFirstItem) {
 	var $index 		= $('.index').first(),
 	indexAnchor		= $index.find('.index-anchor').first(),
@@ -330,8 +340,12 @@ function docReady() {
 	});
 
 	$('.navigation .ladder').on('click', toggleNav);
-	$('.index-anchor').on('click', toggleIndexView);
-	$('.index-anchor-nav').on('click', toggleIndexView);
+	$('.index-anchor').on('click', debounce(function (event) {
+	    toggleIndexView();
+	  }, 1250));
+	$('.index-anchor-nav').on('click', debounce(function (event) {
+	    toggleIndexView();
+	  }, 1250));
 	$('.fullscreen').on('click', toggleFullscreen);
 	$('.shelf .tile').on('click', function(e) {
 		toggleBookPreview(e);
