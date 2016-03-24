@@ -1889,6 +1889,12 @@ keyboard-arrows span:not(.disabled):hover {
   .second-col {
     padding-left: 0;
   }
+  .large-table,
+  .large-table > *,
+  .large-table > * > *,
+  .large-table > * > * > * {
+    display: block;
+  }
 }
 
 @media (min-width: 1400px) {
