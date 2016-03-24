@@ -137,7 +137,7 @@ function toggleNav() {
 
 function toggleIndexView(dontShowFirstItem) {
 	var $index 		= $('.index').first(),
-	index-anchor		= $index.find('.index-anchor').first(),
+	indexAnchor		= $index.find('.index-anchor').first(),
     	$body   		= $('body'),
 	isOpen 			= $index.hasClass('active') && $body.hasClass('index-view'),
 	$indexTxt 		= $index.find('span span'),
