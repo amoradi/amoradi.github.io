@@ -154,7 +154,7 @@ title: work
 	
 </table>
 
-<div>
+<div class="info-section">
 <h2 class="image-example-title">Design Examples</h2>
 <img src="/images/bw.jpg" />
 <img src="/images/raleys-port.jpg" />
