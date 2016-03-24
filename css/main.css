@@ -166,7 +166,7 @@ div {
 .x {
     background: #fff;
     height: 2px;
-    position: relative;
+    position: absolute;
     width: 50px;
     top: 10px;
     margin: 0 auto;
