@@ -149,6 +149,7 @@ function toggleIndexView(dontShowFirstItem) {
 		$body.removeClass('index-view');
 		setTimeout(function() {
 			$indexTxt.html(indexText);
+			indexAnchor.removeClass('leaving');
 		}, 1000);
 	}
 	else {
