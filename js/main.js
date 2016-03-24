@@ -141,18 +141,20 @@ function toggleIndexView(dontShowFirstItem) {
     	$body   		= $('body'),
 	isOpen 			= $index.hasClass('active') && $body.hasClass('index-view'),
 	$indexTxt 		= $index.find('span span'),
-	dontShowFirstItem 	= (dontShowFirstItem === true);
+	dontShowFirstItem 	= (dontShowFirstItem === true),
+	animate;
 
 	if (isOpen) {
 		indexAnchor.addClass('leaving');
 		$index.removeClass('active opaque');
 		$body.removeClass('index-view');
-		setTimeout(function() {
+		animate = setTimeout(function() {
 			$indexTxt.html(indexText);
 			indexAnchor.removeClass('leaving');
 		}, 1000);
 	}
 	else {
+		clearTimeout(animate);
 		$index.addClass('active opaque');
 		$body.addClass('index-view');
 		//$indexTxt.html('<img src=\"/images/close-x.png\" class=\"close-x\"/>');
