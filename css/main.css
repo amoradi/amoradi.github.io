@@ -1072,10 +1072,10 @@ pre {
 }
 .index,
 .index.active {
--webkit-transition: all .5s linear .5s;
-  -moz-transition: all .5s linear .5s;
-  -o-transition: all .5s linear .5s;
-  transition: all .5s linear .5s;
+-webkit-transition: all .5s linear 1s;
+  -moz-transition: all .5s linear 1s;
+  -o-transition: all .5s linear 1s;
+  transition: all .5s linear 1s;
 }
 
 .index.active {
