@@ -150,8 +150,9 @@ function toggleIndexView(dontShowFirstItem) {
 	else {
 		$index.addClass('active opaque');
 		$body.addClass('index-view');
-		$indexTxt.html('<img src=\"/images/close-x.png\" class=\"close-x\"/>');
-
+		//$indexTxt.html('<img src=\"/images/close-x.png\" class=\"close-x\"/>');
+		$indexTxt.html('<span class="x x-top"></span><span class="x x-btm"></span>');
+		
 		// show first item when index area is empty (on first index click)
 		if (!dontShowFirstItem && $('#content > .shelf').length > 0) {
 			if ($('.index-content').find('figure[is=book-preview].show-book-preview').length < 1) {
