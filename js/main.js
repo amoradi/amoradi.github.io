@@ -154,6 +154,7 @@ function toggleIndexView(dontShowFirstItem) {
         animate;
 
     if (isOpen) {
+    	clearTimeout(animate);
         indexAnchor.addClass('leaving');
         $body.removeClass('index-view');
         $index.removeClass('active opaque');
