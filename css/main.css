@@ -669,7 +669,8 @@ p {
   font-size: 4rem;
 }
 
-.active .index-anchor span:before {
+.active .index-anchor span:before,
+.index-anchor.leaving span:before{
     display: none;
 }
 
