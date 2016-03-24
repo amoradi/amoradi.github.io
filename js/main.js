@@ -340,10 +340,10 @@ function docReady() {
     });
 
     $('.navigation .ladder').on('click', toggleNav);
-    $('.index-anchor').on('click', debounce(function(event) {
+    $('.index-anchor').off().on('click', debounce(function(event) {
         toggleIndexView();
     }, 200));
-    $('.index-anchor-nav').on('click', debounce(function(event) {
+    $('.index-anchor-nav').off().on('click', debounce(function(event) {
         toggleIndexView();
     }, 200));
     $('.fullscreen').on('click', toggleFullscreen);
