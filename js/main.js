@@ -154,23 +154,23 @@ function toggleIndexView(dontShowFirstItem) {
         animate;
 
     if (isOpen) {
-    	clearTimeout(animate);
-        indexAnchor.addClass('leaving');
+    	//clearTimeout(animate);
+        //indexAnchor.addClass('leaving');
         $body.removeClass('index-view');
         $index.removeClass('active opaque');
 
-        animate = setTimeout(function() {
+        //animate = setTimeout(function() {
 
-            $indexTxt.html(indexText);
-            indexAnchor.removeClass('leaving');
-        }, 2000);
+            //$indexTxt.html(indexText);
+           // indexAnchor.removeClass('leaving');
+        //}, 2000);
     } else {
-        clearTimeout(animate);
+        //clearTimeout(animate);
         $index.addClass('active opaque');
         $body.addClass('index-view');
         //$indexTxt.html('<img src=\"/images/close-x.png\" class=\"close-x\"/>');
-        indexAnchor.removeClass('leaving');
-        $indexTxt.html('<div class="x x-top"></div><div class="x x-btm"></div>');
+        //indexAnchor.removeClass('leaving');
+        //$indexTxt.html('<div class="x x-top"></div><div class="x x-btm"></div>');
 
         // show first item when index area is empty (on first index click)
         if (!dontShowFirstItem && $('#content > .shelf').length > 0) {
