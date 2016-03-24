@@ -1857,7 +1857,7 @@ keyboard-arrows span:not(.disabled):hover {
     display: none;
   }
   
-  .index-anchor.leaving span:before{
+  .index-anchor.leaving span:before {
     display: none;
    }
 }
