@@ -154,7 +154,17 @@ div {
 }
 
 .active .open-index {
-    display: none;
+    opacity: 0;
+    height: 0;
+    display: block;
+    transition: all .25s linear 0s;
+}
+
+.open-index {
+    opacity: 1;
+    height: 20px;
+    display: block;
+    transition: all .25s linear 0s;
 }
 
 .image-example-title ~ img {
