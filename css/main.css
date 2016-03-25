@@ -683,7 +683,8 @@ p {
 
 .active .index-anchor {
     display: inline-block;
-    height: 60px;
+    height: 50px;
+    width: 50px;
 }
 
 .active .index-anchor span {
