@@ -1867,7 +1867,11 @@ keyboard-arrows span:not(.disabled):hover {
   }
 
   .index-anchor {
-    
+    position: relative;
+    /* height: 50px; */
+    width: 50px;
+    display: block;
+    margin: 0 auto;
   }
   
   .index-anchor.leaving {
