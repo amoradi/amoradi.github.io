@@ -630,7 +630,6 @@ p {
   -moz-transition: all .5s linear 1.5s;
   -o-transition: all .5s linear 1.5s;
   transition: all .5s linear 1.5s;
-  overflow-y: scroll;
 }
 
 .index-anchor {
