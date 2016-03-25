@@ -1867,7 +1867,7 @@ keyboard-arrows span:not(.disabled):hover {
   }
 
   .index-anchor {
-    display: none;
+    /*display: none;*/
   }
   
   .index-anchor.leaving {
