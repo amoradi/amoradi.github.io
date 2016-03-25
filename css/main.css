@@ -149,10 +149,6 @@ div {
   padding-bottom: 9.6rem;
 }
 
-.active .index-content {
-  padding-top: 0;
-}
-
 .active .index-anchor > .open-index {
     opacity: 0;
     height: 0;
