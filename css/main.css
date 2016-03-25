@@ -160,7 +160,7 @@ div {
     transition: all .25s linear 0s;
 }
 
-.open-index {
+.index-anchor > .open-index {
     opacity: 1;
     height: 20px;
     display: block;
