@@ -1870,7 +1870,7 @@ keyboard-arrows span:not(.disabled):hover {
     position: relative;
     /* height: 50px; */
     width: 50px;
-    display: block;
+    display: inline-block;
     margin: 0 auto;
   }
   
