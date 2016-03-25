@@ -181,7 +181,7 @@ div {
 }
 
 .active .x {
-    transition: transform .5s linear 2s;
+    transition: transform .5s linear 1.5s;
 }
 
 .active .x-top {
