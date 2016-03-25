@@ -147,6 +147,7 @@ function debounce(fn, delay) {
 function toggleIndexView(dontShowFirstItem) {
     var $index = $('.index').first(),
         indexAnchor = $index.find('.index-anchor').first(),
+        indexAnchorX = indexAnchor.find('.x'),
         $body = $('body'),
         isOpen = $index.hasClass('active') && $body.hasClass('index-view'),
         $indexTxt = $index.find('span span'),
@@ -158,7 +159,7 @@ function toggleIndexView(dontShowFirstItem) {
         //indexAnchor.addClass('leaving');
         $body.removeClass('index-view');
         $index.removeClass('active opaque');
-
+	indexAnchorX.removeClass('showem');
         //animate = setTimeout(function() {
 
             //$indexTxt.html(indexText);
@@ -168,6 +169,7 @@ function toggleIndexView(dontShowFirstItem) {
         //clearTimeout(animate);
         $index.addClass('active opaque');
         $body.addClass('index-view');
+        indexAnchorX.addClass('showem');
         //$indexTxt.html('<img src=\"/images/close-x.png\" class=\"close-x\"/>');
         //indexAnchor.removeClass('leaving');
         //$indexTxt.html('<div class="x x-top"></div><div class="x x-btm"></div>');
