@@ -188,10 +188,10 @@ div {
     transform: rotate(0deg);  /* Newer browsers (incl IE9) */
 }
 
-.active .x {
+.x.showem {
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s 2s, opacity 0s 2s linear;
+    transition: visibility 1s linear 2s, opacity 1s linear 2s;
 }
 
 .active .x-top {
