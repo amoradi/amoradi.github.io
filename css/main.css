@@ -1503,7 +1503,7 @@ keyboard-arrows span:not(.disabled):hover {
     line-height: 3rem;
   }
   
-  .index-view #content .index-content a {
+  #content .index-content a {
     margin-left: 0;
   }
 
