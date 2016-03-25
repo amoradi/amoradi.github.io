@@ -164,7 +164,7 @@ div {
     opacity: 1;
     height: 20px;
     display: block;
-    transition: all .25s linear .5s;
+    transition: all .25s linear 2s;
 }
 
 .image-example-title ~ img {
@@ -1849,10 +1849,11 @@ keyboard-arrows span:not(.disabled):hover {
 
   .index-anchor {
     position: relative;
-    /* height: 50px; */
+    height: 50px;
     width: 50px;
     display: inline-block;
     margin: 0 auto;
+    overflow: hidden;
   }
   
   .index-anchor.leaving {
