@@ -173,6 +173,8 @@ div {
     position: absolute;
     width: 50px;
     margin: 25px auto 0;
+    visibility: visible;
+    opacity: 1;
     /*visibility: hidden;*/
     /*opacity: 0;*/
     /*-webkit-transition: all 500ms ease-in 0s;*/
