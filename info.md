@@ -33,7 +33,7 @@ Birmingham, MI &mdash; Jan. 2015 - Present
 - Develop web components in Adobe AEM using a mix of JavaScript, JSP, Sightly, HTML, CSS and Java, from scratch
 - Program from a functional paradigm, utilizing higher-order functions, pure functions, and event delegation
 - Employ libraries and frameworks such as jQuery, Modernizer, Respond.js, TerrificJS, Bootstrap and more
-- Write OOCSS with CSS preprocessrors like SASS and LESS
+- Write OOCSS with CSS preprocessors like SASS and LESS
 - Work with brands such as Abbott, Chevrolet, Keller Graduate School, and Mohegan Sun
 - Implement click tracking analytics
 
