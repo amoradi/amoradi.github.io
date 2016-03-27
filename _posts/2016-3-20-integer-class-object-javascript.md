@@ -12,19 +12,20 @@ excerpt: <p>JavaScript code example</p>
 // Integer class
 function Integer(number) {
 
-	// private members
-	var divisorsArr = [];
-
-	function isInt(n) {
-	   return n % 1 === 0;
-	}
-
+	// validate parameter
 	if (isNaN(number)) {
 		throw number + " is not a number.";
 	}
 
 	if (!isInt(number)) {
 		throw number + " is not an integer.";
+	}
+
+	// private members & methods
+	var divisorsArr = [];
+
+	function isInt(n) {
+	   return n % 1 === 0;
 	}
 	
 	// public members
