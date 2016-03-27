@@ -8,8 +8,11 @@ excerpt: <p>JavaScript code example</p>
 ---
 
 ```javascript
+
+// Integer class
 function Integer(number) {
-	// private
+
+	// private members
 	var divisorsArr = [];
 
 	function isInt(n) {
@@ -24,7 +27,7 @@ function Integer(number) {
 		throw number + " is not an integer.";
 	}
 	
-	// public
+	// public members
 	this.isEven = (number % 2 === 0);
 	this.isOdd = !this.isEven;
 
@@ -41,6 +44,8 @@ function Integer(number) {
 	}();
 
 	this.isPrime = function() {
+		if (number <= 1) return false;
+		
 		if (this.isEven && number > 2) return false;
 
 		if (divisorsArr.length > 2) return false;
@@ -64,4 +69,33 @@ function Integer(number) {
 		return Math.abs(number);
 	}();
 }
+```
+
+```javascript
+// new Integer instance
+var seven = new Integer(7);
+
+seven.isEven
+// returns false
+
+seven.isPrime
+// returns true
+
+seven.squared
+// returns 49
+
+seven.squareRoot
+// returns 2.6457513110645907
+
+seven.absoluteValue
+// returns 7
+
+seven.timesTen
+// returns 70
+
+var fiveAndAHalf = new Integer(5.5);
+// throws error "Uncaught 5.5 is not an integer."
+
+var uncleSam = new Integer('Uncle Sam');
+// throws error "Uncaught Uncle Sam is not a number."
 ```
