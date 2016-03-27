@@ -33,7 +33,6 @@ function Integer(number) {
 
 	this.divisors = function() {
 		
-
 		for (var i = 1, ii = number; i <= ii; i++) {
 			if (ii % i === 0) {
 				divisorsArr.push(i);
