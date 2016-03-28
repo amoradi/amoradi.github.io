@@ -9,9 +9,8 @@ excerpt: <p>JavaScript code example</p>
 
 ```javascript
 
-// Integer class
 function Integer(number) {
-
+	
 	// validate parameter
 	if (isNaN(number)) {
 		throw number + " is not a number.";
@@ -25,10 +24,11 @@ function Integer(number) {
 	var divisorsArr = [];
 
 	function isInt(n) {
-		return n % 1 === 0;
+	   return n % 1 === 0;
 	}
-	
+
 	// public members
+	this.number = number;
 	this.isEven = (number % 2 === 0);
 	this.isOdd = !this.isEven;
 
@@ -68,6 +68,23 @@ function Integer(number) {
 	this.absoluteValue = function() {
 		return Math.abs(number);
 	}();
+}
+
+// public methods
+Integer.prototype.add = function(int) {
+	return this.number + int;
+}
+
+Integer.prototype.subtract = function(int) {
+	return this.number - int;
+}
+
+Integer.prototype.multiply = function(int) {
+	return this.number * int;
+}
+
+Integer.prototype.divide = function(int) {
+	return this.number / int;
 }
 ```
 
