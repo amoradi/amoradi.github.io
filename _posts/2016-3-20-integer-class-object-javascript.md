@@ -9,31 +9,49 @@ excerpt: <p>JavaScript code example</p>
 
 ```javascript
 
-function Integer(number) {
-	
-	// validate parameter
-	if (isNaN(number)) {
-		throw number + " is not a number.";
-	}
-
-	if (!isInt(number)) {
-		throw number + " is not an integer.";
-	}
+var integer = function(number) {
+	var that = {};
 
 	// private members & methods
 	var divisorsArr = [];
+
+	var number = number || 0;
 
 	function isInt(n) {
 	   return n % 1 === 0;
 	}
 
-	// public members
-	this.number = number;
-	this.isEven = (number % 2 === 0);
-	this.isOdd = !this.isEven;
-
-	this.divisors = function() {
+	// privileged methods
+	that.setInteger = function(int) {
 		
+		// validate parameter
+		if (isNaN(int)) {
+			throw int + " is not a number.";
+		}
+
+		if (!isInt(int)) {
+			throw int + " is not an integer.";
+		}
+
+		number = int;
+
+	};
+
+	that.getInteger = function() {
+		return number;
+	};
+
+	that.isEven = function() {
+		return (number % 2 === 0);
+	};
+
+	that.isOdd = function() {
+		return !that.isEven();
+	};
+
+	that.divisors = function() {
+		divisorsArr = [];
+
 		for (var i = 1, ii = number; i <= ii; i++) {
 			if (ii % i === 0) {
 				divisorsArr.push(i);
@@ -41,78 +59,88 @@ function Integer(number) {
 		};
 
 		return divisorsArr;
-	}();
+	};
 
-	this.isPrime = function() {
+	that.isPrime = function() {
+		console.log(number);
+
 		if (number <= 1) return false;
 		
-		if (this.isEven && number > 2) return false;
+		if (that.isEven() && number > 2) return false;
+
+		that.divisors(); // recalc divisors
 
 		if (divisorsArr.length > 2) return false;
 
 		return true;
-	}();
+	};
+
+	that.isComposite = function() {
+		return !that.isPrime();
+	}
 	
-	this.timesTen = function() {
-		return number * 10;
-	}();
+	// mutators
+	that.timesTen = function() {
+		return number *= 10;
+	};
 
-	this.squared = function() {
-		return number * number;
-	}();
+	that.squared = function() {
+		return number *= number;
+	};
 
-	this.squareRoot = function() {
-		return Math.sqrt(number);
-	}();
+	that.squareRoot = function() {
+		return number = Math.round(Math.sqrt(number));
+	};
 
-	this.absoluteValue = function() {
-		return Math.abs(number);
-	}();
-}
+	that.absoluteValue = function() {
+		return number = Math.abs(number);
+	};
 
-// public methods
-Integer.prototype.add = function(int) {
-	return this.number + int;
-}
+	that.add = function(int) {
+		return number += Math.round(int);
+	}
 
-Integer.prototype.subtract = function(int) {
-	return this.number - int;
-}
+	that.subtract = function(int) {
+		return number -= Math.round(int);
+	}
 
-Integer.prototype.multiply = function(int) {
-	return this.number * int;
-}
+	that.multiply = function(int) {
+		return number *= Math.round(int);
+	}
 
-Integer.prototype.divide = function(int) {
-	return this.number / int;
+	that.divide = function(int) {
+		return number /= Math.round(int);
+	}
+
+	return that;
 }
 ```
 
 ```javascript
 // new Integer instance
-var seven = new Integer(7);
+var seven = integer(7);
 
-seven.isEven
-// returns false
+seven.isEven();
+// false
 
-seven.isPrime
-// returns true
+seven.isPrime();
+// true
 
-seven.squared
-// returns 49
+seven.squared();
+// 49
 
-seven.squareRoot
-// returns 2.6457513110645907
+seven.squareRoot();
+// 2.6457513110645907
 
-seven.absoluteValue
-// returns 7
+seven.absoluteValue();
+// 7
 
-seven.timesTen
-// returns 70
+seven.timesTen();
+// 70
 
-var fiveAndAHalf = new Integer(5.5);
+var fiveAndAHalf = integer(5.5);
 // throws error "Uncaught 5.5 is not an integer."
 
-var uncleSam = new Integer('Uncle Sam');
+var uncleSam = integer('Uncle Sam');
 // throws error "Uncaught Uncle Sam is not a number."
 ```
