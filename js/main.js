@@ -154,37 +154,20 @@ function toggleIndexView(dontShowFirstItem) {
         animate;
 
     if (isOpen) {
-    	//clearTimeout(animate);
-        //indexAnchor.addClass('leaving');
         $body.removeClass('index-view');
         $index.removeClass('active opaque');
-        //animate = setTimeout(function() {
-
-            //$indexTxt.html(indexText);
-           // indexAnchor.removeClass('leaving');
-        //}, 2000);
+        
     } else {
         //clearTimeout(animate);
         $index.addClass('active opaque');
         $body.addClass('index-view');
-        //$indexTxt.html('<img src=\"/images/close-x.png\" class=\"close-x\"/>');
-        //indexAnchor.removeClass('leaving');
-        //$indexTxt.html('<div class="x x-top"></div><div class="x x-btm"></div>');
-
-        // show first item when index area is empty (on first index click)
+        
         if (!dontShowFirstItem && $('#content > .shelf').length > 0) {
             if ($('.index-content').find('figure[is=book-preview].show-book-preview').length < 1) {
                 bookTransition($('.index-content').find('figure[is=book-preview]').first(), 'fadein');
             }
         }
     }
-}
-
-function toggleFullscreen() {
-    // if is in fullscrn mode, exit
-
-    // else
-    // put document into full screen mode
 }
 
 function toggleBookPreview(e) {
@@ -198,9 +181,9 @@ function toggleBookPreview(e) {
     $index.addClass('book-detail-live');
 
     books.removeClass('show-book-preview');
-    bookPrev.css('top', book.offset().top);
-    bookPrev.css('left', book.offset().left);
-    bookPrev.addClass('show-book-preview');
+    bookPrev.css('top', book.offset().top)
+     .css('left', book.offset().left)
+     .addClass('show-book-preview');
     bookTransition(bookPrev);
 }
 
