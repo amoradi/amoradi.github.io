@@ -329,7 +329,6 @@ function docReady() {
     $('.index-anchor-nav').off().on('click', debounce(function(event) {
         toggleIndexView();
     }, 200));
-    $('.fullscreen').on('click', toggleFullscreen);
     $('.shelf .tile').on('click', function(e) {
         toggleBookPreview(e);
     });
