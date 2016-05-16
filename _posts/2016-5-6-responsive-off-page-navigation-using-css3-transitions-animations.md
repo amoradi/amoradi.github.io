@@ -1,5 +1,5 @@
 ---
-title: Responsive Off-page Navigation Using CSS3 Transitions and Animations
+title: Responsive Off-page Navigation
 author: Aaron Moradi
 layout: post
 permalink: /responsive-off-page-navigation/
