@@ -578,6 +578,10 @@ p {
   color: coral;
 }
 
+body[data-hide-index="true"] .navigation .index-anchor-nav {
+    display: none;
+}
+
 .navigation .logo-link {
   text-decoration: none;
   font-size: 1rem;
