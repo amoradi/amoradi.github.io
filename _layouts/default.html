@@ -7,7 +7,7 @@
     {% include base-css-js.html %}
   </head>
 
-  <body class="{{ page.type }}">
+  <body {% if page.charga %} class="{{ page.charga }}" {% endif %}>
     <div>
       <nav class="navigation hidden-fullscrn">   
         <div>
