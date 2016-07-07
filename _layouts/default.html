@@ -7,7 +7,7 @@
     {% include base-css-js.html %}
   </head>
 
-  <body {% if page.type %} class="{{ page.type }}" {% endif %}>
+  <body {% if page.type %} class="{{ page.type }}" {% endif %} {% if page.displayIndex == false %} data-hide-index="true" {% endif %}>
     <div>
       <nav class="navigation hidden-fullscrn">   
         <div>
