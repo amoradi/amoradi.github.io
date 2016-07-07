@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Python Cookbook 2nd Edition
+title: Python Cookbook, 2nd Edition
 subtitle:
 author:  Alex Martelli, Anna Ravenscroft & David Ascher
 publisher: O'Reilly Media (March 2005)
