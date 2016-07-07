@@ -1,6 +1,7 @@
 ---
 layout: page
 title: work
+displayIndex: false
 ---
 <table class="large-table">
 	<tr>
