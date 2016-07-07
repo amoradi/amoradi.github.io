@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Info
+displayIndex: false
 ---
 <div class="info-section">
 <p>Aaron Moradi is a Detroit-based, knowledge-loving creative developer, hailing from the plains of Plano, Texas.</p>
