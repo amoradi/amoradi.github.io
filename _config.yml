@@ -82,4 +82,6 @@ collections:
     output: true
   customelements:
     output: true
+  notes:
+    output: true
 
