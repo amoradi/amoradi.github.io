@@ -1,6 +1,6 @@
 ---
 layout: page
-title: JavaScript: The Good Parts
+title: JavaScript&#58; The Good Parts
 subtitle: Unearthing the Excellence in JavaScript
 author: Douglas Crockford
 publisher: O'Reilly Media (May 2008)
