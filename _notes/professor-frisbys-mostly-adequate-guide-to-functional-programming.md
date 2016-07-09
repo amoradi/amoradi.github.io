@@ -82,7 +82,7 @@ var snakeCase = compose(replace(/\s+/ig, '_'), toLowerCase);
 
 ## chapter 06 - Declarative Programming
 
-Declarative, as opposed to imperative, means that we will write expressions, as opposed to step by step instructions
+Declarative, as opposed to imperative, means that we will write expressions, as opposed to step by step instructions.
 
 ```javascript
 // imperative
