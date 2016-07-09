@@ -13,9 +13,9 @@ When we say functions are "first class", we mean they are just like everyone els
 
 **side effect** - as anything that occurs in our computation other than the calculation of a result. Immutatble variables within functions (as opposed to mutable variables outside functions) help ensure consistant output and no side effects.
 
-**example: slice vs splice** 
-**slice** - does not MUTATE the obj it is acting upon, thus has no side effect
-**splice** - MUTATES the obj it is acting upon -- an observable side effect.
+example: slice vs splice
+slice - does not MUTATE the obj it is acting upon, thus has no side effect
+splice - MUTATES the obj it is acting upon -- an observable side effect.
 
 ## chapter 04 - Currying
 
