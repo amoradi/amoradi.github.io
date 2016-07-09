@@ -30,8 +30,8 @@ var curry = function(x) {
   }
 }
 
-curry(7);
-// as opposed to curry(7)(4)
+curry(7); // curried
+curry(7)(4); // not surried
 ```
 
 ## chapter 05 - Compostion
@@ -45,9 +45,9 @@ curry(7);
 
 ```javascript
 var compose = function(f,g) {
-	return function(x) {
-		return f(g(x));
-	}
+  return function(x) {
+    return f(g(x));
+  }
 }
 ```
 
