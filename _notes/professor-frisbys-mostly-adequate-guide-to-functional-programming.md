@@ -13,7 +13,7 @@ When we say functions are "first class", we mean they are just like everyone els
 
 **side effect** - as anything that occurs in our computation other than the calculation of a result. Immutatble variables within functions (as opposed to mutable variables outside functions) help ensure consistant output and no side effects.
 
-#### Pure & Impure Examplem in JS
+#### Pure & Impure Example in JS
 
 **slice** - (pure) does not mutate the obj it is acting upon, thus has no side effect.
 
