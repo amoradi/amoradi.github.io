@@ -29,6 +29,9 @@ var curry = function(x) {
     return x + y;
   }
 }
+
+curry(7);
+// as opposed to curry(7)(4)
 ```
 
 ## chapter 05 - Compostion
@@ -43,7 +46,7 @@ var compose = function(f,g) {
 		return f(g(x));
 	}
 }
-'''
+```
 
 ## chapter 06 - Declarative Programming
 
