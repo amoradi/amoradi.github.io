@@ -36,9 +36,12 @@ curry(7);
 
 ## chapter 05 - Compostion
 
-+ takes two functions
+**Composition** feels like function husbandry. You, breeder of functions, select two with traits you'd like to combine and mash them together to spawn a brand new one.
+
++ takes two functions as params
++ x is piped through the 2 fns
 + returning one function as a composition of the two
-+ executes from right to left
++ executes parameters from right to left
 
 ```javascript
 var compose = function(f,g) {
