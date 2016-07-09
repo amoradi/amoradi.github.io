@@ -70,7 +70,6 @@ var authenticate = function(form) {
   var user = toUser(form);
   return logIn(user);
 };
-
 // declarative
 var authenticate = compose(logIn, toUser);
 ```
