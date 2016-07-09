@@ -60,10 +60,10 @@ var associative = compose(f, compose(g, h)) == compose(compose(f, g), h);
 ```
 **Associative property** is a property of some binary operations (mathematics) and is a valid rule of replacement for expressions in logical proofs (propositional logic). Within an expression containing two or more occurrences in a row of the same associative operator (addition & multiplication), the order in which the operations are performed does not matter as long as the sequence of the operands is not changed.
 
-ex. (2 + 3) + 4 = 2 + (3 + 4) = 9,
+ex. (2 + 3) + 4 = 2 + (3 + 4) = 9<br/>
 [source](https://en.wikipedia.org/wiki/Associative_property)
 
-#### Pointfree
+### Pointfree
 
 **Pointfree** style means never having to say your data. Excuse me. It means functions that never mention the data upon which they operate.
 
