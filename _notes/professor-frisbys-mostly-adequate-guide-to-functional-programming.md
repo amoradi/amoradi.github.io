@@ -52,6 +52,33 @@ var compose = function(f,g) {
 }
 ```
 
+Composition is straight from the math books. In fact, perhaps it's time to look at a property that holds for any composition.
+
+```javascript
+// associativity
+var associative = compose(f, compose(g, h)) == compose(compose(f, g), h);
+```
+**Associative property**
+- is a property of some binary operations (mathematics)
+- is a valid rule of replacement for expressions in logical proofs (propositional logic)
+- Within an expression containing two or more occurrences in a row of the same associative operator (addition & multiplication), the order in which the operations are performed does not matter as long as the sequence of the operands is not changed.
+- (2 + 3) + 4 = 2 + (3 + 4) = 9,
+- https://en.wikipedia.org/wiki/Associative_property
+
+**Pointfree** style means never having to say your data. Excuse me. It means functions that never mention the data upon which they operate.
+
+```javascript
+//not pointfree because we mention the data: word
+var snakeCase = function(word) {
+  return word.toLowerCase().replace(/\s+/ig, '_');
+};
+
+//pointfree
+var snakeCase = compose(replace(/\s+/ig, '_'), toLowerCase);
+```
+
+ What we're doing is piping our data through each function of 1 argument. Currying allows us to prepare each function to just take its data, operate on it, and pass it along.
+
 ## chapter 06 - Declarative Programming
 
 Declarative, as opposed to imperative, means that we will write expressions, as opposed to step by step instructions
