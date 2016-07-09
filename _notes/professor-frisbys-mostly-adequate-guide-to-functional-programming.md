@@ -56,7 +56,7 @@ var compose = function(f,g) {
 Declarative, as opposed to imperative, means that we will write expressions, as opposed to step by step instructions
 
 ```javascript
-// 1)
+
 // imperative
 var makes = [];
 for (var i = 0; i < cars.length; i++) {
@@ -65,7 +65,6 @@ for (var i = 0; i < cars.length; i++) {
 // declarative
 var makes = cars.map(function(car) { return car.make; });
 
-// 2)
 // imperative
 var authenticate = function(form) {
   var user = toUser(form);
