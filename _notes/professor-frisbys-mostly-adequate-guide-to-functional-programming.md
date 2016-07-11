@@ -102,7 +102,7 @@ In category theory, we have something called **a category**. It is defined as a 
   + [JS] Compose function
 + A distinguished morphism called **identity**
   + [JS] Identity function
-      ```javascript
+      + ```javascript
       var id = function(x) {
         return x;
       };
