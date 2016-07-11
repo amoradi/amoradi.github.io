@@ -102,14 +102,16 @@ In category theory, we have something called **a category**. It is defined as a 
   + [JS] Compose function
 + A distinguished morphism called **identity**
   + [JS] Identity function
-  ```javascript
-  var id = function(x) {
-    return x;
-  };
 
-  // identity property holds true for every unary fn f
-  compose(id, f) == compose(f, id) == f;
-  ```
+```javascript
+var id = function(x) {
+  return x;
+};
+
+// identity property holds true for every unary fn f
+compose(id, f) == compose(f, id) == f;
+```
+
 ### Exercises
 ```javascript
 var _ = require('ramda');
