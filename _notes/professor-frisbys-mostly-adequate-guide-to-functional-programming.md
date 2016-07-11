@@ -128,7 +128,6 @@ var isLastInStock = _.compose(_.prop('in_stock'), _.last);
 isLastInStock(cars);
 
 // Use _.compose(), _.prop() and _.head() to retrieve the name of the first car.
-
 var nameOfFirstCar = _.compose(_.prop('name'), _.head);
 
 // Use the helper function _average to refactor averageDollarValue as a composition.
