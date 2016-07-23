@@ -119,7 +119,7 @@ L = [x ** 2 for x in range(9)]
 [ expression | for x in iterable | if condition]
 ```
 
-**Generator Expressions - achieve effects similar to list comprehensions, without generating a physical list, instead they create a *generator object* that will return elements one by one in iteration context
+**Generator Expressions** - achieve effects similar to list comprehensions, without generating a physical list, instead they create a *generator object* that will return elements one by one in iteration context
 ```python
 ords = (ord(x) for x in aString if x not in skipStr)
 ```
