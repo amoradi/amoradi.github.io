@@ -10,15 +10,16 @@ Python, in addition to those nifty data structures&#8211;tuples and arrays&#8211
 
 ### Example
 ```python
-    	listA = [1,2,3,4]
-    	dictA = {"one":1, "two":2, "three":3, "four":4}
-     
-    	print listA[1], dictA["one"]
+    listA = [1,2,3,4]
+    dictA = {"one":1, "two":2, "three":3, "four":4}
+
+    print listA[1], dictA["one"]
 ```
 ### Syntax
 ```python
-    	dictX = {"KEY":VALUE, "KEY":VALUE, "KEY":VALUE}
+    dictX = {"KEY":VALUE, "KEY":VALUE, "KEY":VALUE}
 ```
+
 Where KEY is an immutable type, e.g. a String, tuple, int, float.  
 And VALUE can be of any type.
 
