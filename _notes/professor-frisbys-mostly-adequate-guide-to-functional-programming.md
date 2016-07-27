@@ -3,7 +3,7 @@ layout: page
 title: Professor Frisby's Mostly Adequate Guide to Functional Programming
 displayIndex: false
 ---
-## chapter 01 - What ever are we doing?
+## Chapter 01 - What ever are we doing?
 
 #### General Programming Principles
 + DRY (don't repeat yourself)
@@ -12,11 +12,11 @@ displayIndex: false
 + Principle of least surprise
 + Single responsibility
 
-## chapter 02 - First Class Functions
+## Chapter 02 - First Class Functions
 
 When we say functions are "first class", we mean they are just like everyone else... so normal class (coach?). We can treat functions like any other data type and there is nothing particularly special about them - they may be stored in arrays, passed around, assigned to variables, what have you.
 
-## chapter 03 - Pure Functions
+## Chapter 03 - Pure Functions
 
 **pure function** - function that, given the same input, will always return the same output and does not have any observable side effect.
 
@@ -27,7 +27,7 @@ When we say functions are "first class", we mean they are just like everyone els
 **slice** - (pure) does not mutate the obj it is acting upon, thus has no side effect.<br />
 **splice** - (impure) mutates the obj it is acting upon -- an observable side effect.
 
-## chapter 04 - Currying
+## Chapter 04 - Currying
 
 **Currying** creates a closure, returning a fn, and passing one parameter per fn, one can pass one or more less parameters to the function, "initializating" or "starting the function off" at the parameter(s) passed.
 
@@ -43,7 +43,7 @@ curry(7); // curried
 curry(7)(4); // not curried
 ```
 
-## chapter 05 - Compostion
+## Chapter 05 - Compostion
 
 **Composition** feels like function husbandry. You, breeder of functions, select two with traits you'd like to combine and mash them together to spawn a brand new one.
 
@@ -153,7 +153,7 @@ var _underscore = _.replace(/\W+/g, '_'); //<-- leave this alone and use to sani
 var sanitizeNames = _.compose(R.map(_underscore()), _.map(function(c) {return c.name;}));
 ```
 
-## chapter 06 - Declarative Programming
+## Chapter 06 - Declarative Programming
 
 Declarative, as opposed to imperative, means that we will write expressions, as opposed to step by step instructions, specifying *what* not *how*.
 
@@ -175,7 +175,7 @@ var authenticate = function(form) {
 var authenticate = compose(logIn, toUser);
 ```
 
-## chapter 07 - Hindley-Milner Type Signatures
+## Chapter 07 - Hindley-Milner Type Signatures
 
 In **Hindley-Milner**, functions are written as **a -> b** where **a and b are variables for any type**.
 
@@ -189,11 +189,11 @@ Once a type variable is introduced, there emerges a curious property called [par
 
 Hindley-Milner type signatures are ubiquitous in the functional world. Though they are simple to read and write, it takes time to master the technique of understanding programs through signatures alone. We will add type signatures to each line of code from here on out.
 
-// >>>>>> chapter 08 - Tupperware <<<<<<
+// >>>>>> Chapter 08 - Tupperware <<<<<<
 // -----------------
 
-// >>>>>> chapter 09 - Monads <<<<<<
+// >>>>>> Chapter 09 - Monads <<<<<<
 // -----------------
 
-// >>>>>> chapter 10 - Applicative Functors <<<<<<
+// >>>>>> Chapter 10 - Applicative Functors <<<<<<
 // -----------------
