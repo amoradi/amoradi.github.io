@@ -17,7 +17,6 @@ categories: math
   * X values cannot have multiple Y values
   * All of Y may not correspond to X
 
-* * *
 ## Surjection 
 <figure>
 <img src="/images/surjection.png" alt="" width="200" height="200" class="pull-right" />
@@ -27,7 +26,6 @@ categories: math
   * X values can have multiple Y values
   * All of Y must correspond to X
 
-* * *
 ## Bijection
 <figure>
 <img src="/images/bijection.png" alt="" width="200" height="200" class="pull-right" />
