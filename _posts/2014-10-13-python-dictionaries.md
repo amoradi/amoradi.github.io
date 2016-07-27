@@ -15,6 +15,7 @@ Python, in addition to those nifty data structures&#8211;tuples and arrays&#8211
 
     print listA[1], dictA["one"]
 ```
+
 ### Syntax
 ```python
     dictX = {"KEY":VALUE, "KEY":VALUE, "KEY":VALUE}
@@ -71,7 +72,6 @@ type(variable)
 
 ## Looping
 ```python
-    
     for k in ID.keys():
         print ID[k]   # prints number associated with each key.
     
