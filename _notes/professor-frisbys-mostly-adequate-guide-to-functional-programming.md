@@ -95,13 +95,15 @@ What we're doing is piping our data through each function of 1 argument. Curryin
 In category theory, we have something called **a category**. It is defined as a collection with the following components:
 
 + A collection of **objects**
-  + (in JS) Data types - For instance, String, Boolean, Number, Object, etc. We often view data types as sets of all the possible values. One could look at Boolean as the set of [true, false] and Number as the set of all possible numeric values.
 + A collection of **morphisms**
-  + (in JS) Pure functions
 + A notion of **composition** on the morphisms
-  + (in JS) Compose function
 + A distinguished morphism called **identity**
-  + (in JS) Identity function
+
+**JS Equivalents**
++ Data types - For instance, String, Boolean, Number, Object, etc. We often view data types as sets of all the possible values. One could look at Boolean as the set of [true, false] and Number as the set of all possible numeric values.
++ Pure functions
++ Compose function
++ Identity function
 
 ```javascript
 var id = function(x) {
