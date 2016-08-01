@@ -6,9 +6,9 @@ displayIndex: false
 
 ## Chapter 1 - Lines and Their Slopes
 
-### Calculate the slope of a line.
-
 ---
+
+### Calculate the slope of a line.
 
 **Slope Formula** m = y<sub>2</sub> - y<sub>1</sub> / x<sub>2</sub> - x<sub>1</sub>
 
