@@ -1343,7 +1343,7 @@ keyboard-arrows span:not(.disabled):hover {
 }
 
 #content > * > * {
-  opacity: 0;
+  /* stop calling fadeInPageElements - opacity: 0;*/
 }
 
 #content > .index > .index-content,
