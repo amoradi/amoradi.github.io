@@ -116,7 +116,7 @@ function calcTileHeight($elem) {
                 }
             });
 
-            //$elem.css('height', tallest);
+            $elem.css('height', tallest);
         }
     }
 }
