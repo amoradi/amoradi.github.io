@@ -21,9 +21,7 @@ displayIndex: false
 - [ch. 13 - Trigonometry](#ch13)
 - [ch. 14 - Sequences](#ch14)
 
-<a name="ch1"></a>
-
-## Chapter 1 - Lines and Their Slopes
+## <a name="ch1"></a>Chapter 1 - Lines and Their Slopes
 
 ---
 
@@ -47,54 +45,28 @@ displayIndex: false
 - If slopes are equal and neither line is vertical, then the lines are **parallel**.
 - Perpendicualer: slopes are negativev reciprocals of each other.
 
-<a name="ch2"></a>
+## <a name="ch2"></a>Chapter 2 - Introduction to Functions
 
-## Chapter 2 - Introduction to Functions
+## <a name="ch3"></a>Chapter 3 - Functions and Their Graphs
 
-<a name="ch3"></a>
+## <a name="ch4"></a>Chapter 4 - Combinations of Functions
 
-## Chapter 3 - Functions and Their Graphs
+## <a name="ch5"></a>Chapter 5 - Transformations of Functions
 
-<a name="ch4"></a>
+## <a name="ch6"></a>Chapter 6 - Quadratic Functions
 
-## Chapter 4 - Combinations of Functions
+## <a name="ch7"></a>Chapter 7 - Polynomial Functions
 
-<a name="ch5"></a>
+## <a name="ch8"></a>Chapter 8 - Rational Functions
 
-## Chapter 5 - Transformations of Functions
+## <a name="ch9"></a>Chapter 9 - Exponential and Logarithmic Functions
 
-<a name="ch6"></a>
+## <a name="ch10"></a>Chapter 10 - Systems of Equations and Inequalities
 
-## Chapter 6 - Quadratic Functions
+## <a name="ch11"></a>Chapter 11 - Matrices
 
-<a name="ch7"></a>
+## <a name="ch12"></a>Chapter 12 - Conic Sections
 
-## Chapter 7 - Polynomial Functions
+## <a name="ch13"></a>Chapter 13 - Trigonometry
 
-<a name="ch8"></a>
-
-## Chapter 8 - Rational Functions
-
-<a name="ch9"></a>
-
-## Chapter 9 - Exponential and Logarithmic Functions
-
-<a name="ch10"></a>
-
-## Chapter 10 - Systems of Equations and Inequalities
-
-<a name="ch11"></a>
-
-## Chapter 11 - Matrices
-
-<a name="ch12"></a>
-
-## Chapter 12 - Conic Sections
-
-<a name="ch13"></a>
-
-## Chapter 13 - Trigonometry
-
-<a name="ch14"></a>
-
-## Chapter 14 - Sequences
+## <a name="ch14"></a>Chapter 14 - Sequences
