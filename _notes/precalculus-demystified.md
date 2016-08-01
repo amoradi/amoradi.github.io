@@ -53,9 +53,8 @@ displayIndex: false
 
 ## Chapter 11 - Matrices
 
-<a name="ch12"></a>
-
 ## Chapter 12 - Conic Sections
+<a name="ch12"></a>
 
 ## Chapter 13 - Trigonometry
 
