@@ -4,6 +4,8 @@ title: Precalculus Demystified
 displayIndex: false
 ---
 
+## Table of Contents
+
 - [ch. 1 - Lines and Their Slopes](#ch1)
 - [ch. 2 - Introduction to Functions](#ch2)
 - [ch. 3 - Functions and Their Graphs](#ch3)
