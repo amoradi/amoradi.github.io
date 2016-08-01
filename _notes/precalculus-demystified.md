@@ -26,7 +26,7 @@ displayIndex: false
 
 ### Calculate the slope of a line.
 
-**Slope Formula** m = y<sub>2</sub> - y<sub>1</sub> / x<sub>2</sub> - x<sub>1</sub>
+**Slope Formula** <code>m = y<sub>2</sub> - y<sub>1</sub> / x<sub>2</sub> - x<sub>1</sub></code>
 
 - The slope of a horizontal line is 0.
 - The slope of a vertical line is undefined.
@@ -35,7 +35,7 @@ displayIndex: false
 
 ### Given a line's slope and a point on its graph, find an equation of a line.
 
-**Slope-Intercept Equation of a Line** is used in this case: y = mx + b
+**Slope-Intercept Equation of a Line** is used in this case: <code>y = mx + b</code>
 
 ---
 
