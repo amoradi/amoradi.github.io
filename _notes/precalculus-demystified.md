@@ -4,6 +4,10 @@ title: Precalculus Demystified
 displayIndex: false
 ---
 
+- [ch. 1](#ch1)
+- [ch. 12](#ch12)
+
+<a name="ch1"></a>
 ## Chapter 1 - Lines and Their Slopes
 
 ---
@@ -48,6 +52,7 @@ displayIndex: false
 
 ## Chapter 11 - Matrices
 
+<a name="ch12"></a>
 ## Chapter 12 - Conic Sections
 
 ## Chapter 13 - Trigonometry
