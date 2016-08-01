@@ -276,7 +276,7 @@ function docReady() {
     });
 
     // fade page elems
-    fadeInPageElements();
+    //fadeInPageElements();
 
     function calcIndexPos() {
         var nH = $('.navigation').outerHeight() / 2;
@@ -318,7 +318,7 @@ function docReady() {
             calcTileHeight($tiles);
         }
 
-        fadeInPageElements();
+        //fadeInPageElements();
         calcIndexPos();
     });
 
@@ -390,7 +390,7 @@ $(document).ready(function() {
 });
 
 // fade in page elements
-$(window).scroll(fadeInPageElements);
+//$(window).scroll(fadeInPageElements);
 
 // Wait for window load
 $(window).load(function() {
