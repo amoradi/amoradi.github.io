@@ -1836,6 +1836,7 @@ keyboard-arrows span:not(.disabled):hover {
     float: left;
     font-size: 1.7rem;
     margin-left: 10.4rem;
+    display: none;
   }
 
   .sticky-header .welcome-title span {
