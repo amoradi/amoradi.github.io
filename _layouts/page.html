@@ -8,7 +8,10 @@ type: page-layout
   {% if page.subtitle != null %}
   	<h4>{{ page.subtitle }}</h4>
   {% endif %}
- 
+  {% if page.author != null %}
+  	<h5>by {{ page.author }}</h5>
+  {% endif %}
+  
   <div class="entry">
     {{ content }}
   </div>
