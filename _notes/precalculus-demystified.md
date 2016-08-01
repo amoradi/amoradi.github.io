@@ -13,13 +13,13 @@ displayIndex: false
 - The slope of a horizontal line is 0.
 - The slope of a vertical line is undefined.
 
-***
+---
 
 ### Given a line's slope and a point on its graph, find an equation of a line.
 
 **Slope-Intercept Equation of a Line** is used in this case: y = mx + b
 
-***
+---
 
 ### Determine when 2 lines are parallel, perpendicular, or neither
 
