@@ -4,9 +4,11 @@ title: Precalculus Demystified
 displayIndex: false
 ---
 
-## Chapter 1 Lines and Their Slopes
+## Chapter 1 - Lines and Their Slopes
 
 ### Calculate the slope of a line.
+
+---
 
 **Slope Formula** m = y<sub>2</sub> - y<sub>1</sub> / x<sub>2</sub> - x<sub>1</sub>
 
@@ -26,28 +28,28 @@ displayIndex: false
 - If slopes are equal and neither line is vertical, then the lines are **parallel**.
 - Perpendicualer: slopes are negativev reciprocals of each other.
 
-## Chapter 2 Introduction to Functions
+## Chapter 2 - Introduction to Functions
 
-## Chapter 3 Functions and Their Graphs
+## Chapter 3 - Functions and Their Graphs
 
-## Chapter 4 Combinations of Functions
+## Chapter 4 - Combinations of Functions
 
-## Chapter 5 Transformations of Functions
+## Chapter 5 - Transformations of Functions
 
-## Chapter 6 Quadratic Functions
+## Chapter 6 - Quadratic Functions
 
-## Chapter 7 Polynomial Functions
+## Chapter 7 - Polynomial Functions
 
-## Chapter 8 Rational Functions
+## Chapter 8 - Rational Functions
 
-## Chapter 9 Exponential and Logarithmic Functions
+## Chapter 9 - Exponential and Logarithmic Functions
 
-## Chapter 10 Systems of Equations and Inequalities
+## Chapter 10 - Systems of Equations and Inequalities
 
-## Chapter 11 Matrices
+## Chapter 11 - Matrices
 
-## Chapter 12 Conic Sections
+## Chapter 12 - Conic Sections
 
-## Chapter 13 Trigonometry
+## Chapter 13 - Trigonometry
 
-## Chapter 14 Sequences
+## Chapter 14 - Sequences
