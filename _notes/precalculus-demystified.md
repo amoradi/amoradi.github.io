@@ -5,6 +5,7 @@ displayIndex: false
 ---
 
 - [ch. 1](#ch1)
+- [ch. 6](#ch6)
 - [ch. 12](#ch12)
 
 <a name="ch1"></a>
@@ -42,6 +43,7 @@ displayIndex: false
 ## Chapter 5 - Transformations of Functions
 
 ## Chapter 6 - Quadratic Functions
+<a name="ch6"></a>
 
 ## Chapter 7 - Polynomial Functions
 
