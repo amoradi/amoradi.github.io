@@ -7,10 +7,13 @@ type: page-layout
   <h1 class="page-post-title">{{ page.title }}</h1>
   {% if page.subtitle != null %}
   	<h4>{{ page.subtitle }}
-  	  {% if page.author != null %}
-      	| by {{ page.author }}
+      {% if page.author != null %}
+        | by {{ page.author }}
       {% endif %}
   	</h4>
+  {% endif %}
+  {% if page.author != null && page.subtitle == null %}
+    <h4>by {{ page.author }}</h4>
   {% endif %}
   
   <div class="entry">
