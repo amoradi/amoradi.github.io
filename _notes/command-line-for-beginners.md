@@ -5,7 +5,7 @@ author: Jessica Dillion
 displayIndex: false
 ---
 
-Source: https://quickleft.com/blog/command-line-tutorials-summary-what-s-next/
+[Source](https://quickleft.com/blog/command-line-tutorials-summary-what-s-next/)
 
 <code>~</code> - home directory
 
@@ -19,6 +19,7 @@ Source: https://quickleft.com/blog/command-line-tutorials-summary-what-s-next/
 
 <code>touch fileName.ext</code> - make an empty file.
 
+<!--
 touch helloworld.txt
 
 We just made an empty file called helloworld.txt. Print the content of your practice directory, and make sure you see your file. Success! Now, brace yourself, because we're about to enter the world of the command line editor. This is an important tool, but it's very easy to mess up, so make sure you follow along closely. Type:
@@ -65,7 +66,7 @@ This deletes the practice directory. An important note about the "rmdir" command
 
 If you want to delete an entire directory, including the contents, you can type rm -rf . Be careful with this, as it's a powerful tool! Never, EVER type "rm -rf /". With those flags set, you'll delete your entire root directory, otherwise known as the most important directory on your computer. This is a common prank that people like to pull on command line newbies, so be on your guard.
 
-That's all for this installment! Tune in two weeks from now to learn more command line goodness!
+That's all for this installment! Tune in two weeks from now to learn more command line goodness! -->
 
 ## Finding & Grepping
 
