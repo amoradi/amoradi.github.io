@@ -5,8 +5,6 @@ author: Jessica Dillion
 displayIndex: false
 ---
 
-[Source](https://quickleft.com/blog/command-line-tutorials-summary-what-s-next/)
-
 <code>~</code> - home directory
 
 <code>pwd</code> - present working directory, where you are currently at.
@@ -87,3 +85,5 @@ That's all for this installment! Tune in two weeks from now to learn more comman
 <code>lsof</code> - list currently open files.
 
 <code>lsof &vert; grep 1234</code> - with process id from <code>ps aux</code>, you can see what the process has open.
+
+[Source](https://quickleft.com/blog/command-line-tutorials-summary-what-s-next/)
