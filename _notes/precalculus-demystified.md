@@ -37,11 +37,13 @@ displayIndex: false
 
 **Slope-Intercept Equation of a Line** is used in this case: <code>y = mx + b</code>
 
+Where <code>b</code> is the **y-intercept** (where line crosses y-axis).
+
 ---
 
 ### Determine when 2 lines are parallel, perpendicular, or neither
 
-- If slopes are equal and neither line is vertical, then the lines are **parallel**.
+- Parallel: slopes are equal and neither line is vertical, or, both lines are vertical.
 - Perpendicualer: slopes are negativev reciprocals of each other.
 
 ## <a name="ch2"></a>Chapter 2 - Introduction to Functions
