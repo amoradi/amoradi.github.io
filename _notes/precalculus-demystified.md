@@ -48,6 +48,22 @@ Where <code>b</code> is the **y-intercept** (where line crosses y-axis).
 
 ## <a name="ch2"></a>Chapter 2 - Introduction to Functions
 
+To **evaluate a function**, means to insert a number for <code>x</code> (f(x) = y).
+
+---
+
+**Piecewise function** - is a function with two or more formulas for computing <code>y</code>.
+
+---
+
+**Difference quotient** - <code>(f(a + h) - f(a)) / h</code>
+
+Given a function, such as, <code>f(x) = x<sup>2</sup> + 3</code>
+
+- evaluate for f(a+h)
+- evaluate for f(a)
+- put back into difference quotient & solve
+
 ## <a name="ch3"></a>Chapter 3 - Functions and Their Graphs
 
 ## <a name="ch4"></a>Chapter 4 - Combinations of Functions
