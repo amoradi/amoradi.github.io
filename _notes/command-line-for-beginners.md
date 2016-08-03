@@ -69,13 +69,13 @@ That's all for this installment! Tune in two weeks from now to learn more comman
 
 ## Finding & Grepping
 
-<code>find ~ -name *.jpg</code> - find all jpg's in home directory.  command name (find) &vert; directory to search (~) &vert;  flag (-name *.jpg)
+<code>find ~ -name *.jpg</code> - find all jpg's in home directory.  command name (find) &#124; directory to search (~) &#124; flag (-name *.jpg)
 
 <code>grep "blog" temp.txt</code> - search a given file for an expression. Returns every line in temp.txt where "blog" is located.
 <code>grep "bl.g" temp.txt</code> - wildcard ".". Would return blog blag blrg
 <code>grep -i "cats" ~/cats.txt</code> - case insensitive flag.
 
-<code>history &vert; grep "find"</code> - searches command line history for all commands with "find" in them. &vert; (pipe) takes output on left side and feeds it to the command on the right.
+<code>history &vert; grep "find"</code> - searches command line history for all commands with "find" in them. &#124; (pipe) takes output on left side and feeds it to the command on the right.
 
 <code>!5</code> - executes the command following the number 5.
 
