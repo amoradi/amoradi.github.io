@@ -5,6 +5,8 @@ author: Jessica Dillion
 displayIndex: false
 ---
 
+Source: https://quickleft.com/blog/command-line-tutorials-summary-what-s-next/
+
 <code>~</code> - home directory
 
 <code>pwd</code> - present working directory, where you are currently at.
@@ -65,3 +67,22 @@ If you want to delete an entire directory, including the contents, you can type 
 
 That's all for this installment! Tune in two weeks from now to learn more command line goodness!
 
+## Finding & Grepping
+
+<code>find ~ -name *.jpg</code> - find all jpg's in home directory. | command name (find) | directory to search (~) | flag (-name *.jpg) |
+
+<code>grep "blog" temp.txt</code> - search a given file for an expression. Returns every line in temp.txt where "blog" is located.
+<code>grep "bl.g" temp.txt</code> - wildcard ".". Would return blog blag blrg
+<code>grep -i "cats" ~/cats.txt</code> - case insensitive flag.
+
+<code>history | grep "find"</code> - searches command line history for all commands with "find" in them. | (pipe) takes output on left side and feeds it to the command on the right.
+
+<code>!5</code> - executes the command following the number 5.
+
+<code>ps aux</code> - lists all the processes running by process id.
+
+<code>ps aux | grep terminal</code> - search through processes.
+
+<code>lsof</code> - list currently open files.
+
+<code>lsof | grep 1234</code> - with process id from <code>ps aux</code>, you can see what the process has open.
