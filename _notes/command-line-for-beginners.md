@@ -5,6 +5,8 @@ author: Jessica Dillion
 displayIndex: false
 ---
 
+[Windows & Unix Command Line Equivalents](http://www.lemoda.net/windows/windows2unix/windows2unix.html)
+
 <code>~</code> - home directory
 
 <code>pwd</code> - present working directory, where you are currently at.
