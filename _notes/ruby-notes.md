@@ -8,7 +8,7 @@ displayIndex: false
 string interpolation: #{var}
 
 ## Methods
-Methods ending with:
+Methods ending with
 * ? - predicates, return truthy
 * ! - mutates the variable
 
