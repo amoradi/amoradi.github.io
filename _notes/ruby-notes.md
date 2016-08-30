@@ -8,9 +8,9 @@ displayIndex: false
 string interpolation: #{var}
 
 ## Methods
-Methods ending with
-* ? - predicates, return truthy
-* ! - mutates the variable
+- Methods ending with
+	* ? predicates, return truthy
+	* ! mutates the variable
 
 ## Classes
 - classes are blueprints or factories for objects
