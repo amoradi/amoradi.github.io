@@ -1,11 +1,21 @@
 ---
 layout: page
-title: Ruby Notes
+title: Ruby
 displayIndex: false
 ---
 
 ## String
 string interpolation: #{var}
+
+puts vs. print
+
+3.times { print "Hello!" }
+Hello!Hello!Hello!
+
+3.times { puts "Hello!" }
+Hello!
+Hello!
+Hello!
 
 ## Methods
 - Methods ending with
@@ -25,6 +35,31 @@ string interpolation: #{var}
 - we refer to the external state of an object as its attributes
 
 ```ruby
+# example class
+# Triangle.new(x, y, z) => calls initialize
+# puts triangle1 => calls to_s
+
+class Triangle
+
+	def initialize(angle_1=60, angle_2=60, angle_3=60)
+		@angle_1 = angle_1
+		@angle_2 = angle_2
+		@angle_3 = angle_3
+	end
+
+	def to_s
+		"#{@angle_1}, #{@angle_2}, #{@angle_3}"
+	end
+
+	def isTriangle?
+		unless @angle_1 + @angle_2 + @angle_3 == 180
+			return false
+		end
+
+		return true
+	end
+end
+
 # overide attr_accessor and attr_writer 
 # with "varName=(foo)"
 

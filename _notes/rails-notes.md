@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Rails Notes
+title: Rails
 displayIndex: false
 ---
 
