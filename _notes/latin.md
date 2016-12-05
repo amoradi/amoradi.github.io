@@ -21,17 +21,20 @@ A verb is either singular or plural
 Tense, in Latin, refers to a *time reference* (when it took place) and a *duration* (**aspect**). Latin has 6 tenses.
 
 **action in progress**
+
 - present [past]
 - imperfect [present]
 - future [future]
 
 **action completed**
+
 - perfect [past]
 - pluperfect [present]
 - future perfect [future]
 
 ### Mood
 Mood refers to the way a speaker *treats* an action. Latin has 3 moods.
+
 - **indicative mood**
  * treats the action as a fact.
  * I am opening the window.
