@@ -9,6 +9,7 @@ Latin verbs have inflections to encode information for **5 characteristics**:
 
 ### Person
 There are 3 persons in Latin:
+
 - 1st (I, we)
 - 2nd (you)
 - 3rd (he, she, it, they)
