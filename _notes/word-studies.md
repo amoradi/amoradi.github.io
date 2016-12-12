@@ -3,6 +3,7 @@ layout: page
 title: Word Studies
 displayIndex: false
 ---
+<br />
 
  **parochial** [puh-roh-kee-uh l]
  
