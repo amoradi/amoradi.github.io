@@ -27,3 +27,17 @@ The fundamentalist had a parochial view of religon.
 - soothing to the mind or feelings.
 
 The pastor spoke smooth, anodyne words to them.
+
+---
+
+
+**fail-safe** [feyl-seyf]
+
+
+- adjective
+- equipped with a secondary system that insures continued operation even if the primary system fails.
+- guaranteed to work; totally reliable: a fail-safe recipe for a cheese soufflé.
+- noun
+- something designed to work or function automatically to prevent breakdown of a mechanism, system, or the like.
+- verb (used with object), fail-safed, fail-safing.
+- to make fail-safe.
