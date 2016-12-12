@@ -1,6 +1,6 @@
 ---
 layout: page
-title: words
+title: Word Studies
 displayIndex: false
 ---
  **parochial** [puh-roh-kee-uh l]
