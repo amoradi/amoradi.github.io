@@ -10,6 +10,8 @@ displayIndex: false
 - of or relating to parochial schools or the education they provide.
 - very limited or narrow in scope or outlook; provincial: parochial views; a parochial mentality.
 
+The fundamentalist had a parochial view of religon.
+---
 **anodyne** [an-uh-dahyn]
 - noun
 - a medicine that relieves or allays pain.
@@ -17,3 +19,5 @@ displayIndex: false
 - adjective
 - relieving pain.
 - soothing to the mind or feelings.
+
+The pastor spoke smooth, anodyne words to them.
