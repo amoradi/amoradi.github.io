@@ -6,6 +6,7 @@ displayIndex: false
 
  **parochial** [puh-roh-kee-uh l]
  
+ 
 - adjective
 - of, relating to, or financially supported by one or more church parishes: parochial churches in Great Britain.
 - of or relating to parochial schools or the education they provide.
@@ -16,6 +17,7 @@ The fundamentalist had a parochial view of religon.
 ---
 
 **anodyne** [an-uh-dahyn]
+
 
 - noun
 - a medicine that relieves or allays pain.
