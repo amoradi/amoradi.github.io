@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Data Fluency&#58;
+title: Data Fluency
 subtitle: Empowering Your Organization with Effective Data Communication
 author: Chris Gemignani, Patrick Schuermann, Richard Galentino, and Zach Gemignani
 displayIndex: false
