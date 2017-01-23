@@ -1,6 +1,6 @@
 ---
 layout: page
-title: : Data Fluency: Empowering Your Organization with Effective Data Communication 
+title: Data Fluency: Empowering Your Organization with Effective Data Communication 
 displayIndex: false
 ---
 
