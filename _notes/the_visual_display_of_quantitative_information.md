@@ -12,10 +12,10 @@ displayIndex: false
 > Everyone spoke of an information overload, but what there was in fact was a non-information overload.
 > -- <cite>Richard Saul Wurman, What-If, Could-Be (Philadelphia, 1976)</cite>
 
-<p>
-**data-ink**<br />
-The non-erasable core of a graphic, the non-redundant ink arranged in response to variation in the numbers represented.
-</p>
+###Data-ink###
+
+- The non-erasable core of a graphic, the non-redundant ink arranged in response to variation in the numbers represented.
+
 
 ```javascript
 const data-ink ratio = data-ink / total ink used to print the graphic
