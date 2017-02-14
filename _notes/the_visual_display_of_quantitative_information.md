@@ -13,7 +13,8 @@ displayIndex: false
 > -- <cite>Richard Saul Wurman, What-If, Could-Be (Philadelphia, 1976)</cite>
 
 
-**data-ink** - the non-erasable core of a graphic, the non-redundant ink arranged in response to variation in the numbers represented.
+**data-ink**
+The non-erasable core of a graphic, the non-redundant ink arranged in response to variation in the numbers represented.
 
 
 ```javascript
@@ -22,13 +23,11 @@ const data-ink ratio = data-ink / total ink used to print the graphic
 
 
 **Erasing Principles**
-
 - erase *non-data-ink*, within reason
 - erase *redundant data-ink*
 
 
 **Conclusion**
-
 - above all else show the data
 - maximize the data-ink ratio
 - erase non-data-ink
