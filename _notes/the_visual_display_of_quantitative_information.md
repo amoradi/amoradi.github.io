@@ -12,7 +12,7 @@ displayIndex: false
 > Everyone spoke of an information overload, but what there was in fact was a non-information overload.
 > -- <cite>Richard Saul Wurman, What-If, Could-Be (Philadelphia, 1976)</cite>
 
-###Data-ink###
+### Data-ink
 
 - The non-erasable core of a graphic, the non-redundant ink arranged in response to variation in the numbers represented.
 
@@ -22,14 +22,14 @@ const data-ink ratio = data-ink / total ink used to print the graphic
 ```
 
 
-###Erasing Principles###
+### Erasing Principles
 
 - erase *non-data-ink*, within reason
 - erase *redundant data-ink*
 
 
 
-###Conclusion###
+### Conclusion
 
 - above all else show the data
 - maximize the data-ink ratio
@@ -41,5 +41,12 @@ const data-ink ratio = data-ink / total ink used to print the graphic
 
 > With savage pictures fill their gaps
 And o'er unhabitable downs
-Place elephants for want of toens.
+Place elephants for want of towns.
 > -- <cite>Jonathan Swift's indictment of 17th-century cartographers</cite>
+
+### The Gris
+- "the grid should usually be muted or completely surpressed so that its presence is only implicit--lest it compete with the data."
+
+
+### Self-Promoting Graphics: The Duck
+- "When a graphic is taken over by decorative forms or computer debris, when the data measures and structures become Design Elements, when the overall design purveys Graphical Style rather than quantitative information, then that graphic may be called a *duck* in honor of the duck-form store, "Big Duck."
