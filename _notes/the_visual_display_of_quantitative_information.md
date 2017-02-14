@@ -44,7 +44,7 @@ And o'er unhabitable downs
 Place elephants for want of towns.
 > -- <cite>Jonathan Swift's indictment of 17th-century cartographers</cite>
 
-### The Gris
+### The Grid
 - "the grid should usually be muted or completely surpressed so that its presence is only implicit--lest it compete with the data."
 
 
