@@ -7,7 +7,7 @@ pages: 197
 displayIndex: false
 ---
 
-## 4. Data-Ink and Graphical Redesign
+## 4 Data-Ink and Graphical Redesign
 
 > Everyone spoke of an information overload, but what there was in fact was a non-information overload.
 > -- <cite>Richard Saul Wurman, What-If, Could-Be (Philadelphia, 1976)</cite>
@@ -36,3 +36,10 @@ const data-ink ratio = data-ink / total ink used to print the graphic
 - erase non-data-ink
 - erase redundant data-ink
 - revise and edita
+
+## 5 Chartjunk: Vibrations, Grids, and Ducks
+
+> With savage pictures fill their gaps
+And o'er unhabitable downs
+Place elephants for want of toens.
+> -- <cite>Jonathan Swift's indictment of 17th-century cartographers</cite>
