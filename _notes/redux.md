@@ -41,10 +41,10 @@ function addTodo(text) {
 - it's the type of function you would pass to `Array.prototype.reduce(reducer, ?initialValue)`
 - it's **very important that the reducer stays pure**
 
-don't's:  
-  - mutate its arguments
-  - perform side effects like API calls and routing transitions
-  - call non-pure functions, e.g. Date.now() or Math.random()
+avoid:  
+  - mutating its arguments
+  - performing side effects like API calls and routing transitions
+  - calling non-pure functions, e.g. Date.now() or Math.random()
 
 ## Store
 - **holds application state**
