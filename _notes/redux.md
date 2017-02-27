@@ -31,17 +31,17 @@ function addTodo(text) {
 ```
 
 ## Reducers
-- a **reducer** is a **pure function** that takes the **previous state and an action**, and **returns the next state**.
+- a **pure function** that takes the **previous state** and **an action**, and **returns the next state**.
 - they **update state** according to actions
 
 ```javascript
 (previousState, action) => newState
 ```
 
-- it's called a reducer because it's the type of function you would pass to `Array.prototype.reduce(reducer, ?initialValue)`.
+- it's the type of function you would pass to `Array.prototype.reduce(reducer, ?initialValue)`
 - it's **very important that the reducer stays pure**
 
-Things you should never do inside a reducer:  
+don't's:  
   - mutate its arguments
   - perform side effects like API calls and routing transitions
   - call non-pure functions, e.g. Date.now() or Math.random()
