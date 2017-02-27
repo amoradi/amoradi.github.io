@@ -8,6 +8,7 @@ displayIndex: false
 - are **payloads of information** that **send data** from your **application to your store**
 - send them to the store using `store.dispatch()`
 - plain javaScript objects that must have a `type` property
+- describe the fact that something happened
 
 ```javascript
 {
