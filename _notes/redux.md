@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Redux
+subtitle: http://redux.js.org/docs/basics/
 displayIndex: false
 ---
 
