@@ -31,6 +31,7 @@ function addTodo(text) {
 
 ## Reducers
 - a **reducer** is a **pure function** that takes the **previous state and an action**, and **returns the next state**.
+- they **update state** according to actions
 
 ```javascript
 (previousState, action) => newState
@@ -44,7 +45,12 @@ Things you should never do inside a reducer:
   - perform side effects like API calls and routing transitions
   - call non-pure functions, e.g. Date.now() or Math.random()
 
-
 ## Store
+- **holds application state**
+- allows access to state via getState()
+- allows state to be updated via dispatch(action)
+- registers listeners via subscribe(listener)
+- handles unregistering of listeners via the function returned by subscribe(listener)
+
 ## Data Flow
 ## Usage with React
