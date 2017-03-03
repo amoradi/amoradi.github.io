@@ -1,3 +1,10 @@
+---
+layout: page
+title: React Router
+subtitle: https://github.com/ReactTraining/react-router
+displayIndex: false
+---
+
 `react-router`
 - took over determining what components are rendered on each route
 
