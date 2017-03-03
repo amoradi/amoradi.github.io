@@ -13,7 +13,7 @@ displayIndex: false
 - App Component had 1 job: show any childeren component(s)
 - childerend components are defined by nested routes 
 
-```jsx
+```react
 // nested routes
 <Route path="/" component={App}>
   <IndexRoute component={PostsIndex} />
