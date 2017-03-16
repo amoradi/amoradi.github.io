@@ -16,8 +16,8 @@ info
 ### Steps
 
 - login to Optimizely
-- from the left-hand rail in the *Campaigns dashboard*, click *Implementation*
-- *events* > *Create New Event*
+- from the left-hand rail in the **Campaigns dashboard**, click **Implementation**
+- **events** > **Create New Event**
 - choose *custom*
 - fill in a name, an API name (it helps if the API name is similar to the event name)
 - choose category
