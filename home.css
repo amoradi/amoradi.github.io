@@ -1,0 +1,50 @@
+/* homepage CSS */
+.home .masthead {
+    padding: 20px 0 60px;
+}
+
+@media only screen and (min-width: 900px) {
+    .home .masthead {
+        padding-top: 40px;
+    }
+}
+
+.home .header-content {
+    letter-spacing: 0;
+    max-width: 25ch;
+    font-weight: 500;
+    font-size: var(--heading-major-size);
+    color: var(--dark);
+}
+
+.home .header-links {
+    margin-top: 40px;
+}
+
+.home .masthead .header-links a {
+    margin-right: 20px;
+}
+
+.home .content {
+    border-top: 1px solid var(--light-ultra);
+    margin-top: 40px;
+    padding-top: 80px;
+}
+
+@media only screen and (min-width: 900px) {
+    .home .content {
+        display: grid;
+        grid-column-gap: 5%;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-between;
+    }
+}
+
+.home .column div {
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.home .column p {
+    margin: 12px 0;
+}

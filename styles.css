@@ -1,0 +1,90 @@
+/* TODO: Don't style bare elements, use BEM. */
+/* base, shared CSS */
+:root {
+    --dark: #111;
+    --med: #222;
+    --med-light: #444;
+    --light: #aaa; 
+    --light-extra: #ddd;
+    --light-ultra: #eee;
+    
+    --heading-major-size: 24px;
+    --heading-size: 14px;
+    --text-major-size: 18px;
+    --text-size: 18px;
+    --text-meta-size: 14px;
+    --three-line-height: 87px;
+    --two-line-height: 68px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: var(--heading-size);
+    font-weight: 700;
+    color: var(--dark);
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: var(--heading-major-size);
+}
+
+a {
+    text-decoration: none;
+    color: var(--med-light);
+    border-bottom: 1px solid var(--light-extra);
+
+    transition: border-bottom-color 50ms ease-in-out;
+}
+
+a:hover {
+    border-bottom-color: var(--light);
+    cursor: pointer;
+}
+
+.all {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: var(--text-size);
+    font-weight: 300;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 6.4% 40px;
+    line-height: 1.7;
+    color: var(--med-light);
+}
+
+.border-0 {
+    border: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 785px) {
+    .important-content {
+        min-height: 640px;
+    }
+}
+
+.footer {
+    padding-top: 100px;
+    font-size: var(--text-meta-size);
+}
+
+nav.header-links a {
+    margin: 0 0 0 20px;
+}
+
+.reading-text {
+    max-width: 700px;
+}
+
+.reading-text a {
+    font-weight: 400;
+    color: var(--dark);
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://me.aaronmoradi.hns.to/sitemap.xml
