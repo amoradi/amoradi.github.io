@@ -17,6 +17,11 @@
     --two-line-height: 68px;
 }
 
+strong {
+    font-weight: 500;
+    background: rgb(255 249 192 / 50%);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-size: var(--heading-size);
     font-weight: 700;
@@ -80,11 +85,3 @@ nav.header-links a {
     margin: 0 0 0 20px;
 }
 
-.reading-text {
-    max-width: 700px;
-}
-
-.reading-text a {
-    font-weight: 400;
-    color: var(--dark);
-}
