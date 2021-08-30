@@ -24,6 +24,10 @@
 }
 
 /* note body headings */
+.reading-text h1 {
+    margin-bottom: 40px;
+}
+
 .reading-text h2, .reading-text h3, .reading-text h4, .reading-text h5, .reading-text h6 {
     margin-top: 60px;
 }
