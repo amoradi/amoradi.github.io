@@ -12,6 +12,7 @@
     --heading-size: 14px;
     --text-major-size: 18px;
     --text-size: 18px;
+    --text-med-size: 16px;
     --text-meta-size: 14px;
     --three-line-height: 87px;
     --two-line-height: 68px;
@@ -20,6 +21,12 @@
 strong {
     font-weight: 500;
     background: rgb(255 249 192 / 50%);
+}
+
+pre {
+    padding-left: 20px;
+    overflow-x: scroll;
+    font-size: var(--text-med-size);
 }
 
 h1, h2, h3, h4, h5, h6 {
