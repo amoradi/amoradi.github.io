@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    
+    <title>Horizontal Scaling | Aaron Moradi</title>
+    <meta name="description" content="Scaling applications" />
+
+    
+  <link rel="stylesheet" href="/notes.css" />
+
+</head>
+<body class="all">
+    <div class="important-content">
+        <!-- make this sticky/fixed -->
+        <header class="header">
+            <div class="header-body">
+                <!-- 
+                    header content here. 
+                    Either nothing, or the notes filter/list component.
+                    Possible to condition the div with body presence.
+                -->
+                
+            </div>
+            <nav class="header-links">
+                <!--
+                    <a href="/notes" title="notes">notes</a>
+                    <a href="/" title="Aaron Moradi">me</a>
+                -->
+                
+    <a href="/notes" title="notes">notes</a>  
+    <a href="/" title="me">me</a>
+
+            </nav>
+        </header>
+        
+    <div class="reading-text">
+        <h1 class="title">Horizontal Scaling</h1>
+
+        <p>Horizontal scaling is a strategy used to enhance the performance of the server node by adding more instances of the server to your existing pool of servers so that the load can be equally distributed.</p>
+<p>In horizontal scaling, we do not change the capacity of the individual server, but we decrease the load on the server. Horizontal scalability is achieved with the help of a distributed file system, clustering, and load – balancing.</p>
+<p>Some of the reasons why businesses choose to scale horizontally include an increase in their I/O concurrency, need to reduce the load on existing nodes and to expand disk capacity. Horizontal-scaling is considerably easy as you can add more machines to the existing pool. It follows the partitioning of the data in which each node contains only one part of the data.</p>
+<p>For example, let us consider that you have a business website. When there is growth in your business grows, there will be growth in your website traffic. This will increase the responsibility of your server and nodes. So in order to reduce this load, we can add one more server of the same capacity along with the existing server. Now with two servers, the traffic can be managed effectively.</p>
+<p>The Internet has boosted the use of Horizontal Scaling. Many giant web service providers such as Google with its Gmail and YouTube, Yahoo, Facebook, eBay, Amazon, etc. are heavily utilizing horizontal scaling.</p>
+<p>Horizontal scaling is also known as scaling out.</p>
+<p>Example of horizontal scaling: Cassandra and MongoDB.</p>
+<p>Advantages of Horizontal Scaling:</p>
+<ul>
+<li>Easily scalable tools</li>
+<li>Supporting linear amplifies the capacity</li>
+<li>Easier to run fault-tolerance</li>
+<li>Easy to upgrade</li>
+<li>Better use of smaller systems</li>
+<li>Cost of implementing is less expensive compared to scaling-up</li>
+<li>Improved resilience due to the presence of discrete, multiple systems</li>
+<li>Infinite Scale can use an endless number of instances to enable limitless growth</li>
+<li>Disadvantages of Horizontal Scaling:</li>
+<li>Architectural design is highly complicated</li>
+<li>High licensing fees</li>
+<li>High utility costs such (cooling and electricity)</li>
+<li>Bigger footprint and impact on the data center</li>
+<li>Extra networking equipment such as routers and switches are required</li>
+</ul>
+<p>Copied from: <a href="https://www.redswitches.com/blog/difference-between-horizontal-vertical-scaling">https://www.redswitches.com/blog/difference-between-horizontal-vertical-scaling</a></p>
+
+    </div>
+
+    </div>
+    <footer class="footer">
+        
+        <i>Never have the world's moneys been so long cut off from their metallic roots.<br />- M. Rothbard</i>
+        
+    </footer>
+</body>
+</html>
