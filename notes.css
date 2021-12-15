@@ -41,7 +41,7 @@
 }
 
 .notes-list li {
-    padding: 20px 40px 30px 0;
+    padding: 20px 46px 30px 0;
     vertical-align: text-top;
     /* background-color: aquamarine; */
     border-radius: 4px;
@@ -118,6 +118,7 @@
 
 #search {
     height: 27px;
+    border-radius: 0;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: var(--text-major-size);
     font-weight: 300;
