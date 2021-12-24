@@ -90,7 +90,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     border: 0;
-    font-size: var(--text-size);
+    font-size: var(--text-med-size);
     font-weight: 700;
     color: var(--dark);
     letter-spacing: 0.5px;
@@ -126,7 +126,7 @@
     border-bottom: 1px solid var(--light-extra);
     color: var(--med-light);
     box-sizing: content-box;
-    max-width: 100%;
+    max-width: 140px;
     margin-right: 20px;
     position: relative;
     top: -2px;
