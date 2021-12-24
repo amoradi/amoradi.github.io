@@ -69,12 +69,12 @@ a:hover {
 }
 
 .header {
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 @media only screen and (min-width: 600px) {
     .header {
-        display: flex;
         justify-content: space-between;
     }
 }
