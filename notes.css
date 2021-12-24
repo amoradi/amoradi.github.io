@@ -125,11 +125,10 @@
     border: 0;
     border-bottom: 1px solid var(--light-extra);
     color: var(--med-light);
-    box-sizing: content-box;
+    box-sizing: border-box;
     max-width: 140px;
     margin-right: 20px;
     position: relative;
-    top: -2px;
 }
 
 #search::placeholder {
