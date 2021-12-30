@@ -117,6 +117,7 @@
 }
 
 #search {
+    display: none;
     height: 27px;
     border-radius: 0;
     font-family: 'Noto Sans JP', sans-serif;
@@ -129,6 +130,12 @@
     max-width: 140px;
     margin-right: 20px;
     position: relative;
+}
+
+@media only screen and (min-width: 785px) {
+    #search {
+        display: inline-block;
+    }
 }
 
 #search::placeholder {
