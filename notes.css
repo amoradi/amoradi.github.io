@@ -1,11 +1,23 @@
 .reading-text {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 40px auto 0;
+}
+
+@media only screen and (min-width: 785px) {
+    .reading-text {
+        margin: 0 auto;
+    }
 }
 
 .reading-text a {
     font-weight: 400;
     color: var(--dark);
+}
+
+.reading-text .back-link {
+    font-size: var(--text-med-size);
+    font-weight: 300;
+    color: var(--light);
 }
 
 .reading-text blockquote {
@@ -27,6 +39,7 @@
 /* note body headings */
 .reading-text h1 {
     margin-bottom: 40px;
+    margin-top: 0;
 }
 
 .reading-text h2, .reading-text h3, .reading-text h4, .reading-text h5, .reading-text h6 {
@@ -41,7 +54,7 @@
 }
 
 .notes-list li {
-    padding: 20px 46px 30px 0;
+    padding: 20px 76px 0 0;
     vertical-align: text-top;
     /* background-color: aquamarine; */
     border-radius: 4px;
