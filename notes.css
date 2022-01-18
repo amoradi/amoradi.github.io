@@ -15,7 +15,7 @@
 }
 
 .reading-text .back-link {
-    font-size: var(--text-med-size);
+    font-size: var(--text-meta-size);
     font-weight: 300;
     color: var(--light);
 }
