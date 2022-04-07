@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    
+    <title>Blockchain Basics | Aaron Moradi</title>
+    <meta name="description" content="" />
+
+    
+  <link rel="stylesheet" href="/notes.css" />
+
+</head>
+<body class="all">
+    <div class="important-content">
+        <!-- make this sticky/fixed -->
+        <header class="header">
+            <div class="header-body">
+                <a href="/" title="introduction">intro</a>  
+            </div>
+            <nav class="header-links">
+                <!--
+                    <a href="/notes" title="notes">notes</a>
+                    <a href="/" title="Aaron Moradi">me</a>
+                -->
+                
+                
+    <a href="/notes" title="notes">notes</a>
+
+            </nav>
+        </header>
+        
+    <div class="reading-text">
+        <a class="back-link"href="/notes"/>&#8592; back</a>
+        <h1 class="title">Blockchain Basics</h1>
+        
+        <h2 id="overview">Overview</h2>
+<ul>
+<li>The page is what we call a <strong>Block</strong>.</li>
+<li>Date time provided on screen B is what we call the <strong>timestamp</strong> of the block.</li>
+<li>Number X is known as a <strong>nonce</strong>. It is <strong>the number that the nodes of the blockchain network try to find</strong> to reach the output <strong>number that respects the rule given by the wall</strong>.</li>
+<li>The process of finding number X is called <strong>mining</strong>.</li>
+<li>The rule given by the wall is called a <strong>hash function</strong>.</li>
+<li>We will see what the <strong>reference number</strong> is, in later sections.</li>
+</ul>
+<h2 id="hash-function">Hash Function</h2>
+<p>A <strong>hash function</strong> is a mathematical function that <strong>transforms</strong> any chain of characters or numbers <strong>into a fixed-length chain of characters</strong>. It turns data into a digital fingerprint called a hash.</p>
+<p><strong>SHA</strong> stands for <strong>Secure Hash Algorithm</strong> and is a set of cryptographic hash functions designed by the US National Security Agency. <strong>SHA-256</strong> means that it is a hash function <strong>producing a 256-bit-long</strong> output.</p>
+<h2 id="why-work">Why Work?</h2>
+<p>Now, why should every villager try to find number X since somebody is going to find it anyway and tell everyone else? <strong>Why should a villager spend time and effort to have his/her page validated</strong> and displayed on the wall?</p>
+<p>We introduce here the <strong>incentive mechanism</strong>, an <strong>economic payoff for the community to play fair</strong>. Because the pages should keep being sealed to keep the transactions accurate, <strong>the community should continuously work on solving the mathematical problem</strong>. In this manner, <strong>a reward is given to the villager who finds number X</strong>, that is, the <strong>first villager to find the correct hash of the page</strong>.</p>
+<p>This incentive mechanism ensures that everyone keeps interested in working for the common good.</p>
+<h2 id="reference-number">Reference Number</h2>
+<p>So, what is the reference number? Remember that, on page #1, the reference number was 0?</p>
+<p>For page #2, it will be 0031993. Exactly! The reference number of page #2 is the output number found for the previous page. In technical terms, we call it <strong>the previous hash</strong> or the hash value of the previous block. <strong>This allows the pages to be linked with one another</strong>, or to be <strong>chained to one another</strong>.</p>
+
+    </div>
+
+    </div>
+    <footer class="footer">
+        
+        <i>Never have the world's moneys been so long cut off from their metallic roots.<br />- M. Rothbard</i>
+        
+    </footer>
+</body>
+</html>
