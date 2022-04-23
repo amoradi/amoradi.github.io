@@ -104,8 +104,8 @@
     text-overflow: ellipsis;
     border: 0;
     font-size: var(--text-med-size);
-    font-weight: 700;
-    color: var(--med-light);
+    font-weight: 400;
+    color: var(--dark);
     letter-spacing: 0.5px;
 }
 

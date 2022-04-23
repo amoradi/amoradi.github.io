@@ -14,8 +14,13 @@
 .home .header-content {
     letter-spacing: 0;
     max-width: 25ch;
-    font-weight: 500;
+    font-weight: 300;
     font-size: var(--heading-major-size);
+    color: var(--med-light);
+}
+
+.home .header-content-emphasis {
+    font-weight: 400;
     color: var(--dark);
 }
 
