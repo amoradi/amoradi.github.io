@@ -16,6 +16,8 @@
     --text-meta-size: 14px;
     --three-line-height: 87px;
     --two-line-height: 68px;
+    border-top: 6px solid #eee;
+    /*border-bottom: 40px solid #222;*/
 }
 
 strong {
