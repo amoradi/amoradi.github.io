@@ -30,6 +30,19 @@
 
 .home .header-links {
     margin-top: 40px;
+
+    display: grid;
+    columns: auto autp;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    max-width: 248px;
+}
+
+@media only screen and (min-width: 500px) {
+    .home .header-links {
+        display: block;
+        max-width: none;
+    }  
 }
 
 .home .masthead .header-links a {
