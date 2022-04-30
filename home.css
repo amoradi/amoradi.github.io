@@ -50,7 +50,7 @@
 
 @media only screen and (min-width: 500px) {
     .home .header-links {
-        grid-gap: 12spx;
+        grid-gap: 12px;
         grid-template-columns: auto auto;
         max-width: none;
     } 
@@ -67,7 +67,6 @@
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .home .header-links {
         display: grid;
-        grid-gap: 20px;
         grid-template-columns: auto auto;
         max-width: none;
     }  
