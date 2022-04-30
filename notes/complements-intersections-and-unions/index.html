@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+    <title>Probability: Complements, Intersections, Unions, Conditional | Aaron Moradi</title>
+    <meta name="description" content="" />
+
+    
+  <link rel="stylesheet" href="/notes.css" />
+
+</head>
+<body class="all">
+    <div class="important-content">
+        <!-- make this sticky/fixed -->
+        <header class="header">
+            <div class="header-body">
+                <a href="/" title="introduction">intro</a>  
+            </div>
+            <nav class="header-links">
+                <!--
+                    <a href="/notes" title="notes">notes</a>
+                    <a href="/" title="Aaron Moradi">me</a>
+                -->
+                
+                
+    <a href="/notes" title="notes">notes</a>
+
+            </nav>
+        </header>
+        
+    <div class="reading-text">
+        <a class="back-link"href="/notes"/>&#8592; back</a>
+        <h1 class="title">Probability: Complements, Intersections, Unions, Conditional</h1>
+        
+        <h2 id="objectives">Objectives</h2>
+<ol>
+<li>To learn how some <strong>events</strong> are naturally <strong>expressible in terms of other events</strong>.</li>
+<li>To learn how to use special <strong>formulas for the probability</strong> of an event that is expressed in terms of one or more other events.</li>
+</ol>
+<h2 id="probability-rule-for-complements">Probability Rule for Complements</h2>
+<pre data-lang="ts" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-ts "><code class="language-ts" data-lang="ts"><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">A</span><span style="color:#72ab00;">^</span><span style="color:#5597d6;">c</span><span>)</span><span style="color:#72ab00;">=</span><span style="color:#b3933a;">1</span><span>−</span><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">A</span><span>)
+</span></code></pre>
+<p>The <strong>complement of an event A</strong> in a sample space S, denoted <strong>A^c</strong>, is the <strong>collection of all outcomes in S</strong> that are <strong>not elements of the set A</strong>. It corresponds to negating any description in words of the event A.</p>
+<h2 id="intersection-of-events">Intersection of Events</h2>
+<img style="float: right; padding-left: 30px;width: 125px;" src="/images/intersection_of_events.jpeg">
+<p>The <strong>intersection of events</strong> A and B, denoted <strong>A ∩ B</strong>, is the collection of all outcomes that are <strong>elements of both</strong> of the sets A and B. It corresponds to combining descriptions of the two events using the word “and.”</p>
+<h2 id="mutually-exclusive-events">Mutually Exclusive Events</h2>
+<p>Events A and B are <strong>mutually exclusive</strong> if they have <strong>no elements in common</strong>.</p>
+<p>Events A and B are <strong>mutually exclusive</strong> <strong>if and only if</strong></p>
+<pre data-lang="ts" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-ts "><code class="language-ts" data-lang="ts"><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">A</span><span>∩</span><span style="color:#5597d6;">B</span><span>)</span><span style="color:#72ab00;">=</span><span style="color:#b3933a;">0
+</span></code></pre>
+<ul>
+<li>Any event A and its complement A^c are mutually exclusive</li>
+<li>but A and B <strong>can be mutually exclusive without being complements</strong>.</li>
+</ul>
+<h2 id="union-of-events">Union of Events</h2>
+<img style="float: right; padding-left: 30px;width: 125px;" src="/images/union_of_events.jpeg">
+<p>The <strong>union of events</strong> A and B, denoted <strong>A ∪ B</strong>, is the collection of all outcomes that are elements of one or the other of the sets A and B, or of both of them. It corresponds to <strong>combining descriptions of the two events</strong> using the word <strong>“or.”</strong></p>
+<h2 id="additive-rule-of-probability">Additive Rule of Probability</h2>
+<pre data-lang="ts" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-ts "><code class="language-ts" data-lang="ts"><span>
+</span><span style="color:#7f8989;">// Probability(union of A &amp; B)
+</span><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">A</span><span>∪</span><span style="color:#5597d6;">B</span><span>) </span><span style="color:#72ab00;">= </span><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">A</span><span>) </span><span style="color:#72ab00;">+ </span><span style="color:#7f8989;">/* all of A */
+</span><span>         </span><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">B</span><span>) </span><span style="color:#72ab00;">- </span><span style="color:#7f8989;">/* all of B */
+</span><span>         </span><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">A</span><span>∩</span><span style="color:#5597d6;">B</span><span>) </span><span style="color:#7f8989;">/* less the intersection of A &amp; B */
+</span><span>
+</span></code></pre>
+<h2 id="conditional-probability">Conditional Probability</h2>
+<p>In general, the <strong>revised probability</strong> that an <strong>event A has occurred</strong>, taking into account the <strong>additional information</strong> that another <strong>event B has definitely occurred</strong> on this trial of the experiment, is called the <strong>conditional probability</strong> of <strong>A given B</strong> and is denoted by <strong>P(A|B)</strong></p>
+<pre data-lang="ts" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-ts "><code class="language-ts" data-lang="ts"><span style="color:#7f8989;">//
+</span><span style="color:#7f8989;">// the conditional probability of A given B
+</span><span style="color:#7f8989;">// 
+</span><span style="color:#7f8989;">// ex. A = odds of rolling a 5 (1/6)
+</span><span style="color:#7f8989;">//     B = an odd number has been rolled (3/6)
+</span><span style="color:#7f8989;">//
+</span><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">A</span><span style="color:#72ab00;">|</span><span style="color:#5597d6;">B</span><span>)
+</span></code></pre>
+<p>The <strong>conditional probability</strong> of <strong>A given B</strong>, denoted <strong>P(A|B)</strong>, is the <strong>probability that event A</strong> has occurred in a trial of a random experiment for which <strong>it is known that event B has definitely occurred</strong>. It may be computed by means of the following formula:</p>
+<pre data-lang="ts" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-ts "><code class="language-ts" data-lang="ts"><span>
+</span><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">A</span><span style="color:#72ab00;">|</span><span style="color:#5597d6;">B</span><span>)</span><span style="color:#72ab00;">= </span><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">A</span><span>∩</span><span style="color:#5597d6;">B</span><span>) </span><span style="color:#72ab00;">/ </span><span style="color:#7f8989;">/* intersecton of A &amp; B */
+</span><span>        </span><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">B</span><span>)     </span><span style="color:#7f8989;">/* divide by the probability of B */
+</span><span>
+</span><span style="color:#7f8989;">// 
+</span><span style="color:#7f8989;">// A = rolling a 5, (5)
+</span><span style="color:#7f8989;">// B = rolling an odd (1, 3, 5)
+</span><span style="color:#7f8989;">//
+</span><span style="color:#7f8989;">// P(A|B) = what are the odds of rolling a 5 given rolling an odd?
+</span><span style="color:#7f8989;">// 
+</span><span style="color:#7f8989;">// P(A∩B) = (5) ∩ (1, 3, 5) = (5), p(5) = P(A∩B) = 1/6
+</span><span style="color:#7f8989;">// P(B) = (1, 3, 5) = 3/6
+</span><span style="color:#7f8989;">// 
+</span><span style="color:#7f8989;">// P(A|B) = P(A∩B) 1/6 / 
+</span><span style="color:#7f8989;">//          P(B)   1/2
+</span><span style="color:#7f8989;">//
+</span><span style="color:#7f8989;">// -&gt; 1/3
+</span><span style="color:#7f8989;">//
+</span></code></pre>
+<h2 id="independent-events">Independent Events</h2>
+<p>Events A and B are independent if</p>
+<pre data-lang="ts" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-ts "><code class="language-ts" data-lang="ts"><span>
+</span><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">A</span><span>∩</span><span style="color:#5597d6;">B</span><span>)</span><span style="color:#72ab00;">= </span><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">A</span><span>)·</span><span style="color:#c23f31;">P</span><span>(</span><span style="color:#5597d6;">B</span><span>)
+</span><span>
+</span><span style="color:#7f8989;">//
+</span><span style="color:#7f8989;">// A single fair die is rolled.
+</span><span style="color:#7f8989;">// Let A={3} and B={1,3,5}. Are A and B independent?
+</span><span style="color:#7f8989;">//
+</span><span style="color:#7f8989;">// P(A)=1∕6, P(B)=1∕2
+</span><span style="color:#7f8989;">//
+</span><span style="color:#7f8989;">// P(A∩B)=P({3})=1∕6
+</span><span style="color:#7f8989;">//
+</span><span style="color:#7f8989;">// P(A)·P(B)=(1∕6)(1∕2)=1∕12
+</span><span style="color:#7f8989;">//
+</span><span style="color:#7f8989;">// P(A∩B) != P(A)·P(B)
+</span><span style="color:#7f8989;">// 1/6    != 1/12
+</span><span style="color:#7f8989;">//
+</span><span style="color:#7f8989;">// -&gt; not independent
+</span><span style="color:#7f8989;">//
+</span></code></pre>
+<p>The concept of independence applies to any number of events. For example, three events A, B, and C are independent if <code>P(A∩B∩C)=P(A)·P(B)·P(C)</code>.</p>
+<h2 id="probabilities-on-tree-diagrams">Probabilities on Tree Diagrams</h2>
+<p>Some probability problems are made much simpler when approached using a tree diagram. The next example illustrates how to place probabilities on a tree diagram and use it to solve a problem.</p>
+
+    </div>
+
+    </div>
+    <footer class="footer">
+        
+        <i>Never have the world's moneys been so long cut off from their metallic roots.<br />- M. Rothbard</i>
+        
+    </footer>
+</body>
+</html>
