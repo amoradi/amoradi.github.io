@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+    <title>Principled GraphQL | Aaron Moradi</title>
+    <meta name="description" content="Integrity, Agility & Operations Principles" />
+
+    
+  <link rel="stylesheet" href="/notes.css" />
+
+</head>
+<body class="all">
+    <div class="important-content">
+        <!-- make this sticky/fixed -->
+        <header class="header">
+            <div class="header-body">
+                <a href="/" title="introduction">intro</a>  
+            </div>
+            <nav class="header-links">
+                <!--
+                    <a href="/notes" title="notes">notes</a>
+                    <a href="/" title="Aaron Moradi">me</a>
+                -->
+                
+                
+    <a href="/notes" title="notes">notes</a>
+
+            </nav>
+        </header>
+        
+    <div class="reading-text">
+        <a class="back-link"href="/notes"/>&#8592; back</a>
+        <h1 class="title">Principled GraphQL</h1>
+        
+        <h2 id="integrity">Integrity</h2>
+<h3 id="one-graph">One Graph</h3>
+<p>Ensuring that the graph is well-defined, stable, and consistent</p>
+<ul>
+<li>Your company should have <strong>one unified graph</strong>, instead of multiple graphs created by each team.</li>
+</ul>
+<h3 id="federated-implementation">Federated Implementation</h3>
+<p>Though there is only one graph, the implementation of that graph should be <strong>federated across multiple teams</strong>.</p>
+<ul>
+<li>...maintains the <strong>value of a single, unified view of the graph</strong>, while keeping <strong>development efforts</strong> across the company <strong>decoupled</strong>.</li>
+</ul>
+<h3 id="track-the-schema-in-a-registry">Track the Schema in a Registry</h3>
+<p>There should be a <strong>single source of truth</strong> for registering and tracking the graph.</p>
+<blockquote>
+<p>Just like it's important to track source code in a version control system, it's important to track the definition of your graph in a <strong>schema registry.</strong> There should be a single schema registry for your company that is <strong>the authoritative definition of the graph</strong>, rather than relying on whatever processes are running at the moment or whatever code is checked in on a developer's laptop. Like a source control system, the schema registry should store the <strong>history of changes to the graph</strong> and who made them, and it should understand the concept of <strong>multiple versions of the graph</strong>s (for example, staging and production, or different development branches) in a way that parallels the software development process.</p>
+</blockquote>
+<blockquote>
+<p>The schema registry should become the <strong>central hub of the system</strong>, <strong>powering developer tools</strong>, <strong>workflows</strong>, or any business processes that would benefit from awareness of the graph and <strong>any actual or proposed changes to it</strong>.</p>
+</blockquote>
+<h2 id="agility">Agility</h2>
+<p>Rapidly rolling out the graph and continuously adapting it to changing needs</p>
+<ol start="6">
+<li>Iteratively Improve Performance</li>
+<li>Use Graph Metadata to Empower Developers</li>
+</ol>
+<h3 id="abstract-demand-oriented-schema">Abstract, Demand-Oriented Schema</h3>
+<blockquote>
+<p>The schema should act as an abstraction layer that provides <strong>flexibility to consumers</strong> while <strong>hiding service implementation details</strong>.</p>
+</blockquote>
+<h3 id="use-an-agile-approach-to-schema-development">Use an Agile Approach to Schema Development</h3>
+<ul>
+<li>The schema should be <strong>built incrementally</strong> based on actual requirements and <strong>evolve smoothly</strong> over time.</li>
+</ul>
+<blockquote>
+<p>It may be tempting to try to define, ahead of time, the “perfect schema” for all of your organization's data. Rather, what really makes a schema valuable is the degree to which it follows actual user requirements, which are never known perfectly up front and are constantly changing. The true path to the “perfect schema” is to make it easy for the graph to evolve <strong>in response to actual needs.</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>Fields shouldn't be added to the schema speculatively.</strong> Ideally, <strong>each field should be added only in response to a concrete need</strong> by a consumer for additional functionality</p>
+</blockquote>
+<blockquote>
+<p>Updating the graph should be a continuous process. Rather than releasing a new “version” of the graph periodically, such as every 6 or 12 months, it should be possible to change the graph many times a day if necessary. New fields can be added at any time. <strong>To remove a field, it is first deprecated, and then removed when no consumers use it.</strong> The <strong>schema registry enables this agile evolution of the graph</strong>, together with <strong>processes</strong> and <strong>tooling</strong> that keep everyone aware of changes that could affect them. This ensures that only fully vetted changes can go into production.</p>
+</blockquote>
+<h3 id="iteratively-improve-performance">Iteratively Improve Performance</h3>
+<ul>
+<li>Performance management should be a <strong>continuous, data-driven process</strong>, adapting smoothly to changing query loads and service implementations.</li>
+</ul>
+<blockquote>
+<p>Rather than optimizing every possible use of the graph, the <strong>focus should be on supporting the actual query shapes</strong> that are needed in production. <strong>Tooling should extract proposed new query shapes and surface them</strong>, <strong>before they go into production</strong>, to all affected service teams <strong>with latency requirements</strong> and projected query volume. Once the query is in production, its performance should be continuously monitored. If this principle is followed, problems should be easy to track back to the service that is not behaving as expected.</p>
+</blockquote>
+<h3 id="use-graph-metadata-to-empower-developers">Use Graph Metadata to Empower Developers</h3>
+<ul>
+<li>Developers should be equipped with rich awareness of the graph throughout the entire development process.</li>
+</ul>
+<h2 id="operations">Operations</h2>
+<p>Securely deploying the graph to production at scale</p>
+<ul>
+<li>Grant access to the graph on a per-client basis, and manage what and how clients can access it.</li>
+</ul>
+<p>Authorization in a graph has two equally important aspects:</p>
+<ul>
+<li>access control, which dictates which objects and fields a user is allowed to access</li>
+<li><strong>demand control</strong>, which <strong>dictates how (and how much) the user is allowed to access those resources</strong>. </li>
+</ul>
+<p>It is a mistake to allow users to perform any possible query regardless of cost, with no ability to manage its impact on production systems.</p>
+<p>Best practices for demand control include:</p>
+<ul>
+<li>
+<p>When untrusted users are accessing production systems, they should only send queries that have been preregistered by the authenticated developer of the app, instead of allowing them to send arbitrary queries with the app's credentials. This is sometimes relaxed for internal apps that are distributed only to trusted users.</p>
+</li>
+<li>
+<p>For apps that are expected to send large numbers of queries, teams should design a query approval workflow, aligned with the broader software development cycle, to vet queries before they go into production. This ensures that they do not fetch unnecessary data and that server capacity is available to support them.</p>
+</li>
+<li>
+<p>As a second line of defense, estimating the cost of a query before performing it and instituting per-user and per-app query cost budgets can protect against overuse of preregistered operations or in cases where operation preregistration is not possible.</p>
+</li>
+<li>
+<p>Developers should be able to disable the ability of particular apps to send particular queries in production, either as a safety net in emergencies or if a third party app is found to be using the graph in unacceptable ways.</p>
+</li>
+</ul>
+<h2 id="structured-logging">Structured Logging</h2>
+<p>Capture structured logs of all graph operations and leverage them as the primary tool for understanding graph usage.</p>
+<blockquote>
+<p>A wealth of information can be captured about each operation (read or write) that is performed on a graph: what user and app performed the operation, what fields were accessed, how the operation was actually executed, how it performed, and more. This information is highly valuable and should be systematically captured and made available for later use. <strong>Instead of a text log, it should be captured in a structured, machine readable format so that it can be leveraged for as many purposes as possible.</strong></p>
+</blockquote>
+<p>The record of a graph operation is called a trace. A trace should bring together all pertinent information about an operation in one place, including business information (who performed the operation, what was accessed or changed, which feature of which app built by which developer, whether it succeeded, how it performed) and purely technical information (which backend services were contacted, how each service contributed to latency, whether caches were used).</p>
+<p>Because traces truly capture how a graph is being used, they can be used for a wide range of purposes:</p>
+<ul>
+<li>Understanding whether a deprecated field can be removed, or if not, the specific clients that are still accessing it and how important they are</li>
+<li>Predicting how long a query will take to execute – in realtime, as the developer is typing the query in their IDE – based on live production data</li>
+<li>Automatically detecting problems in production (such as increased latency or error rates) and diagnosing their root cause</li>
+<li>Providing an authoritative audit trail showing which users have accessed a particular record</li>
+<li>Powering business intelligence queries (do people search for ice cream more often when it is hot where they are?)</li>
+<li>Generating invoices for partners based on API usage, with the possibility of a detailed cost model based on either the particular fields accessed or the resources consumed</li>
+</ul>
+<p>Traces for all graph operations should be collected in one central place, so that there is one authoritative stream of traces. This stream can then be piped into other observability systems (perhaps after a simple transformation for existing systems that are not GraphQL-aware), or stored in one or more data warehouses for later use (aggregated and sampled as budget, use cases, and scale require).</p>
+<h3 id="separate-the-graphql-layer-from-the-service-layer">Separate the GraphQL Layer from the Service Layer</h3>
+<p>Adopt a layered architecture with graph functionality broken into a separate tier rather than baked into every service.</p>
+<p>Footnotes: <a href="https://principledgraphql.com">https://principledgraphql.com</a></p>
+
+    </div>
+
+    </div>
+    <footer class="footer">
+        
+        <i>Never have the world's moneys been so long cut off from their metallic roots.<br />- M. Rothbard</i>
+        
+    </footer>
+</body>
+</html>
