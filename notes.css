@@ -54,7 +54,7 @@
 }
 
 .notes-list li {
-    padding: 20px 76px 0 0;
+    padding: 20px 150px 0 0;
     vertical-align: text-top;
     /* background-color: aquamarine; */
     border-radius: 4px;
@@ -103,7 +103,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     border: 0;
-    font-size: var(--text-med-size);
+    font-size: var(--text-meta-size);
     font-weight: 400;
     color: var(--dark);
     letter-spacing: 0.5px;
