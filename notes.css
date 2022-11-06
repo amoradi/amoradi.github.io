@@ -103,7 +103,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     border: 0;
-    font-size: var(--text-meta-size);
+    font-size: var(--text-med-meta-size);
     font-weight: 400;
     color: var(--dark);
     letter-spacing: 0.5px;
