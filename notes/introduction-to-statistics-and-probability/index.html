@@ -145,6 +145,120 @@ Boundaries = exclusive</p>
 <p>The <strong>shape of the distribution</strong> is often times <strong>subjective</strong> (especially since changing the class width and number of classes used in a frequency distribution can drastically change the shape of the histogram). The terms are introduced informally, not precisely, for the benefit of exposure to the terms.</p>
 <p><strong>Bidmodal</strong>: having two peaks.</p>
 <p>For these notes, if a distribution is not unimodal, we will not attempt to classify the shape.</p>
+<h2 id="3-1-measures-of-central-tendency">3.1 Measures of Central Tendency</h2>
+<p>A sample dataset is written with a lowercase n.</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>n = 5
+</span></code></pre>
+<p>A population dataset is written with an upperecase N.</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>N = 5
+</span></code></pre>
+<p>Most introductory stats textbooks drop the sigma sub/superscripts and just write <code>Σ x = ...</code>, which is interpreted as &quot;the sum of all oberservations in the data set&quot;. Dropping the sub/superscripts makes it unclear whether the data set represents a sample or a population.</p>
+<p>Example 1:
+Consider the data set: <code>{10, 11, 11, 13, 14}</code></p>
+<p>Evaluate: <code>Σ x</code></p>
+<p>Solution:
+<code>Σ x</code> means &quot;add all of the observations in the data set&quot;.</p>
+<p><code>Σ x = 59</code></p>
+<p>Example 2:
+Consider the data set: <code>{10, 11, 11, 12, 13}</code></p>
+<p>Evaluate: <code>Σ x/2</code></p>
+<p>Solution:
+<code>Σ x/2</code> means &quot;divide each observation by 2, then add them all&quot;.</p>
+<p><code>Σ x/2 = 28.5</code></p>
+<p>It turns out, <code>Σ x/2</code> is equivalent to <code>(Σ x)/2</code>.</p>
+<p><strong>Arithmetic mean</strong> is the sum of data values divided by the number of data values — in everyday parlance we refer to this as the <strong>mean</strong>.</p>
+<p><code>x̄</code>, pronounced X bar, represents the <strong>sample mean</strong>.</p>
+<p><code>μ</code> represents the <strong>population mean</strong>.</p>
+<p><code>x̄ = Σ x/n</code> is considered a <strong>statistic</strong>, b/c it involves the sample.
+<code>μ = Σ x/N</code> is considered a <strong>parameter</strong>, b/c it involves the population.</p>
+<p>The <strong>median</strong> is found via taking the middle value when arranged from lowest to highest. If there are an even number of observations, then the mean of the two middle values is usedss.</p>
+<p>There is no widely accepted standard symbol for the median.</p>
+<p>The <strong>mode</strong> of a data set (quantitative or qualitative) is the data value of the highest frequency. If no data value is repeated, the data has no mode.</p>
+<p>There are other interpretations of the mode in terms of local maximums of a frequencyy distribution which can allow for more than one mode, <strong>bimodal, trimodal, or multimodal</strong>.</p>
+<p>The <strong>weighted mean</strong> of a quantitative data set is similar to the mean of the data set, except that the data values are <strong>assigned weights</strong>.</p>
+<p><code>(Σ wi * xi) / Σ wi</code></p>
+<p>Meaning, multiply each data value by its weight, add them up, then divide that sum by the sum of the weights.</p>
+<p>Example given data set, <code>{ 10, 20, 30, 40 }</code> and weights, <code>{ 20, 20, 40, 20 }</code>.</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>// sigma (weight * data value) / sigma weights
+</span><span>
+</span><span>(20*10 + 20*20 + 40*20 + 20*40) / 20 + 20 + 40 + 20
+</span><span>
+</span><span>= 2600 / 100
+</span><span>= 26
+</span></code></pre>
+<p>Often, a course will use a weighted average to calculate final class grades. E.g 15% from your mean homework, 15% from quizes, and 70% from the final exam.</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>// weights: 15, 15, 70
+</span><span>// grades: 85, 90, 82
+</span><span>
+</span><span>(15*85 + 15*90 + 70*82) / 100
+</span><span>
+</span><span>= 83.65
+</span></code></pre>
+<p>A <strong>measure of central tendency</strong> is a single value that attempts to describe a set of data by identifying the central position within a data set.</p>
+<p>We say that a measure of central tendency is <strong>resistant</strong> if <strong>extreme values relative to the data do not affect its value</strong> substantially.</p>
+<p>The <strong>median and mode</strong> are resistant to extreme values (outliers), but the <strong>mean is not</strong>.</p>
+<p>Aside: Other means exist including, the geometric mean, harmonic mean, generalized mean (power mean), f-mean, truncated mean, etc.</p>
+<p>1<em>0 + 2</em>2 + 3<em>3 + 4</em>4 / 10</p>
+<h2 id="3-2-measure-of-dispersion">3.2 Measure of Dispersion</h2>
+<p>Statistical <strong>dispersion</strong> refers to how stretched or squeezed the data are. Measures include:</p>
+<ul>
+<li>Range</li>
+<li>Standard Deviation</li>
+<li>Variance</li>
+<li>Interquartile range</li>
+<li>Median absolute deviation</li>
+<li>Average absolute deviation</li>
+</ul>
+<p><strong>Range</strong></p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>range = greatest value - least data value
+</span></code></pre>
+<ul>
+<li>Can never be negative</li>
+<li>Is in same units as the data</li>
+<li>Sample range, population range, or simply range</li>
+<li>Is generally not sufficient to describe the spread of data. </li>
+<li>Is not resistant to extreme values.</li>
+</ul>
+<p><strong>Deviation about the mean</strong> is equal to the ith data value minus the mean of the data set.</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>// sample
+</span><span>di = xi - x̄
+</span><span>
+</span><span>// population
+</span><span>di = xi - μ
+</span></code></pre>
+<p>The sum of deviations about the mean and the mean of deviations about the mean are both zero.</p>
+<p>Using absolute values of deviations about the mean is a way to circumvent zero sums, and work with/find central tendencies with deviations. These can be described with:</p>
+<ul>
+<li><strong>Mean absolute deviation</strong></li>
+<li><strong>Media absolute deviation</strong></li>
+</ul>
+<p>Absolute deviations prevent positive deviations from canceling negative deviations. Another way to prevent this is to <strong>square deviations</strong> about the mean.</p>
+<p><strong>Sample variance</strong>
+<code>(Σ (x - x̄)^2) / n - 1</code></p>
+<p><strong>Population variance</strong>
+<code>(Σ (x - μ)^2) / N</code></p>
+<p>The <strong>sample standard deviation</strong> is defined as the square root of the sample variance, and we use the symbol <code>s</code> to denote it. The <strong>population standard deviation</strong> is defined as the square root of the population variance, and we use the symbol <code>σ</code> to denote it.</p>
+<p>We use <code>n - 1</code> in the denominator for sample variation and sample standard deviation. This results in an <strong>overestimate</strong> of values, some would say an approximatation of said values. This is not true for population variance and standard deviation.</p>
+<p><strong>Standard deviation is the sqaure root of the variance</strong>. Standard deviation can be larger that variance when working with variances less than one, e.g. </p>
+<ul>
+<li>variance = 1/4, std deviation = 1/2 AKA the sqaure root of 1/4 = 1/2</li>
+</ul>
+<p><strong>The Empirical Rule</strong></p>
+<p>If a distribution is roughly bell shaped, then:</p>
+<ul>
+<li>~68% of the data will lie within 1 std deviation of the mean (<code>μ - 1σ</code> and <code>μ + 1σ</code>)</li>
+<li>~95% will lie within 2σ </li>
+<li>~99.7% will lie within 3σ</li>
+</ul>
+<p>This is also true for sample data, x̄.</p>
+<p><strong>Chebychev's Rule</strong></p>
+<p>For any data set, regardless of the shape of the distrubution;</p>
+<ul>
+<li>At least 75% of the data will lie within 2 std deviations of the mean</li>
+<li>At least 88.9% of the data will lie within 3 std deviations of the mean</li>
+<li>At least <code>(1 - 1/k^2)100% of the data will lie within K standard deviations of the mean for k &gt; 1. That is, at least (1 - 1/k^2)100% of the data will lie between </code>μ - kσ<code>and</code>μ + kσ`</li>
+</ul>
+<p>This is also true for sample data, x̄.</p>
 <h3 id="citation">Citation</h3>
 <p>westcottcourses.com</p>
 
