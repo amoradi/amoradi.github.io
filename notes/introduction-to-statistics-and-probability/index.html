@@ -284,6 +284,34 @@ will lie between <code>μ - kσ</code> and <code>μ + kσ</code></li>
 <pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>population variance = (Σ (mi - μ)^2 * fi) / (Σ fi)
 </span></code></pre>
 <p>To <strong>approximate the standard deviation</strong> from a frequency distribution, simply take the square root of the variance (see above).</p>
+<h2 id="3-4-measures-of-relative-standing">3.4 - Measures of Relative Standing</h2>
+<p>Measures of relative standing are numbers which indicate where a particular value lies in relation to the rest of the values in a data set. There are many different measures of relative standing, but we will just cover the two most common measures in statistics: <code>z-scores</code> and <code>quartiles</code>.</p>
+<p>The <strong>z-score</strong> of a data value represents the number of standard deviations the data value is away from the mean of the data set.</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>// sample z-score
+</span><span>(x - x̄) / S
+</span><span>
+</span><span>// population z-score
+</span><span>(x - μ) / σ
+</span></code></pre>
+<ul>
+<li>If z-score is negative, x is less than the data set</li>
+<li>If z-score is positive, x is more than the data set</li>
+<li>If z-score is zero, x is the mean of the data set</li>
+</ul>
+<p>The <strong>kth percentile</strong> of a data set is a value such that k percent of the data values are less than or equal to the value. </p>
+<p><strong>Quartiles</strong> are a special case of percentiles.</p>
+<ul>
+<li>Q1 25th, Q2 50th AKA the median, Q3 75th percentiles</li>
+</ul>
+<p>To find quantiles:</p>
+<ul>
+<li>Arrange data in ascending order</li>
+<li>Find the median (second quartile)</li>
+<li>Divide the data set into 2 halves</li>
+<li>The 1st and 3rd quartiles will be the median of the lower and upper halves respectively</li>
+<li>Do not include (n + 1) / 2 AKA step 2in either half.</li>
+</ul>
+<p>^ This definition of quartiles is widely held but not only held.</p>
 <h3 id="citation">Citation</h3>
 <p>westcottcourses.com</p>
 
