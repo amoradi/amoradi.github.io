@@ -303,7 +303,7 @@ will lie between <code>μ - kσ</code> and <code>μ + kσ</code></li>
 <ul>
 <li>Q1 25th, Q2 50th AKA the median, Q3 75th percentiles</li>
 </ul>
-<p>To find quantiles:</p>
+<p>To find quartiles:</p>
 <ul>
 <li>Arrange data in ascending order</li>
 <li>Find the median (second quartile)</li>
@@ -312,6 +312,41 @@ will lie between <code>μ - kσ</code> and <code>μ + kσ</code></li>
 <li>Do not include (n + 1) / 2 AKA step 2in either half.</li>
 </ul>
 <p>^ This definition of quartiles is widely held but not only held.</p>
+<h2 id="3-5-the-five-number-summary-and-boxplots">3.5 - The Five Number Summary and Boxplots</h2>
+<p>The <strong>interquartile range</strong>, denoted <strong>IQR</strong>, is the <strong>range of the middle 50% of the data</strong> values in a data set.</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>IQR = Q3 - Q1
+</span></code></pre>
+<p>The <strong>lower fence</strong> and <strong>upper fence</strong> are defined as follows:
+Lower fence = Q1 - 1.5(IQR)
+Upper fence = Q3 + 1.5(IQR)</p>
+<p>If a data value is less than the lower fence or greater than the upper fence, it is considered an <strong>outlier</strong>.</p>
+<p><strong>The Five number Summary</strong></p>
+<p>The range, std, and variance of a data set are not resistant to extreme values. The interquartile range, however, is resistant.</p>
+<p>Q1-3 do not provide any information about the extreme values of the data set. One way to obtain this information is to determine the minimum and maximum values in a data set.</p>
+<p>The five number summary consists of:</p>
+<ul>
+<li>minumum data value</li>
+<li>Q1</li>
+<li>Q2 (median)</li>
+<li>Q3</li>
+<li>maximum data value</li>
+</ul>
+<p><strong>Drawing a Boxplot</strong></p>
+<ul>
+<li>Determine the lower and upper fences</li>
+<li>Draw vertical lines at Q1, Q2, Q3 and enclose the lines in the box</li>
+<li>Draw a horizontal line through the middle of the box, from lowest to greatest data values interior to the fences (the whiskers)
+<ul>
+<li>The 1st value to the right of the lower fence</li>
+<li>The 1st value to the left of the upper fence</li>
+</ul>
+</li>
+<li>Draw small verticle lines to cap the horizontal line in step 3</li>
+<li>Any outlierers are marked with a small circle. (outside the lower and upper fences)</li>
+</ul>
+<p>Some refer to the boxplot as a box-and-whisker plot.</p>
+<p>A boxplot gives us a good description of the spread and variability of a data set as well as some idea about the shape of the distribution; particularly if a data set is skewed.</p>
+<img style="width: 400px;" src="/images/box_plot_skewness.png"> 
 <h3 id="citation">Citation</h3>
 <p>westcottcourses.com</p>
 
