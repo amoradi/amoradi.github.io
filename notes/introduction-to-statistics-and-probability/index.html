@@ -67,7 +67,7 @@ Involves the organizing and summarizing of data. Some common tools in the proces
 categories, labels, etc. that are not numerical measures of counts.</p>
 <p><strong>Quantitative variables</strong> are variables whose possible values are numerical measurements or counts.</p>
 <p>A variable is at the <strong>nominal level of measurement</strong> if the possible values of the variable represent names, labels, or categories that don't have a meaningful rank or order.</p>
-<p>A variable is at the <strong>ordinal level of measurement</strong> if the possible values of the variable represent names, labels, or categories and have a meaningufl rank or order.</p>
+<p>A variable is at the <strong>ordinal level of measurement</strong> if the possible values of the variable represent names, labels, or categories and have a meaningful rank or order.</p>
 <p>When the value of zero means the absence of the quantity, we have an <strong>inherent zero</strong>.</p>
 <p>A variable is at the <strong>interval level measurement</strong> if the values of variable:</p>
 <ul>
@@ -347,6 +347,31 @@ Upper fence = Q3 + 1.5(IQR)</p>
 <p>Some refer to the boxplot as a box-and-whisker plot.</p>
 <p>A boxplot gives us a good description of the spread and variability of a data set as well as some idea about the shape of the distribution; particularly if a data set is skewed.</p>
 <img style="width: 400px;" src="/images/box_plot_skewness.png"> 
+<h2 id="4-1-the-basics-of-probability">4.1 - The Basics of Probability</h2>
+<p>In probability theory, an <strong>experiment</strong> is any procedure with uncertain results that can be repeated and has a well-defined set of possible outcomes known as the <strong>sample space</strong>.</p>
+<p>An <strong>event</strong> is any collection of outcomes (one or more) from a probability experiment.</p>
+<p><strong>Probability</strong> is a measure of the likelihood of the occurrence of an event.</p>
+<p>There are three type of probability that we will discuss:</p>
+<ul>
+<li>Classical (theoretical) probability</li>
+<li>Emperical probability</li>
+<li>Subjective probability</li>
+</ul>
+<p>If an experiment has <code>n</code> equally likely outcomes, we define the probability of each outcome to b <code>1/n</code>.
+The probability of an event <code>E</code> is defined to be the number of outcomes in the event that belong to the sample space divided by <code>n</code>.
+We use the notation <code>P(E)</code>, which is read, &quot;P of E&quot; or &quot;the probability of E&quot; to denote the probability of the event <code>E</code>.</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>// In other words...
+</span><span>// (Think of E as a collection of outcomes, i.e. a subset of the sample space.)
+</span><span>P(E) = Number of possible outcomes in the event E / Total number of outcomes in the sample space
+</span></code></pre>
+<ul>
+<li>If <code>P(E) = 0</code>, then <code>E</code> is an event that is impossible to occur. In this case, we call teh event <code>E</code> an <code>impossible event</code>.</li>
+<li>If <code>P(E) = 1</code>, then <code>E</code> must occur with certainty — a <code>certain event</code>.</li>
+<li>If <code>P(E) &lt; 0.05</code>, then <code>E</code> is considered unlikely to occur — an <code>unusual event</code>.</li>
+</ul>
+<p>The <strong>emperical probability</strong> of an event is the ratio of the number of trials in which the event occured, divided by the total number of trials performed.</p>
+<p><strong>Subjective probability</strong> is a <strong>probability derived from an individual's personal judgment</strong> about the likelihood that an event occurs. Subjective probabilities <strong>contain no formal calculations</strong> and only reflect the subject's opinions and past experience.</p>
+<p><strong>The Law of Large Numbers:</strong> As the number of repetitionss of a probability experiment increases, the proportion with which a certain outcome is observed gets closer to the classical (theoretical) probability of the outcome.</p>
 <h3 id="citation">Citation</h3>
 <p>westcottcourses.com</p>
 
