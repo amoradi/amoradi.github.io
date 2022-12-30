@@ -59,7 +59,7 @@
     /* background-color: aquamarine; */
     border-radius: 4px;
     display: inline-block;
-    width: 300px;
+    width: 247px; /* Gives us 3 col at 1200 pixel width */
     overflow: hidden;
 }
 
