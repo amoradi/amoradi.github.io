@@ -90,6 +90,10 @@ a:hover {
     overflow: hidden;
 }
 
+.important-content {
+    overflow: hidden;
+}
+
 @media only screen and (min-width: 785px) {
     .important-content {
         min-height: 640px;
