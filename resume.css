@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.resume-header span {
+.resume-header .links {
     font-size: 12px;
 }
 
