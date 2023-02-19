@@ -1,0 +1,38 @@
+.all--resume {
+    font-size: 14px;
+}
+
+.resume-header {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.resume-header span {
+    font-size: 12px;
+}
+
+.split-view {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 40px;
+}
+
+.subhead {
+    /* color: #555; */
+    font-size: 13px;
+    line-height: 1.6;
+    display: block;;
+}
+
+.subhead span {
+    font-weight: 400;
+}
+
+.important-content--poised {
+    max-width: 777px;
+    margin: 0 auto;
+    overflow: unset;
+
+    border: 1px solid #eee;
+    padding: 20px 60px;
+}
