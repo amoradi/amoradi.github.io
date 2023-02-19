@@ -16,8 +16,8 @@
 
 .split-view {
     display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 40px;
+    grid-template-columns: calc(50% - 40px) calc(50% - 40px);
+    column-gap: 80px;
 }
 
 .subhead {
