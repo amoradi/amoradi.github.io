@@ -1,8 +1,10 @@
 .all--resume {
     font-size: 14px;
+    background: #ffebdc78;
 }
 
 .resume-header {
+    justify-content: center;
     display: flex;
     gap:20px;
     font-size: 14px;
@@ -61,6 +63,7 @@ ul {
     margin: 0 auto;
     overflow: unset;
     border: 1px solid #eee;
+    background-color: #fff;
 }
 
 section {
@@ -70,5 +73,6 @@ section {
 
 section:first-child {
     border-top: 0;
+    background-color: azure;
 }
 
