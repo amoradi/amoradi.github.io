@@ -3,8 +3,11 @@
 }
 
 .resume-header {
+    display: flex;
+    gap:20px;
     font-size: 14px;
     margin-bottom: 24px;
+    align-items: center;
 }
 
 .resume-header span {
@@ -28,8 +31,22 @@
     font-weight: 400;
 }
 
+h2 {
+    background-color: #efefef;
+    padding-left: 5px;
+}
+
+.dot {
+    height: 100px;
+    width: 100px;
+    background-color: #efefef;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 .important-content--poised {
     max-width: 777px;
+    min-width: 777px;
     margin: 0 auto;
     overflow: unset;
 
