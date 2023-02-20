@@ -18,15 +18,21 @@
 
 .split-view {
     display: grid;
-    grid-template-columns: calc(50% - 40px) calc(50% - 40px);
+    /* grid-template-columns: calc(50% - 40px) calc(50% - 40px); */
     column-gap: 80px;
 }
 
 .subhead {
-    /* color: #555; */
     font-size: 13px;
     line-height: 1.6;
-    display: block;;
+}
+
+.subhead,
+.icon-image-holder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
 }
 
 .subhead span {
@@ -41,6 +47,7 @@ h2 {
     /* background-color: rgb(255 249 192 / 50%); */
     /* padding: 0 10px; */
     display: inline-block;
+    vertical-align: middle;
 }
 
 ul {
@@ -49,7 +56,7 @@ ul {
     /* list-style-position: inside; */
 }
 
-.dot {
+.headshot {
     height: 100px;
     width: 100px;
     background-color: #efefef;
@@ -57,9 +64,57 @@ ul {
     display: inline-block;
 }
 
+.icon-image {
+    height: 35px;
+    width: 35px;
+    background-color: cornsilk;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.icon-image-holder--poised {
+    margin-bottom: 20px;
+}
+
+[class*="icon-image--"] {
+    background-size: cover;
+}
+
+.icon-image--utd {
+    background-image: url('../images/utd_img.jpeg');
+}
+.icon-image--plano-shs {
+    background-image: url('../images/plano_shs_img.jpeg');
+}
+.icon-image--codecademy {
+    background-image: url('../images/codecademy_img.jpeg');
+}
+.icon-image--collin-college {
+    background-image: url('../images/collin_college_img.jpeg');
+}
+.icon-image--consensys {
+    background-image: url('../images/consensys_img.jpeg');
+}
+.icon-image--dapp-camp{
+    background-image: url('../images/dapp_camp_img.jpeg');
+}
+.icon-image--entreleadership {
+    background-image: url('../images/entreleadership_img.jpeg');
+}
+.icon-image--ivie{
+    background-image: url('../images/ivie_img.jpeg');
+}
+.icon-image--mrm{
+    background-image: url('../images/mrm_img.jpeg');
+}
+.icon-image--visual-app {
+    background-image: url('../images/visual_app_img.jpeg');
+}
+
 .important-content--poised {
-    max-width: calc(877px + 80px);
-    min-width: calc(877px + 80px);
+    max-width: calc(700px + 80px);
+    min-width: calc(700px + 80px);
+    padding-bottom: 40px;
     margin: 0 auto;
     overflow: unset;
     border: 1px solid #eee;
@@ -68,7 +123,7 @@ ul {
 
 section {
     border-top: solid #efefef 1px;
-    padding: 20px 40px;
+    padding: 20px 80px;
 }
 
 section:first-child {
