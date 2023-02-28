@@ -109,15 +109,8 @@
     letter-spacing: 0.5px;
 }
 
-@media only screen and (min-width: 785px) {
-    .notes-teaser-title {
-        height: var(--two-line-height);
-    }
-}
-
 .notes-teaser-desc {
     display: inline-block;
-    height: var(--two-line-height);
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
