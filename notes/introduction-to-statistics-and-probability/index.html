@@ -389,8 +389,21 @@ We use the notation <code>P(E)</code>, which is read, &quot;P of E&quot; or &quo
 <li>Another way to calculate conditional probability is to use the following formula on the <strong>unreduced sample space</strong>.</li>
 </ul>
 <p><code>P(A|B) = P(A ∩ B)) / P(B)</code></p>
+<p>Independence test (given event has no bearing on next event):</p>
+<ul>
+<li><code>P(A|B) = P(A)</code>
+<ul>
+<li>given <code>B</code>, <code>P(A)</code> equals <code>P(A)</code> alone</li>
+</ul>
+</li>
+<li><code>P(B|A) = P(B)</code>
+<ul>
+<li>given <code>A</code>, <code>P(B)</code>, equals <code>P(B)</code> alone</li>
+</ul>
+</li>
+</ul>
 <p>Two events are <strong>independent</strong>, provided that the occurence of one event does not affect the probability that the other event occurs. In other words, 
-<code>P(A|B) = P(A)</code> or <code>P(B|A) = P(B)</code>. If one of these equations is not satisified, then the events are  <strong>dependent</strong>. (Note only 1 of the 2 equations needs to be satified to determine independence or dependence. This is because the truth status of one equation implies the truth status of the other equation.)</p>
+<code>P(A|B) = P(A)</code> or <code>P(B|A) = P(B)</code>. If one of these equations is not satisified, then the events are <strong>dependent</strong>. (Note only 1 of the 2 equations needs to be satified to determine independence or dependence. This is because the truth status of one equation implies the truth status of the other equation.)</p>
 <p>The <strong>multiplication rule</strong> states that when events are independent, <code>P(A∩B) = P(A)P(B)</code>.</p>
 <p>Ex. A is observing heads and B is observing heads, <code>P(A∩B) = P(A)P(B) = .25</code>.</p>
 <p>When events are dependent:</p>
@@ -402,7 +415,7 @@ We use the notation <code>P(E)</code>, which is read, &quot;P of E&quot; or &quo
 <h2 id="4-4-introduction-to-combinatorics">4.4 Introduction to Combinatorics</h2>
 <p>The <strong>multiplication principle</strong>: If there are <code>m</code> ways of performing a task and <code>n</code> ways of performing another task, then there are <code>m * n</code> ways of performing both tasks in sequence.</p>
 <p>How many 2 digit codes are possible if the digits come from the set <code>{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }</code>?</p>
-<p>10 for the 1st digit and 10 for the 2nd digit. <code>10 * 100 = 100</code> according to the multiplication principle.</p>
+<p>10 for the 1st digit and 10 for the 2nd digit. <code>10 * 10 = 100</code> according to the multiplication principle.</p>
 <p>With rules excluding 0 for the 1st digit and disallowing same-digit for the 2nd, we get <code>9 * 9 = 81</code>.</p>
 <p>A <strong>permutation</strong> is an ordered arrangement of objects. The number of distinct permutations of n distinct objects is <code>n!</code>.</p>
 <p><code>n!</code> is read &quot;n factorial&quot; and is defined as: <code>n! 1 * 2 *** n</code> for all natural numbers <code>n</code>.

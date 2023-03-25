@@ -1,6 +1,6 @@
 .all--resume {
     font-size: 14px;
-    background: #ffebdc78;
+    background: #eee
 }
 
 .resume-header {
@@ -14,6 +14,11 @@
 
 .resume-header .links {
     font-size: 12px;
+}
+
+.resume-header .small-text {
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .split-view {
@@ -59,7 +64,7 @@ ul {
 .headshot {
     height: 100px;
     width: 100px;
-    background-color: #efefef;
+    background-color: #48d1cc15;
     border-radius: 50%;
     display: inline-block;
 }
@@ -67,7 +72,7 @@ ul {
 .icon-image {
     height: 35px;
     width: 35px;
-    background-color: #efefef;
+    background-color: #48d1cc;
     border-radius: 50%;
     display: inline-block;
 }
