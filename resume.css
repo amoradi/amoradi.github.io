@@ -1,6 +1,21 @@
+:root {
+    --background: #fff;
+    --dark: #111;
+    --med: #222;
+    --med-light: #444;
+    --light: #aaa; 
+    --light-extra: #ddd;
+    --light-ultra: #eee;
+    --highlight: rgb(255 249 192 / 50%);
+
+    background-color: #eee;
+    border-top: 6px solid var(--light-ultra);
+}
+
 .all--resume {
     font-size: 14px;
-    background: #eee
+    background: #eee;
+    color: #444;
 }
 
 .resume-header {

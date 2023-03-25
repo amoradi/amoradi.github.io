@@ -1,13 +1,16 @@
 /* TODO: Don't style bare elements, use BEM. */
 /* base, shared CSS */
 :root {
+    --background: #fff;
     --dark: #111;
     --med: #222;
     --med-light: #444;
     --light: #aaa; 
     --light-extra: #ddd;
     --light-ultra: #eee;
-    
+    --highlight: rgb(255 249 192 / 50%);
+    --strong: #444;
+
     --heading-major-size: 24px;
     --heading-size: 14px;
     --text-major-size: 18px;
@@ -15,13 +18,27 @@
     --text-med-size: 16px;
     --text-med-meta-size: 15px;
     --text-meta-size: 14px;
-    border-top: 6px solid #eee;
-    /*border-bottom: 40px solid #222;*/
+
+    background-color: var(--background);
+    border-top: 6px solid var(--light-ultra);
+}
+
+:root[data-dark-mode="true"] {
+    --background: #222;
+    --dark: #eee;
+    --med: #ddd;
+    --med-light: #ddd;
+    --light: #777; 
+    --light-extra: #444;
+    --light-ultra: #000;
+    --highlight: #ffd5db;
+    --strong: #222;
 }
 
 strong {
     font-weight: 500;
-    background: rgb(255 249 192 / 50%);
+    background: var(--highlight);
+    color: var(--strong);
 }
 
 pre {
@@ -186,3 +203,70 @@ nav.header-links a + a {
       margin: 0 0 20px 0;
       font-size: var( --text-meta-size);
   }
+
+  /*
+  Color Scheme Toggle Switch
+  - Styled checkbox with slight animation when toggling
+*/
+#color-mode-switch-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#color-mode-switch {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  #color-mode-switch > span {
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  #color-mode-switch svg {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+  }
+  
+  #color-mode-switch input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  #color-mode-switch label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 42px;
+    height: 18px;
+    border-radius: 30px;
+    background: var(--dark);
+    display: block;
+    position: relative;
+    margin: 0 4px 0 0;
+  }
+  
+  #color-mode-switch label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background: var(--background);
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  
+  #color-mode-switch input:checked + label:after {
+    left: calc(100% - 3px);
+    transform: translateX(-100%);
+  }
+  
+  #color-mode-switch label:active:after {
+    width: 30px;
+  }
+  

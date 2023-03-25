@@ -125,6 +125,7 @@
 #search {
     display: none;
     height: 27px;
+    background-color: var(--background);
     border-radius: 0;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: var(--text-major-size);
