@@ -116,6 +116,10 @@ li,
     line-height: 1;
 }
 
+.resume-header__title--slim {
+    font-weight: 300;
+}
+
 .intro-section {
     height: 100px;
 }
