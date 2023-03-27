@@ -33,7 +33,7 @@
 .intro-section__content {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .resume-header div:first-child {
@@ -118,6 +118,18 @@ li,
 
 .resume-header__title--slim {
     font-weight: 300;
+}
+
+.resume-header__list {
+    margin: 0;
+}
+
+.resume-header__list li {
+    text-align: right;
+}
+
+.resume-header__list li:before {
+    content: "";
 }
 
 .intro-section {
