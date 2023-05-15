@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       
-    <title>Vertical Scaling | Aaron Moradi</title>
-    <meta name="description" content="Scaling applications" />
+    <title>React Native | Aaron Moradi</title>
+    <meta name="description" content="Notes on React Native" />
 
     
   <link rel="stylesheet" href="/notes.css" />
@@ -66,35 +66,21 @@
         
     <div class="reading-text">
         <a class="back-link"href="/notes"/>&#8592; back</a>
-        <h1 class="title">Vertical Scaling</h1>
+        <h1 class="title">React Native</h1>
         
-        <p>Vertical Scaling is an attempt to <strong>increase the capacity of a single machine</strong>. Here the resources such as processing power, storage, memory, and more are <strong>added to an existing work unit</strong>.</p>
-<p>Vertical Scaling is done to increase the capacity of existing hardware or software by adding resources. It can <strong>enhance your server without manipulating your code</strong>. But it is limited by the fact that you can only get as big as the size of the server.</p>
-<p>For example, let us consider that you have a business website. As your business grows, your website traffic will also increase. At times, with the increasing traffic, your server performance starts degrading. To manage the traffic load, your website needs to scale its resources by adding faster CPU Processors, RAM, disk capacity, etc. In such cases, you use a vertical scaling model that can enhance the capabilities of the same server and node.</p>
-<p>Vertical Scaling boosts the power of the individual server to handle the increasing load. Adding more machines in vertical Scaling is often restricted to the capacity of a single machine. In vertical-scaling, <strong>there is no partitioning of the data</strong>. It all resides on a single node.</p>
-<p>Vertical Scaling strategy is <strong>widely used in applications of small and mid-sized companies</strong>. One of the most common examples of Virtual Scaling is buying expensive hardware and using it as a Virtual Machine hyper-visor.</p>
-<p>Vertical Scaling is also called the Scale-up approach.</p>
-<p>Example of Vertical Scaling: MySQL and Amazon RDS.</p>
-<p>Advantages of Vertical Scaling:</p>
+        <h2 id="core-components">Core Components</h2>
 <ul>
-<li>Reduced software costs.</li>
-<li>Easy Implementation.</li>
-<li>Licensing fees is less.</li>
-<li>Consumes less power.</li>
-<li>Cooling costs are lesser than horizontal scaling.</li>
-<li>Cooling costs are lesser than horizontal scaling.</li>
-<li>Application compatibility is maintained..</li>
-<li>Disadvantages of Vertical Scaling:</li>
-<li>Limited Scaling.</li>
-<li>The risk for downtime is much higher than horizontal scaling.</li>
-<li>Greater risk of outages and hardware failures.</li>
-<li>Finite scope of upgradeability in the future.</li>
-<li>Severe vendor lock-in.</li>
-<li>The cost of implementing is expensive.</li>
+<li><code>&lt;View&gt;</code> | <code>&lt;div&gt;</code> A container that supports layout with flexbox, style, some touch handling, and accessibility controls</li>
+<li><code>&lt;Text&gt;</code> | <code>&lt;p&gt;</code> Displays, styles, and nests strings of text and even handles touch events</li>
+<li><code>&lt;Image&gt;</code> | <img>	Displays different types of images</li>
+<li><code>&lt;ScrollView&gt;</code> | <code>&lt;div&gt;</code> A generic scrolling container that can contain multiple components and views</li>
+<li><code>&lt;TextInput&gt;</code> | <code>&lt;input type=&quot;text&quot;&gt;</code>	Allows the user to enter text</li>
 </ul>
-<p>Video Comparison
-https://www.youtube.com/watch?v=xpDnVSmNFX0</p>
-<p>Copied from: <a href="https://www.redswitches.com/blog/difference-between-horizontal-vertical-scaling">https://www.redswitches.com/blog/difference-between-horizontal-vertical-scaling</a></p>
+<h2 id="scrollview"><code>&lt;ScrollView&gt;</code></h2>
+<p><code>ScrollView</code>s can be configured to allow <strong>paging through views using swiping gestures</strong> by using the <code>pagingEnabled</code> props. <strong>Swiping horizontally</strong> between views can also be implemented on <strong>Android</strong> using the <code>ViewPager</code> component.</p>
+<p>On iOS a <code>ScrollView</code> <strong>with a single item</strong> can be used to allow the user to <strong>zoom content</strong>. Set up the <code>maximumZoomScale</code> and <code>minimumZoomScale</code> props and your user will be able to use pinch and expand gestures to zoom in and out.</p>
+<p>The ScrollView works best to present a small number of things of a limited size. <strong>All the elements and views of a ScrollView are rendered, even if they are not currently shown on the screen.</strong> </p>
+<p>If you have a <strong>long list</strong> of items which <strong>cannot fit on the screen</strong>, you should use a <code>FlatList</code> instead. So let's learn about list views next.</p>
 
     </div>
 
