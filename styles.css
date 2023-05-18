@@ -190,6 +190,10 @@ nav.header-links a + a {
   .icon-twitter:before { content: '\f099'; } /* 'ï‚™' */
   .icon-linkedin:before { content: '\f0e1'; } /* 'ïƒ¡' */
   
+  .reading-list__container {
+    margin: 0 auto;
+    max-width: 700px;
+  }
 
   .reading-list {
       margin-bottom: 40px;
