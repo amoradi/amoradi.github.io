@@ -19,10 +19,16 @@
 
 .home .header-content {
     letter-spacing: 0;
-    max-width: 27ch;
+    width: 100%;
     font-weight: 300;
     font-size: var(--heading-major-size);
     color: var(--med-light);
+}
+
+@media only screen and (min-width: 760px) {
+    .home .header-content {
+        max-width: 27ch;
+    }
 }
 
 .home .header-content-emphasis {
