@@ -42,7 +42,7 @@ strong {
 }
 
 pre {
-    padding-left: 20px;
+    padding: 10px 0 10px 20px;
     overflow-x: scroll;
     font-size: var(--text-med-size);
 }

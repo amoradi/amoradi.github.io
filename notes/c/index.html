@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+    <title>C++ | Aaron Moradi</title>
+    <meta name="description" content="" />
+
+    
+  <link rel="stylesheet" href="/notes.css" />
+
+</head>
+<body class="all">
+    <div class="important-content">
+        <!-- make this sticky/fixed -->
+        <div id="color-mode-switch-container">
+            <div id="color-mode-switch">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+                <input type="checkbox" id="switch" onchange="((e) => {
+                    try {
+                        const isChecked = e.target.checked;
+
+                        document.getElementsByTagName('html')[0].setAttribute('data-dark-mode', isChecked);
+
+                        if (isChecked) {
+                            window.localStorage.setItem('amoradi-dark-mode', true);
+                        } else {
+                            window.localStorage.removeItem('amoradi-dark-mode');
+                        }
+                    } catch(e) {
+                        console.log(e);
+                    }
+                    })(arguments[0])">
+                <label for="switch">Dark Mode Toggle</label>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+              </div>
+        </div>
+        <header class="header">
+            <div class="header-body">
+                <a href="/" title="introduction">intro</a>  
+            </div>
+            
+            <nav class="header-links">
+                <!--
+                    <a href="/notes" title="notes">notes</a>
+                    <a href="/" title="Aaron Moradi">me</a>
+                -->
+                
+                
+    <a href="/notes" title="notes">notes</a>
+    <a href="/reading-list" title="reading list">reading list</a>
+
+            </nav>
+        </header>
+        
+    <div class="reading-text">
+        <a class="back-link"href="/notes"/>&#8592; back</a>
+        <h1 class="title">C++</h1>
+        
+        <h2 id="data-types">Data Types</h2>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>type    usage                   examples
+</span><span>
+</span><span>int     int numbers             0, 400 
+</span><span>double  floating-point numbers  3.14, -200.0 
+</span><span>char    characters              &#39;a&#39;, &#39;@&#39; 
+</span><span>string  sequence of characters  &quot;hello world!&quot; 
+</span><span>bool    truth values            true, false 
+</span></code></pre>
+<ul>
+<li><code>int</code> requires 4 bytes of memory, ranges from -2^31 to 2^31</li>
+<li><code>double</code> requires 8 bytes of memory, sufficient for storing up to 15 decimal digits</li>
+</ul>
+<p><strong>Type conversion</strong>, &quot;convert value to type&quot; -&gt; <code>(type) value</code>.</p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">double</span><span> a </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">3.5</span><span>;
+</span><span style="color:#668f14;">int</span><span> b </span><span style="color:#72ab00;">= </span><span>(</span><span style="color:#668f14;">int</span><span>) a; </span><span style="color:#7f8989;">// convert a double to an int
+</span></code></pre>
+<ul>
+<li><code>char</code> stores a single character surrounded by single quotes ' '</li>
+<li><code>std::string</code> stores a sequence of characters surrounded by double quotes &quot; &quot;</li>
+<li><code>bool</code> requires 1 byte of memory space</li>
+</ul>
+<h2 id="bitwise-operators">Bitwise Operators</h2>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int</span><span> x </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">3</span><span>;  </span><span style="color:#7f8989;">// in bits: 0011
+</span><span style="color:#668f14;">int</span><span> y </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">9</span><span>;  </span><span style="color:#7f8989;">// in bits: 1001
+</span><span>
+</span><span style="color:#668f14;">int</span><span> z </span><span style="color:#72ab00;">=</span><span> x </span><span style="color:#72ab00;">&lt;&lt; </span><span style="color:#b3933a;">2</span><span>; </span><span style="color:#7f8989;">// z equals 12, in bits: 1100
+</span><span>z </span><span style="color:#72ab00;">=</span><span> y </span><span style="color:#72ab00;">&gt;&gt; </span><span style="color:#b3933a;">1</span><span>; </span><span style="color:#7f8989;">// z equals 4, in bits: 0100
+</span><span>z </span><span style="color:#72ab00;">=</span><span> x </span><span style="color:#72ab00;">|</span><span> y;  </span><span style="color:#7f8989;">// z equals 11, in bits: 1011
+</span></code></pre>
+<p>When a variable is declared, a free memory address is set aside for the purpose of storing the value inside that variable. C++ provides two powerful features that allow programmers to directly manipulate memory:</p>
+<ul>
+<li>References</li>
+<li>Pointers</li>
+</ul>
+<h2 id="reference">Reference</h2>
+<p>A <strong>reference variable is an alias</strong> to an existing variable. It is declared by using an ampersand <strong>&amp; after the type</strong>.</p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int</span><span> exam_grade </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">85</span><span>;
+</span><span style="color:#668f14;">int</span><span style="color:#72ab00;">&amp;</span><span> score </span><span style="color:#72ab00;">=</span><span> exam_grade; </span><span style="color:#7f8989;">// a reference
+</span></code></pre>
+<p>When the value of <code>score</code> is changed, the value of <code>exam_grade</code> will also change in the same way.</p>
+<ul>
+<li>References must be initialized.</li>
+<li>References cannot be reassigned.</li>
+</ul>
+<p>The <strong>primary application for references in C++ is in function parameters</strong>. Because the <strong>reference parameter acts as an alias for the argument</strong>, a function that uses a reference parameter is <strong>able to modify the argument</strong> passed in.</p>
+<h2 id="input-output">Input/Output</h2>
+<p><code>iostream</code>, which stands for “input/output stream”, is part of the C++ standard library that deals with basic input and output. </p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#7f8989;">// include the iostream header at the beginning of your program
+</span><span style="color:#72ab00;">#include </span><span style="color:#d07711;">&lt;iostream&gt;
+</span></code></pre>
+<p><code>std::cout</code>, which stands for <strong>“character output”</strong>, is used together with the <strong>insertion operator</strong> <code>&lt;&lt;</code> to print values on the terminal:</p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span>std::cout </span><span style="color:#72ab00;">&lt;&lt; </span><span style="color:#d07711;">&quot;Hello World!&quot;</span><span>;
+</span></code></pre>
+<p><code>std::endl</code>, which stands for <strong>“end line”</strong>, can also be used to achieve a new line. <code>\n</code> and <code>std::endl</code> are mostly interchangeable.</p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span>std::cout </span><span style="color:#72ab00;">&lt;&lt; </span><span style="color:#d07711;">&quot;Hello World!&quot; </span><span style="color:#72ab00;">&lt;&lt;</span><span> std::endl;
+</span><span>std::cout </span><span style="color:#72ab00;">&lt;&lt; </span><span style="color:#d07711;">&quot;C++ is fun&quot; </span><span style="color:#72ab00;">&lt;&lt;</span><span> std::endl;
+</span></code></pre>
+<p><code>std::cin</code>, which stands for <strong>“character input”</strong>, can be used together with the <strong>extraction operator</strong> <code>&gt;&gt;</code> to read input from the user.</p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int</span><span> x;
+</span><span>std::cin </span><span style="color:#72ab00;">&gt;&gt;</span><span> x;  </span><span style="color:#7f8989;">//  get user input and store it in variable x
+</span></code></pre>
+<h2 id="program-structure">Program Structure</h2>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#72ab00;">#include </span><span style="color:#d07711;">&lt;iostream&gt;
+</span><span style="color:#72ab00;">using namespace</span><span> std;
+</span><span>
+</span><span style="color:#668f14;">int </span><span style="color:#c23f31;">main</span><span>() {
+</span><span>  cout </span><span style="color:#72ab00;">&lt;&lt; </span><span style="color:#d07711;">&quot;Hello, world!&quot;</span><span>;
+</span><span>  </span><span style="color:#72ab00;">return </span><span style="color:#b3933a;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>The above line is a <strong>preprocessor directive</strong>, a special type of statement that starts with the <strong># symbol</strong> and is examined before actual compilation.</p>
+<p>The <code>include</code> keyword is used here to import libraries.</p>
+<ul>
+<li>Standard library names must be enclosed in <code>&lt; &gt;</code></li>
+<li>User-defined library names must be enclosed in <code>&quot; &quot;</code></li>
+</ul>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#72ab00;">using namespace</span><span> std;
+</span></code></pre>
+<p>The above line introduces the <strong>namespace std</strong> into the current program. This line allows the usage of standard library objects without prepending the <code>std::</code> identifier.</p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int </span><span style="color:#c23f31;">main</span><span>() {
+</span></code></pre>
+<p>This is the beginning of the main function. Every C++ program must have a main function in order to run.</p>
+
+    </div>
+
+    </div>
+    <footer class="footer">
+        
+        <i>What do I mean by good people?...Could you describe the person as an animal?<br />- Paul Graham</i>
+        <!-- <i>Never have the world's moneys been so long cut off from their metallic roots.<br />- M. Rothbard</i> -->
+        
+    </footer>
+    <script>
+        try {
+            const darkMode = window.localStorage.getItem('amoradi-dark-mode');
+
+            if (darkMode) {
+                document.getElementById('switch').checked = true;
+                document.getElementsByTagName('html')[0].setAttribute('data-dark-mode', true);
+            }
+        } catch(e) {
+            console.log('dark mode error', e);
+        }
+    </script>
+</body>
+</html>
