@@ -128,7 +128,7 @@
 </span></code></pre>
 <p><code>std::cin</code>, which stands for <strong>“character input”</strong>, can be used together with the <strong>extraction operator</strong> <code>&gt;&gt;</code> to read input from the user.</p>
 <pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int</span><span> x;
-</span><span>std::cin </span><span style="color:#72ab00;">&gt;&gt;</span><span> x;  </span><span style="color:#7f8989;">//  get user input and store it in variable x
+</span><span>std::cin </span><span style="color:#72ab00;">&gt;&gt;</span><span> x;  </span><span style="color:#7f8989;">// get user input and store it in variable x
 </span></code></pre>
 <h2 id="program-structure">Program Structure</h2>
 <pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#72ab00;">#include </span><span style="color:#d07711;">&lt;iostream&gt;
@@ -151,13 +151,46 @@
 <pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int </span><span style="color:#c23f31;">main</span><span>() {
 </span></code></pre>
 <p>This is the beginning of the main function. Every C++ program must have a main function in order to run.</p>
+<h2 id="memory-addresss">Memory Addresss</h2>
+<p>The <strong>ampersand symbol <code>&amp;</code></strong> is called the <strong>address of operator</strong> and is used to access the memory address of a variable. This can be done by preceding the name of a variable with &amp;:</p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span>std::string message </span><span style="color:#72ab00;">= </span><span style="color:#d07711;">&quot;Hello World!&quot;</span><span>;
+</span><span>
+</span><span>std::cout </span><span style="color:#72ab00;">&lt;&lt;</span><span> message </span><span style="color:#72ab00;">&lt;&lt;</span><span> std::endl;
+</span><span>
+</span><span style="color:#7f8989;">// Print the memory address of message (0x7ffee9b21af0)
+</span><span>std::cout </span><span style="color:#72ab00;">&lt;&lt; &amp;</span><span>message </span><span style="color:#72ab00;">&lt;&lt;</span><span> std::endl;
+</span></code></pre>
+<p>Since memory addresses are essentially randomized, don’t expect to get the exact same result in your program.</p>
+<h2 id="pointers">Pointers</h2>
+<p>A pointer in C++ is a <strong>variable that stores a memory address as its value</strong>.</p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int</span><span style="color:#72ab00;">*</span><span> age;
+</span><span style="color:#668f14;">char</span><span style="color:#72ab00;">*</span><span> initial;
+</span></code></pre>
+<p>A pointer variable is <strong>usually assigned with</strong> a memory address obtained by the <strong>address of operator <code>&amp;</code></strong>.</p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span>string day </span><span style="color:#72ab00;">= </span><span style="color:#d07711;">&quot;Monday&quot;</span><span>;
+</span><span>
+</span><span>string</span><span style="color:#72ab00;">*</span><span> ptr </span><span style="color:#72ab00;">= &amp;</span><span>day
+</span></code></pre>
+<h2 id="dereference">Dereference</h2>
+<p>When not used in a declaration, the <strong>asterisk symbol <code>*</code> is called the dereference operator</strong> and is used to <strong>obtain the value pointed to</strong> by a pointer variable.</p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#7f8989;">// Reference: print the memory address of day (0x7ffd1d8306c4)
+</span><span>std::cout </span><span style="color:#72ab00;">&lt;&lt;</span><span> ptr </span><span style="color:#72ab00;">&lt;&lt;</span><span> std::endl;
+</span><span>
+</span><span style="color:#7f8989;">// Dereference: print the value of day (Monday)
+</span><span>std::cout </span><span style="color:#72ab00;">&lt;&lt; *</span><span>ptr </span><span style="color:#72ab00;">&lt;&lt;</span><span> std::endl;
+</span></code></pre>
+<h2 id="null-pointer">Null Pointer</h2>
+<p>It is dangerous to leave a pointer variable uninitialized. If you are unsure where to point, assign that variable to <strong><code>nullptr</code></strong>, which is a keyword that <strong>provides a typesafe pointer value representing an empty pointer</strong>. </p>
+<p>In older C/C++ code, <code>NULL</code> was used for this purpose. <code>nullptr</code> is meant as a modern replacement to <code>NULL</code>.</p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int</span><span style="color:#72ab00;">*</span><span> ptr </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">nullptr</span><span>;
+</span></code></pre>
 
     </div>
 
     </div>
     <footer class="footer">
         
-        <i>What do I mean by good people?...Could you describe the person as an animal?<br />- Paul Graham</i>
+        <i>Food over flame burns, food over heat cooks<br />- Alfred the Great</i>
         <!-- <i>Never have the world's moneys been so long cut off from their metallic roots.<br />- M. Rothbard</i> -->
         
     </footer>
