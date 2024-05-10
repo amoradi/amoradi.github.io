@@ -68,7 +68,20 @@
         <a class="back-link"href="/notes"/>&#8592; back</a>
         <h1 class="title">C++</h1>
         
-        <h2 id="data-types">Data Types</h2>
+        <ul>
+<li>Developed by Bjarne Stroustrup at Bell Labs in 1979.</li>
+<li>Adds object-oriented programming and many other new features to C.</li>
+<li>Fast, flexible, and well-supported across multiple platforms.</li>
+<li>Being one of the most popular languages today, C++ has a wide range of applications across many fields.</li>
+</ul>
+<p>C++ a compiled language, which means a compiler needs to first translate your C++ source code into machine code before it can be run.</p>
+<pre data-lang="bash" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#7f8989;"># compile
+</span><span style="color:#5597d6;">g++</span><span> hello.cpp</span><span style="color:#5597d6;"> -o</span><span> hello
+</span><span>
+</span><span style="color:#7f8989;"># execute
+</span><span style="color:#5597d6;">./hello
+</span></code></pre>
+<h2 id="data-types">Data Types</h2>
 <pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>type    usage                   examples
 </span><span>
 </span><span>int     int numbers             0, 400 
@@ -91,12 +104,12 @@
 <li><code>bool</code> requires 1 byte of memory space</li>
 </ul>
 <h2 id="bitwise-operators">Bitwise Operators</h2>
-<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int</span><span> x </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">3</span><span>;  </span><span style="color:#7f8989;">// in bits: 0011
-</span><span style="color:#668f14;">int</span><span> y </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">9</span><span>;  </span><span style="color:#7f8989;">// in bits: 1001
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int</span><span> x </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">3</span><span>;  </span><span style="color:#7f8989;">// in binary: 0011
+</span><span style="color:#668f14;">int</span><span> y </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">9</span><span>;  </span><span style="color:#7f8989;">// in binary: 1001
 </span><span>
-</span><span style="color:#668f14;">int</span><span> z </span><span style="color:#72ab00;">=</span><span> x </span><span style="color:#72ab00;">&lt;&lt; </span><span style="color:#b3933a;">2</span><span>; </span><span style="color:#7f8989;">// z equals 12, in bits: 1100
-</span><span>z </span><span style="color:#72ab00;">=</span><span> y </span><span style="color:#72ab00;">&gt;&gt; </span><span style="color:#b3933a;">1</span><span>; </span><span style="color:#7f8989;">// z equals 4, in bits: 0100
-</span><span>z </span><span style="color:#72ab00;">=</span><span> x </span><span style="color:#72ab00;">|</span><span> y;  </span><span style="color:#7f8989;">// z equals 11, in bits: 1011
+</span><span style="color:#668f14;">int</span><span> z </span><span style="color:#72ab00;">=</span><span> x </span><span style="color:#72ab00;">&lt;&lt; </span><span style="color:#b3933a;">2</span><span>; </span><span style="color:#7f8989;">// z equals 12, in binary: 1100
+</span><span>z </span><span style="color:#72ab00;">=</span><span> y </span><span style="color:#72ab00;">&gt;&gt; </span><span style="color:#b3933a;">1</span><span>; </span><span style="color:#7f8989;">// z equals 4, in binary: 0100
+</span><span>z </span><span style="color:#72ab00;">=</span><span> x </span><span style="color:#72ab00;">|</span><span> y;  </span><span style="color:#7f8989;">// z equals 11, in binary: 1011
 </span></code></pre>
 <p>When a variable is declared, a free memory address is set aside for the purpose of storing the value inside that variable. C++ provides two powerful features that allow programmers to directly manipulate memory:</p>
 <ul>
@@ -106,7 +119,7 @@
 <h2 id="reference">Reference</h2>
 <p>A <strong>reference variable is an alias</strong> to an existing variable. It is declared by using an ampersand <strong>&amp; after the type</strong>.</p>
 <pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int</span><span> exam_grade </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">85</span><span>;
-</span><span style="color:#668f14;">int</span><span style="color:#72ab00;">&amp;</span><span> score </span><span style="color:#72ab00;">=</span><span> exam_grade; </span><span style="color:#7f8989;">// a reference
+</span><span style="color:#668f14;">int </span><span style="color:#72ab00;">&amp;</span><span>score </span><span style="color:#72ab00;">=</span><span> exam_grade; </span><span style="color:#7f8989;">// a reference
 </span></code></pre>
 <p>When the value of <code>score</code> is changed, the value of <code>exam_grade</code> will also change in the same way.</p>
 <ul>
@@ -151,6 +164,9 @@
 <pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int </span><span style="color:#c23f31;">main</span><span>() {
 </span></code></pre>
 <p>This is the beginning of the main function. Every C++ program must have a main function in order to run.</p>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#72ab00;">return </span><span style="color:#b3933a;">0
+</span></code></pre>
+<p>At the end of the main(), indicates the program ran without issues.</p>
 <h2 id="memory-addresss">Memory Addresss</h2>
 <p>The <strong>ampersand symbol <code>&amp;</code></strong> is called the <strong>address of operator</strong> and is used to access the memory address of a variable. This can be done by preceding the name of a variable with &amp;:</p>
 <pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span>std::string message </span><span style="color:#72ab00;">= </span><span style="color:#d07711;">&quot;Hello World!&quot;</span><span>;
@@ -163,8 +179,8 @@
 <p>Since memory addresses are essentially randomized, don’t expect to get the exact same result in your program.</p>
 <h2 id="pointers">Pointers</h2>
 <p>A pointer in C++ is a <strong>variable that stores a memory address as its value</strong>.</p>
-<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int</span><span style="color:#72ab00;">*</span><span> age;
-</span><span style="color:#668f14;">char</span><span style="color:#72ab00;">*</span><span> initial;
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int </span><span style="color:#72ab00;">*</span><span>age;
+</span><span style="color:#668f14;">char </span><span style="color:#72ab00;">*</span><span>initial;
 </span></code></pre>
 <p>A pointer variable is <strong>usually assigned with</strong> a memory address obtained by the <strong>address of operator <code>&amp;</code></strong>.</p>
 <pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span>string day </span><span style="color:#72ab00;">= </span><span style="color:#d07711;">&quot;Monday&quot;</span><span>;
@@ -182,7 +198,32 @@
 <h2 id="null-pointer">Null Pointer</h2>
 <p>It is dangerous to leave a pointer variable uninitialized. If you are unsure where to point, assign that variable to <strong><code>nullptr</code></strong>, which is a keyword that <strong>provides a typesafe pointer value representing an empty pointer</strong>. </p>
 <p>In older C/C++ code, <code>NULL</code> was used for this purpose. <code>nullptr</code> is meant as a modern replacement to <code>NULL</code>.</p>
-<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int</span><span style="color:#72ab00;">*</span><span> ptr </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">nullptr</span><span>;
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int </span><span style="color:#72ab00;">*</span><span>ptr </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">nullptr</span><span>;
+</span></code></pre>
+<h2 id="looping">Looping</h2>
+<pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#7f8989;">// while loop
+</span><span style="color:#668f14;">int</span><span> count </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">0</span><span>;
+</span><span style="color:#72ab00;">while </span><span>(count </span><span style="color:#72ab00;">&lt;= </span><span style="color:#b3933a;">10</span><span>) {
+</span><span>  std::cout </span><span style="color:#72ab00;">&lt;&lt;</span><span> count;
+</span><span>  count</span><span style="color:#72ab00;">++</span><span>;
+</span><span>}
+</span><span>
+</span><span style="color:#7f8989;">// do-while loop
+</span><span style="color:#668f14;">int</span><span> price </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">300</span><span>;
+</span><span style="color:#72ab00;">do </span><span>{
+</span><span>  std::cout </span><span style="color:#72ab00;">&lt;&lt; </span><span style="color:#d07711;">&quot;Too expensive!&quot;</span><span>;
+</span><span>} </span><span style="color:#72ab00;">while </span><span>(price </span><span style="color:#72ab00;">&gt; </span><span style="color:#b3933a;">500</span><span>);
+</span><span>
+</span><span style="color:#7f8989;">// for loop
+</span><span style="color:#72ab00;">for </span><span>(</span><span style="color:#668f14;">int</span><span> i </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">0</span><span>; i </span><span style="color:#72ab00;">&lt;= </span><span style="color:#b3933a;">10</span><span>; i</span><span style="color:#72ab00;">++</span><span>) {
+</span><span>  std::cout </span><span style="color:#72ab00;">&lt;&lt;</span><span> i;
+</span><span>}
+</span><span>
+</span><span style="color:#7f8989;">// for-each loop
+</span><span style="color:#668f14;">int</span><span> fibonacci[</span><span style="color:#b3933a;">5</span><span>] </span><span style="color:#72ab00;">= </span><span>{ </span><span style="color:#b3933a;">0</span><span>, </span><span style="color:#b3933a;">1</span><span>, </span><span style="color:#b3933a;">1</span><span>, </span><span style="color:#b3933a;">2</span><span>, </span><span style="color:#b3933a;">3 </span><span>};
+</span><span style="color:#72ab00;">for </span><span>(</span><span style="color:#668f14;">auto</span><span> number</span><span style="color:#72ab00;">:</span><span>fibonacci){
+</span><span>  std::cout </span><span style="color:#72ab00;">&lt;&lt;</span><span> number;
+</span><span>}
 </span></code></pre>
 
     </div>
