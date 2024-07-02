@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       
-    <title>Blockchain Basics | Aaron Moradi</title>
+    <title>Precalculus | Aaron Moradi</title>
     <meta name="description" content="" />
 
     
@@ -66,27 +66,37 @@
         
     <div class="reading-text">
         <a class="back-link"href="/notes"/>&#8592; back</a>
-        <h1 class="title">Blockchain Basics</h1>
+        <h1 class="title">Precalculus</h1>
         
-        <h2 id="overview">Overview</h2>
-<ul>
-<li>The page is what we call a <strong>Block</strong>.</li>
-<li>Date time provided on screen B is what we call the <strong>timestamp</strong> of the block.</li>
-<li>Number X is known as a <strong>nonce</strong>. It is <strong>the number that the nodes of the blockchain network try to find</strong> to reach the output <strong>number that respects the rule given by the wall</strong>.</li>
-<li>The process of finding number X is called <strong>mining</strong>.</li>
-<li>The rule given by the wall is called a <strong>hash function</strong>.</li>
-<li>We will see what the <strong>reference number</strong> is, in later sections.</li>
-</ul>
-<h2 id="hash-function">Hash Function</h2>
-<p>A <strong>hash function</strong> is a mathematical function that <strong>transforms</strong> any chain of characters or numbers <strong>into a fixed-length chain of characters</strong>. It turns data into a digital fingerprint called a hash.</p>
-<p><strong>SHA</strong> stands for <strong>Secure Hash Algorithm</strong> and is a set of cryptographic hash functions designed by the US National Security Agency. <strong>SHA-256</strong> means that it is a hash function <strong>producing a 256-bit-long</strong> output.</p>
-<h2 id="why-work">Why Work?</h2>
-<p>Now, why should every villager try to find number X since somebody is going to find it anyway and tell everyone else? <strong>Why should a villager spend time and effort to have his/her page validated</strong> and displayed on the wall?</p>
-<p>We introduce here the <strong>incentive mechanism</strong>, an <strong>economic payoff for the community to play fair</strong>. Because the pages should keep being sealed to keep the transactions accurate, <strong>the community should continuously work on solving the mathematical problem</strong>. In this manner, <strong>a reward is given to the villager who finds number X</strong>, that is, the <strong>first villager to find the correct hash of the page</strong>.</p>
-<p>This incentive mechanism ensures that everyone keeps interested in working for the common good.</p>
-<h2 id="reference-number">Reference Number</h2>
-<p>So, what is the reference number? Remember that, on page #1, the reference number was 0?</p>
-<p>For page #2, it will be 0031993. Exactly! The reference number of page #2 is the output number found for the previous page. In technical terms, we call it <strong>the previous hash</strong> or the hash value of the previous block. <strong>This allows the pages to be linked with one another</strong>, or to be <strong>chained to one another</strong>.</p>
+        <h2 id="composite-functions">Composite functions</h2>
+<p>Given two functions, we can combine them in such a way so that the outputs of one function become the inputs of the other. This action defines a composite function.</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>// M composed with C
+</span><span>M ∘ C
+</span><span>
+</span><span>M(C(a)) = (M ∘ C)(a)
+</span><span>
+</span></code></pre>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>// Find M composed with C
+</span><span>
+</span><span>M(c) = 7c + 5;
+</span><span>C(a) = 10 - a;
+</span><span>
+</span><span>// Ways to Compose
+</span><span>
+</span><span>// Substitute C(a) for c in M(c)
+</span><span>
+</span><span>M(C(a)) = 7(C(a)) + 5
+</span><span>        = 7(10 - a) + 5
+</span><span>        = 75 - 7a &lt;--
+</span><span>
+</span><span>
+</span><span>// Evaluate inner function, substitute result into outer function
+</span><span>
+</span><span>M(C(2)) 
+</span><span>C(2) = 10 - 2 = 8
+</span><span>M(8) = 7(8) + 5 = 61 &lt;--
+</span><span>
+</span></code></pre>
 
     </div>
 
