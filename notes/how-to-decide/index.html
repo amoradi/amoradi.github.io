@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+    <title>How to Decide: Simple Tools for Making Better Choices | Aaron Moradi</title>
+    <meta name="description" content="" />
+
+    
+  <link rel="stylesheet" href="/notes.css" />
+
+</head>
+<body class="all">
+    <div class="important-content">
+        <!-- make this sticky/fixed -->
+        <div id="color-mode-switch-container">
+            <div id="color-mode-switch">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+                <input type="checkbox" id="switch" onchange="((e) => {
+                    try {
+                        const isChecked = e.target.checked;
+
+                        document.getElementsByTagName('html')[0].setAttribute('data-dark-mode', isChecked);
+
+                        if (isChecked) {
+                            window.localStorage.setItem('amoradi-dark-mode', true);
+                        } else {
+                            window.localStorage.removeItem('amoradi-dark-mode');
+                        }
+                    } catch(e) {
+                        console.log(e);
+                    }
+                    })(arguments[0])">
+                <label for="switch">Dark Mode Toggle</label>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+              </div>
+        </div>
+        <header class="header">
+            <div class="header-body">
+                <a href="/" title="home">home</a>  
+            </div>
+            
+            <nav class="header-links">
+                <!--
+                    <a href="/notes" title="notes">notes</a>
+                    <a href="/" title="Aaron Moradi">me</a>
+                -->
+                
+                
+    <a href="/notes" title="notes">notes</a>
+    <a href="/reading-list" title="reads">reads</a>
+
+            </nav>
+        </header>
+        
+    <div class="reading-text">
+        <a class="back-link"href="/notes"/>&#8592; back</a>
+        <h1 class="title">How to Decide: Simple Tools for Making Better Choices</h1>
+        
+        <ul>
+<li>Resulting
+<ul>
+<li>A mental shortcut in which we use the <strong>quality of an outcome to figure out the quality of a decision.</strong></li>
+</ul>
+</li>
+<li><strong>Hindsight bias</strong>
+<ul>
+<li>The tendency to believe that an outcome, after it occurs, was predictable or inevitable.</li>
+<li>Like resulting, is a manifestation of the outsized influence of outcomes. <strong>The outcome casts a shadow over your ability to accurately remember what you knew</strong> at the time of the decision.</li>
+</ul>
+</li>
+<li>Memory creep
+<ul>
+<li><strong>Post outcome knowledge creeps into your memory of what you knew</strong> or was knowable before the decision was made.</li>
+</ul>
+</li>
+<li>Counuterfactual
+<ul>
+<li>A what-if. A possible outcome of a decision that is not the one that actually occured. An imagined, hypothetical state of the world.</li>
+</ul>
+</li>
+</ul>
+<table><thead><tr><th style="text-align: right"></th><th style="text-align: right"></th><th style="text-align: right"></th><th style="text-align: right"></th></tr></thead><tbody>
+<tr><td style="text-align: right"></td><td style="text-align: right"></td><td style="text-align: right"></td><td style="text-align: right">Outcome Quality</td></tr>
+<tr><td style="text-align: right"></td><td style="text-align: right"></td><td style="text-align: right">Good</td><td style="text-align: right">Bad</td></tr>
+<tr><td style="text-align: right"></td><td style="text-align: right">Good</td><td style="text-align: right"><strong>Earned reward</strong></td><td style="text-align: right"><strong>Bad luck</strong></td></tr>
+<tr><td style="text-align: right"></td><td style="text-align: right"></td><td style="text-align: right"></td><td style="text-align: right"></td></tr>
+<tr><td style="text-align: right">Decision Quality</td><td style="text-align: right">Bad</td><td style="text-align: right"><strong>Dumb luck</strong></td><td style="text-align: right"><strong>Just deserts</strong></td></tr>
+</tbody></table>
+
+    </div>
+
+    </div>
+    <footer class="footer">
+        
+        <i>Food over flame burns, food over heat cooks<br />- Alfred the Great</i>
+        <!-- <i>Never have the world's moneys been so long cut off from their metallic roots.<br />- M. Rothbard</i> -->
+        
+    </footer>
+    <script>
+        try {
+            const darkMode = window.localStorage.getItem('amoradi-dark-mode');
+
+            if (darkMode) {
+                document.getElementById('switch').checked = true;
+                document.getElementsByTagName('html')[0].setAttribute('data-dark-mode', true);
+            }
+        } catch(e) {
+            console.log('dark mode error', e);
+        }
+    </script>
+</body>
+</html>
