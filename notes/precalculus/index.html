@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-dark-mode="true">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -25,16 +25,16 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
                 </svg>
-                <input type="checkbox" id="switch" onchange="((e) => {
+                <input checked type="checkbox" id="switch" onchange="((e) => {
                     try {
                         const isChecked = e.target.checked;
 
                         document.getElementsByTagName('html')[0].setAttribute('data-dark-mode', isChecked);
 
                         if (isChecked) {
-                            window.localStorage.setItem('amoradi-dark-mode', true);
+                            window.localStorage.removeItem('amoradi-light-mode');
                         } else {
-                            window.localStorage.removeItem('amoradi-dark-mode');
+                            window.localStorage.setItem('amoradi-light-mode', true);
                         }
                     } catch(e) {
                         console.log(e);
@@ -109,14 +109,14 @@
     </footer>
     <script>
         try {
-            const darkMode = window.localStorage.getItem('amoradi-dark-mode');
+            const lightMode = window.localStorage.getItem('amoradi-light-mode');
 
-            if (darkMode) {
-                document.getElementById('switch').checked = true;
-                document.getElementsByTagName('html')[0].setAttribute('data-dark-mode', true);
+            if (lightMode) {
+                document.getElementById('switch').checked = false;
+                document.getElementsByTagName('html')[0].setAttribute('data-dark-mode', false);
             }
         } catch(e) {
-            console.log('dark mode error', e);
+            console.log('light mode error', e);
         }
     </script>
 </body>
