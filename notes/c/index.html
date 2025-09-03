@@ -94,13 +94,13 @@
 <li><code>int</code> requires 4 bytes of memory, ranges from -2^31 to 2^31</li>
 <li><code>double</code> requires 8 bytes of memory, sufficient for storing up to 15 decimal digits</li>
 </ul>
-<p><strong>Type conversion</strong>, &quot;convert value to type&quot; -&gt; <code>(type) value</code>.</p>
+<p><strong>Type conversion</strong>, "convert value to type" -&gt; <code>(type) value</code>.</p>
 <pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">double</span><span> a </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">3.5</span><span>;
 </span><span style="color:#668f14;">int</span><span> b </span><span style="color:#72ab00;">= </span><span>(</span><span style="color:#668f14;">int</span><span>) a; </span><span style="color:#7f8989;">// convert a double to an int
 </span></code></pre>
 <ul>
 <li><code>char</code> stores a single character surrounded by single quotes ' '</li>
-<li><code>std::string</code> stores a sequence of characters surrounded by double quotes &quot; &quot;</li>
+<li><code>std::string</code> stores a sequence of characters surrounded by double quotes " "</li>
 <li><code>bool</code> requires 1 byte of memory space</li>
 </ul>
 <h2 id="bitwise-operators">Bitwise Operators</h2>
@@ -128,7 +128,7 @@
 </ul>
 <p>The <strong>primary application for references in C++ is in function parameters</strong>. Because the <strong>reference parameter acts as an alias for the argument</strong>, a function that uses a reference parameter is <strong>able to modify the argument</strong> passed in.</p>
 <h2 id="input-output">Input/Output</h2>
-<p><code>iostream</code>, which stands for “input/output stream”, is part of the C++ standard library that deals with basic input and output. </p>
+<p><code>iostream</code>, which stands for “input/output stream”, is part of the C++ standard library that deals with basic input and output.</p>
 <pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#7f8989;">// include the iostream header at the beginning of your program
 </span><span style="color:#72ab00;">#include </span><span style="color:#d07711;">&lt;iostream&gt;
 </span></code></pre>
@@ -156,7 +156,7 @@
 <p>The <code>include</code> keyword is used here to import libraries.</p>
 <ul>
 <li>Standard library names must be enclosed in <code>&lt; &gt;</code></li>
-<li>User-defined library names must be enclosed in <code>&quot; &quot;</code></li>
+<li>User-defined library names must be enclosed in <code>" "</code></li>
 </ul>
 <pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#72ab00;">using namespace</span><span> std;
 </span></code></pre>
@@ -196,7 +196,7 @@
 </span><span>std::cout </span><span style="color:#72ab00;">&lt;&lt; *</span><span>ptr </span><span style="color:#72ab00;">&lt;&lt;</span><span> std::endl;
 </span></code></pre>
 <h2 id="null-pointer">Null Pointer</h2>
-<p>It is dangerous to leave a pointer variable uninitialized. If you are unsure where to point, assign that variable to <strong><code>nullptr</code></strong>, which is a keyword that <strong>provides a typesafe pointer value representing an empty pointer</strong>. </p>
+<p>It is dangerous to leave a pointer variable uninitialized. If you are unsure where to point, assign that variable to <strong><code>nullptr</code></strong>, which is a keyword that <strong>provides a typesafe pointer value representing an empty pointer</strong>.</p>
 <p>In older C/C++ code, <code>NULL</code> was used for this purpose. <code>nullptr</code> is meant as a modern replacement to <code>NULL</code>.</p>
 <pre data-lang="c++" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-c++ "><code class="language-c++" data-lang="c++"><span style="color:#668f14;">int </span><span style="color:#72ab00;">*</span><span>ptr </span><span style="color:#72ab00;">= </span><span style="color:#b3933a;">nullptr</span><span>;
 </span></code></pre>

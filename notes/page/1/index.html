@@ -1,6 +1,12 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="canonical" href="https://amoradi.github.io/notes/">
-<meta http-equiv="refresh" content="0; url=https://amoradi.github.io/notes/">
 <title>Redirect</title>
+<script>
+  const target = "https://amoradi.github.io/notes/";
+  const hash = window.location.hash || "";
+  window.location.replace(target + hash);
+</script>
+<noscript>
+  <meta http-equiv="refresh" content="0; url=https://amoradi.github.io/notes/">
+</noscript>
 <p><a href="https://amoradi.github.io/notes/">Click here</a> to be redirected.</p>
