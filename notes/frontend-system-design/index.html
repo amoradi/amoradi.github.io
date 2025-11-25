@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       
-    <title>Notes from Damodaran's Valuation Class | Aaron Moradi</title>
+    <title>Frontend System Design: Rendering & Delivery Models | Aaron Moradi</title>
     <meta name="description" content="" />
 
     
@@ -66,44 +66,56 @@
         
     <div class="reading-text">
         <a class="back-link"href="/notes"/>&#8592; back</a>
-        <h1 class="title">Notes from Damodaran's Valuation Class</h1>
+        <h1 class="title">Frontend System Design: Rendering & Delivery Models</h1>
         
-        <h2 id="3-approaches-to-valuation">3 Approaches to Valuation</h2>
+        <h2 id="static-site-generation-ssg">Static Site Generation (SSG)</h2>
 <ul>
-<li>Intrinsic Value
+<li>Pages are built during deployment. Visitors get pre-rendered HTML instantly.</li>
+<li>Easy to handle millions of users.</li>
+</ul>
+<p>Use case: Documentation sites, marketing landing pages, or personal blogs where content updates happen through deployments, not user actions.</p>
+<h2 id="incremental-static-regeneration-isr">Incremental Static Regeneration (ISR)</h2>
 <ul>
-<li>Cashflows, discount rate that prices in risk, growth, time horizon, etc.</li>
-<li>Focus is just on the business. Valuation is on its intrinsic characteristics.</li>
-<li>Designed for cashflow-generating assets, as opposed to, e.g., a Picasso painting or gold.</li>
-<li>Discounted cashflows valuation: Expected cashflows over time.
+<li>Pages are still pre-built, but they can update automatically without a full redeploy.</li>
+<li>After revalidation time, trigger a background rebuild of that specific page on the server, not a full deployment. Per page, not site-wide.</li>
+<li>Just as fast as SSG, but the content stays fresh.</li>
+<li>Works with CDNs, so updates happen without downtime.</li>
+</ul>
+<p>Use case: E-commerce product pages where most content (e.g., descriptions or images) is static, but some parts, like prices or stock info, update occasionally.</p>
+<p>ISR keeps the page fresh without full redeploys, while real-time data, such as live prices, can come from APIs.</p>
+<h2 id="server-side-rendering-ssr">Server-Side Rendering (SSR)</h2>
 <ul>
-<li>Can adjust for risk in the cashflow value or the discount rate.</li>
-<li>If in the cashflow, use the Certaintiy Equivalent cashflow (CE). E.g. $90 risk-free vs $100 w/risk. In this scenario CE's and risk-free rates are used as inputs.</li>
+<li>The server builds the page for each request. It fetches the data, generates the HTML, and sends it to the user.</li>
+<li>Keeps content fresh and easy to personalise. Perfect for pages that need real-time data or personalised content.</li>
 </ul>
-</li>
-<li>Financial balance sheet (not accounting)
+<p>Use case: Social media feeds, admin dashboards, or user-specific pages where content varies by session.</p>
+<h2 id="client-side-rendering-csr">Client-Side Rendering (CSR)</h2>
 <ul>
-<li>Assets: In-place assets, growth assets</li>
-<li>Liabilities: Debt and equity (fund a biz by borrowing or use own money)</li>
+<li>The browser does most of the work instead of the server.</li>
+<li>Works best for apps people use for a long time, like dashboards or editors.</li>
+<li>Reduces pressure on the server.</li>
 </ul>
-</li>
-</ul>
-</li>
-<li>Relative Value
+<p>Use case: Complex apps like Figma, Notion, or Google Docs, where the app is highly interactive and users stay on the page for extended sessions.</p>
+<h2 id="hybrid-rendering">Hybrid Rendering</h2>
 <ul>
-<li>Comps from similar companies -- comparied numerically via a multiple. P/E, P/B, etc.</li>
+<li>Different parts of your app might have different needs. For example, some pages stay mostly the same, while others need fresh or personalised data.</li>
 </ul>
-</li>
-<li>Option Pricing
+<p>Use case:</p>
 <ul>
-<li>Valuation is determined based on contengencies.</li>
-<li>Debt-laiden, distrressed company.</li>
-<li>Pharmancuetical who's medicine is based on government/patent approval.</li>
-<li>Oil and gas company where outcomes are based on whether or not oil is found in target area.</li>
+<li>Large-scale apps like e-commerce platforms often combine different rendering strategies:</li>
+<li>The homepage and category pages use static generation for speed.</li>
+<li>Product pages use incremental static regeneration to keep content fresh.</li>
+<li>User account pages use server-side rendering for personalised data.</li>
+<li>The shopping cart uses client-side rendering for real-time updates without page reloads.</li>
 </ul>
-</li>
+<h2 id="content-delivery-networks-cdns-edge-delivery">Content Delivery Networks (CDNs) &amp; Edge Delivery</h2>
+<ul>
+<li>No matter which rendering method you choose, serving content efficiently is super important. CDNs keep copies of your static files on servers worldwide. This lets users download them from a nearby location instead of your main server.</li>
+<li>Edge rendering takes this idea a step further. Instead of just serving static files, it can actually run code or build pages at the edge.</li>
+<li>Faster load times everywhere. Easy to scale to millions of users. Works perfectly with SSG, ISR, SSR, or hybrid setups.</li>
 </ul>
-<p>Footnotes: <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/webcastvalonline.htm">https://pages.stern.nyu.edu/~adamodar/New_Home_Page/webcastvalonline.htm</a></p>
+<p>Use case: Any globally distributed application. Media sites like The New York Times use CDNs to serve articles instantly worldwide.</p>
+<p>Footnotes: <a href="https://newsletter.systemdesign.one/p/frontend-system-design">https://newsletter.systemdesign.one/p/frontend-system-design</a></p>
 
     </div>
 
