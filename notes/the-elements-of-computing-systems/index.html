@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-dark-mode="true">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+    <title>The Elements of Computing Systems - Chapter Summaries | Aaron Moradi</title>
+    <meta name="description" content="" />
+
+    
+  <link rel="stylesheet" href="/notes.css" />
+
+</head>
+<body class="all">
+    <div class="important-content">
+        <!-- make this sticky/fixed -->
+        <div id="color-mode-switch-container">
+            <div id="color-mode-switch">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+                <input checked type="checkbox" id="switch" onchange="((e) => {
+                    try {
+                        const isChecked = e.target.checked;
+
+                        document.getElementsByTagName('html')[0].setAttribute('data-dark-mode', isChecked);
+
+                        if (isChecked) {
+                            window.localStorage.removeItem('amoradi-light-mode');
+                        } else {
+                            window.localStorage.setItem('amoradi-light-mode', true);
+                        }
+                    } catch(e) {
+                        console.log(e);
+                    }
+                    })(arguments[0])">
+                <label for="switch">Dark Mode Toggle</label>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+              </div>
+        </div>
+        <header class="header">
+            <div class="header-body">
+                <a href="/" title="home">home</a>  
+            </div>
+            
+            <nav class="header-links">
+                <!--
+                    <a href="/notes" title="notes">notes</a>
+                    <a href="/" title="Aaron Moradi">me</a>
+                -->
+                
+                
+    <a href="/notes" title="notes">notes</a>
+    <a href="/reading-list" title="reads">reads</a>
+
+            </nav>
+        </header>
+        
+    <div class="reading-text">
+        <a class="back-link"href="/notes"/>&#8592; back</a>
+        <h1 class="title">The Elements of Computing Systems - Chapter Summaries</h1>
+        
+        <h2 id="chapter-1-boolean-logic">Chapter 1: Boolean Logic</h2>
+<p>This foundational chapter introduces the mathematical framework underlying all digital computation. The chapter begins by establishing Boolean algebra as the basis for computing, covering the three fundamental operations: AND, OR, and NOT. A key insight is that any Boolean function can be represented using only NAND gates, making NAND a universal gate.</p>
+<p>The chapter presents the gate interface concept, where gates are viewed as black boxes with defined inputs and outputs, abstracting away their internal implementation. Students learn to specify Boolean functions using truth tables and Boolean expressions, then implement them using HDL (Hardware Description Language).</p>
+<p>Major gates covered include: Nand (primitive), Not, And, Or, Xor, Mux (multiplexor), DMux (demultiplexor), and their multi-bit and multi-way variants (Not16, And16, Or8Way, Mux4Way16, Mux8Way16, DMux4Way, DMux8Way). The multiplexor is particularly important as a fundamental building block, enabling conditional logic at the hardware level.</p>
+<p>The chapter emphasizes the principle of abstraction and specification before implementation. Each gate is specified by its interface (what it does) before students implement it (how it does it). This introduces the crucial computer science practice of separating interface from implementation. Students complete this chapter by building approximately 15 gate chips that will serve as the foundation for all subsequent chapters.</p>
+<h2 id="chapter-2-boolean-arithmetic">Chapter 2: Boolean Arithmetic</h2>
+<p>Building on Chapter 1's logic gates, this chapter constructs the Arithmetic Logic Unit (ALU), the computational heart of the CPU. The progression moves from simple addition to a complete ALU capable of performing multiple arithmetic and logical operations.</p>
+<p>The chapter begins with the half-adder, which adds two bits, then extends to a full-adder that handles carry bits. These combine to create multi-bit adders (Add16) using ripple-carry architecture. The incrementer (Inc16) is introduced as a simplified adder useful for program counter operations.</p>
+<p>A critical discussion addresses representing negative numbers using two's complement notation, which elegantly handles subtraction as addition of negative numbers without requiring separate circuitry. The two's complement system allows the same adder circuit to perform both addition and subtraction.</p>
+<p>The centerpiece is the ALU specification—a remarkably elegant design that uses six control bits to select from 18 different arithmetic and logical operations (including addition, subtraction, AND, OR, negation, and various constants). The ALU also outputs two status bits (zero and negative) essential for implementing conditional branching in programs. The Hack ALU achieves remarkable functionality with minimal circuitry through clever control bit design, demonstrating how hardware constraints drive innovative engineering solutions.</p>
+<h2 id="chapter-3-sequential-logic">Chapter 3: Sequential Logic</h2>
+<p>This chapter introduces time and memory into the computational model, transitioning from combinatorial logic (where outputs depend only on current inputs) to sequential logic (where outputs depend on both current inputs and previous state).</p>
+<p>The fundamental building block is the Data Flip-Flop (DFF), presented as a primitive gate that stores one bit and implements the sequential logic paradigm: out(t) = in(t-1). This seemingly simple device enables memory by capturing and holding state across clock cycles. The clock signal synchronizes all sequential operations throughout the computer.</p>
+<p>From the DFF, the chapter builds progressively more sophisticated memory devices: the 1-bit register, the 16-bit register (Register), and eventually large RAM units (RAM8, RAM64, RAM512, RAM4K, RAM16K). Each level uses the same elegant recursive design pattern: building larger memories by combining smaller ones with addressing logic.</p>
+<p>The Program Counter (PC) is introduced as a specialized register that can increment, load a new value, or reset to zero—operations essential for program execution control. The chapter concludes by discussing the distinction between volatile RAM (loses data when power is off) and non-volatile ROM (permanently stores programs).</p>
+<p>A crucial concept is clocked synchronization: all state changes occur at clock edges, creating discrete time steps that prevent race conditions and make the system's behavior predictable and analyzable.</p>
+<h2 id="chapter-4-machine-language">Chapter 4: Machine Language</h2>
+<p>This chapter bridges the gap between hardware and software by introducing the Hack machine language—the lowest-level programming interface to the computer. The chapter emphasizes that machine language is the boundary where hardware and software meet: below it lies electronics; above it lies programming.</p>
+<p>The Hack computer architecture includes a CPU, two separate memory banks (instruction memory and data memory), and a memory-mapped screen and keyboard. The instruction set follows the Harvard architecture with separate instruction and data memories, rather than von Neumann's unified memory model.</p>
+<p>Hack supports two instruction types: A-instructions (for setting the A register to a 15-bit value) and C-instructions (for computation, combining ALU operation selection, destination register selection, and conditional jump logic). The tight encoding of C-instructions (only 16 bits) demonstrates the engineering tradeoffs in instruction set design.</p>
+<p>Memory-mapped I/O is introduced through the Screen (8K memory map controlling a 256×512 pixel display) and Keyboard (single register containing the currently pressed key's ASCII code). This simple interface enables sophisticated input/output without special I/O instructions.</p>
+<p>Students write assembly programs ranging from simple arithmetic to array manipulation, multiplication (since Hack has no multiplication instruction), and I/O handling. The chapter emphasizes symbolic programming using labels and variables, which the assembler will later translate to addresses. This chapter fundamentally demonstrates that complex software emerges from simple, low-level instructions executed in sequence.</p>
+<h2 id="chapter-5-computer-architecture">Chapter 5: Computer Architecture</h2>
+<p>This chapter integrates all previously built components into a complete, functioning computer. The Hack computer consists of a CPU, instruction memory (ROM), data memory (RAM), and memory-mapped I/O devices (screen and keyboard), all synchronized by a master clock.</p>
+<p>The CPU design is the centerpiece, combining the ALU (from Chapter 2), registers (A, D, and PC from Chapter 3), and control logic that decodes instructions and manages data flow. The instruction decoding logic examines the 16-bit instruction to determine: whether it's an A-instruction or C-instruction, which ALU operation to perform, which registers to write to, and whether to jump. The CPU's control logic is implemented using the combinatorial gates from Chapter 1.</p>
+<p>The von Neumann architecture (though Hack uses Harvard architecture with separate instruction/data memories) is discussed, particularly the stored-program concept where programs reside in memory as data. The fetch-execute cycle is explained in detail: fetch the instruction from ROM using the PC as address, execute it (potentially modifying registers or RAM), then increment the PC (or jump to a new address).</p>
+<p>Memory addressing modes and the role of the A register as both a data register and address pointer are clarified. The chapter emphasizes data flow: how bits travel between components, when registers are loaded, and how the clock synchronizes everything.</p>
+<p>Students implement the CPU and then integrate it with memory chips to create the complete Computer chip. Running a test program on this computer—even something simple like adding two numbers—is a profound moment: students have built a working computer from NAND gates.</p>
+<h2 id="chapter-6-assembler">Chapter 6: Assembler</h2>
+<p>This chapter climbs the first software abstraction layer by building an assembler that translates symbolic assembly language into binary machine code. The assembler transforms human-readable mnemonics (like @sum, D=M, @LOOP) into the 16-bit instructions the Hack computer executes.</p>
+<p>The chapter distinguishes between symbols and binary codes. Symbols include predefined symbols (R0-R15 for registers, SCREEN, KBD, SP, LCL, ARG, THIS, THAT), labels (user-defined symbols marking instruction addresses like (LOOP)), and variables (user-defined symbols allocated to RAM addresses starting at address 16).</p>
+<p>The assembly process occurs in two passes: the first pass scans the code to build a symbol table mapping labels to instruction addresses (handling forward references); the second pass generates binary code by translating each instruction, resolving symbols using the symbol table, and allocating RAM addresses for variables as they're encountered.</p>
+<p>Implementation strategies are discussed, including parser design (breaking instructions into fields), code generation (translating mnemonics to binary), and symbol table management (using a hash table or dictionary). The chapter emphasizes modular design with separate Parser, Code, and SymbolTable modules.</p>
+<p>Students implement a complete assembler in their language of choice, which then becomes an essential tool for testing subsequent projects. This chapter demonstrates how assemblers free programmers from error-prone binary coding and enable symbolic programming, but the assembler itself is a relatively straightforward program—sophisticated functionality emerging from simple transformations.</p>
+<h2 id="chapter-7-virtual-machine-i-stack-arithmetic">Chapter 7: Virtual Machine I - Stack Arithmetic</h2>
+<p>This chapter introduces a two-tier compilation strategy: high-level programs compile to an intermediate VM language, which then translates to assembly. This abstraction simplifies compiler design and enables platform independence. The VM is stack-based, using a stack for all arithmetic and logical operations—a simpler model than register-based machines.</p>
+<p>The chapter focuses on stack arithmetic and memory access commands. Arithmetic/logical commands (add, sub, neg, eq, gt, lt, and, or, not) pop operands from the stack, perform the operation, and push the result. The stack pointer (SP) maintains the stack's current position in RAM.</p>
+<p>Memory access involves eight virtual segments: local, argument, this, that (mapped to RAM blocks pointed to by base addresses), constant (virtual segment for constants), static (mapped to assembly variables), pointer (manipulates THIS/THAT base addresses), and temp (fixed RAM locations 5-12). Push and pop commands transfer data between these segments and the stack.</p>
+<p>The VM-to-assembly translation is systematic: each VM command maps to a sequence of assembly instructions. For example, "push constant 7" becomes assembly code that loads 7 into the D register and pushes it onto the stack. Arithmetic operations require popping operands, performing the operation in the ALU, and pushing the result.</p>
+<p>Students implement a VM translator for arithmetic and memory access commands. This translator forms the foundation for the complete VM translator in Chapter 8. The stack abstraction simplifies expression evaluation and will later enable function calls and recursion naturally.</p>
+<h2 id="chapter-8-virtual-machine-ii-program-control">Chapter 8: Virtual Machine II - Program Control</h2>
+<p>This chapter completes the VM implementation by adding program flow and function call commands, enabling the VM to execute complex programs with procedures and recursion. These additions transform the VM from a simple calculator into a complete programming platform.</p>
+<p>Program flow commands include label (defines a jump target), goto (unconditional jump), and if-goto (conditional jump based on stack top). These enable loops and conditional execution. Labels are function-scoped, preventing name collisions between functions.</p>
+<p>Function call implementation is the chapter's core challenge. Three commands manage function calls: function (declares a function and allocates local variables), call (invokes a function), and return (returns to the caller). The calling convention uses the stack to pass arguments and return values, and maintains a call frame structure.</p>
+<p>Each function call creates a frame containing: the return address, saved segment pointers (LCL, ARG, THIS, THAT), local variables, and the function's working stack. This enables recursion by allowing multiple frames for the same function. The ARG segment points to the function's arguments, and LCL points to its local variables.</p>
+<p>Implementation details include: how the caller pushes arguments before calling, how the function prologue saves the caller's state and establishes the new frame, how the function epilogue restores the caller's state before returning, and how the return value gets positioned for the caller to access.</p>
+<p>Students extend their VM translator to handle all VM commands, enabling it to translate complete VM programs (including those generated by the Jack compiler in Chapters 10-11) into assembly. This completes the VM layer, demonstrating how high-level constructs like function calls can be systematically implemented at a lower level.</p>
+<h2 id="chapter-9-high-level-language">Chapter 9: High-Level Language</h2>
+<p>This chapter introduces Jack, a simple object-based programming language similar to Java or C++. Jack provides the source language for the compiler projects in Chapters 10-11, and allows students to develop substantial programs for the Hack computer without writing assembly.</p>
+<p>Jack supports primitive types (int, char, boolean) and class types (objects). Programs consist of classes containing field declarations and methods (functions or constructor/method procedures). Jack is object-oriented: classes encapsulate data and methods, constructors create instances, and methods operate on objects using the this keyword (implicit in Jack).</p>
+<p>Language features include: expressions (arithmetic, logical, array access, function calls), statements (let, if, while, do, return), strings (treated as String class objects), arrays (accessed via array class), and standard library classes (Math, String, Array, Output, Screen, Keyboard, Memory, Sys). Jack has no inheritance or interfaces, keeping it simple while remaining powerful enough for interesting programs.</p>
+<p>The chapter demonstrates Jack programming through examples: array processing, linked list manipulation, and graphical applications using the Screen class. The Square Dance example (a simple interactive game) shows how Jack programs can create sophisticated applications with graphics and user input.</p>
+<p>Memory management is manual: programmers must explicitly dispose of objects using Memory.deAlloc() to prevent memory leaks. This introduces students to manual memory management concepts without the complexity of modern garbage collection algorithms.</p>
+<p>Students write complete Jack programs—not just snippets—experiencing high-level programming on their own computer architecture. This contextualizes the compiler work ahead and demonstrates how powerful abstractions enable complex software development on simple hardware.</p>
+<h2 id="chapter-10-compiler-i-syntax-analysis">Chapter 10: Compiler I - Syntax Analysis</h2>
+<p>This chapter begins implementing the Jack compiler, focusing on syntax analysis: parsing Jack code and generating an intermediate XML representation of the program's structure. The compiler follows standard architecture: tokenizer, parser, and (in Chapter 11) code generator.</p>
+<p>The tokenizer (lexical analyzer) breaks source code into tokens: keywords, symbols, integer constants, string constants, and identifiers. Each token is classified and extracted sequentially, handling whitespace and comments. This stream of tokens feeds the parser.</p>
+<p>The parser implements a recursive descent parser based on Jack's grammar (presented in Extended Backus-Naur Form). The parser has a method for each non-terminal in the grammar (CompileClass, CompileSubroutineDec, CompileStatements, etc.), recursively descending through the grammar rules to validate syntax.</p>
+<p>The grammar has a two-level structure: program structure (classes, subroutines, variable declarations) and statements/expressions (if, while, let, do, return). Expression parsing handles operator precedence and transforms infix notation into a parse tree structure.</p>
+<p>The parser outputs XML that mirrors the program's syntactic structure, with nested tags representing the parse tree. For example, an if-statement's XML contains nested tags for the condition expression, the if-block statements, and potentially else-block statements.</p>
+<p>Students implement a syntax analyzer that tokenizes and parses Jack programs, producing XML output. This analyzer validates that programs conform to Jack's grammar (catching syntax errors) and produces a structured representation ready for code generation. The chapter emphasizes that parsing is a mechanical process following grammar rules—complex in detail but systematic in approach. The XML output enables testing the parser's correctness before tackling code generation in Chapter 11.</p>
+<h2 id="chapter-11-compiler-ii-code-generation">Chapter 11: Compiler II - Code Generation</h2>
+<p>This chapter completes the Jack compiler by implementing code generation: translating the parsed Jack program into VM code. The compiler transforms high-level object-oriented constructs into the stack-based VM language from Chapters 7-8.</p>
+<p>Symbol table management is crucial. The compiler maintains two-level symbol tables: class-level (for fields and static variables) and subroutine-level (for arguments and local variables). Each identifier is mapped to its kind (field, static, local, argument), type, and index within its segment. This enables the compiler to generate correct push/pop commands.</p>
+<p>Expression compilation generates VM code that evaluates expressions on the stack. Binary operators compile recursively: compile the first operand, compile the second operand, then emit the operator command. The result leaves the expression's value on the stack. Function calls compile similarly: push all arguments, then emit the call command.</p>
+<p>Statement compilation handles each statement type: let-statements compile to expression evaluation followed by pop to the variable; if-statements compile to conditional jumps with label management; while-statements compile to loops using labels; do-statements compile function calls; return-statements compile expression evaluation and return commands.</p>
+<p>Object-oriented feature implementation is particularly interesting. Constructor calls compile to Memory.alloc() calls that allocate heap space, followed by field initialization. Method calls compile to push this onto the stack as argument 0 (so the method can access object fields), then push other arguments and call. Array access (a[i]) compiles to computing the address (base + offset) and using pointer segment manipulation.</p>
+<p>Students implement the complete compiler, transforming the syntax analyzer from Chapter 10 into a full compiler. This project demonstrates how high-level language features systematically decompose into lower-level operations—object orientation, expressions, and control flow all reduce to stack operations and memory access. The resulting compiler can compile itself (bootstrapping), a profound demonstration of software abstraction layers.</p>
+<h2 id="chapter-12-operating-system">Chapter 12: Operating System</h2>
+<p>This chapter implements the Jack OS—a small collection of classes providing essential services to Jack programs. The OS is written in Jack itself and compiled to VM code, demonstrating how system software can be implemented in high-level languages.</p>
+<p><strong>Math class</strong> provides multiplication, division, and square root using only addition, subtraction, and bit shifting (since the Hack ALU lacks these operations). Multiplication uses repeated addition with bit-shifting optimization. Division uses long division. Square root uses binary search. These algorithms demonstrate how complex arithmetic emerges from simple operations.</p>
+<p><strong>Memory class</strong> manages heap allocation and deallocation. The implementation uses a linked list of free memory blocks (free list), with alloc() finding a suitable block using first-fit or best-fit algorithms, and deAlloc() returning blocks to the free list. Memory fragmentation and defragmentation are discussed but not required.</p>
+<p><strong>Array and String classes</strong> provide convenient abstractions over raw memory. Array.new() allocates memory via Memory.alloc(). String provides character manipulation, integer-to-string conversion, and string I/O.</p>
+<p><strong>Output class</strong> handles text output to the screen, managing a character map (bitmap fonts for each character), a cursor position, and character/string display. Screen class provides pixel and geometric shape drawing (lines, rectangles, circles) by manipulating the memory-mapped screen buffer using bit manipulation.</p>
+<p><strong>Keyboard class</strong> provides character input by reading from the memory-mapped keyboard register, implementing functions like readChar() (with visual feedback), readLine(), and readInt().</p>
+<p><strong>Sys class</strong> provides system-level services: wait() (busy-waiting delay), halt() (infinite loop), and error() (error message display and halt).</p>
+<p>Students implement all OS classes, completing the entire software hierarchy. Running a Jack program now involves the entire stack: Jack source → compiler → VM code → VM translator → assembly → assembler → binary → hardware execution → OS services. This final project demonstrates that operating systems, despite seeming magical, are just carefully written programs providing services to other programs.</p>
+<h2 id="chapter-13-postscript-more-fun-to-go">Chapter 13: Postscript - More Fun to Go</h2>
+<p>This brief concluding chapter reflects on the journey and points toward further exploration. The authors celebrate that students have built a complete, working computer system from first principles—a rare achievement that demystifies computing.</p>
+<p>The chapter acknowledges simplifications made for pedagogical purposes: the Hack computer uses Harvard architecture rather than von Neumann; the ALU is simpler than real processors; there's no pipelining, caching, or parallel execution; the Jack language lacks inheritance, garbage collection, and other modern features; the OS is minimal compared to Unix or Windows.</p>
+<p>Suggestions for extensions include: enhancing the Hack computer (add multiplication instructions, implement pipelining, add more registers), improving the assembler (add macro capabilities, better error messages), extending the Jack language (add inheritance, implement garbage collection, add floating-point), expanding the OS (implement file systems, add multi-tasking, create device drivers), and developing applications (write games, create development tools, build productivity software).</p>
+<p>The chapter emphasizes that computing is fundamentally comprehensible—complex systems are built from simple components through systematic abstraction layers. Students now understand the entire stack and can pursue deeper study in any layer: digital logic and computer architecture, programming languages and compilers, operating systems and networks, or software engineering and applications.</p>
+<p>The book concludes by encouraging students to share their achievements and continue exploring. Having built a computer from NAND gates to operating system, students possess a holistic understanding of computing that few programmers achieve—and have the confidence to tackle any computing challenge by breaking it into manageable abstractions.</p>
+
+    </div>
+
+    </div>
+    <footer class="footer">
+        
+        <i>Food over flame burns, food over heat cooks<br />- Alfred the Great</i>
+        <!-- <i>Never have the world's moneys been so long cut off from their metallic roots.<br />- M. Rothbard</i> -->
+        
+    </footer>
+    <script>
+        try {
+            const lightMode = window.localStorage.getItem('amoradi-light-mode');
+
+            if (lightMode) {
+                document.getElementById('switch').checked = false;
+                document.getElementsByTagName('html')[0].setAttribute('data-dark-mode', false);
+            }
+        } catch(e) {
+            console.log('light mode error', e);
+        }
+    </script>
+</body>
+</html>
