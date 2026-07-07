@@ -178,6 +178,27 @@
   }
   .route-arrow { color: var(--link); margin-left: 14px; font-family: 'Caudex', Georgia, serif; transition: color 0.18s ease; }
 
+  /* ---- beliefs ---- */
+  .beliefs { list-style: none; }
+  .beliefs li {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .beliefs li:first-of-type { border-top: 1px solid var(--line); }
+  .beliefs a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    transition: color 0.18s ease;
+  }
+  .beliefs a:hover { color: var(--specie); }
+  .belief-arrow { color: var(--link); margin-left: 2px; }
+
   /* ---- portrait near contact ---- */
   .colophon {
     display: flex;
@@ -284,6 +305,16 @@
       </div>
     </div>
   </section>
+
+   <section class="routes">
+    <div class="routes-label">Strong beliefs loosely held</div>
+
+    <ul class="beliefs">
+      <li>Confront the brutal facts of your reality. <a href="./notes/good-to-great-confront-the-brutal-facts.html">Good to Great, Ch. 4 <span class="belief-arrow">↗</span></a></li>
+      <li>The market is there to serve you, not instruct you. <a href="./notes/the-investor-and-market-fluctuations.html">The Intelligent Investor, Ch. 8 <span class="belief-arrow">↗</span></a></li>
+    </ul>
+  </section>
+
 
   <section class="routes">
     <div class="routes-label">Where to go from here</div>

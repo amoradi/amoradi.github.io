@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Investor and Market Fluctuations · Aaron Moradi</title>
+<meta name="description" content="Market quotations are there for your convenience, to be taken advantage of or ignored. Notes on Chapter 8 of The Intelligent Investor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #16181d;
+    --ink-soft: #44474f;
+    --paper: #fff;
+    --line: #cfc9bd;
+    --specie: #8a6a3b;
+    --link: #c8492b;
+    --max: 760px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Caudex', Georgia, serif;
+    font-size: 19px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+
+  .meta {
+    border-bottom: 1px solid var(--line);
+    font-family: 'Caudex', Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+  .meta .wrap { display: flex; justify-content: space-between; align-items: center; padding: 16px 28px; }
+  .meta a { color: var(--ink-soft); text-decoration: none; }
+  .meta a:hover { color: var(--specie); }
+  .nav { display: flex; gap: 26px; }
+
+  header.page { padding: 80px 0 8px; }
+  header.page .kicker {
+    font-family: 'Caudex', Georgia, serif;
+    font-size: 13px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--specie);
+    margin-bottom: 26px;
+  }
+  header.page h1 {
+    font-weight: 400;
+    font-size: clamp(30px, 5vw, 44px);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    margin-bottom: 22px;
+  }
+  header.page .lede {
+    font-size: 20px;
+    color: var(--ink-soft);
+    max-width: 56ch;
+  }
+
+  article { padding: 34px 0 20px; }
+  article h2 {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--specie);
+    margin: 44px 0 4px;
+  }
+  article p { margin: 18px 0; }
+  article p strong, article li strong, article blockquote strong { font-weight: 700; }
+  article em { font-style: italic; }
+  article blockquote {
+    margin: 26px 0;
+    padding: 4px 0 4px 24px;
+    border-left: 2px solid var(--specie);
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  article ul, article ol {
+    margin: 18px 0;
+    padding-left: 24px;
+  }
+  article li { margin: 8px 0; }
+  article ul ul, article ol ul { margin: 8px 0; }
+  article blockquote ul { margin: 12px 0 0; font-size: 18px; }
+
+  .citation {
+    margin-top: 48px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    font-size: 16px;
+    color: var(--ink-soft);
+  }
+  .citation h2 {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--specie);
+    margin: 0 0 8px;
+  }
+  .citation a { color: var(--link); text-decoration: none; }
+  .citation a:hover { text-decoration: underline; }
+
+  .back {
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  .back:hover { color: var(--specie); }
+
+  footer {
+    border-top: 1px solid var(--line);
+    margin-top: 72px;
+    padding: 34px 0 70px;
+    font-family: 'Caudex', Georgia, serif;
+    font-size: 12px;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  footer .epigraph {
+    text-transform: none;
+    letter-spacing: 0;
+    font-style: italic;
+    font-size: 14px;
+    max-width: 42ch;
+  }
+  footer a { color: var(--ink-soft); text-decoration: none; }
+  footer a:hover { color: var(--specie); }
+
+  @media (max-width: 560px) {
+    body { font-size: 18px; }
+    header.page { padding: 52px 0 8px; }
+    article blockquote { font-size: 18px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="meta">
+  <div class="wrap">
+    <a href="../">Aaron Moradi</a>
+    <nav class="nav">
+      <a href="./">Notes</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <header class="page">
+    <div class="kicker">Notes · The Intelligent Investor</div>
+    <h1>Ch. 8: The Investor and Market Fluctuations</h1>
+    <p class="lede">Market quotations are there for your convenience, either to be taken advantage of or to be ignored.</p>
+  </header>
+
+  <article>
+
+    <blockquote>Let us repeat what we said at the outset: If you want to <strong>speculate</strong> do so with your eyes open, knowing that <strong>you will probably lose money</strong> in the end; be sure to limit the amount at risk and to separate it completely from your investment program.</blockquote>
+
+    <p>Profiting from price swings comes two ways:</p>
+    <ul>
+      <li><strong>Timing</strong> — endeavor to <strong>anticipate the action</strong> of the <strong>stock market</strong>: to buy or hold when the future course is deemed upward, and to sell or refrain from buying when the course is downward.</li>
+      <li><strong>Pricing</strong> — <strong>compare</strong> current <strong>quote value</strong> to <strong>fair value</strong>. Endeavor to <strong>buy</strong> stocks <strong>when quoted below</strong> their <strong>fair value</strong> and <strong>sell</strong> when they <strong>rise above</strong> it.
+        <blockquote>A less ambitious form of pricing is the simple effort to make sure that when you buy you do not pay too much for your stocks. This may suffice for the defensive investor, whose emphasis is on long-pull holding; but as such it represents an essential minimum of attention to market levels.</blockquote>
+      </li>
+    </ul>
+
+    <blockquote>There is no basis either in logic or in experience for assuming that any typical or average investor can anticipate market movements more successfully than the general public, of which he is himself part.</blockquote>
+
+    <blockquote>Timing is of great psychological importance to the speculator because he wants to make his profit in a hurry. The idea of waiting a year before his stock moves up is repugnant to him. But a waiting period, as such, is of no consequence to the investor. What advantage is there to him in having his money uninvested until he receives some (presumably) trustworthy signal that the time has come to buy?</blockquote>
+
+    <h2>Buy-Low-Sell-High Approach</h2>
+
+    <blockquote>We are convinced that <strong>the average investor cannot deal successfully with price movements by endeavoring to forecast them</strong>. Can he benefit from them <em>after</em> they have taken place — i.e., by buying after each major decline and selling out after each major advance?</blockquote>
+
+    <p>The bear-then-bull market pattern has not repeated itself reliably over time. The most notable departure was the late-1920s bull market; the two decades after (at the time of the book's writing) did the opposite. <strong>Buy-low-sell-high is an old, once fairly regular pattern.</strong></p>
+
+    <blockquote><strong>It seems unrealistic</strong> for the investor to base present policy on the classic formula — i.e., <strong>to wait for demonstrable bear-market levels</strong> before buying <em>any</em> common stocks. <strong>Our recommended policy</strong> has instead made provision for <strong>changes in the proportion</strong> of common stocks to bonds in the portfolio.</blockquote>
+
+    <h2>Formula Plans</h2>
+
+    <p>The investor does some selling when the market advances substantially.</p>
+
+    <blockquote>A very <strong>large rise</strong> in the market level would result in the <strong>sale of all common stock.</strong></blockquote>
+
+    <blockquote>This approach had the double appeal of sounding logical (and conservative) and of showing excellent results when applied retrospectively to the stock market over many years in the past.</blockquote>
+
+    <blockquote><strong>The moral</strong> seems to be that any <strong>approach to moneymaking</strong> in the stock market which can be <strong>easily described and followed by a lot of people</strong> is by its terms <strong>too simple and too easy to last</strong>. Spinoza's concluding remark applies to Wall Street as well as to philosophy: <strong>"All things excellent are as difficult as they are rare."</strong></blockquote>
+
+    <h2>Market Fluctuations of the Investor's Portfolio</h2>
+
+    <blockquote>A <strong>serious investor</strong> is not likely to believe that the <strong>day-to-day or even month-to-month fluctuations</strong> of the stock market <strong>make him richer or poorer.</strong> But what about the long-term and wider changes?</blockquote>
+
+    <blockquote>Even the intelligent investor is likely to <strong>need considerable will power</strong> to keep from <strong>following the crowd.</strong></blockquote>
+
+    <blockquote>For these <strong>reasons of human nature</strong>, even more than by calculation of financial gain or loss, we favor some kind of mechanical method for varying the proportion of bonds to stocks in the investor's portfolio. The chief advantage, perhaps, is that such a formula will <strong>give him something to do.</strong></blockquote>
+
+    <h2>Business Valuations Versus Stock-Market Valuations</h2>
+
+    <p>Consider an <strong>investor's situation from the standpoint of a stockholder.</strong> The stockholder has a kind of <strong>double status</strong> — and with it, the privilege of taking advantage of either at his choice:</p>
+    <ol>
+      <li><strong>Minority shareholder</strong> / silent partner in a private business
+        <ul>
+          <li>results are wholly <strong>dependent on the profits</strong> of the enterprise, or a change in the underlying value of its assets</li>
+          <li>value determined by his <strong>share of the net worth as shown in the most recent balance sheet</strong></li>
+        </ul>
+      </li>
+      <li><strong>Common stock investor</strong>
+        <ul>
+          <li>holds a piece of paper, the stock certificate — saleable in minutes</li>
+          <li>whose <strong>price varies minute by minute</strong> (open market hours)</li>
+          <li>is <strong>often far removed from the balance-sheet value</strong></li>
+        </ul>
+      </li>
+    </ol>
+
+    <p>This is a factor of prime importance in present-day investing. The whole structure of <strong>stock-market quotations</strong> contains a <strong>built-in contradiction</strong>:</p>
+    <ul>
+      <li>the <strong>better a company's record and prospects</strong>, the <strong>less relationship</strong> the <strong>share price</strong> will have to its <strong>book value</strong></li>
+      <li>the <strong>greater the premium above book value</strong>, the <strong>less certain the basis</strong> for determining intrinsic value</li>
+    </ul>
+
+    <p>Thus we reach the final paradox: the more successful the company, the greater the likelihood of fluctuations in the price of its shares. This really means, <strong>the better the quality of a common stock, the more speculative it is likely to be.</strong></p>
+
+    <p>Purchases made at or below one-third above tangible-asset value may with logic be regarded as related to the company's balance sheet, and as having justification independent of fluctuating market prices. <strong>Safe zone: tether buys to no more than one-third above tangible-asset value, irrespective of market price.</strong></p>
+
+    <p>A stock <strong>does not become a sound investment</strong> <strong>merely</strong> because it can be <strong>bought close to its asset value</strong>. The investor also needs:</p>
+    <ul>
+      <li>a good earnings-to-price ratio</li>
+      <li>strong financials</li>
+      <li>the prospect of continued, sustained, or better earnings over years</li>
+    </ul>
+
+    <p>The <strong>investor with such book values behind him</strong> can take a much more <strong>independent and detached view of stock-market fluctuations</strong> than those who have paid high multiples of both earnings and tangible assets. As long as the earning power of his holdings remains satisfactory, <strong>he can give as little attention as he pleases</strong> to the vagaries of the market — and at times use those vagaries to play the master game of buying low and selling high.</p>
+
+    <h2>The A. &amp; P. Example</h2>
+
+    <p>The <strong>true investor scarcely ever is forced to sell his shares</strong>, and at all other times he is free to <strong>disregard the current price quotation</strong>. He need pay attention to it and act upon it <strong>only to the extent that it suits his book.</strong></p>
+
+    <p>The liquidity of a quoted market really means:</p>
+    <ul>
+      <li>the investor has the benefit of the market's daily and changing appraisal of his holdings</li>
+      <li>the investor is able to increase or decrease his position at the market's daily figure if he chooses</li>
+    </ul>
+
+    <p>Thus a quoted market gives the investor options he would not have if the security were unquoted. <strong>But it does not impose the current quotation on an investor who prefers to take his idea of value from some other source.</strong></p>
+
+    <h2>Summary</h2>
+
+    <p><strong>Speculator</strong> — interest lies in anticipating and profiting from market fluctuations.</p>
+    <p><strong>Investor</strong> — primary interest lies in acquiring and holding suitable securities at suitable prices. Market movements matter in a practical sense, because they alternately create:</p>
+    <ul>
+      <li>low price levels at which he would be wise to buy</li>
+      <li>high price levels at which he should refrain from buying and would be wise to sell</li>
+    </ul>
+
+    <p>As in all other activities that <strong>emphasize price movements first and underlying values second</strong>, the work of many intelligent minds constantly engaged in this field tends to be <strong>self-neutralizing</strong> and <strong>self-defeating</strong> over the years.</p>
+
+    <blockquote>The investor with a portfolio of sound stocks should expect their prices to fluctuate and <strong>should neither be concerned by sizable declines nor become excited by sizable advances.</strong> He should <strong>always remember</strong> that <strong>market quotations are there for his convenience</strong>, either to be <strong>taken advantage of or to be ignored</strong>. He should never buy a stock <em>because</em> it has gone up or sell one <em>because</em> it has gone down.</blockquote>
+
+    <div class="citation">
+      <h2>Citation</h2>
+      Chapter 8 in <a href="https://www.amazon.com/Intelligent-Investor-Definitive-Investing-Essentials/dp/0060555661" target="_blank">The Intelligent Investor</a>, Benjamin Graham.
+    </div>
+
+    <a class="back" href="./">← All notes</a>
+
+  </article>
+
+  <footer>
+    <span class="epigraph">Lifestyles were in danger, and it was time for invention. &nbsp;Hayne Leland</span>
+    <span>
+      <a href="https://github.com/amoradi" target="_blank">GitHub</a> &nbsp;/&nbsp;
+      <a href="https://x.com/hardbread_" target="_blank">X</a> &nbsp;/&nbsp;
+      <a href="https://www.linkedin.com/in/aaron-moradi" target="_blank">LinkedIn</a>
+    </span>
+  </footer>
+
+</main>
+
+</body>
+</html>
