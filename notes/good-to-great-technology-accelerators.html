@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good to Great, Ch. 7: Technology Accelerators · Aaron Moradi</title>
+<meta name="description" content="Technology is an accelerator of momentum, not a creator of it. Notes on Chapter 7 of Good to Great.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #16181d;
+    --ink-soft: #44474f;
+    --paper: #fff;
+    --line: #cfc9bd;
+    --specie: #8a6a3b;
+    --link: #c8492b;
+    --max: 760px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Caudex', Georgia, serif;
+    font-size: 19px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+
+  .meta {
+    border-bottom: 1px solid var(--line);
+    font-family: 'Caudex', Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+  .meta .wrap { display: flex; justify-content: space-between; align-items: center; padding: 16px 28px; }
+  .meta a { color: var(--ink-soft); text-decoration: none; }
+  .meta a:hover { color: var(--specie); }
+  .nav { display: flex; gap: 26px; }
+
+  header.page { padding: 80px 0 8px; }
+  header.page .kicker {
+    font-family: 'Caudex', Georgia, serif;
+    font-size: 13px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--specie);
+    margin-bottom: 26px;
+  }
+  header.page h1 {
+    font-weight: 400;
+    font-size: clamp(30px, 5vw, 44px);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    margin-bottom: 22px;
+  }
+  header.page .lede {
+    font-size: 20px;
+    color: var(--ink-soft);
+    max-width: 56ch;
+  }
+
+  article { padding: 34px 0 20px; }
+  article h2 {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--specie);
+    margin: 44px 0 4px;
+  }
+  article p { margin: 18px 0; }
+  article p strong, article li strong, article blockquote strong { font-weight: 700; }
+  article em { font-style: italic; }
+  article blockquote {
+    margin: 26px 0;
+    padding: 4px 0 4px 24px;
+    border-left: 2px solid var(--specie);
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  article ul {
+    margin: 18px 0;
+    padding-left: 24px;
+  }
+  article li { margin: 8px 0; }
+  article blockquote ul { margin: 12px 0 0; font-size: 18px; }
+
+  .citation {
+    margin-top: 48px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    font-size: 16px;
+    color: var(--ink-soft);
+  }
+  .citation h2 {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--specie);
+    margin: 0 0 8px;
+  }
+  .citation a { color: var(--link); text-decoration: none; }
+  .citation a:hover { text-decoration: underline; }
+
+  .back {
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  .back:hover { color: var(--specie); }
+
+  footer {
+    border-top: 1px solid var(--line);
+    margin-top: 72px;
+    padding: 34px 0 70px;
+    font-family: 'Caudex', Georgia, serif;
+    font-size: 12px;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  footer .epigraph {
+    text-transform: none;
+    letter-spacing: 0;
+    font-style: italic;
+    font-size: 14px;
+    max-width: 42ch;
+  }
+  footer a { color: var(--ink-soft); text-decoration: none; }
+  footer a:hover { color: var(--specie); }
+
+  @media (max-width: 560px) {
+    body { font-size: 18px; }
+    header.page { padding: 52px 0 8px; }
+    article blockquote { font-size: 18px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="meta">
+  <div class="wrap">
+    <a href="../">Aaron Moradi</a>
+    <nav class="nav">
+      <a href="./">Notes</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <header class="page">
+    <div class="kicker">Notes · Good to Great</div>
+    <h1>Ch. 7: Technology Accelerators</h1>
+    <p class="lede">The contrarian finding: technology is neither the primary cause of greatness nor of decline. What everyone assumes drives disruption is, by the evidence, secondary.</p>
+  </header>
+
+  <article>
+
+    <blockquote>The idea that <strong>technological change is the principal cause in the decline</strong> of once-great companies is <strong>not supported by the evidence.</strong> Technology by itself is never a primary root cause of either greatness or decline — even in decline, it is only an accelerator, not the cause.</blockquote>
+
+    <blockquote>Early technology pioneers <strong>rarely prevail in the end.</strong> VisiCalc lost to Lotus, which lost to Excel. Osborne's portables are gone; De Havilland pioneered the commercial jet and Boeing owned the skies. <strong>The second or third follower prevails over the trailblazer</strong> again and again.</blockquote>
+
+    <blockquote>You could hand the exact same technology to any number of companies with the same resources — and still they would fail. Like the Daytona 500, <strong>the primary variable in winning is not the car, but the driver and his team.</strong></blockquote>
+
+    <blockquote>Those who turn good into great are <strong>motivated by a creative urge and a compulsion for excellence for its own sake.</strong> Those who build mediocrity are <strong>motivated more by the fear of being left behind.</strong> How a company reacts to technological change reveals which one it is.</blockquote>
+
+    <div class="citation">
+      <h2>Citation</h2>
+      Chapter 7 in <a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6/" target="_blank">Good to Great</a>, Jim Collins.
+    </div>
+
+    <a class="back" href="./">← All notes</a>
+
+  </article>
+
+  <footer>
+    <span class="epigraph">Lifestyles were in danger, and it was time for invention. &nbsp;Hayne Leland</span>
+    <span>
+      <a href="https://github.com/amoradi" target="_blank">GitHub</a> &nbsp;/&nbsp;
+      <a href="https://x.com/hardbread_" target="_blank">X</a> &nbsp;/&nbsp;
+      <a href="https://www.linkedin.com/in/aaron-moradi" target="_blank">LinkedIn</a>
+    </span>
+  </footer>
+
+</main>
+
+</body>
+</html>
