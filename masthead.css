@@ -1,0 +1,65 @@
+/* Site masthead: name and social links. Shared by every page. */
+
+.masthead {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.masthead__name {
+    margin: 0;
+    font-family: 'Newsreader', Georgia, serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0;
+    color: var(--dark);
+}
+
+@media (min-width: 768px) {
+    .masthead__name {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+.masthead .masthead__name a {
+    color: inherit;
+    border-bottom: 0;
+    text-decoration: none;
+}
+
+.masthead .masthead__name a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.masthead .masthead__tagline {
+    margin: 8px 0 0;
+    color: var(--med-light);
+}
+
+.masthead__links {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.masthead .masthead__links a {
+    color: var(--med-light);
+    border-bottom: 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.masthead .masthead__links a:hover {
+    color: var(--dark);
+}
+
+/* On every page but the homepage the masthead sits above the page header row. */
+.important-content > .masthead {
+    margin: 24px 0 40px;
+}

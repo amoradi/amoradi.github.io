@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-dark-mode="false">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/masthead.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+    <title>Reading list</title>
+    <meta name="description" content="Reading list for Aaron Moradi" />
+
+    
+  <link rel="stylesheet" href="/home.css" />
+
+</head>
+<body class="all">
+    <div class="important-content">
+        <!-- make this sticky/fixed -->
+        <div id="color-mode-switch-container">
+            <div id="color-mode-switch">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+                <input type="checkbox" id="switch" onchange="((e) => {
+                    try {
+                        const isChecked = e.target.checked;
+
+                        document.getElementsByTagName('html')[0].setAttribute('data-dark-mode', isChecked);
+
+                        if (isChecked) {
+                            window.localStorage.setItem('amoradi-dark-mode', true);
+                        } else {
+                            window.localStorage.removeItem('amoradi-dark-mode');
+                        }
+                    } catch(e) {
+                        console.log(e);
+                    }
+                    })(arguments[0])">
+                <label for="switch">Dark Mode Toggle</label>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+              </div>
+        </div>
+        
+        
+<main role="main" class="main home">
+  
+<header class="masthead">
+  
+  <h1 class="masthead__name"><a href="/">Aaron Moradi</a></h1>
+  <p class="masthead__tagline">I've spent a decade building at the intersection of trading, finance and crypto.</p>
+  
+  <nav class="masthead__links">
+    <a href="https://github.com/amoradi/" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://x.com/hardbread_" target="_blank" rel="noopener">X</a>
+    <a href="https://www.linkedin.com/in/aaron-moradi/" target="_blank" rel="noopener">LinkedIn</a>
+  </nav>
+</header>
+
+
+  <section>
+    <h2 class="home__column-title">Reading list</h2>
+    <div class="home__list home__list--notes home__list--columns">
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/How-Decide-Simple-Making-Choices/dp/0593418484/" target="_blank" rel="noopener">How to Decide: Simple Tools for Making Better Choices</a></p>
+        <p class="note__blurb">Annie Duke</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Understanding-Money-Mechanics-Robert-Murphy-ebook/dp/B09NMKNS7T/" target="_blank" rel="noopener">Understanding Money Mechanics</a></p>
+        <p class="note__blurb">Robert Murphy</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Fail-Safe-Investing-Lifelong-Financial-Security-ebook/dp/B003JMF4GG/" target="_blank" rel="noopener">Fail-Safe Investing: Lifelong Financial Security in 30 Minutes</a></p>
+        <p class="note__blurb">Harry Browne</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Cold-Start-Problem-Andrew-Chen-ebook/dp/B08HZ5XY7X/" target="_blank" rel="noopener">The Cold Start Problem: How to Start and Scale Network Effects</a></p>
+        <p class="note__blurb">Andrew Chen</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6/" target="_blank" rel="noopener">Good to Great: Why Some Companies Make the Leap...And Others Don't</a></p>
+        <p class="note__blurb">Jim Collins</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296/" target="_blank" rel="noopener">Zero to One: Notes on Startups, or How to Build the Future</a></p>
+        <p class="note__blurb">Peter Thiel</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/You-Can-Stock-Market-Genius/dp/0684840073/" target="_blank" rel="noopener">You Can Be a Stock Market Genius: Uncover the Secret Hiding Places of Stock Market Profits</a></p>
+        <p class="note__blurb">Joel Greenblatt</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Case-Against-Fed-Murray-Rothbard/dp/094546617X/" target="_blank" rel="noopener">The Case Against the Fed</a></p>
+        <p class="note__blurb">Murray N. Rothbard</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Quants-Whizzes-Conquered-Street-Destroyed/dp/0307453383/" target="_blank" rel="noopener">The Quants: How a New Breed of Math Whizzes Conquered Wall Street and Nearly Destroyed It</a></p>
+        <p class="note__blurb">Scott Patterson</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Naked-Statistics-Stripping-Dread-Data/dp/039334777X/" target="_blank" rel="noopener">Naked Statistics</a></p>
+        <p class="note__blurb">Charles Wheelan</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Personal-MBA-10th-Anniversary/dp/0525543023/" target="_blank" rel="noopener">The Personal MBA</a></p>
+        <p class="note__blurb">Josh Kaufman</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Quantitative-Trading-Build-Algorithmic-Business/dp/1119800064/" target="_blank" rel="noopener">Quantitative Trading: How to Build Your Own Algorithmic Trading Business</a></p>
+        <p class="note__blurb">Ernest P. Chan</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Algorithmic-Trading-Winning-Strategies-Rationale/dp/1118460146" target="_blank" rel="noopener">Algorithmic Trading: Winning Strategies and Their Rationale</a></p>
+        <p class="note__blurb">Ernest P. Chan</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Mystery-Banking-Murray-N-Rothbard/dp/1933550287/" target="_blank" rel="noopener">The Mystery of Banking</a></p>
+        <p class="note__blurb">Murray N. Rothbard</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Blockchain-Revolution-Technology-Cryptocurrencies-Changing/dp/1101980141/" target="_blank" rel="noopener">Blockchain Revolution: How the Technology Behind Bitcoin and Other Cryptocurrencies Is Changing the World</a></p>
+        <p class="note__blurb">Don Tapscott</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Cryptoassets-Innovative-Investors-Bitcoin-Beyond/dp/1260026671/" target="_blank" rel="noopener">Cryptoassets: The Innovative Investor's Guide to Bitcoin and Beyond</a></p>
+        <p class="note__blurb">Chris Burniske</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://fee.org/resources/economics-in-one-lesson/" target="_blank" rel="noopener">Economics in One Lesson</a></p>
+        <p class="note__blurb">Henry Hazlitt</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.gutenberg.org/files/44800/44800-h/44800-h.htm" target="_blank" rel="noopener">The Law</a></p>
+        <p class="note__blurb">Frédéric Bastiat</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://mises.org/library/what-has-government-done-our-money" target="_blank" rel="noopener">What Has Government Done to Our Money?</a></p>
+        <p class="note__blurb">Murray N. Rothbard</p>
+      </div>
+      <div>
+        <p class="note__title"><a href="https://www.amazon.com/Anatomy-State-Murray-Rothbard/dp/1614279888" target="_blank" rel="noopener">Anatomy of the State</a></p>
+        <p class="note__blurb">Murray N. Rothbard</p>
+      </div>
+    </div>
+  </section>
+
+  
+<footer class="home__footer">
+  <p>Based in Michigan &middot; UTC&minus;5</p>
+</footer>
+
+</main>
+
+    </div>
+    <footer class="footer">
+        
+    </footer>
+    <script>
+        try {
+            const darkMode = window.localStorage.getItem('amoradi-dark-mode');
+
+            if (darkMode) {
+                document.getElementById('switch').checked = true;
+                document.getElementsByTagName('html')[0].setAttribute('data-dark-mode', true);
+            }
+        } catch(e) {
+            console.log('light mode error', e);
+        }
+    </script>
+</body>
+</html>
